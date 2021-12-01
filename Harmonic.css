@@ -2282,16 +2282,4 @@ settings:
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
-    -
-        id: advanced
-        title: Advanced
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: font-smaller
-        title: Small font size
-        type: variable-number
-        default: 13
-        format: px
 */
