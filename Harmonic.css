@@ -28,7 +28,8 @@
 :root {
 /* VARIABLES STYLE SETTING */
 --bold-weight:700;
---font-small:13px;
+--font-small:15px;
+--font-smaller:13px;
 --font-normal:17px;
 --text:mulish;
 --text-editor:mulish;
@@ -2027,7 +2028,7 @@ settings:
         title: Sidebar font size
         description: Font size in px of the sidebar and small text
         type: variable-number
-        default: 13
+        default: 15
         format: px
     - 
         id: normal-weight
