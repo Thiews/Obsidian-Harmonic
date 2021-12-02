@@ -28,9 +28,9 @@
 :root {
 /* VARIABLES STYLE SETTING */
 --bold-weight:700;
---font-small:15px;
+--font-small:0.85em;
 --font-smaller:0.8em;
---font-normal:17px;
+--font-normal:18px;
 --text:mulish;
 --text-editor:mulish;
 --p-offset:37px;
@@ -47,7 +47,7 @@
 --site-title:"OBSIDIAN";
 --title-collapse:0;
 --line-height:1.8em;
---line-width:42rem;
+--line-width:44rem;
 
 
 
@@ -2021,14 +2021,7 @@ settings:
         title: Body font size
         description: Font size in px of paragraphs
         type: variable-number
-        default: 16
-        format: px
-    - 
-        id: font-small
-        title: Sidebar font size
-        description: Font size in px of the sidebar and small text
-        type: variable-number
-        default: 15
+        default: 18
         format: px
     - 
         id: normal-weight
@@ -2047,7 +2040,7 @@ settings:
         title: Normal line width
         description: Number of characters per line
         type: variable-number
-        default: 40
+        default: 44
         format: rem
     -
         id: max-width
