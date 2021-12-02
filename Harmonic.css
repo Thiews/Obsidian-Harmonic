@@ -1026,7 +1026,7 @@ Background-color:var(--text-accent);
   font-weight:400 !important;
 }
 
-.tree-item-self,.tree-item-children{
+.tree-item-self, .tree-item-children{
   Color:var(--text-normal) !important;
 }
 
@@ -1447,20 +1447,13 @@ background-color:hsla(var(--accent-h),calc(var(--accent-s) + 100%),calc(var(--ac
 /* --------------- */
 /* Tables */
 
-.markdown-preview-view tr {
-  Background:var(--background-secondary-alt);
+.markdown-preview-view table {
+  Width:100%
 }
 
 .CodeMirror-code .HyperMD-table-row {
   Font-size:var(--font-small);
 }
-
-.markdown-preview-view th {
-  font-weight:var(--bold-weight);
-  text-align: left;
-  border-top:none;
-}
-
 
 .markdown-preview-view tbody tr{
   Background:var(--background-primary);
@@ -1470,22 +1463,16 @@ background-color:hsla(var(--accent-h),calc(var(--accent-s) + 100%),calc(var(--ac
 .markdown-preview-view th {
   font-weight:var(--bold-weight);
   text-align: left;
+  Font-size:1.1em;
   border-top:none;
+  font-weight:var(--bold-weight);
+  text-align: left;
+  border-top:none;
+  Background:var(--background-secondary-alt);
 }
 
-.markdown-preview-view th:last-child,
-.markdown-preview-view td:last-child {
-  border-right:none;
-}
-
-.markdown-preview-view th:first-child,
-.markdown-preview-view td:first-child {
-  border-left:none;
-  padding-left:0;
-}
-
-.markdown-preview-view tr:last-child td {
-  border-bottom:none;
+.markdown-preview-view table tr:nth-child(2n) {
+  Background:var(--background-secondary-alt);
 }
 
 
@@ -2008,7 +1995,13 @@ input[type=checkbox] {
   }
 }
 
+/* Dataview plugin */
 
+.table-view-table > thead > tr > th {
+  Border-bottom:none !important;
+  Font-size:var(--font-normal) !important;
+  Padding-left:10px !important;
+}
 
 /* Style Settings */
 
