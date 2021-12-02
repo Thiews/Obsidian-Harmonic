@@ -1437,6 +1437,7 @@ background-color:hsla(var(--accent-h),calc(var(--accent-s) + 100%),calc(var(--ac
 
 .markdown-preview-view tbody tr{
   Background:var(--background-primary);
+  Font-size:0.9em;
 }
 
 .markdown-preview-view th {
