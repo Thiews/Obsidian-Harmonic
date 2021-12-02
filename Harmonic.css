@@ -1424,6 +1424,10 @@ background-color:hsla(var(--accent-h),calc(var(--accent-s) + 100%),calc(var(--ac
   Background:var(--background-secondary-alt);
 }
 
+.CodeMirror-code .HyperMD-table-row {
+  Font-size:var(--font-small);
+}
+
 .markdown-preview-view th {
   font-weight:var(--bold-weight);
   text-align: left;
