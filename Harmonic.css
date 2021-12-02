@@ -183,15 +183,15 @@
 
 /* Edit mode adjustment : width */
 .markdown-source-view.is-readable-line-width .CodeMirror{
-  Max-width:740px !important;
-  //max-width:var(--max-width);
+  //Max-width:740px !important;
+  max-width:var(--max-width);
   width:var(--line-width);
 }
 
 /* Preview mode adjustment : width */
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-  //max-width:var(--max-width);
-  Max-width:740px !important;
+  max-width:var(--max-width);
+  //Max-width:740px !important;
   width:var(--line-width);
 }
 
@@ -422,13 +422,24 @@ Color:var(--text-accent);
 
 .nav-action-button.is-active svg, .nav-action-button:hover svg{
   Color:#FFF;
-  Margin-top:-1px;
+  Margin-left:0.15rem;
+  Margin-top:0.1rem
+}
+
+.nav-action-button svg {
+  Margin-left:0rem;
+  Margin-top:0.1rem;
+}
+
+.nav-action-button {
+  width:2.3rem;
+  Height:2.3rem;
+  Margin-right:10px !important;
 }
 
 .nav-action-button.is-active,.nav-action-button:hover{
   Background:var(--text-accent) !important;
-  Border-radius:50px;
-  Height:28px;
+  Border-radius:100%;
 }
 
 .nav-folder-collapse-indicator.collapse-icon{
@@ -440,7 +451,7 @@ Color:var(--text-accent);
 }
 
 .nav-action-button svg{
-Width:14px;
+Width:0.8em;
 Color:var(--text-accent);
 }
 
