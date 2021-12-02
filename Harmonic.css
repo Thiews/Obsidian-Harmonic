@@ -1836,7 +1836,7 @@ input[type=checkbox] {
 /* KANBAN plugin */
 .kanban-plugin { 
    --lane-width:350px !important; /* Largeur des colonnes pour Kanban */
-  Background:var(--background-primary);
+  Background:var(--background-primary) !important;
 }
 
 .kanban-plugin__lane-wrapper {
@@ -2091,7 +2091,7 @@ settings:
     - 
         id: line-width
         title: Normal line width
-        description: Number of characters per line
+        description: Number of characters per line. Don't put any number to make the page fullwidth
         type: variable-number
         default: 44
         format: rem
