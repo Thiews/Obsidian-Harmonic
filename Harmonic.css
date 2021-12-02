@@ -546,6 +546,10 @@ Color:var(--text-accent);
 /* --------------- */
 /* Modals */
 
+.modal .vertical-tab-header-group-title {
+  Background:transparent;
+}
+
 .modal.mod-settings .vertical-tab-content-container {
   border:1px solid var(--background-modifier-border);
   padding-bottom:0;
@@ -859,7 +863,7 @@ Font-weight:bold;
 
 
 .nav-folder-title:hover{
-  filter:saturate(2);
+  filter:brightness(2);
 }
 
 .theme-dark .nav-folder-title {
