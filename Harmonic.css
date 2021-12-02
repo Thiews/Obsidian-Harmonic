@@ -1585,7 +1585,7 @@ Zoom:0.8;
 }
 
 .theme-light .graph-controls {
-  Background-color:hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 35%));
+  Background-color:hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 45%));
 }
 
 .theme-dark .graph-controls {
