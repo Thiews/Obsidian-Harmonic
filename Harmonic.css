@@ -420,10 +420,16 @@ body, input, button,
 Color:var(--text-accent);
 }
 
-.nav-action-button.is-active svg, .nav-action-button:hover svg{
+.nav-action-button.is-active svg {
   Color:#FFF;
   Margin-left:0.15rem;
-  Margin-top:0.1rem
+  Margin-top:0.15rem
+}
+
+.nav-action-button:hover svg{
+  Filter: saturate(2);
+  //Margin-left:0.15rem;
+  //Margin-top:0.1rem
 }
 
 .nav-action-button svg {
@@ -437,9 +443,10 @@ Color:var(--text-accent);
   Margin-right:10px !important;
 }
 
-.nav-action-button.is-active,.nav-action-button:hover{
+.nav-action-button.is-active {
   Background:var(--text-accent) !important;
   Border-radius:100%;
+  //Margin-left:-0.15rem;
 }
 
 .nav-folder-collapse-indicator.collapse-icon{
@@ -640,6 +647,7 @@ input.prompt-input, input.prompt-input:hover {
 
 .workspace-tab-header-container {
   border:0 !important;
+  Background-color:transparent;
   height:36px;
   Opacity:0;
 }
@@ -1568,9 +1576,6 @@ Zoom:0.8;
 /* --------------- */
 /* Graphs */
 
-.graph-control-section {
-}
-
 .graph-controls {
   border:none;
   left:0;
@@ -1579,8 +1584,24 @@ Zoom:0.8;
   padding:0 20px 10px 10px;
 }
 
+.theme-light .graph-controls {
+  Background-color:hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 35%));
+}
+
+.theme-dark .graph-controls {
+  Background-color:hsl(var(--accent-h),calc(var(--accent-s) + 10%),calc(var(--accent-l) - 35%));
+}
+
+.graph-control-section .setting-item .setting-item-info .setting-item-name {
+color:var(--text-normal) !important;
+}
+
+.graph-control-section-header {
+  Color:var(--text-normal);
+}
+
 .graph-controls.is-close {
-Background:var(--background-secondary-alt) !important;
+  Background-color:transparent !important;
 }
 
 input[type=range] {
