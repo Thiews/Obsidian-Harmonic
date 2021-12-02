@@ -183,14 +183,15 @@
 
 /* Edit mode adjustment : width */
 .markdown-source-view.is-readable-line-width .CodeMirror{
-  //Max-width:740px !important;
-  max-width:var(--max-width);
+  Max-width:740px !important;
+  //max-width:var(--max-width);
   width:var(--line-width);
 }
 
 /* Preview mode adjustment : width */
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
-  max-width:var(--max-width);
+  //max-width:var(--max-width);
+  Max-width:740px !important;
   width:var(--line-width);
 }
 
@@ -237,18 +238,18 @@ body, input, button,
   
 }
 .CodeMirror-line {
-Letter-spacing:var(--text-spacing);
+  Letter-spacing:var(--text-spacing) !important;
 }
 .cm-s-obsidian span.cm-formatting-task {
   font-family:var(--text-editor);
   line-height:var(--line-height);
-  Letter-spacing:var(--text-spacing);
+  Letter-spacing:var(--text-spacing) !important;
 }
 
 .cm-s-obsidian .cm-header, .cm-s-obsidian .cm-strong {
   font-weight:var(--bold-weight);
   font-family:var(--text) !important;
-  Letter-spacing:var(--text-spacing);
+  Letter-spacing:var(--text-spacing) !important;
 }
 
 .cm-formatting-header {
@@ -482,15 +483,6 @@ Color:var(--text-accent);
 /* --------------- */
 /* Tags */
 
-.tag-container{
-Padding:10px 40px !important;
-}
-.tag-container::before {
-  Content:"TAGS";
-color:var(--text-accent);
-Font-weight:bold;
-}
-
 .tag {
   background-color:var(--background-tertiary) !important;
   border:none;
@@ -531,17 +523,6 @@ Font-weight:bold;
   border-top-right-radius:14px;
   border-bottom-right-radius:14px;
   padding-right:8px;
-}
-
-.tag-container .tree-item-children .tag-pane-tag-self::before{
-  content:"\2022";
-  Color:var(--text-accent);
-  Margin-left:-20px;
-  Padding-right:10px;
-}
-
-.tag-container .tree-item-icon {
-  Color:var(--text-accent);
 }
 
 /* --------------- */
@@ -1277,6 +1258,33 @@ Padding-top:0px !important;
 /* --------------- */
 /* Tag pane */
 
+.tag-container{
+  Padding:10px 40px !important;
+  Font-size:1em !important;
+}
+
+.tag-container .tree-item-children .tree-item-self .collapse-icon{
+  Margin-left:-26px;
+  Padding-right:27px;
+}
+
+.tag-container .tree-item-children .tag-pane-tag-self::before{
+  content:"\2022";
+  Color:var(--text-accent);
+  Margin-left:-20px;
+  Padding-right:10px;
+}
+
+.tag-container .tree-item-icon {
+  Color:var(--text-accent);
+}
+
+.tag-container::before {
+  Content:"TAGS";
+  color:var(--text-accent);
+  Font-weight:bold;
+}
+
 .tag-pane-tag-count {
   padding:0;
   color:var(--text-faint);
@@ -1295,10 +1303,6 @@ Padding-top:0px !important;
   background:var(--background-tertiary) !important;
 }
 
-.nav-file.is-active > .nav-file-title .nav-file-title-content{
-  //background:var(--background-tertiary);
-  border-left:6px solid hsl(var(--accent-h),var(--accent-s),var(--accent-d));
-}
 
 
 /* --------------- */
