@@ -1338,7 +1338,7 @@ iframe {
   font-family:var(--text);
 }
 
-.markdown-preview-view  p, .markdown-preview-view ol, .markdown-preview-view ul,.markdown-preview-view blockquote {
+.markdown-preview-view  p, .markdown-preview-view ol, .markdown-preview-view ul,.markdown-preview-view blockquote, .markdown-preview-view  table{
   Letter-spacing:var(--text-spacing);
   Margin-left:var(--p-offset) !important;
 }
@@ -1419,6 +1419,21 @@ background-color:hsla(var(--accent-h),calc(var(--accent-s) + 100%),calc(var(--ac
 
 /* --------------- */
 /* Tables */
+
+.markdown-preview-view tr {
+  Background:var(--background-secondary-alt);
+}
+
+.markdown-preview-view th {
+  font-weight:var(--bold-weight);
+  text-align: left;
+  border-top:none;
+}
+
+
+.markdown-preview-view tbody tr{
+  Background:var(--background-primary);
+}
 
 .markdown-preview-view th {
   font-weight:var(--bold-weight);
