@@ -1,6 +1,6 @@
 /* HARMONIC THEME from Mathieu DUBOIS */
 
-/* Font from Google*/
+/* Polices from Google*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
@@ -517,6 +517,7 @@ Color:var(--text-accent);
   color:#fff;
   background:var(--text-accent) !important;
 }
+
 .cm-s-obsidian span.cm-hashtag {
   background-color:var(--background-tertiary);
   border:none;
@@ -528,7 +529,7 @@ Color:var(--text-accent);
   margin:0;
   vertical-align:middle;
   padding-top:3px;
-  padding-bottom:4px;
+  padding-bottom:3px;
   cursor:text;
 }
 .cm-hashtag-begin {
@@ -2084,7 +2085,12 @@ settings:
         description: Font weight of paragraphs
         type: variable-number
         default: 400
-    - 
+    -
+        id: text-spacing
+        title: Letter spacing for paragraph
+        type: variable-text
+        default: 0em
+    -
         id: line-height
         title: Body line height
         description: Line height of the main text
@@ -2098,23 +2104,11 @@ settings:
         default: 44
         format: rem
     -
-        id: max-width
-        title: Maximum line width
-        description: Percentage of space inside a pane that a line can fill. Recommended values between 80 to 100
-        type: variable-number
-        default: 88
-        format: '%'
-    -
         id: p-offset
         title: Paragraph offset 
         description: Text offset (in px, em or rem)
         type: variable-text
         default: 2.3rem
-    -
-        id: text-spacing
-        title: Letter spacing for paragraph
-        type: variable-text
-        default: 0em
     - 
         id: headings
         title: Headings
