@@ -33,7 +33,7 @@
 --font-normal:18px;
 --text:mulish;
 --text-editor:mulish;
---p-offset:37px;
+--p-offset:2.3rem;/*37px;*/
 --h-display:inline;
 --text-spacing:0em;
 --title-spacing:0em;
@@ -48,6 +48,7 @@
 --title-collapse:0;
 --line-height:1.8em;
 --line-width:44rem;
+--max-width:88%;
 
 
 
@@ -183,7 +184,6 @@
 
 /* Edit mode adjustment : width */
 .markdown-source-view.is-readable-line-width .CodeMirror{
-  //Max-width:740px !important;
   max-width:var(--max-width);
   width:var(--line-width);
 }
@@ -191,7 +191,6 @@
 /* Preview mode adjustment : width */
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
   max-width:var(--max-width);
-  //Max-width:740px !important;
   width:var(--line-width);
 }
 
@@ -298,7 +297,7 @@ body, input, button,
 
 .markdown-preview-view h2:before{
   content:"H2 ";
-  margin-right:14px;
+  Margin-right:1rem;/*14px;*/
   Font-size:0.8rem;
   color:var(--text-accent);
   Display:var(--h-display);
@@ -506,7 +505,7 @@ Color:var(--text-accent);
   border:none;
   color:var(--text-muted);
   font-size:var(--font-small);
-  padding:1px 10px;
+  padding:3px 10px 0px 10px;
   text-align:center;
   text-decoration:none;
   display:inline-block;
@@ -850,7 +849,7 @@ input[type=checkbox]:checked {
 }
 
 .theme-light .nav-folder-title {
-  Color:hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-d) - 15%)) !important;
+  Color:hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-d) - 5%)) !important;
 }
 
 .nav-folder .is-collapsed .nav-folder-title .nav-folder-title-content{
@@ -858,12 +857,12 @@ input[type=checkbox]:checked {
 }
 
 .nav-folder .nav-folder-title .nav-folder-title-content{
-Font-weight:bold;
+  Font-weight:bold;
 }
 
 
 .nav-folder-title:hover{
-  filter:brightness(2);
+  filter:brightness(1.5);
 }
 
 .theme-dark .nav-folder-title {
@@ -1461,11 +1460,9 @@ background-color:hsla(var(--accent-h),calc(var(--accent-s) + 100%),calc(var(--ac
 }
 
 .markdown-preview-view th {
-  font-weight:var(--bold-weight);
   text-align: left;
   Font-size:1.1em;
   border-top:none;
-  font-weight:var(--bold-weight);
   text-align: left;
   border-top:none;
   Background:var(--background-secondary-alt);
@@ -1873,6 +1870,11 @@ input[type=checkbox] {
   Background-color:var(--background-secondary-alt) !important;
 }
 
+/* MAPMINDPLUGIN */
+.theme-light .mm-node.mm-root .mm-node-content {
+  Background:var(--text-accent);
+}
+
 /* Tablet styling */
 
 @media (min-width:400pt) {
@@ -2105,9 +2107,9 @@ settings:
     -
         id: p-offset
         title: Paragraph offset 
-        description: Nombre de pixels correspondant à ce décalage
+        description: Text offset (in px, em or rem)
         type: variable-text
-        default: 37px
+        default: 2.3rem
     -
         id: text-spacing
         title: Letter spacing for paragraph
