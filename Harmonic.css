@@ -261,6 +261,11 @@ body, input, button,
   font-weight:var(--normal-weight) !important;
 }
 
+.title-accent-color .markdown-preview-view h1, .title-accent-color .title-accent-color .cm-s-obsidian .cm-header-1,.title-accent-color .markdown-preview-view h2,.title-accent-color .title-accent-color .cm-s-obsidian .cm-header-3,.title-accent-color .markdown-preview-view h3,
+.cm-s-obsidian .cm-header-3,.title-accent-color .title-accent-color .cm-s-obsidian .cm-header-4,.title-accent-color .markdown-preview-view h4, .cm-s-obsidian .cm-header-4,.title-accent-color .title-accent-color .cm-s-obsidian .cm-header-5,.title-accent-color .markdown-preview-view h5, .cm-s-obsidian .cm-header-5,.title-accent-color .title-accent-color .cm-s-obsidian .cm-header-6,.title-accent-color .markdown-preview-view h6, .cm-s-obsidian .cm-header-6{
+  Color:var(--text-accent) !important;
+} 
+
 .empty-state-title,
 .markdown-preview-view h1, .cm-s-obsidian .cm-header-1{
   Font-family:var(--text-title) !important;
@@ -2181,6 +2186,11 @@ settings:
         id: h-reveal
         title: Hx activate
         description: activate Hx in titles
+        type: class-toggle
+    - 
+        id: title-accent-color
+        title: Color title
+        description: Choose the accent color for every titles
         type: class-toggle
     - 
         id: title-collapse
