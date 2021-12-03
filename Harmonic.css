@@ -2033,7 +2033,7 @@ id: perso
 settings:
     - 
         id: logo
-        title: Choose site title (text) or a Logo (image) and an accent color
+        title: Features (logo, accent color, focus mode)
         type: heading
         level: 2
         collapsed: true
@@ -2065,6 +2065,37 @@ settings:
         title: Focus mode
         description: Make navigation button and file name disappear (put your cursor on to make them appear)
         type: class-toggle
+    - 
+        id: page-settings 
+        title: Page settings (line width, fullwidth mode, paragraph offset)
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: line-width
+        title: Line width
+        description: Define your line width
+        type: variable-number-slider
+        default: 44
+        min: 10
+        max: 100
+        step: 1
+        format: rem
+    -
+        id: full-width
+        title: Full width mode
+        description: Activate full width
+        type: class-toggle
+    - 
+        id: p-offset
+        title: Paragraph offset
+        description: Change your paragraph offset
+        type: variable-number-slider
+        default: 2.3
+        min: 0
+        max: 8
+        step: 0.1
+        format: rem
     - 
         id: fonts
         title: Fonts
@@ -2119,32 +2150,6 @@ settings:
         description: Line height of the main text
         type: variable-number
         default: 1.5
-    - 
-        id: line-width
-        title: Line width
-        description: Define your line width
-        type: variable-number-slider
-        default: 44
-        min: 10
-        max: 100
-        step: 1
-        format: rem
-    -
-        id: full-width
-        title: Full width mode
-        description: Activate full width
-        type: class-toggle
-    - 
-
-        id: p-offset
-        title: Paragraph offset
-        description: Change your paragraph offset
-        type: variable-number-slider
-        default: 2.3
-        min: 0
-        max: 8
-        step: 0.1
-        format: rem
     - 
         id: headings
         title: Headings
