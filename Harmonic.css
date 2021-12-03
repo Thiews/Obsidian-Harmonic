@@ -195,8 +195,8 @@
 }
 
 /* Collapse indicator */
-.heading-collapse-indicator {
-  Opacity:var(--title-collapse);
+.title-collapse .heading-collapse-indicator {
+  Opacity:0;
 }
 
 .heading-collapse-indicator:hover{
@@ -271,12 +271,11 @@ body, input, button,
   letter-spacing:var(--title-spacing);
 }
 
-.markdown-preview-view h1:before{
+.h-reveal .markdown-preview-view h1:before{
   content:"H1 ";
   Font-size:0.8rem;
   margin-right:14px;
   color:var(--text-accent);
-  Display:var(--h-display);
 }
 
 .markdown-preview-view h2,
@@ -295,12 +294,11 @@ body, input, button,
   letter-spacing:var(--title-spacing);
 }
 
-.markdown-preview-view h2:before{
+.h-reveal .markdown-preview-view h2:before{
   content:"H2 ";
   Margin-right:1rem;/*14px;*/
   Font-size:0.8rem;
   color:var(--text-accent);
-  Display:var(--h-display);
 }
 
 
@@ -320,12 +318,11 @@ body, input, button,
   letter-spacing:var(--title-spacing);
 }
 
-.markdown-preview-view h3:before{
+.h-reveal .markdown-preview-view h3:before{
   content:"H3 ";
   Font-size:0.8rem;
   margin-right:14px;
   color:var(--text-accent);
-  Display:var(--h-display);
 }
 
 
@@ -346,12 +343,11 @@ body, input, button,
   letter-spacing:var(--title-spacing);
 }
 
-.markdown-preview-view h4:before{
+.h-reveal .markdown-preview-view h4:before{
   content:"H4 ";
   Font-size:0.8rem;
   margin-right:14px;
   color:var(--text-accent);
-  Display:var(--h-display);
 }
 
 .markdown-preview-view h5,
@@ -365,19 +361,17 @@ body, input, button,
   Color:var(--h5-color);
   font-weight:var(--h5-weight) !important;
   padding-top:15px;
-  font-size:var(--h5);
 }
 
 .HyperMD-header-5 {
   letter-spacing:var(--title-spacing);
 }
 
-.markdown-preview-view h5:before{
+.h-reveal .markdown-preview-view h5:before{
   Font-size:0.8rem;
   content:"H5 ";
   margin-right:14px;
   color:var(--text-accent);
-  Display:var(--h-display);
 }
 
 .markdown-preview-view h6,
@@ -398,12 +392,11 @@ body, input, button,
   letter-spacing:var(--title-spacing);
 }
 
-.markdown-preview-view h6:before{
+.h-reveal .markdown-preview-view h6:before{
   Font-size:0.8rem;
   content:"H6 ";
   margin-right:14px;
   color:var(--text-accent);/*hsl(var(--accent-h),var(--accent-s),var(--accent-d));*/
-  Display:var(--h-display);
 }
 
 
@@ -1912,6 +1905,7 @@ input[type=checkbox] {
     border-radius:15px;
     top:100px !important;
   }
+
  .is-mobile .suggestion-container {
     max-width:600px;
     max-height:600px;
@@ -2128,17 +2122,15 @@ settings:
         type: variable-text
         default: 0em
     - 
-        id: h-display
-        title: Hx display for title
-        description: Put inline (to display) or none (to hide)
-        type: variable-text
-        default: inline
+        id: h-reveal
+        title: Hx activate
+        description: activate Hx in titles
+        type: class-toggle
     - 
         id: title-collapse
-        title: Reveal collapse indicator for headers
-        description: Used to show (1) or hide (0) title collapse indicator
-        type: variable-number
-        default: 0
+        title: Collapse indicator for titles
+        description: Hide collapse indicators
+        type: class-toggle
     - 
         id: level-1-headings
         title: Level 1 Headings
@@ -2156,7 +2148,7 @@ settings:
         title: H1 font weight
         description: Accepts numbers representing the CSS font-weight
         type: variable-number
-        default: 600
+        default: 400
     -
         id: h1-style
         title: H1 font style
@@ -2187,7 +2179,7 @@ settings:
         title: H2 font weight
         description: Accepts numbers representing the CSS font-weight
         type: variable-number
-        default: 600
+        default: 400
     - 
         id: h2-style
         title: H2 font style
@@ -2218,7 +2210,7 @@ settings:
         title: H3 font weight
         description: Accepts numbers representing the CSS font-weight
         type: variable-number
-        default: 600
+        default: 400
     - 
         id: h3-style
         title: H3 font style
@@ -2249,7 +2241,7 @@ settings:
         title: H4 font weight
         description: Accepts numbers representing the CSS font-weight
         type: variable-number
-        default: 500
+        default: 400
     - 
         id: h4-style
         title: H4 font style
@@ -2280,7 +2272,7 @@ settings:
         title: H5 font weight
         description: Accepts numbers representing the CSS font-weight
         type: variable-number
-        default: 500
+        default: 400
     -
         id: h5-style
         title: H5 font style
