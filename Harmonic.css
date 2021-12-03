@@ -673,7 +673,7 @@ input.prompt-input, input.prompt-input:hover {
   Opacity:1;
 }
 
-workspace-leaf-header, .view-header .view-header-title {
+.focus-mode .workspace-leaf-header,.focus-mode .view-header .view-header-title {
   Opacity:0;
 }
 
