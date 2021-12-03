@@ -864,8 +864,7 @@ input[type=checkbox]:checked {
   Font-weight:bold;
 }
 
-
-.nav-folder-title:hover{
+.nav-folder-title .nav-folder-title-content:hover{
   filter:brightness(1.5);
 }
 
