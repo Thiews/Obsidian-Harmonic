@@ -1001,6 +1001,17 @@ Background-color:var(--text-accent);
   color:var(--text-accent);
 }
 
+.outline .collapse-icon {
+  Color:var(--text-accent);
+}
+
+.outline  .tree-item-children .tree-item-inner::before {
+  content:"\2022";
+  Color:var(--text-accent);
+  Margin-left:-20px;
+  Padding-right:10px;
+}
+
 .outline .pane-empty {
   font-size:var(--font-small);
   margin:0 0 0 15px;
@@ -2046,7 +2057,7 @@ settings:
     -
         id: focus-mode
         title: Focus mode
-        description: Make navigation button disappear (put your cursor on to make them appear)
+        description: Make navigation button and file name disappear (put your cursor on to make them appear)
         type: class-toggle
     - 
         id: fonts
