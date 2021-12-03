@@ -6,6 +6,6 @@
 Work with style settings plugin to
 - choose a logo or a site title
 - choose a accent color
-- choose paragraph and title font independantly
+- choose paragraph and title font independently
 - create an offset for paragraphs, lists...
 - and many other things...
