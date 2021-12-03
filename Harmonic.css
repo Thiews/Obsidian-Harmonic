@@ -194,6 +194,10 @@
   width:var(--line-width);
 }
 
+.full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-view.is-readable-line-width .markdown-preview-sizer{
+  width:100% !important;
+}
+
 /* Collapse indicator */
 .title-collapse .heading-collapse-indicator {
   Opacity:0;
@@ -1716,8 +1720,8 @@ input[type=range]::-webkit-slider-thumb:active {
   Width:100% !important;
 }
 
-.theme-dark .nav-header::before{
-  Filter: invert(var(--invert-logo)) !important;
+.invert-logo.theme-dark .nav-header:before{
+  Filter: invert(100%) !important;
 }
 
 .workspace-split.mod-right-split .nav-header::before, .view-content .nav-header::before{
@@ -2028,8 +2032,7 @@ settings:
         id: invert-logo
         title: Invert logo colors in dark mode
         description: Put 0 (not invert) or 1 (invert - B&W image works well)
-        type: variable-text
-        default: '0'
+        type: class-toggle
     -
         id: accent
         title: Accent color
@@ -2092,17 +2095,30 @@ settings:
         default: 1.5
     - 
         id: line-width
-        title: Normal line width
-        description: Number of characters per line. Don't put any number to make the page fullwidth
-        type: variable-number
+        title: Line width
+        description: Define your line width
+        type: variable-number-slider
         default: 44
+        min: 10
+        max: 100
+        step: 1
         format: rem
     -
+        id: full-width
+        title: Full width mode
+        description: Activate full width
+        type: class-toggle
+    - 
+
         id: p-offset
-        title: Paragraph offset 
-        description: Text offset (in px, em or rem)
-        type: variable-text
-        default: 2.3rem
+        title: Paragraph offset
+        description: Change your paragraph offset
+        type: variable-number-slider
+        default: 2.3
+        min: 0
+        max: 8
+        step: 0.1
+        format: rem
     - 
         id: headings
         title: Headings
