@@ -127,7 +127,7 @@
   --background-match-highlight:hsla(var(--accent-h), 40%, 62%, 0.2);
   --background-modifier-accent:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 10%));
   --text-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-l));
-  --text-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 10%));
+  --text-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 10%));
   --interactive-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-l));
   --interactive-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 10%));
 
