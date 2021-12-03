@@ -544,8 +544,18 @@ Color:var(--text-accent);
 /* --------------- */
 /* Modals */
 
-.modal .vertical-tab-header-group-title {
+.modal.mod-settings .vertical-tab-header {
   Background:transparent;
+}
+
+.vertical-tab-header-group {
+  Padding:0 0 !important;
+}
+
+.modal .vertical-tab-header-group-title {
+  Background:var(--background-secondary-alt);
+  Color:var(--text-accent);
+  Font-weight:bold;
 }
 
 .modal.mod-settings .vertical-tab-content-container {
@@ -865,7 +875,7 @@ input[type=checkbox]:checked {
 }
 
 .nav-folder-title .nav-folder-title-content:hover{
-  filter:brightness(1.5);
+  filter:brightness(1.2);
 }
 
 .theme-dark .nav-folder-title {
