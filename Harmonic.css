@@ -1005,11 +1005,15 @@ Background-color:var(--text-accent);
   Color:var(--text-accent);
 }
 
-.outline  .tree-item-children .tree-item-inner::before {
+.outline .tree-item-inner::before {
   content:"\2022";
   Color:var(--text-accent);
   Margin-left:-20px;
   Padding-right:10px;
+}
+
+.outline .tree-item-inner:not(:only-child)::before {
+  display: none;
 }
 
 .outline .pane-empty {
@@ -1298,17 +1302,19 @@ Padding-top:0px !important;
   Font-size:1em !important;
 }
 
-.tag-container .tree-item-children .tree-item-self .collapse-icon{
-  Margin-left:-26px;
-  Padding-right:27px;
-}
-
-.tag-container .tree-item-children .tag-pane-tag-self::before{
+.tag-pane-tag-text:before{
   content:"\2022";
   Color:var(--text-accent);
-  Margin-left:-20px;
-  Padding-right:10px;
+  Padding-right:5px;
+  Margin-left:-13px;
+  
 }
+
+.tag-pane-tag > .collapse-icon + .tree-item-inner > .tag-pane-tag-text:before {
+  content: none;
+  margin-left: -5px;
+}
+
 
 .tag-container .tree-item-icon {
   Color:var(--text-accent);
