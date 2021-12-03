@@ -1303,10 +1303,10 @@ Padding-top:0px !important;
 }
 
 .tag-pane-tag-text:before{
-  content:"\2022";
+  content:"#";
   Color:var(--text-accent);
-  Padding-right:5px;
   Margin-left:-13px;
+  Padding-right:6px;
   
 }
 
