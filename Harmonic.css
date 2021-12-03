@@ -31,8 +31,9 @@
 --font-small:0.85em;
 --font-smaller:0.8em;
 --font-normal:18px;
---text:mulish;
---text-editor:mulish;
+--text:mulish,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+--text-editor:mulish,apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+--font-monospace:Menlo,SFMono-Regular,Consolas,"Roboto Mono",monospace;
 --p-offset:2.3rem;/*37px;*/
 --h-display:inline;
 --text-spacing:0em;
@@ -650,7 +651,10 @@ input.prompt-input, input.prompt-input:hover {
   border:0 !important;
   Background-color:transparent;
   height:36px;
-  Opacity:0;
+}
+
+.focus-mode .workspace-tab-header-container {
+   Opacity:0;
 }
 
 .workspace-tab-header-container:hover {
@@ -2039,6 +2043,11 @@ settings:
         type: variable-color
         format: hsl-split
         default: '#4F60B3'
+    -
+        id: focus-mode
+        title: Focus mode
+        description: Make navigation button disappear (put your cursor on to make them appear)
+        type: class-toggle
     - 
         id: fonts
         title: Fonts
