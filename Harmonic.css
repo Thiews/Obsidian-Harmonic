@@ -184,10 +184,15 @@
 /* --------------- */
 
 /* Edit mode adjustment : width */
-.markdown-source-view.is-readable-line-width .CodeMirror{
+.markdown-source-view .is-readable-line-width .CodeMirror{
   max-width:var(--max-width);
   width:var(--line-width);
 }
+
+.title-accent-color .markdown-source-view .HyperMD-header span {
+  Color:var(--text-accent);
+}
+
 
 /* Preview mode adjustment : width */
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
@@ -429,7 +434,7 @@ Color:var(--text-accent);
 }
 
 .nav-action-button:hover svg{
-  Filter: saturate(2);
+  Filter: brightness(1.5);
 }
 
 .nav-action-button svg {
@@ -2065,6 +2070,10 @@ input[type=checkbox] {
     padding:15px;
     border-radius:15px;
   }
+  .is-mobile .side-dock-ribbon-action svg {
+    Color:var(--text-accent) !important;
+  }
+  
 }
 
 /* Dataview plugin */
