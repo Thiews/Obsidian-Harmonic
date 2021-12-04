@@ -454,6 +454,10 @@ Color:var(--text-accent);
   //Right:30%;
 }
 
+.focus-mode .view-action:nth-last-of-type(5),.focus-mode .view-action:nth-last-of-type(6) {
+  Opacity:1 !important;
+}
+
 .view-action:nth-last-of-type(5) svg,.view-action:nth-last-of-type(6) svg{
   Color:#FFF !important;
 }
@@ -1846,7 +1850,7 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
 Color:var(--text-accent) !important;
 }
 
-.focus-mode .view-actions {
+.focus-mode .view-action {
   opacity: 0 !important;
 }
 
