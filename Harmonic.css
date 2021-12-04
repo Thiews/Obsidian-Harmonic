@@ -436,6 +436,28 @@ Color:var(--text-accent);
 .nav-action-button:hover svg{
   Filter: brightness(1.5);
 }
+.view-action:nth-last-of-type(5),
+.view-action:nth-last-of-type(6) {
+  top: calc(90vh - 10px);
+  Margin-right:30px;
+}
+
+.view-action:nth-last-of-type(5),.view-action:nth-last-of-type(6){
+  Position:absolute; !important;
+  Background:var(--text-accent);
+  Width:3rem;
+  Display:flex;
+  Height:3rem;
+  Border-radius:100%;
+  Margin-left:20px;
+  padding:15px 15px;
+  //Right:30%;
+}
+
+.view-action:nth-last-of-type(5) svg,.view-action:nth-last-of-type(6) svg{
+  Color:#FFF !important;
+}
+
 
 .nav-action-button svg {
   Margin-left:0rem;
