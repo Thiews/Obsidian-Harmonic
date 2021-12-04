@@ -430,8 +430,6 @@ Color:var(--text-accent);
 
 .nav-action-button:hover svg{
   Filter: saturate(2);
-  //Margin-left:0.15rem;
-  //Margin-top:0.1rem
 }
 
 .nav-action-button svg {
@@ -448,7 +446,6 @@ Color:var(--text-accent);
 .nav-action-button.is-active {
   Background:var(--text-accent) !important;
   Border-radius:100%;
-  //Margin-left:-0.15rem;
 }
 
 .nav-folder-collapse-indicator.collapse-icon{
@@ -545,6 +542,34 @@ Color:var(--text-accent);
   border-bottom-right-radius:14px;
   padding-right:8px;
 }
+
+.workspace-ribbon svg {
+  Color:var(--text-accent);
+}
+
+.workspace-ribbon .side-dock-ribbon-action:hover {
+  filter:brightness(1.2);
+}
+
+/* Focus mode */
+
+.focus-mode .workspace-ribbon {
+  Display:none;
+}
+
+.focus-mode .prompt-instructions {
+  Display:none;
+}
+
+.focus-mode .tooltip {
+  Display:none;
+}
+
+.focus-mode ::-webkit-scrollbar {
+  Display:none;
+}
+
+
 
 /* --------------- */
 /* Modals */
@@ -684,7 +709,7 @@ input.prompt-input, input.prompt-input:hover {
   border:none !important;
 }
 
-.workspace-leaf-header, .view-header .view-header-title:hover {
+.focus-mode .workspace-leaf-header, .focus-mode .view-header .view-header-title:hover {
   Opacity:1;
 }
 
@@ -1376,6 +1401,10 @@ Padding-top:0px !important;
 
 .status-bar-item-segment {
   margin-right:10px;
+}
+
+.focus-mode .status-bar {
+  Display:none;
 }
 
 
