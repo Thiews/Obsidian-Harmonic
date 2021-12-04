@@ -1782,9 +1782,16 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
 }
 
 .view-actions {
-  opacity: 0 !important;
   Background:var(--background-primary) !important;
   Box-shadow:none !important;
+}
+
+.view-actions svg{
+Color:var(--text-accent) !important;
+}
+
+.focus-mode .view-actions {
+  opacity: 0 !important;
 }
 
 .view-actions:hover{
