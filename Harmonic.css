@@ -185,8 +185,12 @@
 
 /* Edit mode adjustment : width */
 .markdown-source-view .is-readable-line-width .CodeMirror{
-  max-width:var(--max-width);
+  //max-width:var(--max-width);
   width:var(--line-width);
+}
+
+.full-width .markdown-source-view .is-readable-line-width .CodeMirror{
+  Width:100% !important;
 }
 
 .title-accent-color .markdown-source-view .HyperMD-header span {
@@ -195,9 +199,9 @@
 
 
 /* Preview mode adjustment : width */
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+.markdown-source-view.is-readable-line-width .CodeMirror, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
   max-width:var(--max-width);
-  width:var(--line-width);
+  width:var(--line-width) !important;
 }
 
 .full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-view.is-readable-line-width .markdown-preview-sizer{
