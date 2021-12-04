@@ -449,7 +449,7 @@ Color:var(--text-accent);
   Display:flex;
   Height:3rem;
   Border-radius:100%;
-  Margin-left:20px;
+  Margin-left:30px;
   padding:15px 15px;
   //Right:30%;
 }
@@ -1854,7 +1854,7 @@ Color:var(--text-accent) !important;
   opacity: 0 !important;
 }
 
-.view-actions:hover{
+.view-actions:hover .view-action{
   opacity:1 !important;
   z-index: 1 !important;
 }
