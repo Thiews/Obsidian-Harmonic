@@ -286,6 +286,10 @@ Color:var(--text-accent);
   Width:100% !important;
 }
 
+.site-title-accent.theme-light .nav-header::before,.site-title-accent.theme-dark .nav-header::before{
+  filter: hue-rotate(var(--hue-bold-italic)) !important;
+}
+
 .invert-logo.theme-dark .nav-header:before{
   Filter: invert(100%) !important;
 }
@@ -1048,6 +1052,11 @@ input[type=checkbox]:checked {
 .markdown-preview-view .task-list-item {
   padding-inline-start:1.5em;
 }
+
+span.cm-formatting-list{
+  color: var(--text-accent) !important;
+}
+
 
 /* Tables */
 
@@ -2002,7 +2011,7 @@ id: perso
 settings:
     - 
         id: logo
-        title: Features (logo, accent color, focus mode)
+        title: Features (logo, accent color, focus mode...)
         type: heading
         level: 2
         collapsed: true
@@ -2021,7 +2030,7 @@ settings:
     -
         id: invert-logo
         title: Invert logo colors in dark mode
-        description: Put 0 (not invert) or 1 (invert - B&W image works well)
+        description: B&W image works well
         type: class-toggle
     -
         id: accent
@@ -2049,6 +2058,11 @@ settings:
         max: 360
         step: 45
         format: deg
+    - 
+        id: site-title-accent
+        title:  Choose the same color for your obsidian title
+        description: Select the same color as the bold and italic text
+        type: class-toggle
     - 
         id: page-settings 
         title: Page settings (line width, fullwidth mode, paragraph offset)
