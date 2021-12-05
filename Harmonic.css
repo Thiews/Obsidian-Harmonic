@@ -17,6 +17,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
 :root {
@@ -44,7 +48,7 @@
 --line-height:1.8em;
 --line-width:44rem;
 --max-width:88%;
---hue-bold-italic:180deg;
+--hue-bold-italic:180;
 
 
 
@@ -286,7 +290,7 @@ Color:var(--text-accent);
   Width:100% !important;
 }
 
-.site-title-accent.theme-light .nav-header::before,.site-title-accent.theme-dark .nav-header::before{
+.bold-italic-accent.site-title-accent.theme-light .nav-header::before,.bold-italic-accent.site-title-accent.theme-dark .nav-header::before{
   filter: hue-rotate(var(--hue-bold-italic)) !important;
 }
 
@@ -1583,13 +1587,16 @@ input[type=range]::-webkit-slider-thumb:active {
   opacity:0.8;
   transition:opacity 0.2s linear;
 }
+.graph-view.color-fill-focused {
+  color: var(--text-accent);
+}
 
 .graph-view.color-fill {
-  color:hsl(var(--accent-h),var(--accent-s),var(--accent-d)) !important;
+  color: hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.5);
 }
 
 .graph-view.color-circle {
-  color:var(--text-normal);
+  color:transparent;
 }
 
 .graph-view.color-line {
@@ -1600,8 +1607,8 @@ input[type=range]::-webkit-slider-thumb:active {
   color:var(--text-normal);
 }
 
-.graph-view.color-fill-highlight {
-  color:var(--interactive-accent) !important;
+.bold-italic-accent .graph-view.color-fill-highlight {
+  color: hsl(calc(var(--accent-h) + 180), calc(var(--accent-s) + 50%), var(--accent-d))
 }
 
 .graph-view.color-line-highlight {
@@ -2055,7 +2062,7 @@ settings:
         type: variable-number-slider
         default: 180
         min: 0
-        max: 360
+        max: 315
         step: 45
         format: deg
     - 
@@ -2097,7 +2104,7 @@ settings:
     - 
         id: fonts
         title: Fonts
-        description : Pre-insalled google fonts - Cabin, Hind, IBM Plex Sans, Josefin Sans, Jost, Libre Baskerville, Lora, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans,  Outfit, Readex Pro, Source Sans Pro, Work Sans
+        description : Pre-insalled google fonts - Cabin, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Readex Pro, Roboto, Source Sans Pro, Work Sans
         type: heading
         level: 2
         collapsed: true
