@@ -1839,12 +1839,12 @@ input[type=checkbox] {
 .kanban-plugin__lane-wrapper {
   
   Border-radius:20px !important;
-  box-shadow:2px 2px 13px 2px rgba(0, 0, 0, 0.03);
+  //box-shadow:2px 2px 13px 2px rgba(0, 0, 0, 0.03);
 }
 
 .kanban-plugin__lane{
-  background: var(--background-primary) !important;
-  box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.02);
+  background: var(--background-secondary-alt) !important;
+  box-shadow:2px 2px 3px 2px rgba(0, 0, 0, 0.05);
 }
 
 .kanban-plugin p, .kanban-plugin li,.kanban-plugin button{
@@ -1858,7 +1858,8 @@ input[type=checkbox] {
 }
 
 .kanban-plugin__item-wrapper {
-  margin-top: 10px !important
+  margin-top: 10px !important;
+  //box-shadow:6px 8px 5px 0px rgba(0, 0, 0, 0.02);
 }
 
 .kanban-plugin__item {
@@ -1872,17 +1873,17 @@ input[type=checkbox] {
 
 .kanban-plugin__item-wrapper {
   padding:5px 0px!important;
-  background: var(--background-secondary-alt) !important;
+  background: var(--background-primary) !important;
   border-radius: 5px;
   //padding: 0px 0px !important;
 }
 
 .kanban-plugin__item-title-wrapper {
   padding: 0px 0px !important;
-  background: var(--background-secondary-alt) !important;
+  //background: var(--background-secondary-alt) !important;
 }
 .kanban-plugin__item-title{
-  padding: 0px 10px!important;
+  padding: 0px 0px 0px 10px !important;
 }
 
 /* MIND MAP PLUGIN */
