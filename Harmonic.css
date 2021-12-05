@@ -29,7 +29,7 @@
 --bold-weight:700;
 --font-small:0.85em;
 --font-smaller:0.8em;
---font-normal:18px;
+--font-normal:17px;
 --text:mulish,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 --text-editor:mulish,apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 --font-monospace:Menlo,SFMono-Regular,Consolas,"Roboto Mono",monospace;
@@ -1639,10 +1639,15 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 /* ----------------------- */
-/* Additional feature in Focus mode */
+/*  Focus mode */
 
 .focus-mode .view-action {
   opacity: 0 !important;
+  transition: 0.3s;
+}
+
+.focus-mode .view-action:hover {
+  opacity: 1;
 }
 
 .focus-mode .prompt-instructions {
@@ -1670,6 +1675,7 @@ input[type=range]::-webkit-slider-thumb:active {
 
 .focus-mode .workspace-leaf-header,.focus-mode .view-header .view-header-title {
   Opacity:0;
+  transition: 0.3s;
 }
 
 .focus-mode .view-action:nth-last-of-type(4),.focus-mode .view-action:nth-last-of-type(5),
@@ -1715,6 +1721,7 @@ input[type=range]::-webkit-slider-thumb:active {
 
 .focus-mode .workspace-tab-header-container {
    Opacity:0;
+   transition: 0.3s;
 }
 
 .focus-mode .workspace-tab-header-container:hover {
@@ -2164,7 +2171,7 @@ settings:
         title: Body font size
         description: Font size in px of paragraphs
         type: variable-number
-        default: 18
+        default: 17
         format: px
     - 
         id: normal-weight
