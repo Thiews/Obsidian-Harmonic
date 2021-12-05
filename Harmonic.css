@@ -1997,7 +1997,7 @@ input[type=checkbox] {
 /* Style Settings */
 
 /* @settings
-name: Personnalisation Thème perso
+name: Harmonic theme customization
 id: perso
 settings:
     - 
@@ -2034,6 +2034,21 @@ settings:
         title: Focus mode
         description: Make navigation button and file name disappear (put your cursor on to make them appear)
         type: class-toggle
+    - 
+        id: bold-italic-accent
+        title:  Bold and italic pop
+        description: Make bold and italic pop with an other color
+        type: class-toggle
+    -
+        id: hue-bold-italic
+        title: Bold and italic hue
+        description: Change the hue of the pop color (step -> 45 degrees)
+        type: variable-number-slider
+        default: 180
+        min: 0
+        max: 360
+        step: 45
+        format: deg
     - 
         id: page-settings 
         title: Page settings (line width, fullwidth mode, paragraph offset)
@@ -2119,21 +2134,6 @@ settings:
         description: Line height of the main text
         type: variable-number
         default: 1.5
-    - 
-        id: bold-italic-accent
-        title:  Bold and italic pop
-        description: Make bold and italic pop with an other color
-        type: class-toggle
-    -
-        id: hue-bold-italic
-        title: Bold and italic hue
-        description: Change the hue of the pop color (step -> 45 degrees)
-        type: variable-number-slider
-        default: 180
-        min: 0
-        max: 360
-        step: 45
-        format: deg
     -
         id: headings
         title: Headings
