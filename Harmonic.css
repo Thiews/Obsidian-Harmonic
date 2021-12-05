@@ -688,16 +688,21 @@ input.search-input:focus {
 /* ----------------------- */
 /* Typography and fonts */
 
-/* Base */
 
 ::selection { background:var(--text-selection); }
 
-
-.bold-italic-accent strong,.bold-italic-accent em{
+/* Hue for bold and italic pop, preview and edit mode */
+.bold-italic-accent strong,.bold-italic-accent em{ 
   color: var(--text-accent);
   filter: hue-rotate(var(--hue-bold-italic));
   }
 
+  .bold-italic-accent .CodeMirror-code .cm-strong,.bold-italic-accent .CodeMirror-code .cm-em {
+    color: var(--text-accent);
+    filter: hue-rotate(var(--hue-bold-italic));
+  }
+
+/* Base */
 body, input, button, 
 .cm-s-obsidian .cm-formatting-hashtag,
 .cm-s-obsidian {
