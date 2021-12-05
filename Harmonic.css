@@ -44,6 +44,7 @@
 --line-height:1.8em;
 --line-width:44rem;
 --max-width:88%;
+--hue-bold-italic:180deg;
 
 
 
@@ -693,10 +694,9 @@ input.search-input:focus {
 
 
 .bold-italic-accent strong,.bold-italic-accent em{
-    color: var(--text-accent);
-    filter: hue-rotate(90deg);
+  color: var(--text-accent);
+  filter: hue-rotate(var(--hue-bold-italic));
   }
-
 
 body, input, button, 
 .cm-s-obsidian .cm-formatting-hashtag,
@@ -1671,6 +1671,7 @@ input[type=range]::-webkit-slider-thumb:active {
 .focus-mode .view-action:nth-last-of-type(4) svg,.focus-mode .view-action:nth-last-of-type(5) svg,.focus-mode .view-action:nth-last-of-type(6) svg{
   Color:#FFF !important;
   Width:1.3rem;
+  margin-bottom: 0.1rem !important;
 }
 
 .focus-mode.is-mobile .view-action:nth-last-of-type(4) svg, .focus-mode.is-mobile .view-action:nth-last-of-type(5) svg, .focus-mode.is-mobile .view-action:nth-last-of-type(6) svg{
@@ -2115,9 +2116,19 @@ settings:
         default: 1.5
     - 
         id: bold-italic-accent
-        title: Bold and italic pop
+        title:  Bold and italic pop
         description: Make bold and italic pop with an other color
         type: class-toggle
+    -
+        id: hue-bold-italic
+        title: Bold and italic hue
+        description: Change the hue of the pop color (step -> 45 degrees)
+        type: variable-number-slider
+        default: 180
+        min: 0
+        max: 360
+        step: 45
+        format: deg
     -
         id: headings
         title: Headings
