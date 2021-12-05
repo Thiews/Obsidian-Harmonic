@@ -1,6 +1,8 @@
 /* HARMONIC THEME from Mathieu DUBOIS */
 
 /* Polices from Google*/
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
@@ -13,7 +15,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 
@@ -370,9 +372,10 @@ display:none !important;
   cursor:var(--cursor) !important;
 }
 
-.nav-file-title:hover {
+.nav-file-title:hover, .nav-file-title.is-active{
   Background-color:transparent !important;
 }
+
 
 .nav-folder-title:hover {
   Background-color:transparent !important;
@@ -688,8 +691,12 @@ input.search-input:focus {
 
 ::selection { background:var(--text-selection); }
 
-strong {font-weight:var(--bold-weight);}
-h1,h2,h3,h4 {letter-spacing:-0.02em;} 
+
+.bold-italic-accent strong,.bold-italic-accent em{
+    color: var(--text-accent);
+    filter: hue-rotate(90deg);
+  }
+
 
 body, input, button, 
 .cm-s-obsidian .cm-formatting-hashtag,
@@ -2107,6 +2114,11 @@ settings:
         type: variable-number
         default: 1.5
     - 
+        id: bold-italic-accent
+        title: Bold and italic pop
+        description: Make bold and italic pop with an other color
+        type: class-toggle
+    -
         id: headings
         title: Headings
         type: heading
