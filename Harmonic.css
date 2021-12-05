@@ -1837,8 +1837,14 @@ input[type=checkbox] {
 }
 
 .kanban-plugin__lane-wrapper {
+  
+  Border-radius:20px !important;
   box-shadow:2px 2px 13px 2px rgba(0, 0, 0, 0.03);
-  Border-radius:15px !important;
+}
+
+.kanban-plugin__lane{
+  background: var(--background-primary) !important;
+  box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.02);
 }
 
 .kanban-plugin p, .kanban-plugin li,.kanban-plugin button{
@@ -1851,8 +1857,13 @@ input[type=checkbox] {
   Text-transform:uppercase;
 }
 
+.kanban-plugin__item-wrapper {
+  margin-top: 10px !important
+}
+
 .kanban-plugin__item {
-  Padding:8px 8px !important;
+  border: none !important;
+  border-radius: 5px !important;
 }
 
 .kanban-plugin .markdown-preview-view li,.kanban-plugin .markdown-preview-view ul,kanban-plugin .markdown-preview-view ol,.kanban-plugin .markdown-preview-view p,.kanban-plugin .markdown-preview-view input {
@@ -1860,13 +1871,18 @@ input[type=checkbox] {
 }
 
 .kanban-plugin__item-wrapper {
-  Border-radius:10px;
-  Background-color:var(--background-secondary-alt) !important;
-  Margin-top:10px !important;
+  padding:5px 0px!important;
+  background: var(--background-secondary-alt) !important;
+  border-radius: 5px;
+  //padding: 0px 0px !important;
 }
+
 .kanban-plugin__item-title-wrapper {
-  Border-radius:10px;
-  Background-color:var(--background-secondary-alt) !important;
+  padding: 0px 0px !important;
+  background: var(--background-secondary-alt) !important;
+}
+.kanban-plugin__item-title{
+  padding: 0px 10px!important;
 }
 
 /* MIND MAP PLUGIN */
@@ -2028,13 +2044,13 @@ settings:
         collapsed: true
     - 
         id: site-title
-        title: Site title
+        title: Your obsidian title
         description: Put the title in quotation marks (see default parameter)
         type: variable-text
         default: '"OBSIDIAN"'
     - 
         id: logo-url
-        title: Site logo
+        title: Your obsidian logo (url)
         description: Put the url syntax like in default
         type: variable-text
         default: url("")
