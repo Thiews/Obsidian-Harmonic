@@ -25,6 +25,7 @@
 
 :root {
 /* VARIABLES STYLE SETTING */
+
 --bold-weight:700;
 --font-small:0.85em;
 --font-smaller:0.8em;
@@ -1587,12 +1588,15 @@ input[type=range]::-webkit-slider-thumb:active {
   opacity:0.8;
   transition:opacity 0.2s linear;
 }
+
+
 .graph-view.color-fill-focused {
   color: var(--text-accent);
 }
 
 .graph-view.color-fill {
-  color: hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.5);
+  color: var(--text-accent);
+  opacity: 0.6;
 }
 
 .graph-view.color-circle {
@@ -1608,7 +1612,7 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 .bold-italic-accent .graph-view.color-fill-highlight {
-  color: hsl(calc(var(--accent-h) + 180), calc(var(--accent-s) + 50%), var(--accent-d))
+  color: hsl(var(--accent-h), calc(var(--accent-s) + 50%), var(--accent-d))
 }
 
 .graph-view.color-line-highlight {
