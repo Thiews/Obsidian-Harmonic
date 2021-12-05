@@ -13,7 +13,7 @@ Install style settings plugin to
 - After focus mode:
 <img width="1440" alt="Capture d’écran 2021-12-05 à 20 51 52" src="https://user-images.githubusercontent.com/29182877/144761487-3c1ebc74-3557-4673-94a8-01cdbf9b2e89.png">
 
-- Bold and italic in edit mode
+- Bold and italic color accent in edit mode (same in preview mode)
 <img width="1440" alt="Capture d’écran 2021-12-05 à 20 55 50" src="https://user-images.githubusercontent.com/29182877/144761655-35a2c2ad-f170-4f94-9177-075c2c133dbc.png">
 
 ## Customize page settings : line width, paragraph offset, activate fullwidth mode
