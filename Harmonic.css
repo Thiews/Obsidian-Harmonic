@@ -2097,6 +2097,7 @@ settings:
     - 
         id: fonts
         title: Fonts
+        description : Pre-insalled google fonts - Cabin, Hind, IBM Plex Sans, Josefin Sans, Jost, Libre Baskerville, Lora, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans,  Outfit, Readex Pro, Source Sans Pro, Work Sans
         type: heading
         level: 2
         collapsed: true
@@ -2118,6 +2119,12 @@ settings:
         description: Font used for for code blocks and front matter
         type: variable-text
         default: menlo
+    - 
+        id: text-title
+        title: title font
+        description: Font used for titles
+        type: variable-text
+        default: mulish
     -
         id: custom-fonts
         title: Typography
@@ -2154,12 +2161,6 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    - 
-        id: text-title
-        title: title font
-        description: Font used for titles
-        type: variable-text
-        default: mulish
     - 
         id: title-spacing
         title: Letter spacing for titles
