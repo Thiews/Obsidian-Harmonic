@@ -1713,8 +1713,9 @@ input[type=range]::-webkit-slider-thumb:active {
 /* Sliding pane */
 
 .focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4),.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5),.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) {
-  margin-left: 2.2rem !important;
-  top: 10px;
+  margin-left: 3rem !important;
+  //top: calc(90vh - 10px);
+  top: 3rem;
 }
 
 .focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4) svg,.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5) svg,.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) svg{
