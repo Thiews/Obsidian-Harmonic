@@ -1,4 +1,4 @@
-/* HARMONIC THEME from Mathieu DUBOIS */
+/* HARMONIC THEME by Mathieu DUBOIS */
 
 /* Polices from Google*/
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
@@ -1677,57 +1677,57 @@ input[type=range]::-webkit-slider-thumb:active {
 /* ----------------------- */
 /*  Focus mode */
 
-.focus-mode .view-action {
+.hide-action-buttons .view-action {
   opacity: 0 !important;
   transition: 0.3s;
 }
 
-.focus-mode .view-action:hover {
+.hide-action-buttons .view-action:hover {
   opacity: 1;
 }
 
-.focus-mode .prompt-instructions {
+.hide-instruction .prompt-instructions {
   Display:none;
 }
 
-.focus-mode .tooltip {
+.hide-tooltip .tooltip {
   Display:none;
 }
 
-.focus-mode ::-webkit-scrollbar {
+.hide-scrollbar ::-webkit-scrollbar {
   Display:none;
 }
 
-.focus-mode .titlebar-button-container {
+.hide-file-name .titlebar-button-container {
   display: none;
 }
 
-.focus-mode .workspace-ribbon {
+.hide-left-menu .workspace-ribbon {
   Display:none;
 }
-.focus-mode .workspace-leaf-header, .focus-mode .view-header .view-header-title:hover {
+.hide-file-name .workspace-leaf-header, .hide-file-name .view-header .view-header-title:hover {
   Opacity:1;
 }
 
-.focus-mode .workspace-leaf-header,.focus-mode .view-header .view-header-title {
+.hide-file-name .workspace-leaf-header,.hide-file-name .view-header .view-header-title {
   Opacity:0;
   transition: 0.3s;
 }
 
-.focus-mode .view-header-icon {
+.hide-file-name .view-header-icon {
   opacity:0 !important;
 }
 
-.focus-mode .workspace-tab-header-container {
+.hide-left-menu .workspace-tab-header-container {
    Opacity:0;
    transition: 0.3s;
 }
 
-.focus-mode .workspace-tab-header-container:hover {
+.hide-left-menu .workspace-tab-header-container:hover {
    Opacity:1;
 }
 
-.focus-mode .status-bar {
+.hide-status-bar .status-bar {
   Display:none;
 }
 
@@ -1769,7 +1769,7 @@ input[type=range]::-webkit-slider-thumb:active {
 
 .edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) {
   position: absolute;
-  left: calc(85vw);
+  left: calc(84vw);
 }
 
 .edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4) svg,.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5) svg,.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) svg{
@@ -2062,7 +2062,7 @@ id: perso
 settings:
     - 
         id: logo
-        title: Logo and accent color
+        title: Logo OR title, Accent color
         type: heading
         level: 2
         collapsed: true
@@ -2090,21 +2090,50 @@ settings:
         format: hsl-split
         default: '#4F60B3'
     - 
-        id: features
-        title: Features (focus mode, edit button, bold-italic accent)
+        id: focus-mode
+        title: Focus mode
         type: heading
         level: 2
         collapsed: true
     -
-        id: focus-mode
-        title: Focus mode
-        description: Make navigation button and file name disappear (put your cursor on to make them appear)
+        id: hide-left-menu
+        title: Hide vertical menu of the left sidebar
+        type: class-toggle
+    -
+        id: hide-action-buttons
+        title: Hide action buttons
+        type: class-toggle
+    -
+        id: hide-file-name
+        title: Hide file name in main window
+        type: class-toggle
+    -
+        id: hide-tooltip
+        title: Hide tooltip
+        type: class-toggle
+    -
+        id: hide-scrollbar
+        title: Hide scrollbar
+        type: class-toggle
+    -
+        id: hide-instruction
+        title: Hide instructions
+        type: class-toggle
+    -
+        id: hide-status-bar
+        title: Hide status bar
         type: class-toggle
     -
         id: edit-button
         title: Edit button
         description: Create a button to edit and preview
         type: class-toggle
+    -
+        id: features
+        title: Make Bold and italic pop
+        type: heading
+        level: 2
+        collapsed: true
     - 
         id: bold-italic-accent
         title:  Bold and italic pop
@@ -2226,7 +2255,7 @@ settings:
     - 
         id: title-spacing
         title: Letter spacing for titles
-        description: Used for titles
+        description: Letter spacing Used for every titles
         type: variable-text
         default: 0em
     - 
@@ -2236,7 +2265,7 @@ settings:
         type: class-toggle
     - 
         id: title-accent-color
-        title: Color title
+        title: Accent color title
         description: Choose the accent color for every titles
         type: class-toggle
     - 
