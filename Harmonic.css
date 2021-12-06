@@ -939,7 +939,7 @@ body, input, button,
 }
 
 /* Change Hx color (preview and edit mode) */
-.h-change-color .markdown-preview-view h1:before,.h-change-color .markdown-preview-view h2:before,.h-change-color.markdown-preview-view h3:before,.h-change-color.markdown-preview-view h4:before,.h-change-color.markdown-preview-view h5:before,.h-change-color.markdown-preview-view h6:before{
+.h-change-color.bold-italic-accent .markdown-preview-view h1:before,.h-change-color.bold-italic-accent .markdown-preview-view h2:before,.h-change-color.bold-italic-accent .markdown-preview-view h3:before,.h-change-color.bold-italic-accent .markdown-preview-view h4:before,.h-change-color.bold-italic-accent .markdown-preview-view h5:before,.h-change-color.bold-italic-accent .markdown-preview-view h6:before{
   filter: hue-rotate(var(--hue-bold-italic));
 }
 
