@@ -1688,11 +1688,9 @@ input[type=range]::-webkit-slider-thumb:active {
   Position:absolute; !important;
   Background:var(--text-accent);
   Width:3rem;
-  //Display:flex;
   Height:3rem;
   Border-radius:100%;
   Padding:0.9rem 0.9rem;
-  //Right:30%;
 }
 
 .focus-mode .view-action:nth-last-of-type(4),.focus-mode .view-action:nth-last-of-type(5),.focus-mode .view-action:nth-last-of-type(6) {
@@ -1705,11 +1703,22 @@ input[type=range]::-webkit-slider-thumb:active {
   margin-bottom: 0.1rem !important;
 }
 
+
 .focus-mode.is-mobile .view-action:nth-last-of-type(4) svg, .focus-mode.is-mobile .view-action:nth-last-of-type(5) svg, .focus-mode.is-mobile .view-action:nth-last-of-type(6) svg{
   margin-left:0.1rem;
   Margin-top:-0.1rem;
   Width:1rem;
 }
+
+/* Sliding pane */
+
+.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4),.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5),.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) {
+  margin-left: 2.2rem !important;
+  top: 10px;
+}
+
+.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4) svg,.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5) svg,.focus-mode.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) svg{
+  margin-left: -0.5rem;}
 
 .focus-mode.is-mobile .view-action:nth-last-of-type(4),.focus-mode.is-mobile .view-action:nth-last-of-type(5),.focus-mode.is-mobile .view-action:nth-last-of-type(6) {
   Margin-left:-1rem;
