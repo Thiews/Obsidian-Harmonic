@@ -132,6 +132,11 @@
   --text-selection:rgba(237, 237, 237, 1);
 
 }
+
+
+.workspace-split {
+  font-family: var(--text) !important;
+}
 /* ------------------ */
 /* Hides the name of the root folder */
   .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
@@ -342,6 +347,11 @@ display:none !important;
     margin: 10px 5px 20px 5px !important;
     border-radius: 5px;
     cursor: var(--cursor);
+    font-size: var(--font-normal);
+}
+
+.nav-folder-title {
+  font-size: var(--font-normal);
 }
 
 .nav-folder-title.is-being-dragged-over {
@@ -504,6 +514,7 @@ Background-color:var(--text-accent);
   font-size:var(--font-small) !important;
   color:var(--text-normal);
   Font-weight:400;
+  font-family: var(--text);
 }
 
 .side-dock-collapsible-section-header {
@@ -528,7 +539,7 @@ Background-color:var(--text-accent);
 
 
 input[type='text'], input[type='search'], input[type='email'], input[type='password'], input[type='number'] {
-  Font-family:var(--text);
+  Font-family:var(--text) !important;
 }
 
 input.search-input:focus {
@@ -613,6 +624,7 @@ input.search-input:focus {
   font-size:var(--font-small);
   Box-shadow:none !important;
   text-align: center;
+  font-family: var(--text);
 }
 
 .bold-italic-accent .view-header-title {
@@ -748,14 +760,13 @@ Color:var(--text-accent) !important;
 
 /* Editor */
 
-body, input, button, 
-.cm-s-obsidian .cm-formatting-hashtag, .modal-content,
-.cm-s-obsidian {
-  font-family:var(--text);
+body, input, button,.cm-s-obsidian .cm-formatting-hashtag,.cm-s-obsidian {
+  font-family:var(--text) !important;
   font-size:var(--font-normal);
   font-weight:var(--normal-weight);
   -webkit-font-smoothing:subpixel-antialiased;
 }
+
 
 .markdown-source-view.mod-cm6 .cm-scroller,
 .markdown-source-view,
@@ -764,8 +775,8 @@ body, input, button,
 .cm-s-obsidian span.cm-formatting-task {
   line-height:var(--line-height);
   font-family:var(--text-editor);
-  
 }
+
 .CodeMirror-line {
   Letter-spacing:var(--text-spacing) !important;
 }
@@ -1304,6 +1315,9 @@ button:hover {
 /* --------------- */
 /* Modals */
 
+.modal-content {
+  font-family: var(--text);
+}
 .modal.mod-settings .vertical-tab-header {
   Background:transparent;
 }
