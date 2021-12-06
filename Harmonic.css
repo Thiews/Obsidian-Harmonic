@@ -938,6 +938,15 @@ body, input, button,
   color:var(--text-accent);/*hsl(var(--accent-h),var(--accent-s),var(--accent-d));*/
 }
 
+/* Change Hx color (preview and edit mode) */
+.h-change-color .markdown-preview-view h1:before,.h-change-color .markdown-preview-view h2:before,.h-change-color.markdown-preview-view h3:before,.h-change-color.markdown-preview-view h4:before,.h-change-color.markdown-preview-view h5:before,.h-change-color.markdown-preview-view h6:before{
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.h-change-color .cm-formatting {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
 /* Collapse indicator for titles */
 
 .title-collapse .heading-collapse-indicator {
@@ -1714,7 +1723,7 @@ input[type=range]::-webkit-slider-thumb:active {
   transition: 0.3s;
 }
 
-.hide-file-name .view-header-icon {
+.view-header-icon {
   opacity:0 !important;
 }
 
@@ -1784,6 +1793,7 @@ input[type=range]::-webkit-slider-thumb:active {
 /* ----------------------------- */
 /* Andy Matuschak mode! */
 
+
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
   box-shadow: 10px 2px 9px 4px #444 !important;
 }
@@ -1798,7 +1808,12 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
   Text-align:left !important;
 }
 
+/* Correct a problem on tablet */
+.is-mobile.plugin-sliding-panes-stacking .workspace-leaf {
+  margin-left: -10px;
+}
 
+/* -------------------- */
 /* CHECKLIST PLUGIN */
 
 .group-todo {
@@ -1852,6 +1867,7 @@ input[type=checkbox] {
   --todoList-checkboxSize:15px !important;
 }
 
+/* -------------------- */
 /* KANBAN plugin */
 
 .kanban-plugin { 
@@ -1915,6 +1931,8 @@ input[type=checkbox] {
   Background:var(--text-accent);
 }
 
+
+/* ------------------------------- */
 /* Dataview plugin */
 
 .table-view-table > thead > tr > th {
@@ -2051,6 +2069,47 @@ input[type=checkbox] {
   }
   
 }
+
+
+/* ----------------------- */
+/* phone */
+
+/* Show edit button */
+@media (max-width:400pt) {
+    .is-mobile .view-action:nth-last-of-type(4),.is-mobile .view-action:nth-last-of-type(5),
+  .is-mobile .view-action:nth-last-of-type(6) {
+    top: calc(90vh - 10px);
+    Margin-right:1rem;
+  }
+
+  .is-mobile .view-action:nth-last-of-type(5),.is-mobile .view-action:nth-last-of-type(4),.is-mobile .view-action:nth-last-of-type(6){
+    Position:absolute; !important;
+    Background:var(--text-accent);
+    Width:3rem;
+    Height:3rem;
+    Border-radius:100%;
+    Padding:0.9rem 0.9rem;
+  }
+
+  .is-mobile .view-action:nth-last-of-type(4),.is-mobile .view-action:nth-last-of-type(5),.is-mobile .view-action:nth-last-of-type(6) {
+    Opacity:1 !important;
+  }
+
+  .is-mobile .view-action:nth-last-of-type(4) svg,.is-mobile .view-action:nth-last-of-type(5) svg,.is-mobile .view-action:nth-last-of-type(6) svg{
+    Color:#FFF !important;
+    Width:1.3rem;
+    margin-bottom: 0.1rem !important;
+  }
+
+
+  .is-mobile .view-action:nth-last-of-type(4) svg, .is-mobile .view-action:nth-last-of-type(5) svg, .is-mobile .view-action:nth-last-of-type(6) svg{
+    margin-left:0.1rem;
+    Margin-top:-0.1rem;
+    Width:1rem;
+  }
+}
+
+
 
 
 
@@ -2259,11 +2318,6 @@ settings:
         type: variable-text
         default: 0em
     - 
-        id: h-reveal
-        title: Hx activate
-        description: activate Hx in titles
-        type: class-toggle
-    - 
         id: title-accent-color
         title: Accent color title
         description: Choose the accent color for every titles
@@ -2272,6 +2326,16 @@ settings:
         id: title-collapse
         title: Collapse indicator for titles
         description: Hide collapse indicators
+        type: class-toggle
+    - 
+        id: h-reveal
+        title: Hx activate
+        description: activate Hx in titles
+        type: class-toggle
+    - 
+        id: h-change-color
+        title: Color of Hx
+        description: Apply color of bold-italic for Hx
         type: class-toggle
     - 
         id: level-1-headings
