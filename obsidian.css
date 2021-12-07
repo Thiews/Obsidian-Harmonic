@@ -1080,7 +1080,6 @@ Opacity:1 !important;
 /* Preview */
 
 .markdown-preview-view blockquote {
-  //border-radius:0;
   Font-style:italic;
   Font-size:1.1em;
   Line-height:1.9;
@@ -1093,15 +1092,22 @@ Opacity:1 !important;
   Margin-inline-end:0px;
 }
 
+.theme-light .markdown-preview-view blockquote {
+  background: var(--background-secondary-alt) !important;
+}
 
-.markdown-preview-view blockquote {
-background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1) !important;
+.theme-dark .markdown-preview-view blockquote {
+  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1)
 }
 
 /* Edit mode */
-.HyperMD-quote {
+.theme-light .HyperMD-quote {
+  background: var(--background-secondary-alt) !important;
+}
+.theme-dark .HyperMD-quote {
   background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1) !important;
 }
+
 
 .cm-quote {
   font-style: italic;
@@ -1182,19 +1188,32 @@ span.cm-formatting-list{
   border-top:none;
   text-align: left;
   border-top:none;
+}
+
+.theme-light .markdown-preview-view th {
   Background:var(--background-secondary-alt);
 }
 
-.markdown-preview-view table tr:nth-child(2n) {
+.theme-dark .markdown-preview-view th {
+  Background:hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+}
+
+
+.theme-light .markdown-preview-view table tr:nth-child(2n) {
   Background:var(--background-secondary-alt);
 }
+
+.theme-dark .markdown-preview-view table tr:nth-child(2n) {
+  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+}
+
   /* Tables in edit monde */
-.theme-light .HyperMD-table-row:nth-child(2n+1) {
-  Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.1) !important;
+.theme-light .HyperMD-table-row:nth-child(2n-1) {
+  Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.05) !important;
 }
 
-.theme-dark .HyperMD-table-row:nth-child(2n+1) {
-  Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.2) !important;
+.theme-dark .HyperMD-table-row:nth-child(2n-1) {
+  Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.1) !important;
 }
 
 /* Preview Mode Lists  */
