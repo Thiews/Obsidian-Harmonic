@@ -1,6 +1,6 @@
 /* HARMONIC THEME by Mathieu DUBOIS */
 
-/* Fonts from Google*/
+/* Polices from Google*/
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
@@ -1057,19 +1057,23 @@ Opacity:1 !important;
 /* Highlights */
 .theme-light .markdown-preview-view mark {
   background: hsla(var(--accent-h),calc(var(--accent-s) + 30%),var(--accent-l),0.1);
+  padding: 4px 5px;
 }
 
 .theme-dark .markdown-preview-view mark {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-d),0.5);
+  padding: 4px 5px;
 }
 
     /* Edit Mode */
 .theme-light .markdown-source-view .cm-formatting-highlight, .theme-light .markdown-source-view .cm-highlight {
   background: hsla(var(--accent-h),calc(var(--accent-s) + 30%),var(--accent-l),0.1) !important;
+  padding: 4px 5px;
 }
 
 .theme-dark .markdown-source-view .cm-formatting-highlight, .theme-dark .markdown-source-view .cm-highlight {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-d),0.5);
+  padding: 4px 5px;
 }
 /* Blockquotes */
 
@@ -1184,12 +1188,12 @@ span.cm-formatting-list{
 .markdown-preview-view table tr:nth-child(2n) {
   Background:var(--background-secondary-alt);
 }
-
-.theme-light .HyperMD-table-row:nth-child(2n) {
+  /* Tables in edit monde */
+.theme-light .HyperMD-table-row:nth-child(2n+1) {
   Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.1) !important;
 }
 
-.theme-dark .HyperMD-table-row:nth-child(2n) {
+.theme-dark .HyperMD-table-row:nth-child(2n+1) {
   Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.2) !important;
 }
 
