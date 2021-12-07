@@ -135,7 +135,6 @@
 
 
 .workspace-split {
-  font-family: var(--text) !important;
   font-weight: var(--normal-weight);
 }
 /* ------------------ */
@@ -512,8 +511,7 @@ Background-color:var(--text-accent);
   //font-size:var(--font-small) !important;
   font-size: calc(var(--font-small) * var(--font-normal));
   color:var(--text-normal);
-  Font-weight:400;
-  font-family: var(--text);
+  Font-weight:var(--normal-weight);
 }
 
 .side-dock-collapsible-section-header {
@@ -759,7 +757,7 @@ Color:var(--text-accent) !important;
 
 /* ---------------- */
 /* Base */
-/* ---------------- */cm
+/* ---------------- */
 
 /* Editor */
 
@@ -993,7 +991,6 @@ Opacity:1 !important;
 .markdown-preview-view {
   font-size:var(--font-normal);
   line-height:var(--line-height);
-  font-family:var(--text);
   font-weight: var(--normal-weight);
 }
 
@@ -1057,6 +1054,23 @@ Opacity:1 !important;
   color:var(--text-faint);
 }
 
+/* Highlights */
+.theme-light .markdown-preview-view mark {
+  background: hsla(var(--accent-h),calc(var(--accent-s) + 30%),var(--accent-l),0.1);
+}
+
+.theme-dark .markdown-preview-view mark {
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-d),0.5);
+}
+
+    /* Edit Mode */
+.theme-light .markdown-source-view .cm-formatting-highlight, .theme-light .markdown-source-view .cm-highlight {
+  background: hsla(var(--accent-h),calc(var(--accent-s) + 30%),var(--accent-l),0.1) !important;
+}
+
+.theme-dark .markdown-source-view .cm-formatting-highlight, .theme-dark .markdown-source-view .cm-highlight {
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-d),0.5);
+}
 /* Blockquotes */
 
 /* Preview */
@@ -1322,9 +1336,6 @@ button:hover {
 /* --------------- */
 /* Modals */
 
-.modal-content {
-  font-family: var(--text);
-}
 .modal.mod-settings .vertical-tab-header {
   Background:transparent;
 }
@@ -1615,6 +1626,7 @@ iframe {
   padding:0 20px 10px 10px;
 }
 
+
 .theme-light .graph-controls {
   Background-color:hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 45%));
 }
@@ -1624,11 +1636,13 @@ iframe {
 }
 
 .graph-control-section .setting-item .setting-item-info .setting-item-name {
-color:var(--text-normal) !important;
+//color:var(--text-normal) !important;
+color: var(--text-accent);
 }
 
 .graph-control-section-header {
-  Color:var(--text-normal);
+  Color:var(--text-accent);
+  font-weight: bold;
 }
 
 .graph-controls.is-close {
@@ -1636,7 +1650,7 @@ color:var(--text-normal) !important;
 }
 
 input[type=range] {
-  background-color:rgba(0,0,0,0.15);
+  background-color:rgba(0,0,0,0.03);
   height:16px;
   padding:9px 7px 0 7px;
   -webkit-appearance:none;
@@ -1656,7 +1670,7 @@ input[type=range]::-webkit-slider-runnable-track {
 }
 
 input[type=range]::-webkit-slider-thumb {
-  background:var(--text-muted);
+  background:var(--text-accent);
   height:7px;
   width:20px;
   margin-top:0px;
@@ -1885,7 +1899,7 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
 
 .calendar  .day.today {
   font-weight: 800 !important;
-  font-size: 1em !important;
+  font-size: 1.5em !important;
 }
 
 .calendar  .day{
@@ -2088,6 +2102,7 @@ input[type=checkbox] {
     border-radius:15px;
     box-shadow:0 0 100vh 100vh rgba(0,0,0,0.5);
   }
+
   /* Animations */
   .is-mobile .menu,
   .is-mobile .suggestion-container,
@@ -2285,7 +2300,7 @@ settings:
         description: Change the hue of the pop color (step -> 45 degrees)
         type: variable-number-slider
         default: 180
-        min: 0
+        min: 30
         max: 330
         step: 30
         format: deg
