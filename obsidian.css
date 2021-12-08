@@ -1,6 +1,6 @@
 /* HARMONIC THEME by Mathieu DUBOIS */
 
-/* Fons from Google*/
+/* Fonts from Google*/
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
@@ -1000,6 +1000,10 @@ Opacity:1 !important;
   Margin-left:0px !important;
 }
 
+.markdown-preview-view  ul li::marker {
+  display: none !important;
+}
+
 .theme-dark .markdown-preview-view hr {
   height:1px;
   border-width:1px 0 0 0;
@@ -1169,9 +1173,6 @@ span.cm-formatting-list{
   Width:calc(100% - var(--p-offset));
 }
 
-.CodeMirror-code .HyperMD-table-row {
-  font-size: calc(var(--font-small) * var(--font-normal));
-}
 
 .markdown-preview-view tbody tr{
   Background:var(--background-primary);
@@ -1204,24 +1205,30 @@ span.cm-formatting-list{
 }
 
   /* Tables in edit monde */
-.theme-light .HyperMD-table-row:nth-child(2n) {
-  Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.05) !important;
+
+.CodeMirror-code .HyperMD-table-row {
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+/*theme-light .CodeMirror-code .HyperMD-table-row:nth-child(2n) {
+  Background:hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.05) !important;
 }
 
 .theme-dark .HyperMD-table-row:nth-child(2n) {
-  Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.1) !important;
-}
+  Background:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.1) !important; 
+}*/
+
+
+
 
 /* Preview Mode Lists  */
 
-ul {
-  padding-inline-start:1.5em;
-  list-style:none;
+
+ul,ol,ul ul, ol ul, ol ol ul, ol ul ul, ul ol ul, ul ul ul {
+  list-style:none !important;
+  list-style-type:none;
 }
 
-ul ul, ol ul, ol ol ul, ol ul ul, ul ol ul, ul ul ul {
-  list-style:none;
-}
 ul > li:not(.task-list-item)::before {
   content:"\2022";
   color:var(--text-accent);
@@ -1233,6 +1240,10 @@ ul > li:not(.task-list-item)::before {
 
 ul li p, ol li p {
   display:inline;
+}
+
+ul > li {
+  margin-left:-0.7em;
 }
 
 ol {
