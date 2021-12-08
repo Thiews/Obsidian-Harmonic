@@ -417,7 +417,11 @@ Background-color:var(--text-accent);
 /* Menu v2 */
 
 .menu-v2 .nav-folder {
-  margin: 20px 0px 0px 0px !important;
+  margin: 24px 0px 0px 0px !important;
+}
+
+.menu-v2 .nav-folder-title {
+  margin: 0px 0px 0px 24px !important;
 }
 
 .menu-v2 .nav-folder-children {
