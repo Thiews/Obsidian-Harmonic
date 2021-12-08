@@ -409,13 +409,73 @@ display:none !important;
     cursor: var(--cursor) !important;
 }
 
+.nav-file .is-active > .nav-file-title-content{
+  Color:#fff;
+Background-color:var(--text-accent);
+}
+
+/* Menu v2 */
+
+.menu-v2 .nav-folder {
+  margin: 20px 0px 0px 0px !important;
+}
+
+.menu-v2 .nav-folder-children {
+  padding-left: 0;
+}
+
+.menu-v2 .nav-file {
+  margin-left:0px !important;
+  padding-right:0px !important;
+  Cursor:var(--cursor) !important;
+}
+
+.menu-v2 .nav-file-title {
+  width:100% !important;
+  margin:0px 0px 0px 0px !important;
+  padding:0px 2px;
+  border-width:0;
+  cursor:var(--cursor) !important;
+}
+
+.menu-v2 .nav-file-title-content {
+ width: 100%;
+    white-space: initial;
+    padding: 20px 0px !important;
+    border-bottom: 1px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.1);
+    cursor: var(--cursor) !important;
+    border-radius: 0px!important;
+    margin: 0px 40px !important;
+    background: none;
+    box-shadow: none;
+    color: var(--text-normal);
+    margin-left: ;
+}
+
 .nav-file-title-content:hover {
   Color:var(--text-accent);
 }
 
-.nav-file .is-active > .nav-file-title-content{
-  Color:#fff;
-Background-color:var(--text-accent);
+
+.menu-v2 .nav-file {
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05) !important;
+}
+
+.menu-v2 .nav-file .nav-file-title-content {
+  background: none;
+  padding-l
+}
+
+.menu-v2 .nav-file .is-active > .nav-file-title-content {
+  background: none;
+
+  color: var(--text-normal) !important;
+}
+
+.menu-v2 .nav-file .is-active {
+  border-left: 5px solid var(--text-accent);
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05) !important;
+  border-radius: 0px;
 }
 
 .workspace-leaf-content[data-type=starred] .nav-file-title-content {
@@ -2339,6 +2399,11 @@ settings:
         type: variable-color
         format: hsl-split
         default: '#4F60B3'
+    - 
+        id: menu-v2
+        title: File navigation
+        description: Choose an other view for file navigation
+        type: class-toggle
     - 
         id: minimal-icons-on
         title: Icons
