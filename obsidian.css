@@ -414,10 +414,32 @@ display:none !important;
 Background-color:var(--text-accent);
 }
 
+.workspace-leaf-content[data-type=starred] .nav-file-title-content {
+  width:calc(100% - 15px);
+}
+
+.nav-file-title-content, .nav-folder-title, 
+.is-collapsed .search-result-file-title, 
+.tag-pane-tag {
+  font-size: calc(var(--font-small) * var(--font-normal));
+  color:var(--text-normal);
+}
+
 /* Menu v2 */
+
+.menu-v2 .nav-folder-collapse-indicator.collapse-icon{
+  Display: inline !important;
+}
 
 .menu-v2 .nav-folder {
   margin: 0px 0px 0px 0px !important;
+  border-radius: 0px;
+}
+
+.menu-v2 .nav-folder:not(.is-collapsed) {
+  //border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.1);
+  //border-bottom:2px solid var(--text-accent);
+  margin-bottom: 10px !important;
 }
 
 .menu-v2 .nav-folder-title {
@@ -428,7 +450,7 @@ Background-color:var(--text-accent);
 }
 
 .menu-v2 .nav-folder-children {
-  padding-left: 0;
+  padding-left: 0px;
 }
 
 .menu-v2 .nav-file {
@@ -444,6 +466,18 @@ Background-color:var(--text-accent);
   border-width:0;
   cursor:var(--cursor) !important;
 }
+
+.menu-v2 .nav-folder:not(.is-collapsed) > .nav-folder-title svg{
+  font-weight: bold;
+  position: relative;
+  color:  var(--text-accent);
+  filter: hue-rotate(var(--hue-bold-italic));
+  top: 5px;
+  height: 15px;
+  width: 15px;
+}
+
+
 
 .menu-v2 .nav-file-title-content {
  width: 100%;
@@ -480,21 +514,9 @@ Background-color:var(--text-accent);
 }
 
 .menu-v2 .nav-file .is-active {
-  border-left: 5px solid var(--text-accent);
+  border-right: 5px solid var(--text-accent);
   background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05) !important;
   border-radius: 0px;
-}
-
-.workspace-leaf-content[data-type=starred] .nav-file-title-content {
-  width:calc(100% - 15px);
-}
-
-.nav-file-title-content, .nav-folder-title, 
-.is-collapsed .search-result-file-title, 
-.tag-pane-tag {
-  //font-size:var(--font-small) !important;
-  font-size: calc(var(--font-small) * var(--font-normal));
-  color:var(--text-normal);
 }
 
 /* Search */
