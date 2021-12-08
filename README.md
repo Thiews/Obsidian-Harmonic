@@ -16,7 +16,7 @@ Install style settings plugin to
 - Bold and italic color accent in edit mode (same in preview mode)
 <img width="1440" alt="Capture d’écran 2021-12-05 à 20 55 50" src="https://user-images.githubusercontent.com/29182877/144761655-35a2c2ad-f170-4f94-9177-075c2c133dbc.png">
 
-- Focus on the paragraph you are writing
+- Focus on the paragraph you are writing (edit mode)
 <img width="1440" alt="Capture d’écran 2021-12-08 à 18 49 45" src="https://user-images.githubusercontent.com/29182877/145258352-229c6a50-a2a0-4066-a930-bc85477d4422.png">
 
 
