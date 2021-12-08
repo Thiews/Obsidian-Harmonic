@@ -2376,7 +2376,7 @@ id: perso
 settings:
     - 
         id: logo
-        title: Global customization (Logo OR title, Accent color, icon style)
+        title: Global customization (Logo OR title, Accent color, menu style, icon style)
         type: heading
         level: 2
         collapsed: true
