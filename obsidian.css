@@ -257,8 +257,15 @@
   color: var(--text-accent) !important;
 }
 
+.nav-action-button.is-active svg {
+  Color:#FFF !important;
+}
+
+.menu-v2 .nav-action-button.is-active svg {
+  Color:var(--text-accent) !important;
+}
+
 .minimal-icons-on .nav-action-button.is-active svg {
-  Color:#FFF;
   Margin-left:0.1rem;
   Margin-top:0.25rem;
 }
