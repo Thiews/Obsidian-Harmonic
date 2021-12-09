@@ -242,17 +242,19 @@
 }
 
 .nav-action-button.is-active {
-  Background:var(--text-accent) !important;
+  Background:var(--text-accent);
   Border-radius:100%;
 }
 
 .menu-v2 .nav-action-button.is-active {
   border-radius: 5px;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l), 0.1) ;
 }
 
 .nav-action-button.is-active svg {
   Margin-left:0.15rem;
   Margin-top:0.2rem;
+  color: var(--text-accent) !important;
 }
 
 .minimal-icons-on .nav-action-button.is-active svg {
@@ -573,8 +575,9 @@ Background-color:var(--text-accent);
 
 
 .menu-v2 .search-result-container{
-  padding: 0px 0px;
-  margin-top: 20px;
+  padding: 0px 20px;
+  margin: 20px 0px;
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05);
 }
 
 /*.menu-v2 .search-result-container::before{
@@ -586,25 +589,26 @@ Background-color:var(--text-accent);
   width: 100% !important;
   text-align: center;
   margin-bottom: 30px;
-  font-size: :calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
+  font-size:calc(var(--font-small) * var(--font-normal));
 }*/
 
 .menu-v2 .search-result {
   box-shadow: none;
-  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05);
+  background: transparent;
   margin: 0px 0px 0px 0px !important;
-  padding: 0px 0px 0px 20px;
   border-radius: 0px;
 }
 
 .menu-v2 .search-result:hover{
-  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
   margin: 0px 0px !important;
 }
 
+.menu-v2 .search-results-children{
+  padding: 0px 20px;
+}
 .menu-v2 .search-results-children .tree-item{
   border-top: 1px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
-  padding:15px 15px 5px 15px;
+  padding:15px 15px 5px 0px;
 }
 
 .menu-v2 .search-results-children div:nth-child(2) {
@@ -616,6 +620,11 @@ Background-color:var(--text-accent);
 .menu-v2 .backlink-pane {
   background: transparent !important;
   padding: 0px 0px;
+  //margin-top: -10px;
+}
+
+.menu-v2 .backlink-pane .tree-item-self {
+  //margin-top: 20px;
 }
 
 .search-result-count {
@@ -1692,7 +1701,7 @@ input.prompt-input, input.prompt-input:hover {
 .backlink-pane {
   Padding-top:30px;
   padding-bottom:30px;
-  Background:var(--background-secondary-alt);
+  //Background:var(--background-secondary-alt);
   Border-radius:10px;
   Margin-top:20px;
 }
@@ -2493,8 +2502,8 @@ settings:
         default: '#4F60B3'
     - 
         id: menu-v2
-        title: File navigation
-        description: Choose an other view for file navigation
+        title: Change style (left sidebar, right sidebar)
+        description: Choose an other style for file navigation
         type: class-toggle
     - 
         id: minimal-icons-on
