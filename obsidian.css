@@ -409,22 +409,42 @@ display:none !important;
   Background-color:transparent !important;
 }
 
-.nav-file-title-content {
+.menu-v1 .nav-file-title-content {
   width: 100%;
     white-space: initial;
     padding: 14px 15px !important;
-    background: var(--background-primary);
+    background: var(--background-primary) !important;
+    //background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
     margin: 5px 0px;
     border-radius: 5px;
-    box-shadow: 1px 5px 13px rgba(0,0,0,0.05);
+    box-shadow: 1px 5px 13px rgba(0,0,0,0.05) !important;
     padding: 0 5px;
     vertical-align: middle;
     cursor: var(--cursor) !important;
 }
 
-.nav-file .is-active > .nav-file-title-content{
+.menu-v3 .nav-file-title-content {
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+  box-shadow: none;
+  width: 100%;
+  white-space: initial;
+  padding: 14px 15px !important;
+  margin: 5px 0px;
+  border-radius: 5px;
+  padding: 0 5px;
+  vertical-align: middle;
+  cursor: var(--cursor) !important;
+}
+
+
+.menu-v1 .nav-file .is-active > .nav-file-title-content{
   Color:#fff;
-Background-color:var(--text-accent);
+Background-color:var(--text-accent) !important;
+}
+
+.menu-v3 .nav-file .is-active > .nav-file-title-content{
+  Color:#fff;
+Background-color:var(--text-accent) !important;
 }
 
 .workspace-leaf-content[data-type=starred] .nav-file-title-content {
@@ -543,7 +563,7 @@ Background-color:var(--text-accent);
 
 .search-results-children .tree-item-self:hover{
   color:var(--text-accent) !important;
-  Background:var(--background-primary) !important;
+  Background:transparent !important;
 }
 
 .search-result-file-match {
@@ -572,12 +592,20 @@ Background-color:var(--text-accent);
   background-color:var(--background-modifier-accent);
 }
 
-.search-result {
+.menu-v1 .search-result {
     margin-bottom: 15px !important;
-    background:var(--background-primary);
+    background:var(--background-primary) !important;
     margin: 0px 15px;
     border-radius: 5px;
-    box-shadow:1px 1px 5px rgba(0,0,0,0.05);/*1px 5px 13px rgba(0,0,0,0.05);*/
+    box-shadow:1px 1px 5px rgba(0,0,0,0.05) !important;/*1px 5px 13px rgba(0,0,0,0.05);*/
+}
+
+.menu-v3 .search-result {
+    margin-bottom: 15px !important;
+    background:hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);;
+    margin: 0px 15px;
+    border-radius: 5px;
+    box-shadow:none;/*1px 5px 13px rgba(0,0,0,0.05);*/
 }
 
 
@@ -1824,6 +1852,14 @@ Padding-top:0px !important;
   padding: 0px 0px;
 }
 
+.menu-v3 .outgoing-link-item {
+  box-shadow: none;
+  Border-radius: 8px;
+  Margin-bottom:15px;
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}
+
+
 /* --------------- */
 /* Status bar */
 
@@ -2067,6 +2103,11 @@ input[type=range]::-webkit-slider-thumb:active {
   color: var(--text-faint) !important;
 }
 
+.writing-focus.bold-italic-accent .CodeMirror-code .CodeMirror-activeline .cm-strong,.writing-focus.bold-italic-accent .CodeMirror-code .CodeMirror-activeline .cm-em {
+    color: var(--text-accent) !important;
+    filter: hue-rotate(var(--hue-bold-italic));
+  }
+
 /* Edit button */
 
 .edit-button .view-action:nth-last-of-type(4),.edit-button .view-action:nth-last-of-type(5),
@@ -2181,11 +2222,33 @@ input[type=checkbox] {
   Color:var(--text-accent);
 }
 
-.checklist-plugin-main li.classic {
+.menu-v1 .checklist-plugin-main li.classic {
   Background:var(--background-primary) !important;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.05);/*1px 1px 5px rgb(0 0 0 / 5%);*/
 }
 
+.menu-v3 .checklist-plugin-main li.classic {
+  Background:hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}
+
+.menu-v3 .checklist-plugin-main li.classic:hover{
+  Background:hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}
+
+.menu-v2 .checklist-plugin-main li.classic {
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05) !important;
+  margin: 0px 0px !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.1) !important;
+  padding: 10px 10px;
+}
+
+.menu-v2 .checklist-plugin-main .group-todo {
+  margin: 0px 0px !important;
+}
+.menu-v2 .checklist-plugin-main .svelte-yzsyxo ul{
+  margin: 0px 0px !important;
+}
 .checklist-plugin-main .group-header .title {
   Color:var(--text-accent) !important;
   Box-shadow:none;
@@ -2510,12 +2573,23 @@ settings:
         type: variable-color
         format: hsl-split
         default: '#4F60B3'
-    - 
-        id: menu-v2
-        title: Change style (left sidebar, right sidebar)
-        description: Choose an other style for file navigation
-        type: class-toggle
-    - 
+    -
+        id: menus
+        title: Alternative menu appearances
+        description: The cursor style for UI elements
+        type: class-select
+        default: menu-v1
+        options:
+            - 
+                label: Design 1
+                value: menu-v1
+            - 
+                label: Design 2
+                value: menu-v3
+            - 
+                label: Design 3
+                value: menu-v2
+    -
         id: minimal-icons-on
         title: Icons
         description: Activate minimal icons
