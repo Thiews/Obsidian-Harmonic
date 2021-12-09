@@ -1182,7 +1182,7 @@ Opacity:1 !important;
   font-weight: var(--normal-weight);
 }
 
-.markdown-preview-view  p, .markdown-preview-view ol, .markdown-preview-view ul,.markdown-preview-view blockquote, .markdown-preview-view  table, .markdown-preview-view  iframe, .markdown-preview-view .admonition,.markdown-preview-view aside {
+.markdown-preview-view  p, .markdown-preview-view ol, .markdown-preview-view ul, .markdown-preview-view  table, .markdown-preview-view  iframe, .markdown-preview-view .admonition,.markdown-preview-view aside {
   Letter-spacing:var(--text-spacing);
   Margin-left:var(--p-offset);
 }
@@ -1267,6 +1267,18 @@ Opacity:1 !important;
 
 /* Preview */
 
+.blockquote-bracket .markdown-preview-view blockquote:after{
+  content: "“" !important;
+  font-family: lora !important;
+  position: absolute !important;
+  //display: block !important;
+  top: 0em !important;
+  left: -60px !important;
+  font-size: 5rem !important;
+  color: var(--text-accent) !important;
+  margin-top: -40px;
+}
+
 .markdown-preview-view blockquote {
   Font-style:italic;
   Font-size:1.1em;
@@ -1274,10 +1286,14 @@ Opacity:1 !important;
   border:solid hsl(var(--accent-h),var(--accent-s),var(--accent-d));
   border-width:0px 0px 0px 3px;
   color:var(--text-normal);
-  Padding:20px 20px 20px 80px;
-  Margin:40px 0px 40px 0px;
-  Margin-inline-start:0px;
+  Padding:20px 20px 20px 60px;
+  //Margin-inline-start:0px;
   Margin-inline-end:0px;
+  position: relative;
+}
+
+.blockquote-bracket .markdown-preview-view blockquote {
+  margin-left: 6.5rem;
 }
 
 .theme-light .markdown-preview-view blockquote {
@@ -2731,6 +2747,11 @@ settings:
     - 
         id: img-border-shadow
         title:  Shadow for images
+        type: class-toggle
+    - 
+        id: blockquote-bracket
+        title:  Brackets for quote
+        description: Display brackets for blockquote
         type: class-toggle
     - 
         id: page-settings 
