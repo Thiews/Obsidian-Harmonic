@@ -2750,8 +2750,8 @@ settings:
         type: class-toggle
     - 
         id: blockquote-bracket
-        title:  Brackets for quote
-        description: Display brackets for blockquote
+        title:  Quotation mark for quote
+        description: Display quotation mark for blockquote
         type: class-toggle
     - 
         id: page-settings 
