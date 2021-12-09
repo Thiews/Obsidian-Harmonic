@@ -135,9 +135,6 @@
 }
 
 
-.workspace-split {
-  font-weight: var(--normal-weight);
-}
 /* ------------------ */
 /* Hides the name of the root folder */
   .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
@@ -1185,9 +1182,9 @@ Opacity:1 !important;
   font-weight: var(--normal-weight);
 }
 
-.markdown-preview-view  p, .markdown-preview-view ol, .markdown-preview-view ul,.markdown-preview-view blockquote, .markdown-preview-view  table, .markdown-preview-view  iframe, .markdown-preview-view .admonition{
+.markdown-preview-view  p, .markdown-preview-view ol, .markdown-preview-view ul,.markdown-preview-view blockquote, .markdown-preview-view  table, .markdown-preview-view  iframe, .markdown-preview-view .admonition,.markdown-preview-view aside {
   Letter-spacing:var(--text-spacing);
-  Margin-left:var(--p-offset) !important;
+  Margin-left:var(--p-offset);
 }
 
 .markdown-preview-view  ol li p,.markdown-preview-view  ul li p, .markdown-preview-view  blockquote p,.markdown-preview-view li ul{
@@ -1308,6 +1305,25 @@ Opacity:1 !important;
 .cm-formatting-quote {
   color: var(--text-accent) !important;
 }
+
+/* ASIDE */
+
+aside {
+    width: 35%;
+    padding-left: 1rem;
+    margin-right: 2rem;
+    float: right;
+    font-style: italic;
+}
+
+aside > p {
+    margin: 0px 0px 0px calc(var(--p-offset) * -1) !important;
+    font-size: calc(var(--font-small) * var(--font-normal)) !important;
+    padding-left: 1rem !important;
+    border-left: 3px solid var(--text-accent) !important;
+
+}
+
 
 /* Checkboxes */
 
