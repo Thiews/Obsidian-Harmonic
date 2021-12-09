@@ -575,7 +575,7 @@ Background-color:var(--text-accent);
 
 
 .menu-v2 .search-result-container{
-  padding: 0px 20px;
+  padding: 0px 20px !important;
   margin: 20px 0px;
   background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05);
 }
@@ -1807,18 +1807,15 @@ Padding-top:0px !important;
 
 .menu-v2 .outgoing-link-item {
   box-shadow: none;
-  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.05);
+  background: transparent;
+  padding: 20px 20px;
   border-radius: 0px;
+  border-bottom: 1px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  margin: 0px 0px !important;
 }
 .menu-v2 .outgoing-link-pane {
   padding: 0px 0px;
 }
-
-.menu-v2 .outgoing-link-pane .outgoing-link-item{
-  margin: 0px 0px !important;
-  padding-left:20px !important ;
-}
-
 
 /* --------------- */
 /* Status bar */
@@ -2053,6 +2050,9 @@ input[type=range]::-webkit-slider-thumb:active {
   color: var(--font-normal) !important;
 }
 
+.writing-focus .CodeMirror-code .CodeMirror-activeline pre .cm-hmd-internal-link {
+  color: var(--text-accent) !important;
+}
 .writing-focus .CodeMirror-code:not(.CodeMirror-activeline) span{
   color: var(--text-faint) !important;
 }
@@ -2907,6 +2907,13 @@ settings:
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
+    -
+        id: credits
+        title: Credits
+        type: heading
+        description: Made by @Thiews to be shared. Support my work at buymeacoffee.com/thiews
+        level: 2
+        collapsed: true
 */
 
 
