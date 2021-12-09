@@ -222,6 +222,10 @@
   padding:0;
 }
 
+.markdown-preview-view .nav-buttons-container{ 
+  margin-top: 100px;
+}
+
 .nav-action-button svg {
   Margin-left:0rem;
   Margin-top:0.1rem;
@@ -2578,8 +2582,8 @@ settings:
         default: '#4F60B3'
     -
         id: menus
-        title: Alternative menu appearances
-        description: The cursor style for UI elements
+        title: Alternative menu styles
+        description: Choose diffent styles for the left and right sidebars
         type: class-select
         default: menu-v1
         options:
