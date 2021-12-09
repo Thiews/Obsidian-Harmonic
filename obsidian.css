@@ -1331,17 +1331,18 @@ input[type=checkbox] {
   -webkit-appearance:none;
   appearance:none;
   border-radius:50%;
-  border:1px solid var(--background-modifier-border-hover);
+  border:2px solid var(--text-accent) !important;
   padding:0;
 }
 
 input[type=checkbox]:focus,input[type=checkbox]:hover {
   outline:0;
   border-color:var(--text-faint);
+  cursor: pointer;
 }
 input[type=checkbox]:checked {
-  background-color:var(--background-modifier-accent);
-  border:1px solid var(--background-modifier-accent);
+  background-color:var(--text-accent);
+  border:1px solid var(--text-accent);
   background-position:center;
   background-size:70%;
   background-repeat:no-repeat;
@@ -1354,12 +1355,12 @@ input[type=checkbox]:checked {
 }
 
 .markdown-preview-view .task-list-item-checkbox {
-  width:18px;
-  height:18px;
+  width:18px !important;
+  height:18px !important;
   position:relative;
-  top:6px;
+  top:7px !important;
   line-height:0;
-  margin-left:-1.5em;
+  margin-left:-1.3em;
   margin-right:6px;
   filter:none;
 }
@@ -1371,7 +1372,10 @@ input[type=checkbox]:checked {
 span.cm-formatting-list{
   color: var(--text-accent) !important;
 }
-
+   /* Edit mode */
+.cm-s-obsidian span.cm-formatting-task {
+  color: var(--text-accent);
+}
 
 /* Tables */
 
