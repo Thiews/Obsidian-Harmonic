@@ -1292,6 +1292,10 @@ Opacity:1 !important;
   position: relative;
 }
 
+.blockquote-serif .markdown-preview-view blockquote {
+  font-family: lora;
+}
+
 .blockquote-bracket .markdown-preview-view blockquote {
   margin-left: 6.5rem;
 }
@@ -2706,7 +2710,7 @@ settings:
         type: class-toggle
     -
         id: features
-        title: Make pages pop (bold and italic accentuation, image)
+        title: Make pages pop (bold and italic accentuation, image, blockquote)
         type: heading
         level: 2
         collapsed: true
@@ -2731,11 +2735,6 @@ settings:
         description: Display the same color for your obsidian title (global customization part)
         type: class-toggle
     - 
-        id: hue-color-nav
-        title:  Same color for the file active in navigation folder
-        description: Display the same color for the file active in navigation folder (global customization part)
-        type: class-toggle
-    - 
         id: img-border-radius
         title:  Border radius for images
         type: variable-number-slider
@@ -2751,7 +2750,10 @@ settings:
     - 
         id: blockquote-bracket
         title:  Quotation mark for quote
-        description: Display quotation mark for blockquote
+        type: class-toggle
+    - 
+        id: blockquote-serif
+        title:  Serif font for quote
         type: class-toggle
     - 
         id: page-settings 
