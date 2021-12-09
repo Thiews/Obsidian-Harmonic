@@ -50,6 +50,7 @@
 --line-width:44rem;
 --max-width:88%;
 --hue-bold-italic:180;
+--img-border-radius: 15px;
 
 
 
@@ -222,6 +223,10 @@
   padding:0;
 }
 
+.app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split .nav-action-button {
+  margin-top: 20px;
+}
+
 .markdown-preview-view .nav-buttons-container{ 
   margin-top: 100px;
 }
@@ -279,8 +284,8 @@
 }
 
 .nav-action-button svg{
-Width:0.8em;
-Color:var(--text-accent);
+  Width:0.8em;
+  Color:var(--text-accent);
 }
 
 .nav-action-button,
@@ -317,7 +322,7 @@ Color:var(--text-accent);
 }
 
 .invert-logo.theme-dark .nav-header:before{
-  Filter: invert(100%) !important;
+  Filter: invert(100%);
 }
 
 .workspace-split.mod-right-split .nav-header::before, .view-content .nav-header::before{
@@ -443,7 +448,7 @@ display:none !important;
 
 .menu-v1 .nav-file .is-active > .nav-file-title-content{
   Color:#fff;
-Background-color:var(--text-accent) !important;
+  Background-color:var(--text-accent) !important;
 }
 
 .menu-v3 .nav-file .is-active > .nav-file-title-content{
@@ -513,8 +518,8 @@ Background-color:var(--text-accent) !important;
   position: relative;
   color:  var(--text-accent);
   top: 5px;
-  height: 15px;
-  width: 15px;
+  height: 12px;
+  width: 12px;
 }
 
 
@@ -618,7 +623,7 @@ Background-color:var(--text-accent) !important;
 
 .menu-v2 .search-result-container{
   padding: 0px 20px !important;
-  margin: 20px 0px;
+  margin: 20px 0px 0px 0px;
   background: var(--background-secondary-alt);
 }
 
@@ -665,8 +670,8 @@ Background-color:var(--text-accent) !important;
   //margin-top: -10px;
 }
 
-.menu-v2 .backlink-pane .tree-item-self {
-  //margin-top: 20px;
+.menu-v2 .backlink-pane .search-results-children{
+  margin-bottom: 20px;
 }
 
 .search-result-count {
@@ -1640,17 +1645,38 @@ input.prompt-input, input.prompt-input:hover {
 /* Image  */
 
 .view-content img {
-  margin-bottom:20px;
   max-width:100%;
   cursor:zoom-in;
 }
 
-.img-border-radius .view-content img{
-  border-radius:15px;
+.view-content img{
+  border-radius:var(--img-border-radius);
 }
 
 .img-border-shadow .view-content img {
   box-shadow: 0px 2px 10px -3px #222;
+}
+
+/*img {
+  left: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+ // max-width: 100%;
+  position: relative; !important;
+  object-fit: cover;
+  display: block!important;
+  right: 50%;
+  height: 500px;
+  width: 100vw !important;
+}*/
+
+img:after{
+  height: 400px !important;
+  width: 10px !important;
+  padding-bottom: 600px;
+  content: "";
+  position: relative;
+  display: inline !important;
 }
 
 .view-content img:active {
@@ -1832,9 +1858,6 @@ Padding-top:0px !important;
   padding-top:10px;
 }
 
-.nav-file.is-active .nav-file-title:hover {
-  background:var(--background-tertiary) !important;
-}
 
 /* Outgoing links */
 
@@ -2672,9 +2695,19 @@ settings:
         description: Display the same color for your obsidian title (global customization part)
         type: class-toggle
     - 
+        id: hue-color-nav
+        title:  Same color for the file active in navigation folder
+        description: Display the same color for the file active in navigation folder (global customization part)
+        type: class-toggle
+    - 
         id: img-border-radius
         title:  Border radius for images
-        type: class-toggle
+        type: variable-number-slider
+        default: 15
+        min: 0
+        max: 100
+        step: 1
+        format: px
     - 
         id: img-border-shadow
         title:  Shadow for images
