@@ -1708,7 +1708,7 @@ input.prompt-input, input.prompt-input:hover {
 .backlink-pane {
   Padding-top:30px;
   padding-bottom:30px;
-  //Background:var(--background-secondary-alt);
+  Background:var(--background-secondary-alt);
   Border-radius:10px;
   Margin-top:20px;
 }
