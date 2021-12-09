@@ -500,11 +500,14 @@ Background-color:var(--text-accent) !important;
   cursor:var(--cursor) !important;
 }
 
+.menu-v2.bold-italic-accent .nav-folder:not(.is-collapsed) > .nav-folder-title svg{
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
 .menu-v2 .nav-folder:not(.is-collapsed) > .nav-folder-title svg{
   font-weight: bold;
   position: relative;
   color:  var(--text-accent);
-  filter: hue-rotate(var(--hue-bold-italic));
   top: 5px;
   height: 15px;
   width: 15px;
@@ -3589,7 +3592,7 @@ settings:
 }
 .minimal-icons-on svg.right-triangle {
   -webkit-mask-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 32 32"><path fill="black" stroke-width="2" stroke="currentColor" d="M16 22L6 12l1.4-1.4l8.6 8.6l8.6-8.6L26 12z"></path></svg>');
-  width: 0.5em;
+  width: 0.5rem;
   height: 0.5rem;
   margin-top: -0.3rem !important;
 }
