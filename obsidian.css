@@ -584,7 +584,7 @@ Background-color:var(--text-accent);
 .menu-v2 .search-result-container{
   padding: 0px 20px !important;
   margin: 20px 0px;
-  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05);
+  background: var(--background-secondary-alt);
 }
 
 /*.menu-v2 .search-result-container::before{
@@ -1883,6 +1883,9 @@ color: var(--text-accent);
 
 .graph-controls.is-close {
   Background-color:transparent !important;
+}
+.graph-controls-button svg {
+  color: var(--text-accent);
 }
 
 input[type=range] {
