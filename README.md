@@ -45,4 +45,4 @@ and other things...
 <img width="1440" alt="Capture d’écran 2021-12-06 à 02 08 54" src="https://user-images.githubusercontent.com/29182877/144772150-312b8261-6175-45b3-8f54-2456675b238f.png">
 
 
-
+> If you like using the theme, support my work and    <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
