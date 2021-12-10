@@ -134,6 +134,163 @@
 
 }
 
+/* ------------------------- */
+/* Custom css for html elements */
+
+/* Column */
+.columns-2 {
+  margin: 0;
+  height: auto;
+  column-count: 2;
+}
+
+.columns-3{
+  margin: 0;
+  height: auto;
+  column-count: 3;
+}
+/*.columns-3 {
+  width: 33% !important;
+  display: block-inline;
+  //float: right;
+  position: relative;
+}*/
+
+/* Buttons */
+button{
+  background: var(--text-accent) !important;
+  color: #FFF !important;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+button span{
+  color: #FFF;
+}
+
+.kanban-plugin button.kanban-plugin__new-item-button {
+  color: #FFF !important;
+}
+
+button a{
+  color: #FFF !important;
+}
+
+button:hover{
+  filter: brightness(1.1);
+}
+
+/* Cards */
+.cards-2 {
+  float: left;
+  width: calc(50% - var(--p-offset));
+  padding: 0 10px;
+  margin: 0;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.cards-2 img{
+  width: 100%;
+  height: 15rem;
+  position: relative;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.cards-2 p{
+  margin-left: 0px !important;
+}
+
+
+.cards-3 {
+  float: left;
+  width: calc(33% - var(--p-offset));
+  padding: 0 10px;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.cards-3 img{
+  width: 100%;
+  height: 15rem;
+  margin-bottom: 1rem;
+  position: relative;
+  object-fit: cover;
+}
+
+.cards-2 p{
+  margin-left: 0px !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+  .cards-3 p{
+  margin-left: 0px !important;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+.card-title{
+  font-size: 2rem;
+  color: var(--font-normal);
+  text-align: left;
+}
+
+/* Menu */
+.menu-page{
+  //border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  padding: 15px 10px 15px 15px;
+  margin-top: 20px;
+  font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
+  background-color: var(--background-secondary-alt);
+  position: relative;  
+  text-align: center;
+  left: 0px;
+  width: 100%;
+  //box-shadow: 2px 2px 15px -2px rgba(0,0,0,0.05);
+  //border-radius: 10px;
+}
+
+.menu-page:before{
+  Content:"MENU";/*Content:"\2302" \2630 */
+  Font-size:1em;
+  font-weight: 700;
+  Color:var(--text-accent) !important;
+  Margin-right:3rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.menu-page a{
+  color: var(--text-normal);
+  font-weight: 500;
+  text-transform : uppercase ;
+  margin-right: 20px;
+  text-decoration: none;
+  //text-align: right;
+  padding-bottom: 15px;
+}
+
+/*.menu-page a:before{
+  content: "/ ";
+  color: var(--text-accent);
+}
+.menu-page a:first-child:before{
+  content: "";
+}*/
+
+.menu-page a:hover{
+  //color: var(--text-accent);
+  cursor: pointer;
+  border-bottom: 3px solid var(--text-accent);
+}
 
 /* ------------------ */
 /* Hides the name of the root folder */
@@ -1198,7 +1355,7 @@ Opacity:1 !important;
   font-weight: var(--normal-weight);
 }
 
-.markdown-preview-view  p, .markdown-preview-view ol, .markdown-preview-view ul, .markdown-preview-view  table, .markdown-preview-view  iframe, .markdown-preview-view .admonition,.markdown-preview-view aside {
+.markdown-preview-view  p, .markdown-preview-view ol, .markdown-preview-view ul, .markdown-preview-view  table, .markdown-preview-view  iframe, .markdown-preview-view .admonition,.markdown-preview-view aside,.markdown-preview-view .columns-2,.markdown-preview-view .columns-3,.markdown-preview-view .cards-3,.markdown-preview-view .cards-2 {
   Letter-spacing:var(--text-spacing);
   Margin-left:var(--p-offset);
 }
@@ -1314,7 +1471,6 @@ Opacity:1 !important;
   content: "“" !important;
   font-family: lora !important;
   position: absolute !important;
-  //display: block !important;
   top: 0em !important;
   left: -60px !important;
   font-size: 5rem !important;
@@ -1328,7 +1484,10 @@ Opacity:1 !important;
 
 .blockquote-text-center .markdown-preview-view blockquote {
   text-align: center;
+  padding-right: 4rem;
+  padding-left: 4rem;
 }
+
 
 
 /* Edit mode */
