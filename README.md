@@ -1,6 +1,7 @@
 # Obsidian-theme : Harmonic
+If you like using the theme, support my work and    <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
 
-Install style settings plugin to
+Install style **settings plugin** to
 
 ## Choose a logo or a title, an accent color, 2 different styles for menus (left sidebar and right sidebar)
 ![](http)<img width="1440" alt="Capture d’écran 2021-12-01 à 16 31 58" src="https://user-images.githubusercontent.com/29182877/144263738-a27cac6b-9db8-4007-850f-68d273f5d5b8.png">
@@ -46,5 +47,36 @@ Install style settings plugin to
 and other things...
 <img width="1440" alt="Capture d’écran 2021-12-06 à 02 08 54" src="https://user-images.githubusercontent.com/29182877/144772150-312b8261-6175-45b3-8f54-2456675b238f.png">
 
+## Custom html elements
+- columns (.columns-2, columns-3) avec html :
 
-> If you like using the theme, support my work and    <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
+```
+<div class="columns-2>your text</div>
+```
+
+
+- cards (.cards-2, .cards-3) avec html :
+
+```
+ <div class="cards-2>
+  <img src="image url">
+  <div class="card-title">Your title</div>
+  <p>Your text</p>
+  <button><a href="url of the page">Text of the button</a></button>
+ </div>
+```
+
+- menu bar for page (.menu-page) avec html 
+
+```
+  <div class="menu-page">
+	  <a href="obsidian link of page 1">Page 1</a>
+	  <a href="obsidian link of page 2">Page 2</a>
+	  <a href="obsidian link of page 3">Page 3</a>
+  </div>
+```
+
+- aside
+
+<img width="1440" alt="Capture d’écran 2021-12-10 à 17 32 44" src="https://user-images.githubusercontent.com/29182877/145609115-47350e07-fd2b-4de3-8d20-45b88f211ad0.png">
+
