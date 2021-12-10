@@ -248,6 +248,18 @@ button:hover{
   margin-bottom: 0px;
 }
 
+.text-full-width {
+  width: 100%;
+  }
+
+.img-full-width img{
+  object-fit: cover;
+  max-height: 35rem;
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
 
 /* Menu */
 .menu-page{
