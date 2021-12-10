@@ -326,10 +326,26 @@
 display:none !important;
 }
 
-/* Nav folder */
+/* ------- Nav folder ---------- */
+
+/* Customize font style */
+
+.font-nav-folder-header .nav-folder,.font-nav-folder-header .search-result,.font-nav-folder-header .backlink-pane,.font-nav-folder-header .outline,.font-nav-folder-header #calendar-container,.font-nav-folder-header .tag-container,.font-nav-folder-header .outgoing-link-pane,.font-nav-folder-header .checklist-plugin-main{
+  font-family: var(--text-title);
+}
+
+.font-nav-folder-text .nav-folder,.font-nav-folder-text .search-result,.font-nav-folder-text .backlink-pane,.font-nav-folder-text .outline,.font-nav-folder-text #calendar-container,.font-nav-folder-text .tag-container,.font-nav-folder-text .outgoing-link-pane,.font-nav-folder-text .checklist-plugin-main{
+  font-family: var(--text);
+}
+
+ 
+/* Don't display collapse indicators */
+
 .nav-folder-collapse-indicator.collapse-icon{
   Display:none !important;
 }
+
+/* Styling */
 
 .nav-folder-title {
   margin:0px;
@@ -1187,7 +1203,7 @@ Opacity:1 !important;
   Margin-left:var(--p-offset);
 }
 
-.markdown-preview-view  ol li p,.markdown-preview-view  ul li p, .markdown-preview-view  blockquote p,.markdown-preview-view li ul{
+.markdown-preview-view  ol li p,.markdown-preview-view  ul li p, .markdown-preview-view  blockquote p,.markdown-preview-view li ul, .markdown-preview-view li iframe{
   Margin-left:0px !important;
 }
 
@@ -1267,6 +1283,33 @@ Opacity:1 !important;
 
 /* Preview */
 
+
+.markdown-preview-view blockquote {
+  Font-style:italic;
+  Font-size:1.1em;
+  Line-height:1.9;
+  color:var(--text-normal);
+  Margin-inline-end:0px;
+  position: relative;
+}
+
+.blockquote-background .markdown-preview-view blockquote {
+  border-left:3px solid hsl(var(--accent-h), var(--accent-s),var(--accent-d));
+  Padding:20px 20px 20px 60px;
+}
+
+.blockquote-background.theme-light .markdown-preview-view blockquote {
+  background: var(--background-secondary-alt) !important;
+}
+
+.blockquote-background.theme-dark .markdown-preview-view blockquote {
+  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1)
+}
+
+.blockquote-serif .markdown-preview-view blockquote {
+  font-family: lora;
+}
+
 .blockquote-bracket .markdown-preview-view blockquote:after{
   content: "“" !important;
   font-family: lora !important;
@@ -1279,34 +1322,14 @@ Opacity:1 !important;
   margin-top: -40px;
 }
 
-.markdown-preview-view blockquote {
-  Font-style:italic;
-  Font-size:1.1em;
-  Line-height:1.9;
-  border:solid hsl(var(--accent-h),var(--accent-s),var(--accent-d));
-  border-width:0px 0px 0px 3px;
-  color:var(--text-normal);
-  Padding:20px 20px 20px 60px;
-  //Margin-inline-start:0px;
-  Margin-inline-end:0px;
-  position: relative;
-}
-
-.blockquote-serif .markdown-preview-view blockquote {
-  font-family: lora;
-}
-
 .blockquote-bracket .markdown-preview-view blockquote {
   margin-left: 6.5rem;
 }
 
-.theme-light .markdown-preview-view blockquote {
-  background: var(--background-secondary-alt) !important;
+.blockquote-text-center .markdown-preview-view blockquote {
+  text-align: center;
 }
 
-.theme-dark .markdown-preview-view blockquote {
-  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1)
-}
 
 /* Edit mode */
 .theme-light .HyperMD-quote {
@@ -1412,6 +1435,7 @@ span.cm-formatting-list{
 .markdown-preview-view th {
   text-align: left;
   Font-size:var(--font-normal);
+  font-weight: 600;
   border-top:none;
   text-align: left;
   border-top:none;
@@ -2610,22 +2634,48 @@ button.kanban-plugin__new-item-button:hover {
 
 /* Style Settings */
 
+.style-settings-container .style-settings-container {
+  margin-left: 15px;
+}
+
 /* @settings
 name: Harmonic theme customization
 id: perso
 settings:
     - 
         id: logo
-        title: Global customization (Logo OR title, Accent color, menu style, icon style)
+        title: 1. Global customization (Logo OR title, Accent color, navigation folder style, icon style)
         type: heading
         level: 2
         collapsed: true
+    -
+        id: accent
+        title: Accent color
+        type: variable-color
+        format: hsl-split
+        default: '#4F60B3'
+    -
+        id: minimal-icons-on
+        title: Icons
+        description: Activate minimal icons
+        type: class-toggle
+    - 
+        id: logo-section
+        title: Choose a logo OR a title for your obsidian
+        type: heading
+        level: 3
+        collapsed: false
     - 
         id: site-title
         title: Your obsidian title
         description: Put the title in quotation marks (see default parameter)
         type: variable-text
         default: '"OBSIDIAN"'
+    - 
+        id: site-title-accent
+        title:  Color accent for your obsidian title
+        description: Display the title with the bold and italic accent color (menu > Make pages pop)
+        type: class-toggle
     - 
         id: logo-url
         title: Your obsidian logo (url)
@@ -2637,12 +2687,12 @@ settings:
         title: Invert logo colors in dark mode
         description: B&W image works well
         type: class-toggle
-    -
-        id: accent
-        title: Accent color
-        type: variable-color
-        format: hsl-split
-        default: '#4F60B3'
+    - 
+        id: nav-folder-section
+        title: Customize the navigation folder panel
+        type: heading
+        level: 3
+        collapsed: false
     -
         id: menus
         title: Alternative menu styles
@@ -2660,13 +2710,30 @@ settings:
                 label: Design 3
                 value: menu-v2
     -
-        id: minimal-icons-on
-        title: Icons
-        description: Activate minimal icons
-        type: class-toggle
+        id: menus-font
+        title: Font of navigation folders
+        description: Choose diffent styles for the left and right sidebars
+        type: class-select
+        default: font-nav-folder-text
+        options:
+            - 
+                label: Text
+                value: font-nav-folder-text
+            - 
+                label: Headings
+                value: font-nav-folder-header
+    -
+        id: font-small
+        title: Font size of navigation folder
+        description: Select a font size
+        type: variable-number-slider
+        default: 0.85
+        min: 0.7
+        max: 1
+        step: 0.01
     -
         id: focus-mode
-        title: Focus mode
+        title: 2. Focus mode
         type: heading
         level: 2
         collapsed: true
@@ -2710,10 +2777,16 @@ settings:
         type: class-toggle
     -
         id: features
-        title: Make pages pop (bold and italic accentuation, image, blockquote)
+        title: 3. Make pages pop (bold and italic accentuation, image, blockquote)
         type: heading
         level: 2
         collapsed: true
+    - 
+        id: bold-italic-section
+        title: Customize bold and italic
+        type: heading
+        level: 3
+        collapsed: false
     - 
         id: bold-italic-accent
         title:  Bold and italic accentuation
@@ -2730,10 +2803,11 @@ settings:
         step: 30
         format: deg
     - 
-        id: site-title-accent
-        title:  Same color for your obsidian title
-        description: Display the same color for your obsidian title (global customization part)
-        type: class-toggle
+        id: image-section
+        title: Customize images
+        type: heading
+        level: 3
+        collapsed: false
     - 
         id: img-border-radius
         title:  Border radius for images
@@ -2748,6 +2822,16 @@ settings:
         title:  Shadow for images
         type: class-toggle
     - 
+        id: blockquote-section
+        title: Customize blockquote
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: blockquote-background
+        title:  Display background and border for quote
+        type: class-toggle
+    - 
         id: blockquote-bracket
         title:  Quotation mark for quote
         type: class-toggle
@@ -2756,8 +2840,12 @@ settings:
         title:  Serif font for quote
         type: class-toggle
     - 
+        id: blockquote-text-center
+        title:  Center text for quote
+        type: class-toggle
+    - 
         id: page-settings 
-        title: Page settings (line width, fullwidth mode, paragraph offset)
+        title: 4. Page settings (line width, fullwidth mode, paragraph offset)
         type: heading
         level: 2
         collapsed: true
@@ -2788,7 +2876,7 @@ settings:
         format: rem
     - 
         id: fonts
-        title: Fonts (Preview mode, edit mode, monospace, titles)
+        title: 5. Fonts (Preview mode, edit mode, monospace, titles)
         description : Pre-insalled google fonts - Cabin, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Readex Pro, Roboto, Source Sans Pro, Work Sans
         type: heading
         level: 2
@@ -2813,13 +2901,13 @@ settings:
         default: menlo
     - 
         id: text-title
-        title: title font
+        title: Header font
         description: Font used for titles
         type: variable-text
         default: mulish
     -
         id: custom-fonts
-        title: Typography
+        title: 6. Typography
         type: heading
         level: 2
         collapsed: true
@@ -2848,17 +2936,8 @@ settings:
         type: variable-number
         default: 1.5
     -
-        id: font-small
-        title: Font size of navigation folder
-        description: Select a font size
-        type: variable-number-slider
-        default: 0.85
-        min: 0.7
-        max: 1
-        step: 0.01
-    -
         id: headings
-        title: Headings
+        title: 7. Headings
         type: heading
         level: 2
         collapsed: true
