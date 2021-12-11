@@ -1267,6 +1267,12 @@ Opacity:1 !important;
   border-color: #eee;
 }
 
+.invert-background-color .markdown-preview-view hr {
+   height:1px;
+  border-width:2px 0 0 0;
+  border-color: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+}
+
 /* Links */
 
 .external-link {
