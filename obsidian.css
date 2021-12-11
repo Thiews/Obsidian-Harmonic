@@ -138,7 +138,7 @@
 /* Color background inersion */
 
 .invert-background-color.theme-light {
-  --background-primary: hsla(var(--accent-h),calc(var(--accent-s) + 15%),calc(var(--accent-l) + 45%),0.6);
+  --background-primary: hsla(var(--accent-h),calc(var(--accent-s) + 15%),calc(var(--accent-l) + 45%),0.5);
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
