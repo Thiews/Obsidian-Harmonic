@@ -139,8 +139,7 @@
 /* Color background inersion */
 
 .invert-background-color.theme-light {
-  //--background-primary: hsla(var(--accent-h),calc(var(--accent-s) + 15%),calc(var(--accent-l) + 45%),0.5);
-  --background-primary: hsla(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 25%),0.2);
+  --background-primary: hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 32%));
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
@@ -167,7 +166,7 @@ background: var(--background-secondary-alt);}
 }
 
 .invert-background-color.theme-dark {
-  --background-primary: hsla(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 32%),0.7);
+  --background-primary: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) - 37%));
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-d));
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
