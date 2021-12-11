@@ -1350,6 +1350,10 @@ Opacity:1 !important;
   background: var(--background-secondary-alt) !important;
 }
 
+.invert-background-color.blockquote-background .markdown-preview-view blockquote {
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
+}
+
 .blockquote-background.theme-dark .markdown-preview-view blockquote {
   background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1)
 }
