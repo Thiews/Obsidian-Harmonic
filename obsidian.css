@@ -2070,12 +2070,12 @@ iframe {
 
 
 .theme-light .graph-controls {
-  Background-color:hsl(var(--accent-h),calc(var(--accent-s) - 20%),calc(var(--accent-l) + 35%));
+  Background-color:hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 35%));
   //box-shadow: -10px -10px 20px 12px rgba(0,0,0,0.05) !important;
 }
 
 .theme-dark .graph-controls {
-  Background-color:hsl(var(--accent-h),calc(var(--accent-s) + 10%),calc(var(--accent-l) - 35%));
+  Background-color:hsl(var(--accent-h),calc(var(--accent-s) + 10%),calc(var(--accent-l) - 40%));
 }
 
 .graph-control-section .setting-item .setting-item-info .setting-item-name {
