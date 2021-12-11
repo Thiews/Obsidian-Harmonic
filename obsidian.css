@@ -83,7 +83,7 @@
 .theme-dark {
   --background-primary:hsl(var(--base-h),var(--base-s),var(--base-d));
   --background-primary-alt:hsl(var(--base-h),var(--base-s),calc(var(--base-d) - 3%));
-  --background-secondary-alt:hsla(var(--accent-h),calc(var(--accent-s) - 0%),calc(var(--accent-l) + 10%),0.05);
+  --background-secondary-alt:hsla(var(--accent-h),calc(var(--accent-s) - 0%),calc(var(--accent-l) + 10%),0.08);
   --background-tertiary:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 5%));
   --background-modifier-border:transparent;/*hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 5%));*/
   --background-modifier-border-hover:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 10%));
@@ -110,7 +110,7 @@
 .theme-light {
   --background-primary:hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-primary-alt:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 2%));
-  --background-secondary-alt:hsla(var(--accent-h),calc(var(--accent-s) - 0%),calc(var(--accent-l) + 10%),0.03);
+  --background-secondary-alt:hsla(var(--accent-h),calc(var(--accent-s) - 0%),calc(var(--accent-l) + 10%),0.1);
   --background-tertiary:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 7%));
   --background-modifier-border:transparent;/*hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 8%));*/
   --background-modifier-border-hover:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 12%));
@@ -140,7 +140,7 @@
 /* Color background inersion */
 
 .invert-background-color.theme-light {
-  --background-primary: hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 33%));
+  --background-primary: hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 35%));
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
