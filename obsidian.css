@@ -135,6 +135,10 @@
 }
 
 
+.app-container{
+  //filter: invert(1);
+}
+
 /* --------------------- */
 /* Color background inersion */
 
@@ -166,7 +170,7 @@ background: var(--background-secondary-alt);}
 }
 
 .invert-background-color.theme-dark {
-  --background-primary: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) - 37%));
+  --background-primary: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) - 38%));
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-d));
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
@@ -2219,7 +2223,7 @@ input[type=range]::-webkit-slider-thumb:active {
   opacity:0 !important;
 }
 
-.hide-left-menu .workspace-tab-header-container {
+.hide-tab-header .workspace-tab-header-container {
    Opacity:0;
    transition: 0.3s;
 }
@@ -3059,6 +3063,10 @@ settings:
     -
         id: hide-left-menu
         title: Hide vertical menu of the left sidebar
+        type: class-toggle
+    -
+        id: hide-tab-header
+        title: Hide tab header buttons
         type: class-toggle
     -
         id: hide-action-buttons
