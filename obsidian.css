@@ -140,10 +140,8 @@
 /* Color background inersion */
 
 .invert-background-color.theme-light {
-  //--background-primary: hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 35%));
-  --background-primary: hsl(var(--accent-h),calc(var(--accent-s) - 0%),calc(var(--accent-l) + 35%));
-  //--background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-l));
-  --background-secondary-alt: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 40%)) !important;
+  --background-primary: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 35%));
+  --background-secondary-alt: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 37%));
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
 }
@@ -175,8 +173,8 @@ background: var(--background-secondary-alt);}
   --background-tertiary: transparent;
 }
 
-.invert-background-color.theme-light .popover {
-  --background-primary:hsl(var(--base-h),var(--base-s),var(--base-l));
+.invert-background-color.theme-light .popover.hover-popover  {
+  --background-secondary-alt: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 40%)) !important;
 }
 
 .invert-background-color.theme-dark .popover {
