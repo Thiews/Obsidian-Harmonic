@@ -1595,6 +1595,10 @@ ol > li::before {
   margin-left: var(--p-offset) !important;
 }
 
+.invert-background-color .markdown-preview-view .markdown-preview-section  div pre{
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
+}
+
 .markdown-preview-view .markdown-preview-section  div pre code {
   background: transparent;
   color: var(--text-accent);
@@ -1616,7 +1620,6 @@ ol > li::before {
  }
 
  .invert-background-color .cm-s-obsidian div.HyperMD-codeblock-bg {
-  //background-color: var(--background-secondary-alt) !important;
    background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
    border: 0px;
 }
