@@ -134,19 +134,30 @@
 
 }
 
+
 /* --------------------- */
 /* Color background inersion */
 
 .invert-background-color.theme-light {
-  --background-primary: hsla(var(--accent-h),calc(var(--accent-s) + 15%),calc(var(--accent-l) + 45%),0.5);
+  //--background-primary: hsla(var(--accent-h),calc(var(--accent-s) + 15%),calc(var(--accent-l) + 45%),0.5);
+  --background-primary: hsla(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 25%),0.2);
   --background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-l));
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
 }
 
+.workspace-leaf{
+background: var(--background-secondary-alt);}
+
 .invert-background-color .frontmatter-container-header {
   color: var(--text-accent);
 }
+
+.invert-background-color .frontmatter-container{
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  border-radius: 0px;
+}
+
 .invert-background-color .frontmatter-alias {
   background: transparent;
 }
@@ -874,7 +885,8 @@ input.search-input:focus {
 }
 
 .view-actions {
-  Background:var(--background-primary) !important;
+  //Background:var(--background-primary) !important;
+  background: none !important
   Box-shadow:none !important;
 }
 
@@ -1676,13 +1688,6 @@ Zoom:0.8;
   padding-right:8px;
 }
 
-button {
-  background-color:transparent;
-}
-
-button:hover {
-  background-color:var(--background-tertiary);
-}
 
 /* Embed internal text */
 .markdown-preview-view .internal-embed:not(.image-embed){
@@ -2027,12 +2032,13 @@ iframe {
   left:0;
   top:0;
   margin-bottom:0;
-  padding:0 20px 10px 10px;
+  padding:10px 20px 10px 10px;
 }
 
 
 .theme-light .graph-controls {
-  Background-color:hsl(var(--accent-h),calc(var(--accent-s) - 10%),calc(var(--accent-l) + 45%));
+  Background-color:hsl(var(--accent-h),calc(var(--accent-s) - 25%),calc(var(--accent-l) + 30%));
+  //box-shadow: -10px -10px 20px 12px rgba(0,0,0,0.05) !important;
 }
 
 .theme-dark .graph-controls {
@@ -2050,7 +2056,7 @@ color: var(--text-accent);
 }
 
 .graph-controls.is-close {
-  Background-color:transparent !important;
+  Background-color:var(--background-secondary-alt);
 }
 .graph-controls-button svg {
   color: var(--text-accent);
@@ -2313,6 +2319,8 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
   text-align: left;
 }
 
+
+
 /* Correct a problem on tablet */
 .is-mobile.plugin-sliding-panes-stacking .workspace-leaf {
   margin-left: -10px;
@@ -2334,6 +2342,10 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
 
 .group-todo {
   Margin-left:20px;
+}
+
+.checklist-plugin-main button{
+  background: transparent !important;
 }
 
 .task-list-item-checkbox {
@@ -2723,6 +2735,7 @@ button{
   padding: 7px 15px;
 }
 
+
 button span{
   color: #FFF;
 }
@@ -2801,6 +2814,15 @@ button:hover{
   -webkit-box-orient: vertical;
 }
 
+.cards-2 a{
+  color: var(--font-normal);
+  text-decoration: none;
+}
+
+.cards-2 a:hover{
+  color: var(--text-accent);
+}
+
 .cards-3 h2{
   margin: 0 ;
   color: var(--text-normal) !important;
@@ -2811,13 +2833,22 @@ button:hover{
   content: none !important;
 }
 
-  .cards-3 p{
+.cards-3 p{
   margin-left: 0px !important;
   text-overflow: ellipsis;
   display: -webkit-box;
   overflow: hidden;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
+}
+
+.cards-3 a{
+  color: var(--font-normal);
+  text-decoration: none;
+}
+
+.cards-3 a:hover{
+  color: var(--text-accent);
 }
 
 
