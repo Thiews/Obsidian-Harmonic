@@ -135,9 +135,6 @@
 }
 
 
-.app-container{
-  //filter: invert(1);
-}
 
 /* --------------------- */
 /* Color background inersion */
@@ -1386,12 +1383,11 @@ Opacity:1 !important;
 
 /* Edit mode */
 .theme-light .HyperMD-quote {
-  background: var(--background-secondary-alt) !important;
+  background: var(--background-secondary-alt);
 }
 .theme-dark .HyperMD-quote {
-  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1) !important;
+  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
 }
-
 
 .cm-quote {
   font-style: italic;
@@ -1400,6 +1396,10 @@ Opacity:1 !important;
 }
 .cm-formatting-quote {
   color: var(--text-accent) !important;
+}
+
+.invert-background-color .HyperMD-quote{
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
 }
 
 /* ASIDE */
@@ -1502,6 +1502,10 @@ span.cm-formatting-list{
   Background:hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
 }
 
+.invert-background-color .markdown-preview-view th {
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  }
 
 .theme-light .markdown-preview-view table tr:nth-child(2n) {
   Background:var(--background-secondary-alt);
@@ -1509,6 +1513,15 @@ span.cm-formatting-list{
 
 .theme-dark .markdown-preview-view table tr:nth-child(2n) {
   background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+}
+
+.invert-background-color .markdown-preview-view table tr {
+  background: var(--background-primary) !important;
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+}
+
+.invert-background-color .markdown-preview-view table tr:nth-child(2n) {
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
 }
 
   /* Tables in edit monde */
@@ -1601,6 +1614,12 @@ ol > li::before {
  .cm-s-obsidian .cm-hmd-codeblock {
   color: var(--text-accent);
  }
+
+ .invert-background-color .cm-s-obsidian div.HyperMD-codeblock-bg {
+  //background-color: var(--background-secondary-alt) !important;
+   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
+   border: 0px;
+}
 
  .bold-italic-accent .cm-s-obsidian .cm-hmd-codeblock {
   filter: hue-rotate(var(--hue-bold-italic));
@@ -1696,6 +1715,10 @@ Zoom:0.8;
 .markdown-preview-view .internal-embed:not(.image-embed){
   background: var(--background-secondary-alt);
   border-radius: 10px;
+}
+
+.invert-background-color .markdown-preview-view .internal-embed:not(.image-embed){
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
 }
 
 /* --------------- */
