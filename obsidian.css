@@ -162,6 +162,13 @@
   --background-tertiary: transparent;
 }
 
+.invert-background-color.theme-light .popover {
+  --background-primary:hsl(var(--base-h),var(--base-s),var(--base-l));
+}
+
+.invert-background-color.theme-dark .popover {
+  --background-primary:hsl(var(--base-h),var(--base-s),var(--base-d));
+}
 
 
 /* ------------------ */
