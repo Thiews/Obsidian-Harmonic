@@ -1,5 +1,8 @@
 # Obsidian-theme : Harmonic
-If you like using the theme, support my work and    <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
+Harmonic is a minimal and highly customizable theme. You can easily change the entire design with just a few changes.
+
+If you like using the theme, support my work and    
+<a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
 
 Install style **settings plugin** to
 
@@ -79,4 +82,18 @@ and other things...
 - aside
 
 <img width="1440" alt="Capture d’écran 2021-12-10 à 17 32 44" src="https://user-images.githubusercontent.com/29182877/145609115-47350e07-fd2b-4de3-8d20-45b88f211ad0.png">
+
+## Custom dataview
+
+- list of articles style (.dataview-articles-style)
+With the following dataview code. "Cover" appear in page YAML (cover: url of the image)
+
+```dataview
+table file.ctime, ("<img src=" + cover + ">") as cover
+from WHAT TOU TO SHOW
+sort file.ctime desc 
+```
+
+<img width="1440" alt="list note article view" src="https://user-images.githubusercontent.com/29182877/145707056-24b05f43-067e-41bc-bd28-e40059a90d81.png">
+
 
