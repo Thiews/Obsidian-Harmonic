@@ -141,7 +141,7 @@
 
 .invert-background-color.theme-light {
   --background-primary: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 35%));
-  --background-secondary-alt: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 37%));
+  --background-secondary-alt: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 38%));
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
 }
