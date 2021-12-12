@@ -652,6 +652,7 @@ Background-color:var(--text-accent) !important;
 
 .search-result-file-match:hover {
   color:var(--text-normal);
+  background: transparent !important;
 }
 
 .search-result-container:before {
