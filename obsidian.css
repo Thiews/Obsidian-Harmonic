@@ -167,7 +167,7 @@ background: var(--background-secondary-alt);}
 }
 
 .invert-background-color.theme-dark {
-  --background-primary: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 35%));
+  --background-primary: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 36%));
   --background-secondary-alt: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 38%));
   //--background-secondary-alt: hsl(var(--base-h),var(--base-s),var(--base-d));
   --background-primary-alt:transparent;
