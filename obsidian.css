@@ -530,6 +530,10 @@ Background-color:var(--text-accent) !important;
 
 /* Menu v2 */
 
+.menu-v2 .nav-files-container{
+  margin-top: 2rem;
+}
+
 .menu-v2 .nav-folder-collapse-indicator.collapse-icon{
   Display: inline !important;
 }
@@ -610,7 +614,6 @@ Background-color:var(--text-accent) !important;
 
 .menu-v2 .nav-file .nav-file-title-content {
   background: none;
-  padding-l
 }
 
 .menu-v2 .nav-file .is-active > .nav-file-title-content {
@@ -1674,7 +1677,7 @@ Span.cm-hmd-frontmatter{
 /* Popover */
 
 .popover .markdown-preview-view {
-
+background: var(--background-secondary-alt);
 Zoom:0.8;
 }
 
@@ -2824,7 +2827,7 @@ button:hover{
   height: 17rem;
   position: relative;
   object-fit: cover;
-  margin-bottom: 1rem;
+  cursor: pointer !important;
 }
 
 .cards-2 p{
@@ -2834,6 +2837,7 @@ button:hover{
 .cards-2 h2{
   margin: 0 ;
   font-size: 2rem !important;
+  color: var(--text-normal) !important;
 }
 
 .cards-2 h2:before{
@@ -2844,7 +2848,7 @@ button:hover{
 .cards-3 {
   float: left;
   width: calc(calc(var(--line-width) / 3) - var(--p-offset));
-  padding: 3rem 1rem 1rem 1rem;
+  padding: 3rem 0.5rem 1rem 0.5rem;
   position: relative;
   margin: 0;
 }
@@ -2857,14 +2861,24 @@ button:hover{
   object-fit: cover;
   cursor: pointer !important;
 }
-/.cards-3 img:hover{
-  -webkit-transform:scale(1.25); /* Safari et Chrome */
-  -moz-transform:scale(1.25); /* Firefox */
-  -ms-transform:scale(1.25); /* Internet Explorer 9 */
-  -o-transform:scale(1.25); /* Opera */
+/*.cards-3 img:hover{
+  -webkit-transform:scale(1.25); 
+  -moz-transform:scale(1.25); 
+  -ms-transform:scale(1.25); 
+  -o-transform:scale(1.25); 
   transform:scale(1.1);
   transition: 0.2s;
 }*/
+
+.cards-3 h2{
+  margin: 0 ;
+  color: var(--text-normal) !important;
+  font-size: 1.5rem !important;
+}
+
+.cards-2 h2:before{
+  content: none !important;
+}
 
 .cards-2 p{
   margin-left: 0px !important;
@@ -2881,7 +2895,7 @@ button:hover{
 }
 
 .cards-2 a:hover{
-  color: var(--text-accent);
+  color: var(--text-accent) !important;
 }
 
 .cards-3 h2{
