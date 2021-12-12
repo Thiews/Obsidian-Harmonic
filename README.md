@@ -90,7 +90,7 @@ With the following dataview code. "Cover" appear in page YAML (cover: url of the
 
 ```dataview
 table file.ctime, ("<img src=" + cover + ">") as cover
-from WHAT TOU TO SHOW
+from WHAT YOU WANT TO SHOW
 sort file.ctime desc 
 ```
 
