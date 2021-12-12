@@ -1334,6 +1334,7 @@ Opacity:1 !important;
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-d),0.3);
   padding: 1px 1px;
 }
+
 /* Blockquotes */
 
 /* Preview */
@@ -1349,7 +1350,7 @@ Opacity:1 !important;
 }
 
 .blockquote-background .markdown-preview-view blockquote {
-  border-left:3px solid hsl(var(--accent-h), var(--accent-s),var(--accent-d));
+  border-left:3px solid var(--text-accent);
   Padding:20px 20px 20px 60px;
 }
 
