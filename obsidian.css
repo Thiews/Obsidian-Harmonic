@@ -620,7 +620,7 @@ Background-color:var(--text-accent) !important;
 
 .menu-v2 .nav-file .is-active {
   border-left: 5px solid var(--text-accent);
-  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05) !important;
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.03) !important;
   border-radius: 0px;
 }
 
@@ -2805,6 +2805,13 @@ button:hover{
 }
 
 /* Cards */
+
+.grid-cards{
+  widh: 100% !important;
+  position: relative;
+  display: inline-block;
+}
+
 .cards-2 {
   float: left;
   width: calc(50% - var(--p-offset));
@@ -2836,8 +2843,9 @@ button:hover{
 
 .cards-3 {
   float: left;
-  width: calc(33.33% - var(--p-offset));
+  width: calc(calc(var(--line-width) / 3) - var(--p-offset));
   padding: 3rem 1rem 1rem 1rem;
+  position: relative;
   margin: 0;
 }
 
@@ -2913,7 +2921,7 @@ button:hover{
 
 
 
-@media (min-width:400pt) {
+@media (max-width:400pt) {
   .cards-3,.card-2{
     width: 100%; /* For phone */
   }
