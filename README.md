@@ -1,5 +1,5 @@
 # Obsidian-theme : Harmonic
-Harmonic is a minimal and highly customizable theme. You can easily change the entire design with just a few changes.
+Harmonic is a minimal and highly customizable theme. You can easily change the entire design with just a few changes in Style settings plugin panel.
 
 If you like using the theme, support my work and    
 <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
