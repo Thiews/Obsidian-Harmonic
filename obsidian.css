@@ -324,7 +324,7 @@ background: var(--background-secondary-alt);}
 }
 
 .nav-action-button:hover svg{
-  Filter: brightness(1.5);
+  Filter: brightness(1.2);
 }
 
 .nav-action-button svg{
@@ -604,7 +604,7 @@ Background-color:var(--text-accent) !important;
 
 
 .menu-v2 .nav-file {
-  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05) !important;
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.03) !important;
 }
 
 .menu-v2 .nav-file .nav-file-title-content {
