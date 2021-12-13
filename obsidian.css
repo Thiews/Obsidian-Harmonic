@@ -1796,18 +1796,26 @@ Zoom:0.8;
 /* Modals */
 
 .modal.mod-settings .vertical-tab-header {
-  Background:transparent;
+  Background:transparent !important;
 }
 
 .vertical-tab-header-group {
   Padding:0 0 !important;
+  background: transparent !important;
 }
 
+.vertical-tab-header-group-items {
+  background: transparent !important;
+}
+
+
 .modal .vertical-tab-header-group-title {
-  Background:var(--background-secondary-alt);
+  
   Color:var(--text-accent);
   Font-weight:bold;
 }
+
+
 
 .modal.mod-settings .vertical-tab-content-container {
   border:1px solid var(--background-modifier-border);
@@ -1830,6 +1838,7 @@ input.prompt-input, input.prompt-input:hover {
 .suggestion-item.is-selected,
 .menu-item:hover {
   background:var(--background-tertiary);
+
 }
 
 .prompt {
@@ -1842,6 +1851,51 @@ input.prompt-input, input.prompt-input:hover {
 }
 
 .menu-item-icon svg {
+  color: var(--text-accent);
+}
+
+
+.modal {
+border-radius: 17px;
+}
+
+
+.modal .vertical-tab-nav-item{
+  padding: 5px 30px;
+  background: transparent;
+}
+
+.modal .vertical-tab-header{
+  padding: 0px 0px !important;
+  flex: 0 0 300px !important;
+  width: 500px !important
+
+}
+
+.modal .vertical-tab-header-group-title{
+  padding-top: 30px !important;
+  padding-left: 30px;
+}
+.modal .vertical-tab-header-group {
+  padding-bottom: 10px !important;
+}
+
+.modal.mod-settings .vertical-tab-header{
+padding: 0px 0px 0px 20px;
+Background:var(--background-secondary-alt) !important;
+}
+
+.modal-bg{
+  backdrop-filter: blur(5px);
+}
+
+.modal .vertical-tab-nav-item.is-active {
+  background: var(--background-secondary-alt) !important;
+  border-right: 5px solid var(--text-accent) !important;
+  border-left: none !important;
+}
+
+.modal .vertical-tab-nav-item:hover{
   color: var(--text-accent);
 }
 
