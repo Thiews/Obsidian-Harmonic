@@ -224,17 +224,14 @@ background: var(--background-secondary-alt);}
 
 /* width modes adjustment */
 
-.full-width .markdown-source-view .is-readable-line-width .CodeMirror{
-  Width:100% !important;
-}
-
 .markdown-source-view.is-readable-line-width .CodeMirror, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
   max-width:var(--max-width);
-  width:var(--line-width) !important;
+  width:var(--line-width);
 }
 
-.full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-view.is-readable-line-width .markdown-preview-sizer{
+.full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-sizer{
   width:100% !important;
+  //min-width: 100% !important;
 }
 
 
@@ -1854,11 +1851,45 @@ input.prompt-input, input.prompt-input:hover {
   cursor:zoom-in;
 }
 
-.view-content img{
-  border-radius:var(--img-border-radius);
+.img-border-radius .markdown-preview-section img{
+  border-radius: 15px;
 }
 
-.img-border-shadow .view-content img {
+.img-rounded.img-rounded-small  .markdown-preview-section img {
+  border-radius: 100% ;
+  width: 150px;
+  height: 150px;
+  position:relative;
+  display: block; 
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.img-rounded.img-rounded-medium .markdown-preview-section img {
+  border-radius: 100%;
+  width: 350px;
+  height: 350px;
+  position:relative;
+  display: block; 
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-rounded.img-rounded-big .markdown-preview-section img {
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+  position:relative;
+  display: block; 
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-border-shadow .markdown-preview-section img {
   //box-shadow: 0px 2px 10px -3px #222;
   box-shadow: 0px 2px 10px -4px #333;
 }
@@ -1889,11 +1920,11 @@ img:after{
   cursor:zoom-out;
   display:block;
   z-index:100;
-  position:fixed;
+  position:fixed !important;
   max-height:calc(100% + 1px);
   max-width:calc(100% - 20px);
-  height:calc(100% + 1px);
-  width:100%;
+  height:calc(100% + 1px) !important;
+  width:100% !important;
   object-fit:contain;
   margin:-0.5px auto 0;
   text-align:center;
@@ -1902,6 +1933,7 @@ img:after{
   padding:0;
   left:0;
   right:0;
+  border-radius: 0px !important;
   bottom:0;
   background:var(--background-translucent);
 }
@@ -2604,7 +2636,13 @@ button.kanban-plugin__new-item-button:hover {
 
 /* ------------------------------- */
 /* Dataview plugin */
+.dataview.table-view-table .dataview-result-list-li{
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
 
+.dataview.table-view-table .dataview-result-list-li:before{
+  display: none !important;
+}
 .table-view-table > thead > tr > th {
   Border-bottom:none !important;
   Font-size:var(--font-normal) !important;
@@ -2626,10 +2664,13 @@ button.kanban-plugin__new-item-button:hover {
   border-top: 2px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.05);
 }
 
-.dataview-articles-style .dataview.table-view-table tbody td:nth-child(3){
-  width:35% !important;
+.dataview-articles-style.article-style-1 .dataview.table-view-table tbody td:nth-child(3){
+  width:250px !important;
 }
 
+.dataview-articles-style.article-style-2 .dataview.table-view-table tbody td:nth-child(1){
+  width:250px !important;
+}
 
 .dataview-articles-style .dataview.table-view-table tbody td:nth-child(2){
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
@@ -3030,7 +3071,7 @@ button:hover{
 
 
 /* Menu */
-.menu-page,.menu-page-v2{
+.menu-page-v1,.menu-page-v2{
   padding: 15px 10px 15px 15px;
   margin-top: 20px;
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
@@ -3041,9 +3082,10 @@ button:hover{
   font-family: var(--text-title);
 }
 
-.menu-page {
+.menu-page-v1 {
   background-color: var(--background-secondary-alt);
   text-align: center;
+  //border-radius: 10px;
 }
 
 .menu-page-v2 {
@@ -3051,7 +3093,7 @@ button:hover{
  text-align: center;
 }
 
-.menu-page:before,.menu-page-v2:before{
+.menu-page-v1:before,.menu-page-v2:before{
   Content:"MENU";/*Content:"\2302" \2630 */
   Font-size:1em;
   font-weight: 700;
@@ -3061,7 +3103,7 @@ button:hover{
   background-size: contain;
 }
 
-.menu-page a,.menu-page-v2 a{
+.menu-page-v1 a,.menu-page-v2 a{
   color: var(--text-normal);
   font-weight: 500;
   text-transform : uppercase ;
@@ -3079,7 +3121,7 @@ button:hover{
   content: "";
 }*/
 
-.menu-page a:hover{
+.menu-page-v1 a:hover{
   //color: var(--text-accent);
   cursor: pointer;
   border-bottom: 3px solid var(--text-accent);
@@ -3281,13 +3323,28 @@ settings:
     - 
         id: img-border-radius
         title:  Border radius for images
-        type: variable-number-slider
-        default: 5
-        min: 0
-        max: 100
-        step: 1
-        format: '%'
+        type: class-toggle
     - 
+        id: img-rounded
+        title:  To make rounded images
+        type: class-toggle
+    - 
+        id: img-round
+        title: Choose the size of image rounded
+        description: Choose diffent styles for the left and right sidebars
+        type: class-select
+        default: img-rounded-medium
+        options:
+            - 
+                label: Small
+                value: img-rounded-small
+            - 
+                label: Medium
+                value: img-rounded-medium
+            - 
+                label: Big
+                value: img-rounded-big
+    -
         id: img-border-shadow
         title:  Shadow for images
         type: class-toggle
