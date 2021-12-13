@@ -2909,9 +2909,11 @@ button:hover{
 
   .grid-cards{
     //width: calc(var(--line-width) - var(--p-offset));
-    width: 100%;
+    width: 100% !important;
     position: relative;
-    display: inline-block;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
     max-width: var(--line-width);
   }
 
@@ -2953,7 +2955,7 @@ button:hover{
   }
 
   .cards-3 img{
-    width: 100%;
+   width: 100%;
     height: 10rem;
     position: relative;
     object-fit: cover;
@@ -3330,7 +3332,7 @@ settings:
         type: class-toggle
     - 
         id: img-round
-        title: Choose the size of image rounded
+        title: Choose the size of rounded image
         description: Choose diffent styles for the left and right sidebars
         type: class-select
         default: img-rounded-medium
