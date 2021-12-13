@@ -4,7 +4,7 @@ Harmonic is a minimal and highly customizable theme. You can easily change the e
 If you like using the theme, support my work and    
 <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
 
-To have more information aboutthe theme and custom css / html : [Go there](https://github.com/Thiews/Obsidian-Harmonic/blob/main/Custom%20css%20and%20html%20elements.md)
+To have more information about the theme and custom css / html : [Go there](https://github.com/Thiews/Obsidian-Harmonic/blob/main/Custom%20css%20and%20html%20elements.md)
 
 Install style **settings plugin** to
 
