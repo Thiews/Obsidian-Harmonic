@@ -1749,10 +1749,9 @@ Zoom:0.8;
 }
 
 .cm-s-obsidian span.cm-hashtag {
-  background-color:var(--background-tertiary);
   border:none;
-  color:var(--text-muted);
-  //font-size:var(--font-small);
+  color:var(--text-accent);
+  font-weight: 700;
   font-size: calc(var(--font-small) * var(--font-normal));
   text-align:center;
   text-decoration:none;
@@ -1763,6 +1762,15 @@ Zoom:0.8;
   padding-bottom:3px;
   cursor:text;
 }
+
+.theme-light .cm-s-obsidian span.cm-hashtag{
+  background: hsla(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l)),0.1);
+}
+
+.theme-dark .cm-s-obsidian span.cm-hashtag{
+  background: rgba(0,0,0,0.3);
+}
+
 .cm-hashtag-begin {
   border-top-left-radius:14px;
   border-bottom-left-radius:14px;
