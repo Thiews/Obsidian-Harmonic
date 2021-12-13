@@ -277,6 +277,10 @@ background: var(--background-secondary-alt);}
   fill: var(--text-accent) !important;
 }
 
+.nav-action-button:hover{
+  filter: brightness(1.1);
+}
+
 .nav-action-button.is-active .widget-icon {
   fill: #FFF !important;
 }
@@ -317,6 +321,10 @@ background: var(--background-secondary-alt);}
 .nav-action-button svg{
   Width:0.8em;
   Color:var(--text-accent);
+}
+
+.workspace-tab-header-inner-icon:hover{
+  filter: brightness(1.2) !important;
 }
 
 .nav-action-button,
@@ -1894,7 +1902,7 @@ Background:var(--background-secondary-alt) !important;
 }
 
 .modal .vertical-tab-nav-item.is-active {
-  border-right: 5px solid var(--text-accent) !important;
+  border-right: 4px solid var(--text-accent) !important;
   border-left: none !important;
   color: var(--text-accent);
   font-weight: 700;
