@@ -1,5 +1,6 @@
 /* HARMONIC THEME by Mathieu DUBOIS */
 
+
 /* Fonts from Google*/
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
@@ -92,7 +93,7 @@
   --text-normal:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 70%));
   --text-muted:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 45%));
   --text-faint:hsl(var(--base-h),var(--base-s),calc(var(--base-d) + 30%));
-  --text-selection:rgba(50, 50, 50, 1);
+  --text-selection:hsla(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-d)),0.3);
 
   --background-transparent:hsla(var(--base-h),var(--base-s),var(--base-d),0);
   --background-translucent:hsla(var(--base-h),var(--base-s),var(--base-d),0.85);
@@ -118,6 +119,7 @@
   --text-normal:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 80%));
   --text-muted:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 45%));
   --text-faint:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 30%));
+  --text-selection:hsla(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l)),0.09);
 
   --background-transparent:hsla(var(--base-h),var(--base-s),var(--base-l),0);
   --background-translucent:hsla(var(--base-h),var(--base-s),var(--base-l),0.85);
@@ -130,7 +132,6 @@
 
   --quote-opening-modifier:hsl(var(--base-h),var(--base-s),calc(var(--base-l) - 15%));
   --interactive-accent-rgb:220, 220, 220;
-  --text-selection:rgba(237, 237, 237, 1);
 
 }
 
