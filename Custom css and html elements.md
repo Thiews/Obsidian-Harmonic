@@ -12,6 +12,12 @@ How : in the top of the page, in the yaml section (between two ---), put
 - cssclass: blockquote-text-center, to center the text in the blockquote
 
 ## Html and theme custom css
+- you can display <aside>
+```
+<aside><p>YOUR TEXT</p></aside>
+```
+<img width="759" alt="Capture d’écran 2021-12-13 à 18 13 29" src="https://user-images.githubusercontent.com/29182877/145857817-bf71530b-e620-4f3d-899f-63a3f0068952.png">
+	
 - you can display text in columns (.columns-2 or .columns-3) :
 ```
 <div class=".columns-2">
