@@ -480,6 +480,7 @@ display:none !important;
   background: var(--background-primary);
 }
 
+
 .theme-dark.menu-v1 .nav-file-title-content {
   box-shadow: none !important;
   background: rgba(0,0,0,0.2);
@@ -1452,6 +1453,7 @@ aside > p {
     border-left: 3px solid var(--text-accent) !important;
 
 }
+
 
 
 /* Checkboxes */
@@ -2687,6 +2689,7 @@ button.kanban-plugin__new-item-button:hover {
 /* ----------------------- */
 /* Tablet styling */
 
+
 @media (min-width:400pt) {
 
   .mobile-toolbar-option {
@@ -2817,6 +2820,12 @@ button.kanban-plugin__new-item-button:hover {
 
 /* ----------------------- */
 /* phone */
+
+@media (max-width:500pt){
+ .markdown-preview-view {
+ --p-offset:0px !important;
+}
+  }
 
 /* Show edit button */
 @media (max-width:400pt) {
@@ -3054,8 +3063,9 @@ button:hover{
     position: relative;
     display: block;
   }
- --p-offset:0px !important;
-  }
+}
+
+
 
 
 
