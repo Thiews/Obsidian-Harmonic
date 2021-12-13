@@ -18,6 +18,7 @@ How : in the top of the page, in the yaml section (between two ---), put
 YOUR TEXT
 </div>
 ```
+<img width="903" alt="Capture d’écran 2021-12-13 à 17 53 16" src="https://user-images.githubusercontent.com/29182877/145854571-01515d3c-dfbd-464a-88fe-160d701e252c.png">
 
 - you can add cards displayed in grid (.cards-2 -> 2 cards / row, .cards-3 -> 3 cards / row):
 ```
@@ -34,6 +35,7 @@ YOUR TEXT
 	</div>
 </div>
 ```
+<img width="1088" alt="Capture d’écran 2021-12-13 à 17 56 32" src="https://user-images.githubusercontent.com/29182877/145855187-ac9c2020-0c1e-417d-9b3b-1bcd64456485.png">
 
 - you can add buttons
 ```
@@ -53,6 +55,7 @@ YOUR TEXT
 	<a href="OBSIDIAN URL OF THE PAGE 3">PAGE 3</a>
 </div>
 ```
+<img width="1440" alt="Capture d’écran 2021-12-13 à 17 51 47" src="https://user-images.githubusercontent.com/29182877/145854325-ab8a1847-3a0f-4365-be79-7205182f6905.png">
 
 ## Dataview and custom css
 You can display an article view (like in blogs) with :
@@ -63,4 +66,5 @@ table without id ("<img src=" + cover + ">") as cover,file.ctime,file.name
 from WHAT YOU WANT TO SHOW 
 sort file.ctime desc 
 ```
+<img width="1294" alt="Capture d’écran 2021-12-13 à 17 50 27" src="https://user-images.githubusercontent.com/29182877/145854093-74ea892c-1298-4bb7-9c7f-b1981662a89a.png">
 
