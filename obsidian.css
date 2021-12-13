@@ -1370,28 +1370,28 @@ Opacity:1 !important;
   position: relative;
 }
 
-.blockquote-background .markdown-preview-view blockquote {
+.blockquote-background  blockquote {
   border-left:3px solid var(--text-accent);
   Padding:20px 20px 20px 60px;
 }
 
-.blockquote-background.theme-light .markdown-preview-view blockquote {
+.blockquote-background.theme-light  blockquote {
   background: var(--background-secondary-alt) !important;
 }
 
-.invert-background-color.blockquote-background .markdown-preview-view blockquote {
+.invert-background-color.blockquote-background  blockquote {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
 }
 
-.blockquote-background.theme-dark .markdown-preview-view blockquote {
+.blockquote-background.theme-dark blockquote {
   background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1)
 }
 
-.blockquote-serif .markdown-preview-view blockquote {
+.blockquote-serif blockquote {
   font-family: lora;
 }
 
-.blockquote-bracket .markdown-preview-view blockquote:after{
+.blockquote-bracket blockquote:after{
   content: "“" !important;
   font-family: lora !important;
   position: absolute !important;
@@ -1402,11 +1402,11 @@ Opacity:1 !important;
   margin-top: -40px;
 }
 
-.blockquote-bracket .markdown-preview-view blockquote {
+.blockquote-bracket  blockquote {
   margin-left: 6.5rem;
 }
 
-.blockquote-text-center .markdown-preview-view blockquote {
+.blockquote-text-center  blockquote {
   text-align: center;
   padding-right: 4rem;
   padding-left: 4rem;
@@ -2664,11 +2664,8 @@ button.kanban-plugin__new-item-button:hover {
   border-top: 2px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.05);
 }
 
-.dataview-articles-style.article-style-1 .dataview.table-view-table tbody td:nth-child(3){
-  width:250px !important;
-}
 
-.dataview-articles-style.article-style-2 .dataview.table-view-table tbody td:nth-child(1){
+.dataview-articles-style .dataview.table-view-table tbody td:nth-child(1){
   width:250px !important;
 }
 
@@ -2897,6 +2894,7 @@ button span{
 
 button a{
   color: #FFF !important;
+  text-decoration: none;
 }
 
 button:hover{
@@ -2915,7 +2913,7 @@ button:hover{
   }
 
   .grid-cards p{
-    text-align: center;
+    //text-align: center;
   }
 
   .cards-2 {
@@ -2940,6 +2938,10 @@ button:hover{
     cursor: pointer !important;
   }
 
+  .full-width .cards-2 img{
+    height: 24rem;
+  }
+
   .cards-2 p{
     margin-left: 0px !important;
   }
@@ -2961,6 +2963,12 @@ button:hover{
     object-fit: cover;
     cursor: pointer !important;
   }
+
+
+  .full-width .cards-3 img{
+    height: 17rem;
+  }
+
   /*.cards-3 img:hover{
     -webkit-transform:scale(1.25); 
     -moz-transform:scale(1.25); 
@@ -3099,6 +3107,8 @@ button:hover{
   Content:"MENU";/*Content:"\2302" \2630 */
   Font-size:1em;
   font-weight: 700;
+  //display: flex;
+  position: relative;
   Color:var(--text-accent) !important;
   Margin-right:3rem;
   background-repeat: no-repeat;
