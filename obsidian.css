@@ -1889,7 +1889,7 @@ input.prompt-input, input.prompt-input:hover {
   margin-right: auto;
 }
 
-.img-border-shadow .markdown-preview-section img {
+.img-box-shadow .markdown-preview-section img {
   //box-shadow: 0px 2px 10px -3px #222;
   box-shadow: 0px 2px 10px -4px #333;
 }
@@ -2911,10 +2911,11 @@ button:hover{
     //width: calc(var(--line-width) - var(--p-offset));
     width: 100% !important;
     position: relative;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    max-width: var(--line-width);
+    display: inline-block;
+  }
+
+  .grid-cards p{
+    text-align: center;
   }
 
   .cards-2 {
@@ -2925,9 +2926,8 @@ button:hover{
   }
   .cards-3 {
     float: left;
-    width: calc(33.33% - var(--p-offset));
+    width: calc(33.33% - var(--p-offset)) !important;
     padding: 3rem 1rem 1rem 1rem;
-    position: relative;
     margin: 0;
   }
 }
@@ -3347,7 +3347,7 @@ settings:
                 label: Big
                 value: img-rounded-big
     -
-        id: img-border-shadow
+        id: img-box-shadow
         title:  Shadow for images
         type: class-toggle
     - 
