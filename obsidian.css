@@ -2960,6 +2960,7 @@ button.kanban-plugin__new-item-button:hover {
   .CodeMirror .CodeMirror-line, .CodeMirror .CodeMirror-line-like {
     z-index: 0;
   }
+}
 
 @media (max-width: 400pt){
   .view-action:nth-last-of-type(4),.view-action:nth-last-of-type(5),
