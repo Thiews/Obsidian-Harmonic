@@ -46,7 +46,7 @@ Install style **settings plugin** to
 <img width="1440" alt="Capture d’écran 2021-12-05 à 21 01 48" src="https://user-images.githubusercontent.com/29182877/144761982-d015958e-baf2-4579-9873-3a5d78b7316a.png">
 
 ## Font
-- Choose different font for titles, text preview and edit mode
+- Choose different font for titles, text preview, edit mode and phone
 <img width="1440" alt="Harmonic-dark" src="https://user-images.githubusercontent.com/29182877/144762127-1a94b1f2-a362-4773-bda1-d37cfc3482c1.png">
 <img width="1440" alt="Capture d’écran 2021-12-05 à 21 09 34" src="https://user-images.githubusercontent.com/29182877/144762227-774a7c7b-4c87-41fd-b627-60e1d4a29e87.png">
 
@@ -58,9 +58,13 @@ Install style **settings plugin** to
 <img width="1440" alt="Capture d’écran 2021-12-05 à 21 17 49" src="https://user-images.githubusercontent.com/29182877/144762461-cda33fe6-7f85-457b-9b35-c5e8f3d4effb.png">
 
 
+## Designed for phones
+- you can choose a specific font size for phone
+- texts (preview and edit mode) are displayed smaller
+- an edit button is displayed automaticaly
 
-and other things...
-<img width="1440" alt="Capture d’écran 2021-12-06 à 02 08 54" src="https://user-images.githubusercontent.com/29182877/144772150-312b8261-6175-45b3-8f54-2456675b238f.png">
+<img width="300" src="https://user-images.githubusercontent.com/29182877/146077863-930ad281-eea3-4570-a46a-88060faf8601.png">
+
 
 ## Custom html elements
 - columns (.columns-2, columns-3) avec html :
