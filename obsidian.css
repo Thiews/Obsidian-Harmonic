@@ -2478,20 +2478,15 @@ input[type=range]::-webkit-slider-thumb:active {
 .edit-button .view-action:nth-last-of-type(6) {
   top: calc(90vh - 10px);
   Margin-right:1rem;
-}
-
-.edit-button .view-action:nth-last-of-type(5),.edit-button .view-action:nth-last-of-type(4),.edit-button .view-action:nth-last-of-type(6){
   Position:absolute; !important;
   Background:var(--text-accent);
   Width:3rem;
   Height:3rem;
   Border-radius:100%;
   Padding:0.9rem 0.9rem;
-}
-
-.edit-button .view-action:nth-last-of-type(4),.edit-button .view-action:nth-last-of-type(5),.edit-button .view-action:nth-last-of-type(6) {
   Opacity:1 !important;
 }
+
 
 .edit-button .view-action:nth-last-of-type(4) svg,.edit-button .view-action:nth-last-of-type(5) svg,.edit-button .view-action:nth-last-of-type(6) svg{
   Color:#FFF !important;
@@ -2500,10 +2495,33 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 
-.edit-button.is-mobile .view-action:nth-last-of-type(4) svg, .edit-button.is-mobile .view-action:nth-last-of-type(5) svg, .edit-button.is-mobile .view-action:nth-last-of-type(6) svg{
+/*.edit-button.is-mobile .view-action:nth-last-of-type(4) svg, .edit-button.is-mobile .view-action:nth-last-of-type(5) svg, .edit-button.is-mobile .view-action:nth-last-of-type(6) svg{
   margin-left:0.1rem;
   Margin-top:-0.1rem;
   Width:1rem;
+}*/
+
+
+@media (max-width: 400pt){
+  .view-action:nth-last-of-type(4),.view-action:nth-last-of-type(5),
+.view-action:nth-last-of-type(6) {
+  top: calc(95vh - 20px);
+  Margin-right:0.2rem;
+  Position:absolute; !important;
+  Background:var(--text-accent);
+  Width:3rem;
+  Height:3rem;
+  Border-radius:100%;
+  Padding:0.9rem 0.9rem;
+  Opacity:1 !important;
+}
+
+
+.view-action:nth-last-of-type(4) svg,.view-action:nth-last-of-type(5) svg,.view-action:nth-last-of-type(6) svg{
+  Color:#FFF !important;
+  //Width:1.3rem;
+  margin-bottom: 0.1rem !important;
+}
 }
 
 /* with Sliding pane plugin */
@@ -2916,6 +2934,15 @@ button.kanban-plugin__new-item-button:hover {
  --p-offset:0px !important;
 }
   }
+
+  @media (max-width: 400pt) {
+    .markdown-source-view.is-readable-line-width,.markdown-source-view.is-readable-line-width .CodeMirror, .markdown-preview-view{
+  width:100% !important;
+  padding: 0px 0px;
+  margin: 0px 0px;
+
+}
+}
 
 /* Show edit button */
 @media (max-width:400pt) {
