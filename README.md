@@ -6,6 +6,16 @@ If you like using the theme, support my work and
 
 To have more information about the theme and custom css / html : [Go there](https://github.com/Thiews/Obsidian-Harmonic/blob/main/Custom%20css%20and%20html%20elements.md)
 
+---
+CSS Plugin adjustments:
+- kanban
+- Calendar
+- Sliding panes
+- Checklist
+- File explorer note count
+
+---
+
 Install style **settings plugin** to
 
 ## Choose a logo or a title, an accent color, 2 different styles for menus (left sidebar and right sidebar)
