@@ -418,6 +418,22 @@ display:none !important;
   filter: brightness(1);  
 }
 
+.nav-folder-title[data-count]{
+//display: flex;
+
+}
+.nav-folder-title[data-count]::after{
+  background: hsla(var(--accent-h),var(--accent-s), calc(var(--accent-l)),0.1);
+  border-radius: 100%;
+  padding-top: 5px !important;
+ width: 30px;
+ font-weight: 700;
+ color: var(--text-accent);
+  text-align: center;
+  //left: 5px;
+  height: 24px;
+}
+
 .nav-folder {
   white-space: initial;
     margin: 10px 5px 20px 5px !important;
