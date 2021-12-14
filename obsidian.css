@@ -2969,7 +2969,7 @@ button.kanban-plugin__new-item-button:hover {
 @media (max-width: 400pt){
   .view-action:nth-last-of-type(4),.view-action:nth-last-of-type(5),
 .view-action:nth-last-of-type(6) {
-  top: calc(95vh - 150px);
+  top: calc(95vh - 100px);
   Margin-right:0rem;
   Position:absolute !important;
   Background:var(--text-accent);
