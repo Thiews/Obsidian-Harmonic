@@ -2502,28 +2502,6 @@ input[type=range]::-webkit-slider-thumb:active {
 }*/
 
 
-@media (max-width: 400pt){
-  .view-action:nth-last-of-type(4),.view-action:nth-last-of-type(5),
-.view-action:nth-last-of-type(6) {
-  top: calc(95vh - 20px);
-  Margin-right:0.2rem;
-  Position:absolute; !important;
-  Background:var(--text-accent);
-  Width:3rem;
-  Height:3rem;
-  Border-radius:100%;
-  Padding:0.9rem 0.9rem;
-  Opacity:1 !important;
-}
-
-
-.view-action:nth-last-of-type(4) svg,.view-action:nth-last-of-type(5) svg,.view-action:nth-last-of-type(6) svg{
-  Color:#FFF !important;
-  //Width:1.3rem;
-  margin-bottom: 0.1rem !important;
-}
-}
-
 /* with Sliding pane plugin */
 
 .edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) {
@@ -2945,38 +2923,27 @@ button.kanban-plugin__new-item-button:hover {
 }
 
 /* Show edit button */
-@media (max-width:400pt) {
-    .is-mobile .view-action:nth-last-of-type(4),.is-mobile .view-action:nth-last-of-type(5),
-  .is-mobile .view-action:nth-last-of-type(6) {
-    top: calc(90vh - 10px);
-    Margin-right:1rem;
-  }
-
-  .is-mobile .view-action:nth-last-of-type(5),.is-mobile .view-action:nth-last-of-type(4),.is-mobile .view-action:nth-last-of-type(6){
-    Position:absolute; !important;
-    Background:var(--text-accent);
-    Width:3rem;
-    Height:3rem;
-    Border-radius:100%;
-    Padding:0.9rem 0.9rem;
-  }
-
-  .is-mobile .view-action:nth-last-of-type(4),.is-mobile .view-action:nth-last-of-type(5),.is-mobile .view-action:nth-last-of-type(6) {
-    Opacity:1 !important;
-  }
-
-  .is-mobile .view-action:nth-last-of-type(4) svg,.is-mobile .view-action:nth-last-of-type(5) svg,.is-mobile .view-action:nth-last-of-type(6) svg{
-    Color:#FFF !important;
-    Width:1.3rem;
-    margin-bottom: 0.1rem !important;
-  }
+@media (max-width: 400pt){
+  .view-action:nth-last-of-type(4),.view-action:nth-last-of-type(5),
+.view-action:nth-last-of-type(6) {
+  top: calc(95vh - 20px);
+  Margin-right:0.2rem;
+  Position:absolute; !important;
+  Background:var(--text-accent);
+  Width:3rem;
+  Height:3rem;
+  z-index: 1;
+  Border-radius:100%;
+  Padding:0.9rem 0.9rem;
+  Opacity:1 !important;
+}
 
 
-  .is-mobile .view-action:nth-last-of-type(4) svg, .is-mobile .view-action:nth-last-of-type(5) svg, .is-mobile .view-action:nth-last-of-type(6) svg{
-    margin-left:0.1rem;
-    Margin-top:-0.1rem;
-    Width:1rem;
-  }
+.view-action:nth-last-of-type(4) svg,.view-action:nth-last-of-type(5) svg,.view-action:nth-last-of-type(6) svg{
+  Color:#FFF !important;
+  //Width:1.3rem;
+  margin-bottom: 0.1rem !important;
+}
 }
 
 /* ------------------------- */
