@@ -6,6 +6,7 @@ How : in the top of the page, in the yaml section (between two ---), put
 - cssclass: img-border-radius, to add border radius to your images in the page
 - cssclass: img-box-shadow, to add box shadow to your page images
 - cssclass: img-rounded, img-rounded-small (or img-rounded-medium or img-rounded-big), to make your images rounded in the page
+- cssclass: img-bw, to display black and white images in the page
 - cssclass: blockquote-background, theme-light, to add a background for blockquotes in light theme page (theme-dark when in dark theme)
 - cssclass: blockquote-serif, to choose the serif font for the blockquote
 - cssclass: blockquote-bracket, to add a quotation mark for blockquote in the page
