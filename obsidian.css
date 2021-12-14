@@ -2968,12 +2968,12 @@ button.kanban-plugin__new-item-button:hover {
 @media (max-width: 400pt){
   .view-action:nth-last-of-type(4),.view-action:nth-last-of-type(5),
 .view-action:nth-last-of-type(6) {
-  top: calc(95vh - 80px);
+  top: calc(95vh - 60px);
   Margin-right:0rem;
   Position:absolute !important;
   Background:var(--text-accent);
-  Width:6rem;
-  Height:6rem;
+  Width:5rem;
+  Height:5rem;
   z-index: 100 !important;
   Border-radius:100%;
   Padding:0.9rem 0.9rem;
@@ -2985,8 +2985,8 @@ button.kanban-plugin__new-item-button:hover {
   Color:#FFF !important;
   Width:2rem !important;
   height: 2rem !important;
-  margin-top: 1rem !important;
-  margin-left: 1rem;
+  margin-top: 0.5rem !important;
+  margin-left: 0.6rem;
   position: relative;
 }
 }
