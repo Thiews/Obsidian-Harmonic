@@ -31,7 +31,7 @@
 --font-small:0.85; /* Coeff multuplicateur */ 
 --font-smaller: 0.94; /* Coeff multuplicateur */
 --font-normal:17px;
---font-phone: 15px;
+--font-phone: 17px;
 --text:mulish,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 --text-editor:mulish,apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 --font-monospace:Menlo,SFMono-Regular,Consolas,"Roboto Mono",monospace;
@@ -2969,7 +2969,7 @@ button.kanban-plugin__new-item-button:hover {
 @media (max-width: 400pt){
   .view-action:nth-last-of-type(4),.view-action:nth-last-of-type(5),
 .view-action:nth-last-of-type(6) {
-  top: calc(95vh - 100px);
+  top: calc(95vh - 150px);
   Margin-right:0rem;
   Position:absolute !important;
   Background:var(--text-accent);
@@ -3606,7 +3606,7 @@ settings:
         title: Body font size for phone
         description: Font size in px of paragraphs for phones
         type: variable-number
-        default: 15
+        default: 17
         format: px
     - 
         id: normal-weight
