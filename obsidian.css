@@ -2952,6 +2952,10 @@ button.kanban-plugin__new-item-button:hover {
 .markdown-preview-view h6, .cm-s-obsidian .cm-header-6{
   font-size: 1em;
  }
+ .markdown-preview-sizer, .CodeMirror-sizer {
+  
+  width: 100% !important;
+ }
 }
 
 /* Show edit button */
