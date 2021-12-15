@@ -3,6 +3,7 @@
 You can add the following specific options to a page.  
 How : in the top of the page, in the yaml section (between two ---), put
 - cssclass: fullwidth, to make the page fullwidth
+- cssclass:first-letter-capitalize, to capitalize the first letter of a paragraph
 - cssclass: img-border-radius, to add border radius to your images in the page
 - cssclass: img-box-shadow, to add box shadow to your page images
 - cssclass: img-rounded, img-rounded-small (or img-rounded-medium or img-rounded-big), to make your images rounded in the page
