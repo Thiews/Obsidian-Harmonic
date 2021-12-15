@@ -3305,6 +3305,54 @@ img[alt*='img-bw']{
 
 /* Image grid */
 
+
+/*.img-grid{
+  //margin: 5px;
+  //float:left !important;
+  display: grid;
+  place-items: center;
+  position: relative;
+  //width: var(--line-width);
+  //max-width: var(--line-width);
+  margin-right: auto !important;
+  justify-items: stretch;
+  align-items: stretch;
+  margin-left: auto !important;
+}*/
+
+/* Grid */
+
+.img-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: masonry;
+  align-items: stretch;
+  justify-content: space-between;  
+  align-content: space-between;  
+}
+
+.img-grid img {
+  margin-bottom: 1rem;
+  height: auto;
+  object-fit: cover;
+  padding-right: 0.5rem;
+padding-left: 0.5rem;
+}
+
+/* Masonry */
+
+.img-masonry { /* Masonry container */
+  column-count: 4;
+  column-gap: 0.6em;
+  margin-left: var(--p-offset);
+}
+
+.img--masonry img{ /* Masonry bricks or child elements */
+  display: inline-block;
+}
+
+/* Gallery via tables */
+
 .img-grid table {
   border: none;
   background: none;
