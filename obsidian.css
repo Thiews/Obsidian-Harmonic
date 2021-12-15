@@ -1819,7 +1819,10 @@ Zoom:0.8;
 
 /* --------------- */
 /* Modals */
-
+.modal.mod-settings{
+  width: 70vw;
+}
+}
 .modal.mod-settings .vertical-tab-header {
   Background:transparent !important;
 }
@@ -1897,7 +1900,6 @@ border-radius: 17px;
 .modal .vertical-tab-header{
   padding: 0px 0px !important;
   flex: 0 0 300px !important;
-  width: 500px !important
 
 }
 
@@ -2930,26 +2932,32 @@ button.kanban-plugin__new-item-button:hover {
  .empty-state-title,
 .markdown-preview-view h1, .cm-s-obsidian .cm-header-1{
   font-size: 1.5em;
+  padding-top: 15px;
   }
   .empty-state-title,
 .markdown-preview-view h2, .cm-s-obsidian .cm-header-2{
   font-size: 1.3em;
+  padding-top: 8px;
   }
   .empty-state-title,
 .markdown-preview-view h3, .cm-s-obsidian .cm-header-3{
   font-size: 1.1em;
+  padding-top: 5px;
   }
   .empty-state-title,
 .markdown-preview-view h4, .cm-s-obsidian .cm-header-4{
   font-size: 1em;
+  padding-top: 3px;
  }
  .empty-state-title,
 .markdown-preview-view h5, .cm-s-obsidian .cm-header-5{
   font-size: 1em;
+  padding-top: 3px;
  }
  .empty-state-title,
 .markdown-preview-view h6, .cm-s-obsidian .cm-header-6{
   font-size: 1em;
+  padding-top: 3px;
  }
  .markdown-preview-sizer, .CodeMirror-sizer {
   
