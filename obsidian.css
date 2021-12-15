@@ -1469,14 +1469,8 @@ aside {
     margin-right: 2rem;
     float: right;
     font-style: italic;
-}
-
-aside > p {
-    margin: 0px 0px 0px calc(var(--p-offset) * -1) !important;
-    font-size: calc(var(--font-small) * var(--font-normal)) !important;
-    padding-left: 1rem !important;
     border-left: 3px solid var(--text-accent) !important;
-
+    font-size: calc(var(--font-small) * var(--font-normal)) !important;
 }
 
 
@@ -1566,8 +1560,6 @@ border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
   Background:hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
 }
 
-
-
 .invert-background-color .markdown-preview-view th {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
   border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
@@ -1604,6 +1596,14 @@ border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
   Background:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.1) !important; 
 }*/
 
+/* Capitalize first letter of a paragraph */
+
+.first-letter-capitalize p:not(.frontmatter-section-label):first-letter,.first-letter-capitalize span:not(.frontmatter-section-label):first-letter{
+  text-transform: uppercase;
+  font-size: 2rem !important;
+  padding-right: 2px;
+  font-weight: bold !important;
+}
 
 
 
@@ -3254,7 +3254,7 @@ img[alt~='img-profile'] {
 }
 
 img[alt~='img-portrait'] {
-  width: 281px;
+  width: 280px;
   height: 500px;
   object-fit: cover;
   float: left;
@@ -3559,6 +3559,16 @@ settings:
         max: 330
         step: 30
         format: deg
+    - 
+        id: Text-section
+        title: Customize text style
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: first-letter-capitalize
+        title:  Capitalize first letter of a praragraph
+        type: class-toggle
     - 
         id: image-section
         title: Customize images
