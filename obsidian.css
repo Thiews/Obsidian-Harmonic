@@ -2067,6 +2067,10 @@ img:after{
   display: none;
 }
 
+.outline .tree-item-inner:hover{
+  background: none !important;
+}
+
 .outline .pane-empty {
   //font-size:var(--font-small);
   //font-size: calc(var(--font-small) * var(--font-normal));
@@ -2085,6 +2089,12 @@ img:after{
 
 .outline .collapsible-item-self:hover {
   opacity:0.7;
+}
+
+.outline .tree-item-self:hover{
+  background: none;
+  color: var(--text-accent) !important;
+  transition: 0.2s;
 }
 
 .collapsible-item-collapse {
@@ -2150,6 +2160,12 @@ Padding-top:0px !important;
 .tag-container{
   Padding:10px 40px !important;
   Font-size:1em !important;
+}
+
+.tag-container .tree-item-self:hover{
+  background: none !important;
+  color: var(--text-accent) !important;
+  transition: 0.2s;
 }
 
 .tag-pane-tag-text:before{
