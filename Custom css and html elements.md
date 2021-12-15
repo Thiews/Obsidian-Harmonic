@@ -13,6 +13,7 @@ How : in the top of the page, in the yaml section (between two ---), put
 - cssclass: blockquote-serif, to choose the serif font for the blockquote
 - cssclass: blockquote-bracket, to add a quotation mark for blockquote in the page
 - cssclass: blockquote-text-center, to center the text in the blockquote
+- cssclass: img-grid, to display grid image galery with table
 
 You can display each image in a different way with this synthax:
 
