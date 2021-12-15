@@ -409,7 +409,7 @@ display:none !important;
 }
 
 .nav-folder-title .nav-folder-title-content:hover{
-  filter:brightness(1.2);
+  filter:brightness(1.2) !important;
 }
 
 .theme-light .nav-folder-title .nav-folder-title-content {
