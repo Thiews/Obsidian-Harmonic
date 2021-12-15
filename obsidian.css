@@ -3229,7 +3229,7 @@ img[alt~='img-float-right'] {
   float: right;
   object-fit: cover;
   margin-left: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 img[alt~='img-float-left'] {
@@ -3238,7 +3238,7 @@ img[alt~='img-float-left'] {
   float: left;
   object-fit: cover;
   margin-right: 1rem;
-  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 img[alt~='img-banner'] {
