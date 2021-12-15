@@ -1325,15 +1325,25 @@ Opacity:1 !important;
 /* Links */
 
 .external-link {
-  text-decoration:none;
-  color:var(--text-faint);
+  text-decoration:none;  
   border-bottom:1px solid #222;
   Background-image:none !important;
   Padding-right:0px !important;
 }
 
+.theme-dark .external-link{
+  color: rgba(255,255,255,0.2);
+}
+
+.theme-light .external-link{
+  color: rgba(0,0,0,0.2);
+}
+
 .external-link {
   border-bottom:none !important;
+}
+.external-link:hover{
+  color: var(--text-accent);
 }
 
 .internal-link {
