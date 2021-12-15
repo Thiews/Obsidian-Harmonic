@@ -2459,6 +2459,7 @@ input[type=range]::-webkit-slider-thumb:active {
 
 .writing-focus .CodeMirror-code .CodeMirror-activeline pre span{
   color: var(--font-normal) !important;
+  opacity: 1;
 }
 
 .writing-focus .CodeMirror-code .CodeMirror-activeline pre .cm-hmd-internal-link {
@@ -2466,6 +2467,7 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 .writing-focus .CodeMirror-code:not(.CodeMirror-activeline) span{
   color: var(--text-faint) !important;
+  opacity: 0.6;
 }
 
 .writing-focus.bold-italic-accent .CodeMirror-code .CodeMirror-activeline .cm-strong,.writing-focus.bold-italic-accent .CodeMirror-code .CodeMirror-activeline .cm-em {
@@ -3341,15 +3343,25 @@ padding-left: 0.5rem;
 
 /* Masonry */
 
-.img-masonry { /* Masonry container */
+.img-masonry-3 { /* Masonry container */
+  column-count: 3;
+  column-gap: 0.6em;
+  margin-left: var(--p-offset);
+}
+
+
+.img-masonry-4 { /* Masonry container */
   column-count: 4;
   column-gap: 0.6em;
   margin-left: var(--p-offset);
 }
 
-.img--masonry img{ /* Masonry bricks or child elements */
-  display: inline-block;
+.img-masonry-5 { /* Masonry container */
+  column-count: 5;
+  column-gap: 0.6em;
+  margin-left: var(--p-offset);
 }
+
 
 /* Gallery via tables */
 
