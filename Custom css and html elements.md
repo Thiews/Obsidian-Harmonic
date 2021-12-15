@@ -27,7 +27,7 @@ img-profile, img-portrait, img-banner
 ## Html and theme custom css
 - you can display <aside>
 ```
-<aside><p>YOUR TEXT</p></aside>
+<aside>YOUR TEXT</aside>
 ```
 <img width="759" alt="Capture d’écran 2021-12-13 à 18 13 29" src="https://user-images.githubusercontent.com/29182877/145857817-bf71530b-e620-4f3d-899f-63a3f0068952.png">
 	
@@ -76,10 +76,10 @@ YOUR TEXT
 ```
 <img width="1440" alt="Capture d’écran 2021-12-13 à 17 51 47" src="https://user-images.githubusercontent.com/29182877/145854325-ab8a1847-3a0f-4365-be79-7205182f6905.png">
 	
-- You can add a masonry grid
+- You can add a masonry grid (img-masonry-3 > 3 columns,img-masonry-4 > 4 columns,img-masonry-5 > 5 columns)
 	
 ```
-<div class="img-masonry">
+<div class="img-masonry-3">
 	<img src="url image">
 	<img src="url image">
 	<img src="url image"> etc..
