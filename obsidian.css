@@ -2466,7 +2466,7 @@ input[type=range]::-webkit-slider-thumb:active {
   color: var(--text-accent) !important;
 }
 
-.writing-focus.is-mobile .CodeMirror-code:not(.CodeMirror-activeline) span{
+.writing-focus .is-mobile .CodeMirror-code:not(.CodeMirror-activeline) span{
   color: var(--text-faint) !important;
   opacity: 0.6;
 }
