@@ -75,7 +75,21 @@ YOUR TEXT
 </div>
 ```
 <img width="1440" alt="Capture d’écran 2021-12-13 à 17 51 47" src="https://user-images.githubusercontent.com/29182877/145854325-ab8a1847-3a0f-4365-be79-7205182f6905.png">
+	
+- You can add a masonry grid
+	
+```
+<div class="img-masonry">
+	<img src="url image">
+	<img src="url image">
+	<img src="url image"> etc..
+</div>
+```
+	
+<img width="827" alt="Capture d’écran 2021-12-15 à 17 22 49" src="https://user-images.githubusercontent.com/29182877/146224544-a6602b36-a01a-4eeb-9f29-e8f7abd18362.png">
 
+- A classic grid : the same with "img-grid"
+	
 ## Dataview and custom css
 You can display an article view (like in blogs) with :
 - In the yaml of the page: cssclass: dataview-articles-style
