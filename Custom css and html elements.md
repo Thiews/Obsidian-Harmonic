@@ -7,10 +7,20 @@ How : in the top of the page, in the yaml section (between two ---), put
 - cssclass: img-box-shadow, to add box shadow to your page images
 - cssclass: img-rounded, img-rounded-small (or img-rounded-medium or img-rounded-big), to make your images rounded in the page
 - cssclass: img-bw, to display black and white images in the page
+- cssclass: img-float-left (or img-float-right)
 - cssclass: blockquote-background, theme-light, to add a background for blockquotes in light theme page (theme-dark when in dark theme)
 - cssclass: blockquote-serif, to choose the serif font for the blockquote
 - cssclass: blockquote-bracket, to add a quotation mark for blockquote in the page
 - cssclass: blockquote-text-center, to center the text in the blockquote
+
+You can display each image in a different way with this synthax:
+
+```
+![alt-text|img-border-radius](url image)
+```
+
+Works with the class for images above +
+img-profile, img-portrait, img-banner
 
 ## Html and theme custom css
 - you can display <aside>
