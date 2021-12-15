@@ -16,7 +16,7 @@ How : in the top of the page, in the yaml section (between two ---), put
 You can display each image in a different way with this synthax:
 
 ```
-![alt-text|img-border-radius](url image)
+![img-border-radius](url image)
 ```
 
 Works with the class for images above +
