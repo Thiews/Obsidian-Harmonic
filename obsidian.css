@@ -3251,15 +3251,22 @@ img[alt~='img-profile'] {
   width: 100px;
   height: 100px;
   object-fit: cover;
+  float: left;
+  margin-right: 1rem;
+  border-radius: 100% !important;
 }
 
 img[alt~='img-portrait'] {
-  width: 280px;
-  height: 500px;
+  width: 350px;
+  height: 550px;
   object-fit: cover;
-  float: left;
+  //float: left;
   margin-right: 1rem;
   margin-top: 1rem;
+  position: relative;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 img[alt~='img-border-radius']{
