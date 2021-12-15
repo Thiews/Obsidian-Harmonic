@@ -3227,6 +3227,7 @@ img[alt~='img-float-right'] {
   width: calc(40% - var(--p-offset));
   height: 250px;
   float: right;
+  object-fit: cover;
   margin-left: 1rem;
   margin-top: 1rem;
 }
@@ -3235,6 +3236,7 @@ img[alt~='img-float-left'] {
   width: calc(40% - var(--p-offset));
   height: 250px;
   float: left;
+  object-fit: cover;
   margin-right: 1rem;
   margin-top: 1rem;
 }
