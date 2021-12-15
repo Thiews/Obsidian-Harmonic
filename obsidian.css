@@ -2480,6 +2480,17 @@ input[type=range]::-webkit-slider-thumb:active {
 
 
 
+.writing-focus.is-mobile .markdown-source-view div{
+  color: var(--text-faint);
+  opacity: var(--writing-focus-opacity);
+}
+
+.writing-focus.is-mobile .markdown-source-view div:hover{
+  color: var(--font-normal) !important;
+  opacity: 1 !important;
+}
+
+
 /* Edit button */
 
 .edit-button .view-action:nth-last-of-type(4),.edit-button .view-action:nth-last-of-type(5),
