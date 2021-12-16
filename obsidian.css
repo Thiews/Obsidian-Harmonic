@@ -463,6 +463,7 @@ display:none !important;
   padding-top:2px;
 }
 
+
 /* Files */
 
 .nav-files-container {
@@ -649,6 +650,63 @@ Background-color:var(--text-accent) !important;
   border-radius: 0px;
 }
 
+/* Menu v4 */
+
+.menu-v4 .nav-file-title-content {
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+  box-shadow: none;
+  width: 100%;
+  white-space: initial;
+  padding: 15px 10px !important;
+  vertical-align: middle;
+  cursor: var(--cursor) !important;
+}
+
+.menu-v4 .nav-file-title {
+  width:calc(100% - 30px);
+  margin-left:-1rem !important;
+  padding:2px 0px !important;
+  
+  cursor:var(--cursor) !important;
+}
+
+.menu-v4 .nav-folder-children .nav-folder:not(.is-collapsed){
+  border-radius: 0px;
+  margin-left: 0px !important;
+  padding: 0px !important;
+}
+
+.menu-v4 .nav-folder-children .nav-folder:not(.is-collapsed) .nav-folder-children {
+  border-left: 3px solid var(--text-accent);
+  margin-left: 1rem;
+}
+
+.menu-v4 .nav-folder-collapse-indicator.collapse-icon{
+  Display: inline !important;
+}
+
+.menu-v4.bold-italic-accent .nav-folder:not(.is-collapsed) > .nav-folder-title svg{
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.menu-v4 .nav-folder:not(.is-collapsed) > .nav-folder-title svg{
+  font-weight: bold;
+  position: relative;
+  color:  var(--text-accent);
+  top: 5px;
+  height: 12px;
+  width: 12px;
+}
+
+.menu-v4 .nav-file-title.is-active {
+  color: var(--text-accent) !important;
+  font-weight: bold !important;
+}
+
+.menu-v4 .nav-file-title.is-active .nav-file-title-content{
+  color: var(--text-accent) !important;
+}
+
 /* Search */
 
 .tree-item-self, .tree-item-children{
@@ -760,6 +818,14 @@ Background-color:var(--text-accent) !important;
 .menu-v2 .backlink-pane .search-results-children{
   margin-bottom: 20px;
 }
+
+.menu-v4 .search-results-children .tree-item{
+  border-left: 3px solid var(--text-accent);
+  padding:15px 15px 5px 0px;
+  margin: 0.2rem 1rem;
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}
+
 
 .search-result-count {
   opacity:1;
@@ -2253,6 +2319,14 @@ Padding-top:0px !important;
 }
 
 
+.menu-v4 .outgoing-link-item{
+  box-shadow: none;
+  Border-radius: 0px;
+  border-left: 3px solid var(--text-accent);
+  Margin-bottom:0.2rem;
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}
+
 /* --------------- */
 /* Status bar */
 
@@ -2669,6 +2743,17 @@ input[type=checkbox] {
 .menu-v2 .checklist-plugin-main .svelte-yzsyxo ul{
   margin: 0px 0px !important;
 }
+
+
+.menu-v4 .checklist-plugin-main li.classic {
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+  border-left: 3px solid var(--text-accent);
+  margin-bottom: 0.2rem;
+  border-radius: 0px;
+}
+
+
+
 .checklist-plugin-main .group-header .title {
   Color:var(--text-accent) !important;
   Box-shadow:none;
@@ -3636,6 +3721,9 @@ settings:
             - 
                 label: Design 3
                 value: menu-v2
+            - 
+                label: Design 4
+                value: menu-v4
     -
         id: menus-font
         title: Font of navigation folders
