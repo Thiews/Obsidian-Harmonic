@@ -726,7 +726,6 @@ Background-color:var(--text-accent) !important;
   color: var(--text-accent);
   font-size: 1.8rem;
   background-position:  12px !important;
-  font-weight: bold;
   position: relative;
   border-radius: 100%;
   display: block;
