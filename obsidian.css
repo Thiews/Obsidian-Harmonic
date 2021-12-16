@@ -1740,13 +1740,17 @@ ul,ol,ul ul, ol ul, ol ol ul, ol ul ul, ul ol ul, ul ul ul {
   list-style-type:none;
 }
 
+
 ul > li:not(.task-list-item)::before {
   content:"\2022";
   color:var(--text-accent);
   font-weight:600;
   display:inline-block;
   width:1em;
-  margin-left:-1.3em;
+  position: relative;
+  margin-left:-1em;
+  top: 1px;
+
 }
 
 ul li p, ol li p {
@@ -1754,7 +1758,7 @@ ul li p, ol li p {
 }
 
 ul > li {
-  margin-left:-0.7em;
+  margin-left:-1.2em;
 }
 
 ol {
@@ -1766,7 +1770,7 @@ ol {
 }
 
 ol > li {
-  margin-left:-0.1em;
+  margin-left:-0.3em;
   counter-increment:counter;
 }
 
@@ -1774,7 +1778,7 @@ ol > li::before {
   content:counter(counter) ". ";
   color:var(--text-accent);
   position:absolute;
-  left:-0.9em;
+  left:-1.1em;
   text-align:right;
   width:2em;
 }
