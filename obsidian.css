@@ -1635,7 +1635,7 @@ input[type=checkbox]:checked {
   position:relative;
   top:7px !important;
   line-height:0;
-  margin-left:-1.3em;
+  margin-left:-1em;
   margin-right:6px;
   filter:none;
 }
