@@ -713,11 +713,12 @@ Background-color:var(--text-accent) !important;
 .menu-v4 .nav-folder-children .nav-folder.is-collapsed .nav-folder-title:before{
   content: "\002B" !important;
   border: none !important;
+  top: 1px;
   color: var(--text-accent) !important;
   font-size: 1rem !important;
   position: relative;
   background: transparent !important;
-  font-weight: bold;
+  font-weight: 400 !important;
 }
 
 .menu-v4 .nav-folder-children .nav-folder:not(.is-collapsed) .nav-folder-title:before{
