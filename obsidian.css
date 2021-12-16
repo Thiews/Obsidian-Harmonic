@@ -695,6 +695,7 @@ Background-color:var(--text-accent) !important;
 
 .menu-v4 .nav-folder-children .nav-folder:not(.is-collapsed) .nav-folder-title-content {
   font-weight: 400;
+  color: var(--text-accent) !important;
 }
 
 .menu-v4 .nav-folder-children .nav-folder:not(.is-collapsed) .nav-folder-children {
@@ -722,17 +723,8 @@ Background-color:var(--text-accent) !important;
   position: relative;
 }
 
-.menu-v4.bold-italic-accent .nav-folder:not(.is-collapsed) > .nav-folder-title svg{
+.menu-v4.bold-italic-accent .nav-folder:not(.is-collapsed) > .nav-folder-title:before{
   filter: hue-rotate(var(--hue-bold-italic));
-}
-
-.menu-v4 .nav-folder:not(.is-collapsed) > .nav-folder-title svg{
-  font-weight: bold;
-  position: relative;
-  color:  var(--text-accent);
-  top: 5px;
-  height: 12px;
-  width: 12px;
 }
 
 .menu-v4 .nav-file-title{
