@@ -22,7 +22,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Spartan:wght@300;400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap');
 
 :root {
 /* VARIABLES STYLE SETTING */
@@ -1329,14 +1332,16 @@ Opacity:1 !important;
   border-bottom:1px solid #222;
   Background-image:none !important;
   Padding-right:0px !important;
+  color: var(--text-faint);
 }
 
 .theme-dark .external-link{
-  color: rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.25);
 }
 
 .theme-light .external-link{
-  color: rgba(0,0,0,0.2);
+  color: rgba(0,0,0,0.25);
+  
 }
 
 .external-link {
@@ -1952,7 +1957,7 @@ Background:var(--background-secondary-alt) !important;
 }
 
 .img-border-radius .markdown-preview-section img{
-  border-radius: 15px;
+  border-radius: 25px;
 }
 
 .img-rounded.img-rounded-small  .markdown-preview-section img {
@@ -2104,7 +2109,7 @@ img:after{
 .outline .tree-item-self:hover{
   background: none;
   color: var(--text-accent) !important;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .collapsible-item-collapse {
@@ -2175,7 +2180,7 @@ Padding-top:0px !important;
 .tag-container .tree-item-self:hover{
   background: none !important;
   color: var(--text-accent) !important;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 .tag-pane-tag-text:before{
@@ -2288,12 +2293,14 @@ iframe {
 
 
 .theme-light .graph-controls {
-  Background-color:hsl(var(--accent-h),calc(var(--accent-s) + 10%),calc(var(--accent-l) + 35%));
-  //box-shadow: -10px -10px 20px 12px rgba(0,0,0,0.05) !important;
+  background-color: var(--background-primary);
+  box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.05);
+  margin-left: 1rem;
 }
 
 .theme-dark .graph-controls {
-  Background-color:hsl(var(--accent-h),calc(var(--accent-s) + 10%),calc(var(--accent-l) - 40%));
+  background-color: var(--background-primary);
+  margin-left: 1rem;
 }
 
 .graph-control-section .setting-item .setting-item-info .setting-item-name {
@@ -2506,7 +2513,7 @@ input[type=range]::-webkit-slider-thumb:active {
 
 
 
-.writing-focus.is-mobile .markdown-source-view div{
+.writing-focus.is-mobile .markdown-source-view div {
   color: var(--text-faint);
   opacity: var(--writing-focus-opacity);
 }
@@ -2514,7 +2521,9 @@ input[type=range]::-webkit-slider-thumb:active {
 .writing-focus.is-mobile .markdown-source-view div:hover{
   color: var(--font-normal) !important;
   opacity: 1 !important;
+  }
 }
+
 
 
 /* Edit button */
@@ -3315,7 +3324,7 @@ img[alt*='img-portrait'] {
 }
 
 img[alt*='img-border-radius']{
-border-radius: 15px;
+border-radius: 25px;
 }
 
 img[alt*='img-box-shadow']{
@@ -3837,7 +3846,7 @@ settings:
     - 
         id: fonts
         title: 5. Fonts (Preview mode, edit mode, monospace, titles)
-        description : Pre-insalled google fonts - Cabin, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Readex Pro, Roboto, Source Sans Pro, Work Sans
+        description : Pre-insalled google fonts - Cabin, Heebo, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Oxygen, Readex Pro, Roboto, "Source Sans 3", Source Sans Pro, Work Sans
         type: heading
         level: 2
         collapsed: true
