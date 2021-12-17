@@ -3092,6 +3092,13 @@ button.kanban-plugin__new-item-button:hover {
 /* ----------------------- */
 /* phone */
 
+@media (max-width: 400pt){
+  .is-mobile .modal,
+  .is-mobile .modal-container .modal.mod-settings  {
+    width: 100%;
+    max-width: 100%;
+}
+
 @media (max-width:500pt){
  .markdown-preview-view {
  --p-offset:0px !important;
