@@ -3094,7 +3094,7 @@ button.kanban-plugin__new-item-button:hover {
 
 @media (max-width: 400pt){
   .is-mobile .modal,
-  .is-mobile .modal-container .modal.mod-settings, .is-mobile .menu {
+  .is-mobile .modal-container .modal.mod-settings, .is-mobile .menu, .is-mobile .workspace-split.mod-left-split {
     width: 100vw!important;
     max-width: 100vw !important;
 }
