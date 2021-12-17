@@ -3099,7 +3099,7 @@ button.kanban-plugin__new-item-button:hover {
     max-width: 100vw !important;
     padding: 0px !important;
     margin: 0px !important;
-}
+}}
 
 @media (max-width:500pt){
  .markdown-preview-view {
