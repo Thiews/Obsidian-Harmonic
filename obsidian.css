@@ -1695,7 +1695,7 @@ input[type=checkbox] {
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.6rem;
+    left: -0.7rem;
     content: "✕";
     }
 
@@ -1748,6 +1748,10 @@ input[type=checkbox] {
     left: -0.7rem;
     font-size: 0.8em;
     content: "🔍";
+    }
+
+    .markdown-preview-view li[data-task="L"]{
+      color: red !important;
     }
 
     .markdown-preview-view li[data-task="L"]>.task-list-item-checkbox:checked::before,
