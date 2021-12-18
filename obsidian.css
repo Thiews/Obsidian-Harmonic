@@ -1635,7 +1635,7 @@ input[type=checkbox] {
 }
 
 .markdown-preview-view .task-list-item {
-  padding-inline-start:0.6em;
+  padding-inline-start:0.7em;
 }
 
 .markdown-preview-view li[data-task="x"]{
@@ -1651,7 +1651,7 @@ input[type=checkbox] {
   font-size: 0.8rem;
   background: var(--text-accent);
   border-radius: 100%;
-  padding: 0.08rem 0.33rem;
+  padding: 0.09rem 0.33rem;
   position: relative;
   top: -0.5rem;
   left: -0.6rem;
@@ -1694,9 +1694,9 @@ input[type=checkbox] {
     border-radius: 100%;
     position: relative;
     padding: 0.26rem 0.4rem;
-    top: -0.2rem;
+    top: -0.3rem;
     left: -0.6rem;
-    content: "✗";
+    content: "✕";
     }
 
     .markdown-preview-view li[data-task="D"]{
@@ -1763,13 +1763,13 @@ input[type=checkbox] {
     }
 
 
-.markdown-preview-view li[data-task="I"]{
+.markdown-preview-view li[data-task="!"]{
   margin-left: -1.3rem;
   font-weight: bold;
   text-transform:uppercase !important;
 }
-    .markdown-preview-view li[data-task="I"]>.task-list-item-checkbox:checked::before,
-.markdown-preview-view li[data-task="I"] p .task-list-item-checkbox:checked::before {
+    .markdown-preview-view li[data-task="!"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="!"] p .task-list-item-checkbox:checked::before {
    color: var(--text-accent) !important;
     position: relative;
     padding: 0.26rem 0.4rem;
