@@ -1721,9 +1721,10 @@ input[type=checkbox] {
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -1rem;
+    left: -1.4rem;
+    font-size: 1rem;
     //content: "⎖";
-    content: "●○";
+    content: "◼︎◻︎";
     display: inline-block;
     }
 
