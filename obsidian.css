@@ -1632,7 +1632,7 @@ input[type=checkbox] {
   content: "⭘";
   filter:none !important;
   color: var(--text-accent);
-  
+  //font-size: 1.2rem;
 }
 
 .markdown-preview-view .task-list-item {
@@ -1723,11 +1723,10 @@ input[type=checkbox] {
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -1.4rem;
+    left: -0.9rem;
     font-size: 1rem;
     //content: "⎖";
-    content: "◼︎◻︎";
-    display: inline-block;
+    content: "◐";
     }
 
      .markdown-preview-view li[data-task="?"]>.task-list-item-checkbox:checked::before,
