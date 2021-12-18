@@ -1627,7 +1627,7 @@ input[type=checkbox] {
   //font-size: 1rem;
   position:relative;
   left: 0.8rem;
-  top: 0rem;
+  top: 0.1rem;
   position: relative;
   //border: 1px solid var(--text-accent) !important;
   content: "⭘";
@@ -1650,10 +1650,14 @@ input[type=checkbox] {
 .markdown-preview-view li[data-task="x"] p .task-list-item-checkbox:checked::before{
   filter:none !important;
   content: "✓";
-  color: var(--text-accent);
+  color: #FFF;
+  font-size: 0.6rem;
+  background: var(--text-accent);
+  border-radius: 100%;
+  padding: 2.5px 5.5px;
   position: relative;
-  top: -0.4rem;
-  left: -0.4rem;
+  top: -0.5rem;
+  left: -0.5rem;
 }
 
 
