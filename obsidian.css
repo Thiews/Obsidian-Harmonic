@@ -1619,20 +1619,18 @@ input[type=checkbox] {
 }
 
 .markdown-preview-view .task-list-item:not(.is-checked){
-  margin-left: -2.3rem;
+  margin-left: -3.2rem;
 }
 
 .markdown-preview-view .task-list-item:not(.is-checked)::before {
-  //padding: 0.1rem 0.45rem;
-  //font-size: 1rem;
   position:relative;
-  left: 0.8rem;
+  left: 1.25rem;
   top: 0.1rem;
+  padding: 0rem 0.45rem;
   position: relative;
   //border: 1px solid var(--text-accent) !important;
   content: "⭘";
   filter:none !important;
-  border-radius: 100%;
   color: var(--text-accent);
   
 }
@@ -1714,7 +1712,7 @@ input[type=checkbox] {
     padding: 0.26rem 0.4rem;
     top: -0.2rem;
     left: -1rem;
-    content: "→";
+    content: "⇥";
     }
 .markdown-preview-view li[data-task="/"]{
   margin-left: -1.3rem;
