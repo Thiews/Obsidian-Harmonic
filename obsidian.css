@@ -1619,20 +1619,19 @@ input[type=checkbox] {
 }
 
 .markdown-preview-view .task-list-item:not(.is-checked){
-  margin-left: -3.2rem;
+  margin-left: -3.3rem;
 }
 
 .markdown-preview-view .task-list-item:not(.is-checked)::before {
   position:relative;
   left: 1.25rem;
-  top: 0.1rem;
+  top: 0.05rem;
   padding: 0rem 0.45rem;
   position: relative;
-  //border: 1px solid var(--text-accent) !important;
   content: "⭘";
   filter:none !important;
+  font-weight: bold;
   color: var(--text-accent);
-  //font-size: 1.2rem;
 }
 
 .markdown-preview-view .task-list-item {
@@ -1649,13 +1648,13 @@ input[type=checkbox] {
   filter:none !important;
   content: "✓";
   color: #FFF;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   background: var(--text-accent);
   border-radius: 100%;
-  padding: 2.5px 5.5px;
+  padding: 0.08rem 0.33rem;
   position: relative;
   top: -0.5rem;
-  left: -0.5rem;
+  left: -0.6rem;
 }
 
 
@@ -1696,7 +1695,7 @@ input[type=checkbox] {
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.2rem;
-    left: -0.7rem;
+    left: -0.6rem;
     content: "✗";
     }
 
@@ -1711,7 +1710,7 @@ input[type=checkbox] {
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.2rem;
-    left: -1rem;
+    left: -0.8rem;
     content: "⇥";
     }
 .markdown-preview-view li[data-task="/"]{
