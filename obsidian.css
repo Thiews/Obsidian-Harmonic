@@ -1761,7 +1761,7 @@ input[type=checkbox] {
 
 
 .markdown-preview-view li[data-task="I"]{
-  margin-left: -1.6rem;
+  margin-left: -1.3rem;
 }
     .markdown-preview-view li[data-task="I"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="I"] p .task-list-item-checkbox:checked::before {
@@ -1769,8 +1769,8 @@ input[type=checkbox] {
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.5rem;
-    font-size: 0.8em;
+    left: -0.7rem;
+    font-size: 0.9rem;
     content: "⚡︎";
     }
 
