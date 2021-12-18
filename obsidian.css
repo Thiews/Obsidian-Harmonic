@@ -1604,23 +1604,13 @@ aside {
 input[type=checkbox] {
   -webkit-appearance:none;
   appearance:none;
-  border-radius:50%;
-  border:2px solid var(--text-accent) !important;
-  padding:0;
+  border: 0px solid !important;
+  //margin-left: 0rem;
 }
 
-input[type=checkbox]:focus,input[type=checkbox]:hover {
-  outline:0;
-  border-color:var(--text-faint);
-  cursor: pointer;
-}
-input[type=checkbox]:checked {
-  background-color:var(--text-accent);
-  border:1px solid var(--text-accent);
-  background-position:center;
-  background-size:70%;
-  background-repeat:no-repeat;
-  background-image:url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
+
+.markdown-preview-view .task-list-item-checkbox {
+  filter: none;
 }
 
 .markdown-preview-view ul > li.task-list-item.is-checked {
@@ -1628,24 +1618,163 @@ input[type=checkbox]:checked {
   color:var(--text-normal);
 }
 
-.markdown-preview-view .task-list-item-checkbox {
-  width:18px !important;
-  height:18px !important;
+.markdown-preview-view .task-list-item:not(.is-checked){
+  margin-left: -2.3rem;
+}
+
+.markdown-preview-view .task-list-item:not(.is-checked)::before {
+  //padding: 0.1rem 0.45rem;
+  //font-size: 1rem;
   position:relative;
-  top:7px !important;
-  line-height:0;
-  margin-left:-1em;
-  margin-right:6px;
-  filter:none;
+  left: 0.8rem;
+  top: 0rem;
+  position: relative;
+  //border: 1px solid var(--text-accent) !important;
+  content: "⭘";
+  filter:none !important;
+  border-radius: 100%;
+  color: var(--text-accent);
+  
 }
 
 .markdown-preview-view .task-list-item {
-  padding-inline-start:1.5em;
+  padding-inline-start:0.5em;
 }
 
-span.cm-formatting-list{
-  color: var(--text-accent) !important;
+.markdown-preview-view li[data-task="x"]{
+  text-decoration: line-through !important;
+  color: var(--text-faint) !important;
 }
+
+.markdown-preview-view li[data-task="x"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="x"] p .task-list-item-checkbox:checked::before{
+  filter:none !important;
+  content: "✓";
+  color: var(--text-accent);
+  position: relative;
+  top: -0.4rem;
+  left: -0.4rem;
+}
+
+
+
+.markdown-preview-view li[data-task=">"]{
+  color: var(--text-faint) !important;
+}
+
+
+.markdown-preview-view li[data-task=">"]{
+  text-decoration: line-through !important;
+  color: var(--text-faint) !important;
+  margin-left: -1.4rem;
+}
+
+.markdown-preview-view li[data-task=">"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task=">"] p .task-list-item-checkbox:checked::before {
+    color: var(--text-accent);
+    border-radius: 100%;
+    font-size: 1.4rem;
+    position: relative;
+    padding: 0.26rem 0.4rem;
+    top: -0.3rem;
+    left: -0.7rem;
+    content: "⌲";
+}
+
+.markdown-preview-view li[data-task="-"]{
+  text-decoration: line-through !important;
+  color: var(--text-faint) !important;
+  margin-left: -1.4rem;
+}
+
+.markdown-preview-view li[data-task="-"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="-"] p .task-list-item-checkbox:checked::before {
+   color: var(--text-accent);
+    border-radius: 100%;
+    position: relative;
+    padding: 0.26rem 0.4rem;
+    top: -0.2rem;
+    left: -0.7rem;
+    content: "✗";
+    }
+
+    .markdown-preview-view li[data-task="D"]{
+      margin-left: -1.4rem;
+    }
+
+    .markdown-preview-view li[data-task="D"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="D"] p .task-list-item-checkbox:checked::before {
+   color: var(--text-accent) !important;
+    border-radius: 100%;
+    position: relative;
+    padding: 0.26rem 0.4rem;
+    top: -0.2rem;
+    left: -1rem;
+    content: "→";
+    }
+.markdown-preview-view li[data-task="/"]{
+  margin-left: -1.3rem;
+}
+    .markdown-preview-view li[data-task="/"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="/"] p .task-list-item-checkbox:checked::before {
+   color: var(--text-accent) !important;
+    position: relative;
+    padding: 0.26rem 0.4rem;
+    top: -0.5rem;
+    left: -0.7rem;
+    content: "⎖";
+    }
+
+     .markdown-preview-view li[data-task="?"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="?"] p .task-list-item-checkbox:checked::before {
+   color: var(--text-accent) !important;
+    position: relative;
+    padding: 0.26rem 0.4rem;
+    top: -0.5rem;
+    left: -0.7rem;
+    content: "?";
+    }
+
+
+.markdown-preview-view li[data-task="R"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="R"] p .task-list-item-checkbox:checked::before {
+   color: var(--text-accent) !important;
+    position: relative;
+    padding: 0.26rem 0.4rem;
+    top: -0.5rem;
+    left: -0.7rem;
+    font-size: 0.8em;
+    content: "🔍";
+    }
+
+    .markdown-preview-view li[data-task="L"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="L"] p .task-list-item-checkbox:checked::before {
+   color: var(--text-accent) !important;
+    position: relative;
+    padding: 0.26rem 0.4rem;
+    top: -0.3rem;
+    left: -0.5rem;
+    font-size: 0.9em;
+    content: "!!";
+    display: inline-block;
+    }
+
+
+.markdown-preview-view li[data-task="I"]{
+  margin-left: -1.6rem;
+}
+    .markdown-preview-view li[data-task="I"]>.task-list-item-checkbox:checked::before,
+.markdown-preview-view li[data-task="I"] p .task-list-item-checkbox:checked::before {
+   color: var(--text-accent) !important;
+    position: relative;
+    padding: 0.26rem 0.4rem;
+    top: -0.3rem;
+    left: -0.5rem;
+    font-size: 0.8em;
+    content: "⚡︎";
+    }
+
+
    /* Edit mode */
 .cm-s-obsidian span.cm-formatting-task {
   color: var(--text-accent);
