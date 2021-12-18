@@ -1709,7 +1709,7 @@ input[type=checkbox] {
     border-radius: 100%;
     position: relative;
     padding: 0.26rem 0.4rem;
-    top: -0.2rem;
+    top: -0.3rem;
     left: -0.8rem;
     content: "⇥";
     }
@@ -1756,14 +1756,15 @@ input[type=checkbox] {
 
     .markdown-preview-view li[data-task="L"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="L"] p .task-list-item-checkbox:checked::before {
-   color: var(--text-accent) !important;
+   color: red !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.7rem;
-    font-size: 0.9em;
-    content: "‼️";
+    left: -0.6rem;
+    //font-size: 0.5em;
+    content: "!!";
     display: inline-block;
+    font-weight: bold;
     }
 
 
