@@ -1720,9 +1720,11 @@ input[type=checkbox] {
    color: var(--text-accent) !important;
     position: relative;
     padding: 0.26rem 0.4rem;
-    top: -0.5rem;
-    left: -0.7rem;
-    content: "⎖";
+    top: -0.3rem;
+    left: -1rem;
+    //content: "⎖";
+    content: "●○";
+    display: inline-block;
     }
 
      .markdown-preview-view li[data-task="?"]>.task-list-item-checkbox:checked::before,
