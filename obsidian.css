@@ -1619,11 +1619,21 @@ input[type=checkbox] {
 }
 
 .markdown-preview-view .task-list-item:not(.is-checked){
-  margin-left: -3.3rem;
+  margin-left: -2.9rem;
 }
 
 .markdown-preview-view .task-list-item:not(.is-checked)::before {
-  position:relative;
+  filter:none !important;
+  content: "✓";
+  color: transparent;
+  font-size: 0.6rem;
+  border:2px solid var(--text-accent);
+  border-radius: 100%;
+  padding: 0.07rem 0.275rem;
+  position: relative;
+  top: -0.15rem;
+  left: 1.18rem;
+  /*position:relative;
   left: 1.25rem;
   top: 0.05rem;
   padding: 0rem 0.45rem;
@@ -1631,7 +1641,7 @@ input[type=checkbox] {
   content: "⭘";
   filter:none !important;
   font-weight: bold;
-  color: var(--text-accent);
+  color: var(--text-accent);*/
 }
 
 .markdown-preview-view .task-list-item {
