@@ -1613,6 +1613,10 @@ input[type=checkbox] {
   filter: none;
 }
 
+.markdown-preview-view ul li li.task-list-item{
+  margin-left: -1.2rem;
+}
+
 .markdown-preview-view ul > li.task-list-item.is-checked {
   text-decoration:none;
   color:var(--text-normal);
@@ -1880,11 +1884,55 @@ border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
 
 
 
-/* Preview Mode Lists  */
+/* List style  */
 
+  /* Edit mode > outline*/
+.HyperMD-list-line .cm-formatting-list:not(.cm-formatting-list-ol):before{
+  content: "●";
+  position: relative;
+  //font-size: 1.2rem;
+  display: absolute;
+  color: var(--text-accent);
+  left: 26px;
+  margin-right: 1rem;
+}
+
+.HyperMD-list-line .cm-formatting-list-ol {
+  color: var(--text-accent) !important;
+}
+
+.cm-formatting-list:not(.cm-formatting-list-ol) {
+  //display: none;
+  position: relative;
+  left: -6px;
+  margin-left: -1rem;
+  //color: transparent !important;
+}
+
+.cm-s-obsidian > .cm-tab,
+.cm-hmd-list-indent > .cm-tab,
+.rel-lines-edit .cm-hmd-list-indent > .cm-tab {
+  position: relative;
+}
+
+.outline-mode .cm-hmd-list-indent .cm-tab::before,.outline-mode .cm-hmd-list-indent > .cm-tab:before,.outline-mode .rel-lines-edit
+  .cm-hmd-list-indent
+  > .cm-tab:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -0.5rem;
+  left: 0.45em;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: var(--text-faint);
+  height: calc(100% + 0.78rem);
+}
+
+  /* Preview mode */
 
 ul,ol,ul ul, ol ul, ol ol ul, ol ul ul, ul ol ul, ul ul ul {
-  list-style:none !important;
+ list-style:none !important;
   list-style-type:none;
 }
 
@@ -1906,11 +1954,11 @@ ul li p, ol li p {
 }
 
 ul > li {
-  margin-left:-1.2em;
+  margin-left:-1.2rem;
 }
 
 ol {
-  padding-inline-start:1.5em;
+  padding-inline-start:0em;
   margin-left:0.3em;
   list-style:none;
   counter-reset:counter;
@@ -1918,8 +1966,12 @@ ol {
 }
 
 ol > li {
-  margin-left:-0.3em;
+  margin-left:1.2rem;
   counter-increment:counter;
+}
+
+ol ol{
+  margin-left: 0.2rem !important;
 }
 
 ol > li::before {
@@ -1930,6 +1982,45 @@ ol > li::before {
   text-align:right;
   width:2em;
 }
+
+.outline-mode .markdown-preview-view ul ul,
+.outline-mode  .markdown-preview-view ol ol {
+  position: relative;
+}
+
+.outline-mode .list-collapse-indicator {
+  opacity: 0;
+  position: relative;
+  left: 1rem;
+}
+
+.outline-mode .markdown-preview-view ul > li:not(.task-list-item)::after,
+.outline-mode .markdown-preview-view ul li > li:not(.task-list-item)::after,
+.outline-mode .markdown-preview-view ol > li li:not(.task-list-item)::after {
+  content: "";
+  border-left-width: 1px;
+  border-left-style: solid;
+  position: absolute;
+  height: calc(100% - 0.5rem);
+  border-left-color: var(--text-faint);
+  margin-left: -0.90rem;
+  left: -0.02rem;
+  top: 0rem;
+  bottom: 0;
+}
+
+
+.outline-mode ul ul::before,
+.outline-mode ol ol::before {
+  content: "";
+  position: absolute;
+}
+
+
+.outline-mode .markdown-preview-view ol ol::before {
+  margin-left: -0.8em;
+}
+
 
 /* Code */
 
@@ -4001,7 +4092,7 @@ settings:
         step: 0.01
     -
         id: features
-        title: 3. Make pages pop (bold and italic accentuation, image, blockquote)
+        title: 3. Make pages pop (bold and italic accentuation, image, blockquote, outline)
         type: heading
         level: 2
         collapsed: true
@@ -4097,6 +4188,17 @@ settings:
         title:  Center text for quote
         type: class-toggle
     - 
+        id: outline-section
+        title: Outlines for lists
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: outline-mode
+        title: Outline for list
+        description: Activate outlines for list
+        type: class-toggle
+    -
         id: page-settings 
         title: 4. Page settings (line width, fullwidth mode, paragraph offset)
         type: heading
