@@ -2009,7 +2009,7 @@ ol > li::before {
   position: relative;
 }
 
-.outline-mode .list-collapse-indicator {
+.list-collapse-indicator {
   opacity: 0;
   position: relative;
   left: 1rem;
@@ -2029,7 +2029,6 @@ ol > li::before {
   border-left-style: solid;
   position: absolute;
   height: calc(100% - 2.5rem) !important;
-  
   border-left-color: var(--text-accent);
   filter: saturate(50%);
   //margin-left: -0.90rem;
@@ -2039,6 +2038,22 @@ ol > li::before {
   bottom: 0;
 }
 
+.outline-mode .markdown-preview-view ul li.task-list-item::after,
+.outline-mode .markdown-preview-view ul li li.task-list-item::after,
+.outline-mode .markdown-preview-view ol > li.task-list-item::after{
+  content: "";
+  border-left-width: 1px;
+  border-left-style: solid;
+  position: absolute;
+  height: calc(100% - 2.5rem) !important;
+  border-left-color: var(--text-accent);
+  filter: saturate(50%);
+  //margin-left: -0.90rem;
+  //left: -0.02rem;
+ left: -1.4rem;
+  top: 2rem;
+  bottom: 0;
+}
 
 .outline-mode ul ul::before,
 .outline-mode ol ol::before {
