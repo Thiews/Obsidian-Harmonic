@@ -1627,7 +1627,13 @@ input[type=checkbox] {
   color:var(--text-normal);
 }
 
+.markdown-preview-view .task-list-item:not(.is-checked ) .list-collapse-indicator svg{
+  margin-left: 0.4rem;
+}
 
+.markdown-preview-view .task-list-item.is-checked  .list-collapse-indicator svg{
+  margin-left: -0.8rem;
+}
 
 .markdown-preview-view li[data-task=""]::before {
   filter:none !important;
