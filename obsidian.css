@@ -1618,11 +1618,11 @@ input[type=checkbox] {
   color:var(--text-normal);
 }
 
-.markdown-preview-view .task-list-item:not(.is-checked){
+.markdown-preview-view li[data-task=""]{
   margin-left: -2.9rem;
-}
+  }
 
-.markdown-preview-view .task-list-item:not(.is-checked)::before {
+.markdown-preview-view li[data-task=""]::before {
   filter:none !important;
   content: "✓";
   color: transparent;
@@ -1632,7 +1632,7 @@ input[type=checkbox] {
   padding: 0.07rem 0.275rem;
   position: relative;
   top: -0.15rem;
-  left: 1.18rem;
+  left: 1.2rem;
   /*position:relative;
   left: 1.25rem;
   top: 0.05rem;
