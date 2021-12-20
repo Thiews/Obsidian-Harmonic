@@ -1250,6 +1250,16 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   color:var(--text-accent);
 }
 
+.line-title .markdown-preview-view h1,
+.line-title .cm-s-obsidian .HyperMD-header-1:after{
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
+  padding-bottom: 0.5rem;
+  content: "";
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
 .markdown-preview-view h2,
 .cm-s-obsidian .cm-header-2 {
   Font-family:var(--text-title) !important;
@@ -1261,6 +1271,17 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   font-weight:var(--h2-weight) !important;
   Color:var(--h2-color);
 }
+
+.line-title .markdown-preview-view h2:after,
+.line-title .cm-s-obsidian .HyperMD-header-2:after{
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
+  padding-bottom: 0.5rem;
+  content: "";
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
 
 .HyperMD-header-2 {
   letter-spacing:var(--title-spacing);
@@ -1286,6 +1307,16 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   padding-top:15px;
   font-size:var(--h3);
   Color:var(--h3-color);
+}
+
+.line-title .markdown-preview-view h3:after,
+.line-title .cm-s-obsidian .HyperMD-header-3:after{
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
+  padding-bottom: 0.5rem;
+  content: "";
+  position: relative;
+  width: 100%;
+  display: block;
 }
 
 .HyperMD-header-3 {
@@ -1315,6 +1346,16 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   padding-top:15px;
 }
 
+.line-title .markdown-preview-view h4:after,
+.line-title .cm-s-obsidian .HyperMD-header-4:after{
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
+  padding-bottom: 0.5rem;
+  content: "";
+  position: relative;
+  width: 100%;
+  display: block;
+}
+
 .HyperMD-header-4 {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
@@ -1339,6 +1380,16 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   Color:var(--h5-color);
   font-weight:var(--h5-weight) !important;
   padding-top:15px;
+}
+
+.line-title .markdown-preview-view h5:after,
+.line-title .cm-s-obsidian .HyperMD-header-5:after{
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
+  padding-bottom: 0.5rem;
+  content: "";
+  position: relative;
+  width: 100%;
+  display: block;
 }
 
 .HyperMD-header-5 {
@@ -1366,6 +1417,16 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   Color:var(--h6-color);
   font-weight:var(--h6-weight) !important;
   font-size:var(--h6);
+}
+
+.line-title .markdown-preview-view h6:after,
+.line-title .cm-s-obsidian .HyperMD-header-6:after{
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
+  padding-bottom: 0.5rem;
+  content: "";
+  position: relative;
+  width: 100%;
+  display: block;
 }
 
 .HyperMD-header-6 {
@@ -2177,6 +2238,10 @@ Zoom:0.8;
   background:var(--text-accent) !important;
 }
 
+.bold-italic-accent.hue-tag .tag{
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
 .cm-s-obsidian span.cm-hashtag {
   border:none;
   color:var(--text-accent);
@@ -2199,6 +2264,11 @@ Zoom:0.8;
 .theme-dark .cm-s-obsidian span.cm-hashtag{
   background: rgba(0,0,0,0.3);
 }
+
+.bold-italic-accent.hue-tag .cm-s-obsidian span.cm-hashtag{
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
 
 .cm-hashtag-begin {
   border-top-left-radius:14px;
@@ -4759,8 +4829,6 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 .wys-mode  .CodeMirror-sizer {
   left: var(--p-offset);
   width: calc(100% - var(--p-offset) - 4.2rem);
-  //width: 100%;
-  overflow: visible;
 }
 
 .wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header {
@@ -4768,14 +4836,14 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 }
 
 .wys-mode .CodeMirror-activeline .cm-formatting-header{
- //display: none;
+ display: none;
  position: relative;
  //display: inline-block;
 }
 
-.wys-mode .CodeMirror-activeline .HyperMD-header {
-  left: 0rem;
-}
+/*.wys-mode .CodeMirror-activeline .HyperMD-header {
+  //left: 0rem;
+}*/
 
 .wys-mode .CodeMirror-activeline  .cm-formatting-header{
   font-size: 0.8em !important;
@@ -4783,7 +4851,7 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 
 }
 
-.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-1:before {
+.h-reveal.wys-mode .HyperMD-header-1:before {
   content: "H1";
   color: var(--text-accent);
   font-size: 0.8rem;
@@ -4791,7 +4859,11 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   margin-right: 1rem;
 }
 
-.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-2:before {
+.bold-italic-accent.h-reveal.wys-mode .HyperMD-header-1:before {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.h-reveal.wys-mode .HyperMD-header-2:before {
   content: "H2";
   color: var(--text-accent);
   font-size: 0.8rem;
@@ -4799,25 +4871,35 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   margin-right: 1rem;
 }
 
-.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-3:before {
+.bold-italic-accent.h-reveal.wys-mode .HyperMD-header-2:before {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.h-reveal.wys-mode .HyperMD-header-3:before {
   content: "H3";
   color: var(--text-accent);
   font-size: 0.8rem;
   font-family: var(--text-title);
   margin-right: 1rem;
-
 }
 
-.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-4:before {
+.bold-italic-accent.h-reveal.wys-mode .HyperMD-header-3:before {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.h-reveal.wys-mode .HyperMD-header-4:before {
   content: "H4";
   color: var(--text-accent);
   font-size: 0.8rem;
   font-family: var(--text-title);
   margin-right: 1rem;
-
 }
 
-.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-5:before {
+.bold-italic-accent.h-reveal.wys-mode .HyperMD-header-4:before {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.h-reveal.wys-mode .HyperMD-header-5:before {
   content: "H5";
   color: var(--text-accent);
   font-size: 0.8rem;
@@ -4825,12 +4907,20 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   margin-right: 1rem;
 }
 
-.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-6:before {
+.bold-italic-accent.h-reveal.wys-mode .HyperMD-header-5:before {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.h-reveal.wys-mode .HyperMD-header-6:before {
   content: "H6";
   color: var(--text-accent);
   font-size: 0.8rem;
   font-family: var(--text-title);
   margin-right: 1rem;
+}
+
+.bold-italic-accent.h-reveal.wys-mode .HyperMD-header-6:before {
+  filter: hue-rotate(var(--hue-bold-italic));
 }
 
 .bold-italic-accent.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-1:before,
@@ -4976,7 +5066,7 @@ margin-left: calc(var(--p-offset));
 .wys-mode  span.cm-hmd-frontmatter {
   font-family: var(--text);
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
-  color: var(--text-normal) !important; 
+  color: var(--text-faint) !important; 
 }
 
 .wys-mode  .CodeMirror-activeline span.cm-image-alt-text,.wys-mode .CodeMirror-activeline span.cm-image-marker{
@@ -5223,6 +5313,10 @@ settings:
         step: 30
         format: deg
     - 
+        id: hue-tag
+        title:  Use this color to display tag
+        type: class-toggle
+    -
         id: Text-section
         title: Customize text style
         type: heading
@@ -5423,6 +5517,10 @@ settings:
         id: title-collapse
         title: Collapse indicator for titles
         description: Hide collapse indicators
+        type: class-toggle
+    - 
+        id: line-title
+        title: Add a line under titles
         type: class-toggle
     - 
         id: h-reveal
