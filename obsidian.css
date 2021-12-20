@@ -230,8 +230,8 @@ background: var(--background-secondary-alt);}
 /* width modes adjustment */
 
 .markdown-source-view{
-padding-left: 0px;
-padding-right: 0px;
+padding-left: 0px !important;
+padding-right: 0px !important;
 }
 
 .markdown-source-view.is-readable-line-width .CodeMirror, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
@@ -1239,6 +1239,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 }
 .HyperMD-header-1 {
   letter-spacing:var(--title-spacing);
+  margin: 0px;
+ padding-bottom: 1rem !important;
 }
 
 .h-reveal .markdown-preview-view h1:before{
@@ -1262,6 +1264,9 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 .HyperMD-header-2 {
   letter-spacing:var(--title-spacing);
+ // padding: 30px 0px 20px 0px!important;
+ padding-top: 2rem !important;
+ padding-bottom: 1rem !important;
 }
 
 .h-reveal .markdown-preview-view h2:before{
@@ -1285,6 +1290,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 .HyperMD-header-3 {
   letter-spacing:var(--title-spacing);
+  padding-top: 2rem !important;
+ padding-bottom: 1rem !important;
 }
 
 .h-reveal .markdown-preview-view h3:before{
@@ -1310,6 +1317,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 .HyperMD-header-4 {
   letter-spacing:var(--title-spacing);
+  padding-top: 2rem !important;
+ padding-bottom: 1rem !important;
 }
 
 .h-reveal .markdown-preview-view h4:before{
@@ -1334,6 +1343,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 .HyperMD-header-5 {
   letter-spacing:var(--title-spacing);
+  padding-top: 2rem !important;
+ padding-bottom: 1rem !important;
 }
 
 .h-reveal .markdown-preview-view h5:before{
@@ -1359,6 +1370,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 .HyperMD-header-6 {
   letter-spacing:var(--title-spacing);
+  padding-top: 2rem !important;
+ padding-bottom: 1rem !important;
 }
 
 .h-reveal .markdown-preview-view h6:before{
@@ -1570,12 +1583,6 @@ Opacity:1 !important;
 
 
 /* Edit mode */
-.theme-light .HyperMD-quote {
-  background: var(--background-secondary-alt);
-}
-.theme-dark .HyperMD-quote {
-  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
-}
 
 .cm-quote {
   font-style: italic;
@@ -1893,31 +1900,20 @@ border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
   /* Edit mode > outline*/
   
 
-  .cm-s-obsidian .HyperMD-list-line {
+  /*.cm-s-obsidian .HyperMD-list-line {
   padding-top: 0;
   position: relative;
+  text-indent: -20px !important;
+  margin-left: 10px !important;
 }
+.cm-s-obsidian .HyperMD-list-line span{
+  text-indent: 0px !important;
+  //margin-left: -10px;
+}*/
 
-.HyperMD-list-line .cm-formatting-list:not(.cm-formatting-list-ol):before{
-  content: "●";
-  position: relative;
-  //font-size: 1.2rem;
-  display: absolute;
-  color: var(--text-accent);
-  left: 26px;
-  margin-right: 1rem;
-}
 
 .HyperMD-list-line .cm-formatting-list-ol {
   color: var(--text-accent) !important;
-}
-
-.cm-formatting-list:not(.cm-formatting-list-ol) {
-  //display: none;
-  position: relative;
-  left: -6px;
-  margin-left: -1rem;
-  //color: transparent !important;
 }
 
 .cm-s-obsidian > .cm-tab,
@@ -2031,9 +2027,7 @@ ol > li::before {
   height: calc(100% - 2.5rem) !important;
   border-left-color: var(--text-accent);
   filter: saturate(50%);
-  //margin-left: -0.90rem;
-  //left: -0.02rem;
- left: -0.9rem;
+  left: -0.9rem;
   top: 1.7rem;
   bottom: 0;
 }
@@ -2048,9 +2042,7 @@ ol > li::before {
   height: calc(100% - 2.5rem) !important;
   border-left-color: var(--text-accent);
   filter: saturate(50%);
-  //margin-left: -0.90rem;
-  //left: -0.02rem;
- left: -1.4rem;
+  left: -1.4rem;
   top: 2rem;
   bottom: 0;
 }
@@ -3970,611 +3962,6 @@ padding-left: 0.5rem;
 }  
 
 
-
-/* Style Settings */
-
-.style-settings-container .style-settings-container {
-  margin-left: 15px;
-}
-
-/* @settings
-name: Harmonic theme customization
-id: perso
-settings:
-    - 
-        id: logo
-        title: 1. Global customization (Logo OR title, Accent color, navigation folder style, icon style)
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: accent
-        title: Accent color
-        type: variable-color
-        format: hsl-split
-        default: '#4F60B3'
-    -
-        id: invert-background-color
-        title: Colorful background for pages
-        type: class-toggle
-    -
-
-        id: minimal-icons-on
-        title: Icons
-        description: Activate minimal icons
-        type: class-toggle
-    - 
-        id: logo-section
-        title: Choose a logo OR a title for your obsidian
-        type: heading
-        level: 3
-        collapsed: false
-    - 
-        id: site-title
-        title: Your obsidian title
-        description: Put the title in quotation marks (see default parameter)
-        type: variable-text
-        default: '"OBSIDIAN"'
-    - 
-        id: site-title-accent
-        title:  Color accent for your obsidian title
-        description: Display the title with the bold and italic accent color (menu > Make pages pop)
-        type: class-toggle
-    - 
-        id: logo-url
-        title: Your obsidian logo (url)
-        description: Put the url syntax like in default
-        type: variable-text
-        default: url("")
-    -
-        id: invert-logo
-        title: Invert logo colors in dark mode
-        description: B&W image works well
-        type: class-toggle
-    - 
-        id: nav-folder-section
-        title: Customize the navigation folder panel
-        type: heading
-        level: 3
-        collapsed: false
-    -
-        id: menus
-        title: Alternative menu styles
-        description: Choose diffent styles for the left and right sidebars
-        type: class-select
-        default: menu-v1
-        options:
-            - 
-                label: Design 1
-                value: menu-v1
-            - 
-                label: Design 2
-                value: menu-v3
-            - 
-                label: Design 3
-                value: menu-v2
-            - 
-                label: Design 4
-                value: menu-v4
-    -
-        id: menus-font
-        title: Font of navigation folders
-        description: Choose diffent styles for the left and right sidebars
-        type: class-select
-        default: font-nav-folder-text
-        options:
-            - 
-                label: Text
-                value: font-nav-folder-text
-            - 
-                label: Headings
-                value: font-nav-folder-header
-    -
-        id: font-small
-        title: Font size of navigation folder
-        description: Select a font size
-        type: variable-number-slider
-        default: 0.85
-        min: 0.7
-        max: 1
-        step: 0.01
-    -
-        id: focus-mode
-        title: 2. Focus mode
-        type: heading
-        level: 2
-        collapsed: true
-    -
-        id: hide-left-menu
-        title: Hide vertical menu of the left sidebar
-        type: class-toggle
-    -
-        id: hide-tab-header
-        title: Hide tab header buttons
-        type: class-toggle
-    -
-        id: hide-action-buttons
-        title: Hide action buttons
-        type: class-toggle
-    -
-        id: hide-file-name
-        title: Hide file name in main window
-        type: class-toggle
-    -
-        id: hide-tooltip
-        title: Hide tooltip
-        type: class-toggle
-    -
-        id: hide-scrollbar
-        title: Hide scrollbar
-        type: class-toggle
-    -
-        id: hide-instruction
-        title: Hide instructions
-        type: class-toggle
-    -
-        id: hide-status-bar
-        title: Hide status bar
-        type: class-toggle
-    -
-        id: edit-button
-        title: Edit button
-        description: Create a button to edit and preview
-        type: class-toggle
-    -
-        id: writing-focus
-        title: Writing focus
-        description: Hightligh the paragraph you are writing, faint the others (edit mode)
-        type: class-toggle
-    -
-        id: writing-focus-opacity
-        title: Opacity of the fainted text in writing focus mode
-        description: Change the Opacity of the fainted text
-        type: variable-number-slider
-        default: 0.6
-        min: 0
-        max: 0.95
-        step: 0.01
-    -
-        id: features
-        title: 3. Make pages pop (bold and italic accentuation, image, blockquote, outline)
-        type: heading
-        level: 2
-        collapsed: true
-    - 
-        id: bold-italic-section
-        title: Customize bold and italic
-        type: heading
-        level: 3
-        collapsed: false
-    - 
-        id: bold-italic-accent
-        title:  Bold and italic accentuation
-        description: Make bold and italic pop with an other color
-        type: class-toggle
-    -
-        id: hue-bold-italic
-        title: Bold and italic hue
-        description: Change the hue of the accent color (step -> 45 degrees)
-        type: variable-number-slider
-        default: 180
-        min: 30
-        max: 330
-        step: 30
-        format: deg
-    - 
-        id: Text-section
-        title: Customize text style
-        type: heading
-        level: 3
-        collapsed: false
-    - 
-        id: first-letter-capitalize
-        title:  Capitalize first letter of a praragraph
-        type: class-toggle
-    - 
-        id: image-section
-        title: Customize images
-        type: heading
-        level: 3
-        collapsed: false
-    - 
-        id: img-border-radius
-        title:  Border radius for images
-        type: class-toggle
-    - 
-        id: img-rounded
-        title:  To make rounded images
-        type: class-toggle
-    - 
-        id: img-round
-        title: Choose the size of rounded image
-        description: Choose diffent styles for the left and right sidebars
-        type: class-select
-        default: img-rounded-medium
-        options:
-            - 
-                label: Small
-                value: img-rounded-small
-            - 
-                label: Medium
-                value: img-rounded-medium
-            - 
-                label: Big
-                value: img-rounded-big
-    -
-        id: img-box-shadow
-        title:  Shadow for images
-        type: class-toggle
-    -
-        id: img-bw
-        title:  Black and white for images
-        type: class-toggle
-    - 
-        id: blockquote-section
-        title: Customize blockquote
-        type: heading
-        level: 3
-        collapsed: false
-    - 
-        id: blockquote-background
-        title:  Display background and border for quote
-        type: class-toggle
-    - 
-        id: blockquote-bracket
-        title:  Quotation mark for quote
-        type: class-toggle
-    - 
-        id: blockquote-serif
-        title:  Serif font for quote
-        type: class-toggle
-    - 
-        id: blockquote-text-center
-        title:  Center text for quote
-        type: class-toggle
-    - 
-        id: outline-section
-        title: Outlines for lists
-        type: heading
-        level: 3
-        collapsed: false
-    - 
-        id: outline-mode
-        title: Outline for list
-        description: Activate outlines for list
-        type: class-toggle
-    -
-        id: page-settings 
-        title: 4. Page settings (line width, fullwidth mode, paragraph offset)
-        type: heading
-        level: 2
-        collapsed: true
-    - 
-        id: line-width
-        title: Line width
-        description: Define your line width
-        type: variable-number-slider
-        default: 44
-        min: 30
-        max: 60
-        step: 1
-        format: rem
-    -
-        id: full-width
-        title: Full width mode
-        description: Activate full width
-        type: class-toggle
-    - 
-        id: p-offset
-        title: Paragraph offset
-        description: Change your paragraph offset
-        type: variable-number-slider
-        default: 2.2
-        min: 0
-        max: 8
-        step: 0.1
-        format: rem
-    - 
-        id: fonts
-        title: 5. Fonts (Preview mode, edit mode, monospace, titles)
-        description : Pre-insalled google fonts - Cabin, Heebo, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Oxygen, Readex Pro, Roboto, "Source Sans 3", Source Sans Pro, Work Sans
-        type: heading
-        level: 2
-        collapsed: true
-    - 
-        id: text
-        title: Text font
-        description: Font used for paragraph in preview mode
-        type: variable-text
-        default: mulish
-    -
-        id: text-editor
-        title: Editor font
-        description: Font used for paragraph in edit mode
-        type: variable-text
-        default: mulish
-    -
-        id: font-monospace
-        title: Monospace font
-        description: Font used for for code blocks and front matter
-        type: variable-text
-        default: menlo
-    - 
-        id: text-title
-        title: Header font
-        description: Font used for titles
-        type: variable-text
-        default: mulish
-    -
-        id: custom-fonts
-        title: 6. Typography
-        type: heading
-        level: 2
-        collapsed: true
-    - 
-        id: font-normal
-        title: Body font size
-        description: Font size in px of paragraphs
-        type: variable-number
-        default: 17
-        format: px
-    - 
-        id: font-phone
-        title: Body font size for phone
-        description: Font size in px of paragraphs for phones
-        type: variable-number
-        default: 17
-        format: px
-    - 
-        id: normal-weight
-        title: Body font weight
-        description: Font weight of paragraphs
-        type: variable-number
-        default: 400
-    -
-        id: text-spacing
-        title: Letter spacing for paragraph
-        type: variable-text
-        default: 0em
-    -
-        id: line-height
-        title: Body line height
-        description: Line height of the main text
-        type: variable-number
-        default: 1.5
-    -
-        id: headings
-        title: 7. Headings
-        type: heading
-        level: 2
-        collapsed: true
-    - 
-        id: title-spacing
-        title: Letter spacing for titles
-        description: Letter spacing Used for every titles
-        type: variable-text
-        default: 0em
-    - 
-        id: title-accent-color
-        title: Accent color title
-        description: Choose the accent color for every titles
-        type: class-toggle
-    - 
-        id: title-collapse
-        title: Collapse indicator for titles
-        description: Hide collapse indicators
-        type: class-toggle
-    - 
-        id: h-reveal
-        title: Hx activate
-        description: activate Hx in titles
-        type: class-toggle
-    - 
-        id: h-change-color
-        title: Color of Hx
-        description: Apply color of bold-italic for Hx
-        type: class-toggle
-    - 
-        id: level-1-headings
-        title: Level 1 Headings
-        type: heading
-        level: 3
-        collapsed: true
-    - 
-        id: h1
-        title: H1 font size
-        description: Accepts any CSS font-size value
-        type: variable-text
-        default: 2em
-    - 
-        id: h1-weight
-        title: H1 font weight
-        description: Accepts numbers representing the CSS font-weight
-        type: variable-number
-        default: 400
-    -
-        id: h1-style
-        title: H1 font style
-        description: Accepts normal or italic representing the CSS font-style
-        type: variable-text
-        default: normal
-    -  
-        id: h1-color
-        title: H1 font color
-        type: variable-themed-color
-        format: hex
-        default-light: '#363636'
-        default-dark: '#d1d1d1'
-    -
-        id: level-2-headings
-        title: Level 2 Headings
-        type: heading
-        level: 3
-        collapsed: true
-    - 
-        id: h2
-        title: H2 font size
-        description: Accepts any CSS font-size value
-        type: variable-text
-        default: 1.6em
-    - 
-        id: h2-weight
-        title: H2 font weight
-        description: Accepts numbers representing the CSS font-weight
-        type: variable-number
-        default: 400
-    - 
-        id: h2-style
-        title: H2 font style
-        description: Accepts normal or italic representing the CSS font-style
-        type: variable-text
-        default: normal
-    -  
-        id: h2-color
-        title: H2 font color
-        type: variable-themed-color
-        format: hex
-        default-light: '#363636'
-        default-dark: '#d1d1d1'
-    -
-        id: level-3-headings
-        title: Level 3 Headings
-        type: heading
-        level: 3
-        collapsed: true
-    - 
-        id: h3
-        title: H3 font size
-        description: Accepts any CSS font-size value
-        type: variable-text
-        default: 1.2em
-    - 
-        id: h3-weight
-        title: H3 font weight
-        description: Accepts numbers representing the CSS font-weight
-        type: variable-number
-        default: 400
-    - 
-        id: h3-style
-        title: H3 font style
-        description: Accepts normal or italic representing the CSS font-style
-        type: variable-text
-        default: normal
-    -  
-        id: h3-color
-        title: H3 font color
-        type: variable-themed-color
-        format: hex
-        default-light: '#363636'
-        default-dark: '#d1d1d1'
-    -
-        id: level-4-headings
-        title: Level 4 Headings
-        type: heading
-        level: 3
-        collapsed: true
-    - 
-        id: h4
-        title: H4 font size
-        description: Accepts any CSS font-size value
-        type: variable-text
-        default: 1em
-    - 
-        id: h4-weight
-        title: H4 font weight
-        description: Accepts numbers representing the CSS font-weight
-        type: variable-number
-        default: 400
-    - 
-        id: h4-style
-        title: H4 font style
-        description: Accepts normal or italic representing the CSS font-style
-        type: variable-text
-        default: normal
-    -  
-        id: h4-color
-        title: H4 font color
-        type: variable-themed-color
-        format: hex
-        default-light: '#363636'
-        default-dark: '#d1d1d1'
-    - 
-        id: level-5-headings
-        title: Level 5 Headings
-        type: heading
-        level: 3
-        collapsed: true
-    -  
-        id: h5
-        title: H5 font size
-        description: Accepts any CSS font-size value
-        type: variable-text
-        default: 0.85em
-    - 
-        id: h5-weight
-        title: H5 font weight
-        description: Accepts numbers representing the CSS font-weight
-        type: variable-number
-        default: 400
-    -
-        id: h5-style
-        title: H5 font style
-        description: Accepts normal or italic representing the CSS font-style
-        type: variable-text
-        default: normal
-    -  
-        id: h5-color
-        title: H5 font color
-        type: variable-themed-color
-        format: hex
-        default-light: '#363636'
-        default-dark: '#d1d1d1'
-    - 
-        id: level-6-headings
-        title: Level 6 Headings
-        type: heading
-        level: 3
-        collapsed: true
-    - 
-        id: h6
-        title: H6 font size
-        description: Accepts any CSS font-size value
-        type: variable-text
-        default: 0.85em
-    - 
-        id: h6-weight
-        title: H6 font weight
-        description: Accepts numbers representing the CSS font-weight
-        type: variable-number
-        default: 400
-    -
-        id: h6-style
-        title: H6 font style
-        description: Accepts normal or italic representing the CSS font-style
-        type: variable-text
-        default: normal
-    -  
-        id: h6-color
-        title: H6 font color
-        type: variable-themed-color
-        format: hex
-        default-light: '#363636'
-        default-dark: '#d1d1d1'
-    -
-        id: credits
-        title: Credits
-        type: heading
-        description: Made by @Thiews to be shared. Support my work at buymeacoffee.com/thiews
-        level: 2
-        collapsed: true
-*/
-
-
-
-
-
-
-
 /* ----------------------------------------------------------------------------------- */
 /* Icons replacement (icons found in Minimal theme) */
 /* Thanks to Matthew Meyers, Chetachi Ezikeuzor, inspired by Kepano */
@@ -5343,3 +4730,901 @@ settings:
 .minimal-icons-on svg.changelog {
   -webkit-mask-image:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10s10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8s8 3.589 8 8s-3.589 8-8 8z" fill="currentColor"/><path d="M11 11h2v6h-2zm0-4h2v2h-2z" fill="currentColor"/></svg>');
 }
+
+/* ---------------------------------------------------------------------------------------------- */
+/* -------------------------- WYS edit mode ------------------------------------------- */
+
+
+body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1,
+body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
+body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
+body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
+body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
+body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6 {
+  font-size: 0px !important;
+}
+
+/*.wys-mode div:not(.CodeMirror-activeline) > .cm-formatting.cm-formatting-header.cm-formatting-header-1.cm-header.cm-header-1,
+.wys-mode div:not(.CodeMirror-activeline) > .cm-formatting.cm-formatting-header.cm-formatting-header-2.cm-header.cm-header-2,
+.wys-mode div:not(.CodeMirror-activeline) > .cm-formatting.cm-formatting-header.cm-formatting-header-3.cm-header.cm-header-3,
+.wys-mode div:not(.CodeMirror-activeline) > .cm-formatting.cm-formatting-header.cm-formatting-header-4.cm-header.cm-header-4,
+.wys-mode div:not(.CodeMirror-activeline) > .cm-formatting.cm-formatting-header.cm-formatting-header-5.cm-header.cm-header-5,
+.wys-mode div:not(.CodeMirror-activeline) > .cm-formatting.cm-formatting-header.cm-formatting-header-6.cm-header.cm-header-6 {
+  font-size: 0.5px !important;
+  color: transparent !important;
+  margin: 0;
+  padding: 0;
+}*/
+
+.wys-mode  .CodeMirror-sizer {
+  left: var(--p-offset);
+  width: calc(100% - var(--p-offset) - 4.2rem);
+  //width: 100%;
+  overflow: visible;
+}
+
+.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header {
+  left: calc(-1 * var(--p-offset)) !important;
+}
+
+.wys-mode .CodeMirror-activeline .cm-formatting-header{
+ //display: none;
+ position: relative;
+ //display: inline-block;
+}
+
+.wys-mode .CodeMirror-activeline .HyperMD-header {
+  left: 0rem;
+}
+
+.wys-mode .CodeMirror-activeline  .cm-formatting-header{
+  font-size: 0.8em !important;
+  margin-right: 0.5rem;
+
+}
+
+.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-1:before {
+  content: "H1";
+  color: var(--text-accent);
+  font-size: 0.8rem;
+  font-family: var(--text-title);
+  margin-right: 1rem;
+}
+
+.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-2:before {
+  content: "H2";
+  color: var(--text-accent);
+  font-size: 0.8rem;
+  font-family: var(--text-title);
+  margin-right: 1rem;
+}
+
+.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-3:before {
+  content: "H3";
+  color: var(--text-accent);
+  font-size: 0.8rem;
+  font-family: var(--text-title);
+  margin-right: 1rem;
+
+}
+
+.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-4:before {
+  content: "H4";
+  color: var(--text-accent);
+  font-size: 0.8rem;
+  font-family: var(--text-title);
+  margin-right: 1rem;
+
+}
+
+.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-5:before {
+  content: "H5";
+  color: var(--text-accent);
+  font-size: 0.8rem;
+  font-family: var(--text-title);
+  margin-right: 1rem;
+}
+
+.h-reveal.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-6:before {
+  content: "H6";
+  color: var(--text-accent);
+  font-size: 0.8rem;
+  font-family: var(--text-title);
+  margin-right: 1rem;
+}
+
+.bold-italic-accent.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-1:before,
+.bold-italic-accent.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-2:before,
+.bold-italic-accent.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-3:before,
+.bold-italic-accent.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-4:before,
+.bold-italic-accent.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-5:before,
+.bold-italic-accent.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header-6:before {
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.wys-mode .HyperMD-list-line .cm-formatting-list:not(.cm-formatting-list-ol):before{
+  content: "●";
+  position: relative;
+  //font-size: 1.2rem;
+  display: absolute;
+  color: var(--text-accent);
+  left: 26px;
+  margin-right: 1rem;
+}
+
+.wys-mode .cm-formatting-list:not(.cm-formatting-list-ol) {
+  //display: none;
+  position: relative;
+  left: -6px;
+  margin-left: -1rem;
+  //color: transparent !important;
+}
+
+
+/* Remove markdown clutter */
+
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-strong,
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-em,
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-url.cm-string,
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-link,
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-link:not(.cm-link),
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-barelink,
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-tag{
+  display: none !important;
+}
+
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting.cm-formatting-code-block.cm-hmd-codeblock {
+  display: inline !important;
+}
+
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting-task {
+  display: inline !important;
+}
+
+/* and task checkboxes */
+.wys-mode span.cm-formatting-task {
+  display: inline !important;
+}
+
+/* highlight (==) not visible anymore if not active line */
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line .cm-formatting-highlight.cm-highlight {
+  font-size: 0;
+}
+
+/* Blockquote: in edit mode with left border rendered instead of > */
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-formatting.cm-formatting-quote,
+.wys-mode div:not(.CodeMirror-activeline) > .CodeMirror-line span.cm-hmd-indent-in-quote {
+  display: inline !important;
+  color: transparent !important;
+}
+
+.cm-link{
+  color: var(--text-faint) !important;
+}
+
+.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-quote:before {
+  font-size: 2.5em;
+  margin-right: -0.25em;
+  margin-left: 0.35em;
+  line-height: 0.1em;
+  vertical-align: -0.3em;
+  display: inline;
+  position: relative;
+}
+
+
+.wys-mode  .HyperMD-quote {
+  padding: 0.8rem 0rem 0.8rem 0rem;
+  margin-left: 0rem;
+  font-size: 1.2rem;
+}
+
+.wys-mode.blockquote-background div:not(.CodeMirror-activeline) > .HyperMD-quote {
+  line-height: 1.75em;
+  color: hsl(var(--blockquote-border));
+  font-family: var(--text);
+  border: none;
+  border-left: 0.3rem solid var(--text-accent);
+  background-color: var(--background-secondary-alt);
+  border-radius: 0px;
+  display: inline-block;
+  padding-right: 1.5rem !important;
+  width: 100%;
+}
+
+.wys-mode.blockquote-background.blockquote-bracket div:not(.CodeMirror-activeline) > .HyperMD-quote {
+left: 30px;
+width: calc(100% - 3rem);
+display: block;
+padding-right: 1.5rem !important;
+margin-left: calc(var(--p-offset));
+ }
+
+  .wys-mode.blockquote-background.blockquote-bracket div:not(.CodeMirror-activeline) > .HyperMD-quote:before {
+    left: -60px !important;
+  }
+
+.wys-mode.blockquote-bracket  div:not(.CodeMirror-activeline) > .HyperMD-quote{
+  margin-left: var(--p-offset);
+
+}
+
+.wys-mode.blockquote-bracket div:not(.CodeMirror-activeline)  > .HyperMD-quote:before {
+  content: "“" !important;
+  font-family: lora !important;
+  position: absolute !important;
+  top: 0.6rem !important;
+  left: -30px;
+  font-size: 5rem !important;
+  color: var(--text-accent) !important;
+  margin-top: 30px;
+}
+
+.wys-mode.blockquote-serif div:not(.CodeMirror-activeline) > .HyperMD-quote {
+ font-family: lora;
+
+}
+
+.wys-mode .CodeMirror-line span.cm-hmd-frontmatter.cm-null:before {
+  content: "METADATA";
+  font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
+  display: block;
+  color: var(--text-accent);
+  font-weight: bold;
+}
+
+.wys-mode  span.cm-hmd-frontmatter {
+  font-family: var(--text);
+  font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
+  color: var(--text-normal) !important; 
+}
+
+.wys-mode  .CodeMirror-activeline span.cm-image-alt-text,.wys-mode .CodeMirror-activeline span.cm-image-marker{
+  opacity: 1 !important;
+}
+.wys-mode div:not(.CodeMirror-activeline) span.cm-image-alt-text,.wys-mode div:not(.CodeMirror-activeline) span.cm-image-marker{
+  opacity: 0 ;
+}
+
+.img-border-radius.wys-mode .markdown-source-view img {
+  border-radius: 25px;
+}
+.img-box-shadow.wys-mode .markdown-source-view img {
+box-shadow: 0px 2px 10px -4px #333;
+}
+
+.wys-mode.img-rounded.img-rounded-small  .markdown-source-view img {
+  border-radius: 100% ;
+  width: 150px;
+  height: 150px;
+  position:relative;
+  display: block; 
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.wys-mode.img-rounded.img-rounded-medium .markdown-source-view img {
+  border-radius: 100%;
+  width: 350px;
+  height: 350px;
+  position:relative;
+  display: block; 
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wys-mode.img-rounded.img-rounded-big .markdown-source-view img {
+  border-radius: 100%;
+  width: 600px;
+  height: 600px;
+  position:relative;
+  display: block; 
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Style Settings ----------------------------------------------------  */
+
+.style-settings-container .style-settings-container {
+  margin-left: 15px;
+}
+
+/* @settings
+name: Harmonic theme customization
+id: perso
+settings:
+    - 
+        id: logo
+        title: 1. Global customization (Logo OR title, Accent color, navigation folder style, icon style)
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: accent
+        title: Accent color
+        type: variable-color
+        format: hsl-split
+        default: '#4F60B3'
+    -
+        id: invert-background-color
+        title: Colorful background for pages
+        type: class-toggle
+    -
+        id: minimal-icons-on
+        title: Icons
+        description: Activate minimal icons
+        type: class-toggle
+    - 
+        id: wys-mode
+        title: Activate WYSIWYG in edit mode (Ozan's Image plugin need to show images)
+        type: class-toggle
+    - 
+        id: logo-section
+        title: Choose a logo OR a title for your obsidian
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: site-title
+        title: Your obsidian title
+        description: Put the title in quotation marks (see default parameter)
+        type: variable-text
+        default: '"OBSIDIAN"'
+    - 
+        id: site-title-accent
+        title:  Color accent for your obsidian title
+        description: Display the title with the bold and italic accent color (menu > Make pages pop)
+        type: class-toggle
+    - 
+        id: logo-url
+        title: Your obsidian logo (url)
+        description: Put the url syntax like in default
+        type: variable-text
+        default: url("")
+    -
+        id: invert-logo
+        title: Invert logo colors in dark mode
+        description: B&W image works well
+        type: class-toggle
+    - 
+        id: nav-folder-section
+        title: Customize the navigation folder panel
+        type: heading
+        level: 3
+        collapsed: false
+    -
+        id: menus
+        title: Alternative menu styles
+        description: Choose diffent styles for the left and right sidebars
+        type: class-select
+        default: menu-v1
+        options:
+            - 
+                label: Design 1
+                value: menu-v1
+            - 
+                label: Design 2
+                value: menu-v3
+            - 
+                label: Design 3
+                value: menu-v2
+            - 
+                label: Design 4
+                value: menu-v4
+    -
+        id: menus-font
+        title: Font of navigation folders
+        description: Choose diffent styles for the left and right sidebars
+        type: class-select
+        default: font-nav-folder-text
+        options:
+            - 
+                label: Text
+                value: font-nav-folder-text
+            - 
+                label: Headings
+                value: font-nav-folder-header
+    -
+        id: font-small
+        title: Font size of navigation folder
+        description: Select a font size
+        type: variable-number-slider
+        default: 0.85
+        min: 0.7
+        max: 1
+        step: 0.01
+    -
+        id: focus-mode
+        title: 2. Focus mode
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: hide-left-menu
+        title: Hide vertical menu of the left sidebar
+        type: class-toggle
+    -
+        id: hide-tab-header
+        title: Hide tab header buttons
+        type: class-toggle
+    -
+        id: hide-action-buttons
+        title: Hide action buttons
+        type: class-toggle
+    -
+        id: hide-file-name
+        title: Hide file name in main window
+        type: class-toggle
+    -
+        id: hide-tooltip
+        title: Hide tooltip
+        type: class-toggle
+    -
+        id: hide-scrollbar
+        title: Hide scrollbar
+        type: class-toggle
+    -
+        id: hide-instruction
+        title: Hide instructions
+        type: class-toggle
+    -
+        id: hide-status-bar
+        title: Hide status bar
+        type: class-toggle
+    -
+        id: edit-button
+        title: Edit button
+        description: Create a button to edit and preview
+        type: class-toggle
+    -
+        id: writing-focus
+        title: Writing focus
+        description: Hightligh the paragraph you are writing, faint the others (edit mode)
+        type: class-toggle
+    -
+        id: writing-focus-opacity
+        title: Opacity of the fainted text in writing focus mode
+        description: Change the Opacity of the fainted text
+        type: variable-number-slider
+        default: 0.6
+        min: 0
+        max: 0.95
+        step: 0.01
+    -
+        id: features
+        title: 3. Make pages pop (bold and italic accentuation, image, blockquote, outline)
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: bold-italic-section
+        title: Customize bold and italic
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: bold-italic-accent
+        title:  Bold and italic accentuation
+        description: Make bold and italic pop with an other color
+        type: class-toggle
+    -
+        id: hue-bold-italic
+        title: Bold and italic hue
+        description: Change the hue of the accent color (step -> 45 degrees)
+        type: variable-number-slider
+        default: 180
+        min: 30
+        max: 330
+        step: 30
+        format: deg
+    - 
+        id: Text-section
+        title: Customize text style
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: first-letter-capitalize
+        title:  Capitalize first letter of a praragraph
+        type: class-toggle
+    - 
+        id: image-section
+        title: Customize images
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: img-border-radius
+        title:  Border radius for images
+        type: class-toggle
+    - 
+        id: img-rounded
+        title:  To make rounded images
+        type: class-toggle
+    - 
+        id: img-round
+        title: Choose the size of rounded image
+        description: Choose diffent styles for the left and right sidebars
+        type: class-select
+        default: img-rounded-medium
+        options:
+            - 
+                label: Small
+                value: img-rounded-small
+            - 
+                label: Medium
+                value: img-rounded-medium
+            - 
+                label: Big
+                value: img-rounded-big
+    -
+        id: img-box-shadow
+        title:  Shadow for images
+        type: class-toggle
+    -
+        id: img-bw
+        title:  Black and white for images
+        type: class-toggle
+    - 
+        id: blockquote-section
+        title: Customize blockquote
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: blockquote-background
+        title:  Display background and border for quote
+        type: class-toggle
+    - 
+        id: blockquote-bracket
+        title:  Quotation mark for quote
+        type: class-toggle
+    - 
+        id: blockquote-serif
+        title:  Serif font for quote
+        type: class-toggle
+    - 
+        id: blockquote-text-center
+        title:  Center text for quote
+        type: class-toggle
+    - 
+        id: outline-section
+        title: Outlines for lists
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: outline-mode
+        title: Outline for list
+        description: Activate outlines for list
+        type: class-toggle
+    -
+        id: page-settings 
+        title: 4. Page settings (line width, fullwidth mode, paragraph offset)
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: line-width
+        title: Line width
+        description: Define your line width
+        type: variable-number-slider
+        default: 44
+        min: 30
+        max: 60
+        step: 1
+        format: rem
+    -
+        id: full-width
+        title: Full width mode
+        description: Activate full width
+        type: class-toggle
+    - 
+        id: p-offset
+        title: Paragraph offset
+        description: Change your paragraph offset
+        type: variable-number-slider
+        default: 2.2
+        min: 0
+        max: 8
+        step: 0.1
+        format: rem
+    - 
+        id: fonts
+        title: 5. Fonts (Preview mode, edit mode, monospace, titles)
+        description : Pre-insalled google fonts - Cabin, Heebo, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Oxygen, Readex Pro, Roboto, "Source Sans 3", Source Sans Pro, Work Sans
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: text
+        title: Text font
+        description: Font used for paragraph in preview mode
+        type: variable-text
+        default: mulish
+    -
+        id: text-editor
+        title: Editor font
+        description: Font used for paragraph in edit mode
+        type: variable-text
+        default: mulish
+    -
+        id: font-monospace
+        title: Monospace font
+        description: Font used for for code blocks and front matter
+        type: variable-text
+        default: menlo
+    - 
+        id: text-title
+        title: Header font
+        description: Font used for titles
+        type: variable-text
+        default: mulish
+    -
+        id: custom-fonts
+        title: 6. Typography
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: font-normal
+        title: Body font size
+        description: Font size in px of paragraphs
+        type: variable-number
+        default: 17
+        format: px
+    - 
+        id: font-phone
+        title: Body font size for phone
+        description: Font size in px of paragraphs for phones
+        type: variable-number
+        default: 17
+        format: px
+    - 
+        id: normal-weight
+        title: Body font weight
+        description: Font weight of paragraphs
+        type: variable-number
+        default: 400
+    -
+        id: text-spacing
+        title: Letter spacing for paragraph
+        type: variable-text
+        default: 0em
+    -
+        id: line-height
+        title: Body line height
+        description: Line height of the main text
+        type: variable-number
+        default: 1.5
+    -
+        id: headings
+        title: 7. Headings
+        type: heading
+        level: 2
+        collapsed: true
+    - 
+        id: title-spacing
+        title: Letter spacing for titles
+        description: Letter spacing Used for every titles
+        type: variable-text
+        default: 0em
+    - 
+        id: title-accent-color
+        title: Accent color title
+        description: Choose the accent color for every titles
+        type: class-toggle
+    - 
+        id: title-collapse
+        title: Collapse indicator for titles
+        description: Hide collapse indicators
+        type: class-toggle
+    - 
+        id: h-reveal
+        title: Hx activate
+        description: activate Hx in titles
+        type: class-toggle
+    - 
+        id: h-change-color
+        title: Color of Hx
+        description: Apply color of bold-italic for Hx
+        type: class-toggle
+    - 
+        id: level-1-headings
+        title: Level 1 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h1
+        title: H1 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 2em
+    - 
+        id: h1-weight
+        title: H1 font weight
+        description: Accepts numbers representing the CSS font-weight
+        type: variable-number
+        default: 400
+    -
+        id: h1-style
+        title: H1 font style
+        description: Accepts normal or italic representing the CSS font-style
+        type: variable-text
+        default: normal
+    -  
+        id: h1-color
+        title: H1 font color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: level-2-headings
+        title: Level 2 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h2
+        title: H2 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1.6em
+    - 
+        id: h2-weight
+        title: H2 font weight
+        description: Accepts numbers representing the CSS font-weight
+        type: variable-number
+        default: 400
+    - 
+        id: h2-style
+        title: H2 font style
+        description: Accepts normal or italic representing the CSS font-style
+        type: variable-text
+        default: normal
+    -  
+        id: h2-color
+        title: H2 font color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: level-3-headings
+        title: Level 3 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h3
+        title: H3 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1.2em
+    - 
+        id: h3-weight
+        title: H3 font weight
+        description: Accepts numbers representing the CSS font-weight
+        type: variable-number
+        default: 400
+    - 
+        id: h3-style
+        title: H3 font style
+        description: Accepts normal or italic representing the CSS font-style
+        type: variable-text
+        default: normal
+    -  
+        id: h3-color
+        title: H3 font color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: level-4-headings
+        title: Level 4 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h4
+        title: H4 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 1em
+    - 
+        id: h4-weight
+        title: H4 font weight
+        description: Accepts numbers representing the CSS font-weight
+        type: variable-number
+        default: 400
+    - 
+        id: h4-style
+        title: H4 font style
+        description: Accepts normal or italic representing the CSS font-style
+        type: variable-text
+        default: normal
+    -  
+        id: h4-color
+        title: H4 font color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    - 
+        id: level-5-headings
+        title: Level 5 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    -  
+        id: h5
+        title: H5 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 0.85em
+    - 
+        id: h5-weight
+        title: H5 font weight
+        description: Accepts numbers representing the CSS font-weight
+        type: variable-number
+        default: 400
+    -
+        id: h5-style
+        title: H5 font style
+        description: Accepts normal or italic representing the CSS font-style
+        type: variable-text
+        default: normal
+    -  
+        id: h5-color
+        title: H5 font color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    - 
+        id: level-6-headings
+        title: Level 6 Headings
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: h6
+        title: H6 font size
+        description: Accepts any CSS font-size value
+        type: variable-text
+        default: 0.85em
+    - 
+        id: h6-weight
+        title: H6 font weight
+        description: Accepts numbers representing the CSS font-weight
+        type: variable-number
+        default: 400
+    -
+        id: h6-style
+        title: H6 font style
+        description: Accepts normal or italic representing the CSS font-style
+        type: variable-text
+        default: normal
+    -  
+        id: h6-color
+        title: H6 font color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: credits
+        title: Credits
+        type: heading
+        description: Made by @Thiews to be shared. Support my work at buymeacoffee.com/thiews
+        level: 2
+        collapsed: true
+*/
