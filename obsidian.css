@@ -2317,10 +2317,6 @@ Zoom:0.8;
   border-radius: 10px;
 }
 
-.invert-background-color .markdown-preview-view .internal-embed:not(.image-embed){
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
-}
-
 /* --------------- */
 /* Modals */
 .modal.mod-settings{
