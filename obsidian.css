@@ -1046,15 +1046,13 @@ margin-left: 1rem;
 }
 
 .workspace-tab-header-inner {
-  //padding:3px 3px 3px 10px;
   width:2rem;
   Height:2rem;
-  border-radius: 5px !important;
-  Margin-right:5px !important;
+  border-radius: 7px !important;
+  Margin-right:4px !important;
   Background-color:var(--background-primary) !important;
   box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
   padding: 5px;
-  //margin-left: 1rem;
 }
 
 .workspace-tab-header.is-active .workspace-tab-header-inner{
@@ -1063,10 +1061,6 @@ margin-left: 1rem;
 
 .workspace-tab-header.is-active .workspace-tab-header-inner svg{
   color: #FFF;
-}
-
-.workspace-tab-header-inner:first-child{
-  //margin-left: 1rem;
 }
 
 .workspace-tab-header-inner svg {
