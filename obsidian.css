@@ -5099,11 +5099,22 @@ margin-left: calc(var(--p-offset));
   color: var(--text-faint) !important; 
 }
 
-.wys-mode  .CodeMirror-activeline span.cm-image-alt-text,.wys-mode .CodeMirror-activeline span.cm-image-marker{
+.wys-mode  .CodeMirror-activeline span.cm-image-alt-text,.wys-mode .CodeMirror-activeline span.cm-image-marker,.wys-mode .CodeMirror-activeline .cm-hmd-internal-link.cm-hmd-embed{
   opacity: 1 !important;
 }
-.wys-mode div:not(.CodeMirror-activeline) span.cm-image-alt-text,.wys-mode div:not(.CodeMirror-activeline) span.cm-image-marker{
-  opacity: 0 ;
+
+.wys-mode div:not(.CodeMirror-activeline) span.cm-image-alt-text,.wys-mode div:not(.CodeMirror-activeline) span.cm-image-marker,.wys-mode div:not(.CodeMirror-activeline) span.cm-hmd-internal-link.cm-hmd-embed{
+  opacity: 0;
+}
+
+.oz-transclusion-widget{
+  background: var(--background-secondary-alt);
+  border: none !important;
+}
+
+.wys-mode .CodeMirror-activeline span.cm-hmd-internal-link.cm-hmd-embed:before{
+
+ display: none;
 }
 
 .img-border-radius.wys-mode .markdown-source-view img {
@@ -5181,7 +5192,7 @@ settings:
         type: class-toggle
     - 
         id: wys-mode
-        title: Activate WYSIWYG in edit mode (Ozan's Image plugin need to show images)
+        title: Activate WYSIWYG in edit mode (Ozan's Image plugin need to show images and transclusion)
         type: class-toggle
     - 
         id: logo-section
