@@ -273,15 +273,11 @@ padding-right: 0px !important;
 }
 
 .nav-action-button svg {
-  Margin-left:0rem;
-  Margin-top:0.1rem;
+  Margin-left:0.2rem;
+  left: 0.2rem !important;
+  Margin-top:0.2rem;
 }
 
-.nav-action-button {
-  width:2.3rem;
-  Height:2.3rem;
-  Margin-right:10px !important;
-}
 
 .nav-action-button .widget-icon{
   fill: var(--text-accent) !important;
@@ -1026,7 +1022,7 @@ input.search-input:focus {
 
 .view-actions {
   //Background:var(--background-primary) !important;
-  background: none !important
+  background: none !important;
   Box-shadow:none !important;
 }
 
@@ -1041,8 +1037,33 @@ Color:var(--text-accent) !important;
 
 /* Workspace */
 
+.workspace-tab-header-container {
+margin-left: 1rem;
+}
+
+.workspace-tab-container-before{
+  display: none;
+}
+
 .workspace-tab-header-inner {
-  padding:3px 3px 3px 10px;
+  //padding:3px 3px 3px 10px;
+  width:2.3rem;
+  Height:2.3rem;
+  border-radius: 5px !important;
+  Margin-right:10px !important;
+  Background-color:var(--background-primary) !important;
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
+  padding: 5px;
+  //margin-left: 1rem;
+}
+
+.workspace-tab-header-inner:first-child{
+  //margin-left: 1rem;
+}
+
+.workspace-tab-header-inner svg {
+  margin-left: 0.2rem;
+  margin-top: 0.2rem;
 }
 
 .workspace > .workspace-split:not(.mod-root) .workspace-leaf-content {
@@ -2785,6 +2806,7 @@ color:var(--text-normal) !important;
   box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
   padding: 5px;
   margin-left: 1rem;
+  margin-top: 1rem;
 }
 .graph-controls-button svg {
   color: var(--text-accent);
