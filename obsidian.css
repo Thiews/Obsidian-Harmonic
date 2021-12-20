@@ -1683,7 +1683,7 @@ Opacity:1 !important;
   color: var(--text-accent) !important;
 }
 
-.invert-background-color .HyperMD-quote{
+.invert-background-color .CodeMirror-activeline .HyperMD-quote{
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
 }
 
@@ -2158,7 +2158,7 @@ ol > li::before {
 }
 
 .invert-background-color .markdown-preview-view .markdown-preview-section  div pre{
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
+  //background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
 }
 
 .markdown-preview-view .markdown-preview-section  div pre code {
@@ -2170,19 +2170,16 @@ ol > li::before {
   filter: hue-rotate(var(--hue-bold-italic));
 }
 
-.theme-light .cm-s-obsidian div.HyperMD-codeblock-bg {
-  Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.05) !important;
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  Background-color:var(--background-secondary-alt);
 }
 
-.theme-dark .cm-s-obsidian div.HyperMD-codeblock-bg {
-  Background-color:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.1) !important;
-}
  .cm-s-obsidian .cm-hmd-codeblock {
   color: var(--text-accent);
  }
 
  .invert-background-color .cm-s-obsidian div.HyperMD-codeblock-bg {
-   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
+   //background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
    border: 0px;
 }
 
