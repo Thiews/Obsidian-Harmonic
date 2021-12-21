@@ -1307,8 +1307,14 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 /* Titles */
 
-.title-accent-color .markdown-preview-view h1, .title-accent-color .cm-s-obsidian .cm-header-1,.title-accent-color .markdown-preview-view h2,.title-accent-color .cm-s-obsidian .cm-header-3,.title-accent-color .markdown-preview-view h3,
+.title-accent-color .markdown-preview-view h1, .title-accent-color .cm-s-obsidian .cm-header-1,.title-accent-color .markdown-preview-view h2,.title-accent-color .cm-s-obsidian .cm-header-2,.title-accent-color .cm-s-obsidian .cm-header-3,.title-accent-color .markdown-preview-view h3,
 .title-accent-color .cm-s-obsidian .cm-header-4,.title-accent-color .markdown-preview-view h4, .title-accent-color .cm-s-obsidian .cm-header-5,.title-accent-color .markdown-preview-view h5, .title-accent-color .title-accent-color .cm-s-obsidian .cm-header-6,.title-accent-color .markdown-preview-view h6{
+  Color:var(--text-accent);
+} 
+
+.title-hue .markdown-preview-view h1, .title-hue .cm-s-obsidian .cm-header-1,.title-hue .markdown-preview-view h2,.title-hue .cm-s-obsidian .cm-header-2,.title-hue .cm-s-obsidian .cm-header-3,.title-hue .markdown-preview-view h3,
+.title-hue .cm-s-obsidian .cm-header-4,.title-hue .markdown-preview-view h4, .title-hue .cm-s-obsidian .cm-header-5,.title-hue .markdown-preview-view h5, .title-hue .title-accent-color .cm-s-obsidian .cm-header-6,.title-hue .markdown-preview-view h6{
+  filter: hue-rotate(var(--hue-bold-italic));
   Color:var(--text-accent);
 } 
 
@@ -5604,6 +5610,10 @@ settings:
         id: title-accent-color
         title: Accent color title
         description: Choose the accent color for every titles
+        type: class-toggle
+    - 
+        id: title-hue
+        title: Bold and italic color for titles
         type: class-toggle
     - 
         id: title-collapse
