@@ -608,7 +608,7 @@ filter: hue-rotate(var(--hue-bold-italic));
 }
 
 .bold-italic-accent.hue-nav-file-active.menu-v3 .nav-file .is-active > .nav-file-title-content{
-  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.3) !important;
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.1) !important;
   color: var(--text-accent);
   font-weight: bold;
 }
