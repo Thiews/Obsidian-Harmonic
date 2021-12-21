@@ -274,7 +274,7 @@ padding-right: 0px !important;
 
 .nav-buttons-container{
   margin-top: 0.5rem;
-  //margin-bottom: 0.5rem;
+  justify-content: center;
 }
 
 .nav-action-button {
@@ -299,20 +299,9 @@ margin:  0rem 0.5rem !important;
 }
 
 .nav-action-button.is-active {
-  //width:2rem;
-  //Height:2rem;
   border-radius: 5px !important;
-  //Margin-right:5px!important;
-  //Margin-left:auto !important;
-  //Margin-left:5px !important;
   Background-color:var(--background-primary) !important;
-  //background: var(--text-accent);
   box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.05);
-  //padding: 10px 0px;
-  /*//Background:var(--text-accent);
-  background: transparent;
-  //Border-radius:5px;
-  //margin: 0rem 0.55rem !important;*/
 }
 
 .menu-v2 .nav-action-button.is-active {
@@ -321,24 +310,16 @@ margin:  0rem 0.5rem !important;
 }
 
 .nav-action-button.is-active svg {
-  //Margin-left:0.15rem;
-  //Margin-top:0.2rem;
   color: var(--text-accent) !important;
   opacity: 1;
 }
 
 .nav-action-button.is-active svg {
-  //Color:#FFF !important;
   opacity: 1;
 }
 
 .menu-v2 .nav-action-button.is-active svg {
   Color:var(--text-accent) !important;
-}
-
-.minimal-icons-on .nav-action-button.is-active svg {
-  //Margin-left:0.1rem;
-  //Margin-top:0.25rem;
 }
 
 .nav-action-button:hover svg{
