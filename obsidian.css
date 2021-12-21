@@ -592,11 +592,15 @@ display:none !important;
 .menu-v1 .nav-file .is-active > .nav-file-title-content{
   Color:#fff;
   Background-color:var(--text-accent) !important;
-}
+  }
 
 .menu-v3 .nav-file .is-active > .nav-file-title-content{
   Color:#fff;
-Background-color:var(--text-accent) !important;
+  Background-color:var(--text-accent) !important;
+}
+
+.hue-nav-file-active .nav-file .is-active {
+filter: hue-rotate(var(--hue-bold-italic));
 }
 
 .workspace-leaf-content[data-type=starred] .nav-file-title-content {
@@ -5369,6 +5373,10 @@ settings:
         min: 0.7
         max: 1
         step: 0.01
+    -
+        id: hue-nav-file-active
+        title: Bold and italic color for active file
+        type: class-toggle
     -
         id: focus-mode
         title: 2. Focus mode
