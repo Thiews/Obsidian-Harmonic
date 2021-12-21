@@ -1307,8 +1307,12 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 /* Titles */
 
-.title-accent-color .markdown-preview-view h1, .title-accent-color .cm-s-obsidian .cm-header-1,.title-accent-color .markdown-preview-view h2,.title-accent-color .cm-s-obsidian .cm-header-2,.title-accent-color .cm-s-obsidian .cm-header-3,.title-accent-color .markdown-preview-view h3,
-.title-accent-color .cm-s-obsidian .cm-header-4,.title-accent-color .markdown-preview-view h4, .title-accent-color .cm-s-obsidian .cm-header-5,.title-accent-color .markdown-preview-view h5, .title-accent-color .title-accent-color .cm-s-obsidian .cm-header-6,.title-accent-color .markdown-preview-view h6{
+.title-accent-color .markdown-preview-view h1, .title-accent-color .cm-s-obsidian .cm-header-1,
+.title-accent-color .markdown-preview-view h2,.title-accent-color .cm-s-obsidian .cm-header-2,
+.title-accent-color .cm-s-obsidian .cm-header-3,.title-accent-color .markdown-preview-view h3,
+.title-accent-color .cm-s-obsidian .cm-header-4,.title-accent-color .markdown-preview-view h4,
+.title-accent-color .cm-s-obsidian .cm-header-5,.title-accent-color .markdown-preview-view h5,
+.title-accent-color .cm-s-obsidian .cm-header-6,.title-accent-color .markdown-preview-view h6{
   Color:var(--text-accent);
 } 
 
@@ -1316,6 +1320,16 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .title-hue .cm-s-obsidian .cm-header-4,.title-hue .markdown-preview-view h4, .title-hue .cm-s-obsidian .cm-header-5,.title-hue .markdown-preview-view h5, .title-hue .title-accent-color .cm-s-obsidian .cm-header-6,.title-hue .markdown-preview-view h6{
   filter: hue-rotate(var(--hue-bold-italic));
   Color:var(--text-accent);
+} 
+
+.title-hue .markdown-preview-view h1:after,
+.title-hue .markdown-preview-view h2:after,
+.title-hue .markdown-preview-view h3:after,
+.title-hue .markdown-preview-view h4:after,
+.title-hue .markdown-preview-view h5:after, 
+.title-hue .markdown-preview-view h6:after{
+  Color:var(--text-accent);
+  filter: hue-rotate(calc(-1 * var(--hue-bold-italic)));
 } 
 
 .empty-state-title,
@@ -1342,7 +1356,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   color:var(--text-accent);
 }
 
-.line-title .markdown-preview-view h1,
+.line-title .markdown-preview-view h1:after,
 .line-title .cm-s-obsidian .HyperMD-header-1:after{
   border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.2);
   padding-bottom: 0.5rem;
