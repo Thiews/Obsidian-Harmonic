@@ -1566,8 +1566,12 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   filter: hue-rotate(0) !important;
 }
 
-.wys-mode.bold-italic-accent:not(.h-change-color) .HyperMD-header:before{
-  filter: hue-rotate(calc(-1 * var(--hue-bold-italic))) !important;
+.wys-mode:not(.title-hue).bold-italic-accent:not(.h-change-color) .HyperMD-header:before{
+  filter: hue-rotate(calc(360 - var(--hue-bold-italic))) !important;
+}
+
+.wys-mode.title-hue.bold-italic-accent:not(.h-change-color) .HyperMD-header:before{
+  filter: hue-rotate(calc(360 - var(--hue-bold-italic))) !important;
 }
 
 
