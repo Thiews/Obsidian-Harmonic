@@ -619,6 +619,7 @@ filter: hue-rotate(var(--hue-bold-italic));
   font-weight: bold;
 }
 
+
 .workspace-leaf-content[data-type=starred] .nav-file-title-content {
   width:calc(100% - 15px);
 }
@@ -5205,12 +5206,23 @@ margin-left: calc(var(--p-offset));
 
 }
 
-.wys-mode .CodeMirror-line span.cm-hmd-frontmatter.cm-null:before {
+.wys-mode .CodeMirror-activeline .cm-hmd-frontmatter.cm-def{
+  opacity: 1 !important;
+}
+.wys-mode div:not(.CodeMirror-activeline) .cm-hmd-frontmatter.cm-def{
+  opacity: 0;
+}
+
+.wys-mode .CodeMirror-line .cm-atom.cm-hmd-frontmatter:before {
   content: "METADATA";
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
   display: block;
   color: var(--text-accent);
   font-weight: bold;
+}
+
+.wys-mode .cm-atom.cm-hmd-frontmatter{
+  color: var(--text-accent) !important;
 }
 
 .wys-mode  span.cm-hmd-frontmatter {
