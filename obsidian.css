@@ -1536,7 +1536,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 /* Change Hx color (preview and edit mode) */
 .h-change-color.bold-italic-accent .markdown-preview-view h1:before,.h-change-color.bold-italic-accent .markdown-preview-view h2:before,.h-change-color.bold-italic-accent .markdown-preview-view h3:before,.h-change-color.bold-italic-accent .markdown-preview-view h4:before,.h-change-color.bold-italic-accent .markdown-preview-view h5:before,.h-change-color.bold-italic-accent .markdown-preview-view h6:before{
-  filter: hue-rotate(var(--hue-bold-italic));
+  filter: hue-rotate(var(--hue-bold-italic)) !important;
 }
 
 .cm-formatting-header {
@@ -1544,7 +1544,25 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 }
 
 .bold-italic-accent.h-change-color .cm-formatting-header {
-  filter: hue-rotate(var(--hue-bold-italic)) !important;
+  filter: hue-rotate(var(--hue-bold-italic));
+}
+
+.title-hue.bold-italic-accent .markdown-preview-view h1:before,
+.title-hue.bold-italic-accent .markdown-preview-view h2:before,
+.title-hue.bold-italic-accent .markdown-preview-view h3:before,
+.title-hue.bold-italic-accent .markdown-preview-view h4:before,
+.title-hue.bold-italic-accent .markdown-preview-view h5:before,
+.title-hue.bold-italic-accent .markdown-preview-view h6:before{
+  filter: hue-rotate(calc(-1 * var(--hue-bold-italic)));
+}
+
+.h-change-color.title-hue.bold-italic-accent .markdown-preview-view h1:before,
+.h-change-color.title-hue.bold-italic-accent .markdown-preview-view h2:before,
+.h-change-color.title-hue.bold-italic-accent .markdown-preview-view h3:before,
+.h-change-color.title-hue.bold-italic-accent .markdown-preview-view h4:before,
+.h-change-color.title-hue.bold-italic-accent .markdown-preview-view h5:before,
+.h-change-color.title-hue.bold-italic-accent .markdown-preview-view h6:before{
+  filter: hue-rotate(0) !important;
 }
 
 /* Collapse indicator for titles */
