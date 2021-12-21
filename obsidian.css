@@ -1547,12 +1547,13 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   filter: hue-rotate(var(--hue-bold-italic));
 }
 
+
 .title-hue.bold-italic-accent .markdown-preview-view h1:before,
 .title-hue.bold-italic-accent .markdown-preview-view h2:before,
 .title-hue.bold-italic-accent .markdown-preview-view h3:before,
 .title-hue.bold-italic-accent .markdown-preview-view h4:before,
 .title-hue.bold-italic-accent .markdown-preview-view h5:before,
-.title-hue.bold-italic-accent .markdown-preview-view h6:before{
+.title-hue.bold-italic-accent .markdown-preview-view h6:before {
   filter: hue-rotate(calc(-1 * var(--hue-bold-italic)));
 }
 
@@ -1564,6 +1565,12 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .h-change-color.title-hue.bold-italic-accent .markdown-preview-view h6:before{
   filter: hue-rotate(0) !important;
 }
+
+.wys-mode.bold-italic-accent:not(.h-change-color) .HyperMD-header:before{
+  filter: hue-rotate(calc(-1 * var(--hue-bold-italic))) !important;
+}
+
+
 
 /* Collapse indicator for titles */
 
