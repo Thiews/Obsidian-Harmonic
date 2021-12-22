@@ -1240,6 +1240,10 @@ margin-left: 1rem;
 
 /* Front matter */
 
+.markdown-preview-view .frontmatter-collapse-indicator{
+  display: none;
+}
+
 .markdown-preview-view .frontmatter-container {
   background: transparent;
   border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
