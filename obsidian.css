@@ -1347,7 +1347,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .title-hue .markdown-preview-view h1, .title-hue .cm-s-obsidian .cm-header-1,.title-hue .markdown-preview-view h2,.title-hue .cm-s-obsidian .cm-header-2,.title-hue .cm-s-obsidian .cm-header-3,.title-hue .markdown-preview-view h3,
 .title-hue .cm-s-obsidian .cm-header-4,.title-hue .markdown-preview-view h4, .title-hue .cm-s-obsidian .cm-header-5,.title-hue .markdown-preview-view h5, .title-hue .title-accent-color .cm-s-obsidian .cm-header-6,.title-hue .markdown-preview-view h6{
   filter: hue-rotate(var(--hue-bold-italic));
-  Color:var(--text-accent);
+  Color:var(--text-accent) !important;
 } 
 
 .title-hue .markdown-preview-view h1:after,
