@@ -5257,26 +5257,23 @@ margin-left: calc(var(--p-offset));
 
 }
 
-.wys-mode .CodeMirror-activeline .cm-hmd-frontmatter.cm-def,.wys-mode .cm-hmd-frontmatter.cm-def:hover,.markdown-source-view.is-live-preview .cm-active .cm-hmd-frontmatter.cm-def{
+/*.wys-mode .CodeMirror-activeline .cm-hmd-frontmatter.cm-def,.wys-mode .cm-hmd-frontmatter.cm-def:hover,.markdown-source-view.is-live-preview .cm-active .cm-hmd-frontmatter.cm-def{
   opacity: 1 !important;
 }
 .wys-mode div:not(.CodeMirror-activeline) .cm-hmd-frontmatter.cm-def{
   opacity: 0;
+}*/
+
+.wys-mode .cm-hmd-frontmatter.cm-def{
+color: var(--text-accent) !important;
 }
 
 /*.wys-mode .CodeMirror-line .cm-atom.cm-def:first-of-type:before,*/
-.wys-mode .CodeMirror-code pre.CodeMirror-line .cm-hmd-frontmatter.cm-atom {
-
-  font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
-  color: var(--text-accent);
-  font-weight: bold;
-
-}
-
-.wys-mode .cm-atom.cm-hmd-frontmatter{
+.wys-mode .cm-hmd-frontmatter.cm-atom {
   color: var(--text-accent) !important;
   font-weight: bold;
 }
+
 
 .wys-mode  span.cm-hmd-frontmatter {
   font-family: var(--text);
