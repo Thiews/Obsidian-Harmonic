@@ -5264,8 +5264,18 @@ margin-left: calc(var(--p-offset));
   opacity: 0;
 }*/
 
-.wys-mode .cm-hmd-frontmatter.cm-def{
+.wys-mode div:not(.cm-active) > .cm-hmd-frontmatter.cm-def{
+  color: transparent !important;
+}
+
+.wys-mode div:not(.cm-active) > .cm-hmd-frontmatter.cm-def:before{
 color: var(--text-accent) !important;
+font-family: ;
+content: "———";
+position: absolute;
+margin-top: 0.5rem !important;
+width: calc(var(--line-width) - var(--p-offset)) !important;
+height: 3px;
 }
 
 /*.wys-mode .CodeMirror-line .cm-atom.cm-def:first-of-type:before,*/
