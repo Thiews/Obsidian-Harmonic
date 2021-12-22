@@ -5489,7 +5489,7 @@ settings:
         step: 0.01
     -
         id: hue-nav-file-active
-        title: Bold and italic color for active file
+        title: Bold and italic color for active file (color to choose in Make pages pop menu)
         type: class-toggle
     -
         id: focus-mode
