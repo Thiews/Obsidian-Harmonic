@@ -5279,7 +5279,7 @@ height: 3px;
 }
 
 /*.wys-mode .CodeMirror-line .cm-atom.cm-def:first-of-type:before,*/
-.wys-mode .cm-hmd-frontmatter.cm-atom {
+.wys-mode .cm-hmd-frontmatter.cm-atom,.wys-mode .cm-hmd-frontmatter.cm-meta {
   color: var(--text-accent) !important;
   font-weight: bold;
 }
@@ -5288,7 +5288,8 @@ height: 3px;
 .wys-mode  span.cm-hmd-frontmatter {
   font-family: var(--text);
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
-  color: var(--text-faint) !important; 
+  color: var(--text-normal) !important; 
+  font-style: italic;
 }
 
 .wys-mode  .CodeMirror-activeline span.cm-image-alt-text,.wys-mode .CodeMirror-activeline span.cm-image-marker,.wys-mode .CodeMirror-activeline .cm-hmd-internal-link.cm-hmd-embed{
