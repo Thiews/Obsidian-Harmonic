@@ -3132,9 +3132,12 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 
-.writing-focus .CodeMirror-code:not(.CodeMirror-activeline) span{
+.writing-focus .CodeMirror-code:not(.CodeMirror-activeline) span, 
+.writing-focus .cm-content .cm-line:not(.cm-active),
+.writing-focus .cm-content .cm-line:not(.cm-active) span,
+.writing-focus .cm-content .HyperMD-header:not(.cm-active){
   color: var(--text-faint) !important;
-  opacity: var(--writing-focus-opacity);
+  opacity: var(--writing-focus-opacity) !important;
 }
 
 .writing-focus.bold-italic-accent .CodeMirror-code .CodeMirror-activeline .cm-strong,.writing-focus.bold-italic-accent .CodeMirror-code .CodeMirror-activeline .cm-em {
