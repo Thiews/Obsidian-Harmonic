@@ -1968,9 +1968,9 @@ filter: none !important;
     content: "⇥";
   }
 
-  .markdown-source-view .HyperMD-task-line[data-task]{
-    text-decoration: none;
-    color: var(--text-normal);
+  .markdown-source-view .HyperMD-task-line[data-task='/']{
+    text-decoration: none !important;
+    color: var(--text-normal) !important;
   }
     .markdown-preview-view li[data-task="/"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="/"] p .task-list-item-checkbox:checked::before,
@@ -1985,7 +1985,10 @@ filter: none !important;
     content: "◐";
     }
 
-
+.markdown-source-view .HyperMD-task-line[data-task='?']{
+    text-decoration: none !important;
+    color: var(--text-normal) !important;
+  }
 
      .markdown-preview-view li[data-task="?"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="?"] p .task-list-item-checkbox:checked::before,
@@ -1998,6 +2001,11 @@ filter: none !important;
     content: "?";
 }
 
+.markdown-source-view .HyperMD-task-line[data-task='R']{
+    text-decoration: none !important;
+    color: var(--text-normal) !important;
+  }
+
 .markdown-preview-view li[data-task="R"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="R"] p .task-list-item-checkbox:checked::before,
 .markdown-source-view.is-live-preview input[data-task="R"]:before {
@@ -2009,6 +2017,11 @@ filter: none !important;
     font-size: 0.8em;
     content: "🔍";
     }
+
+    .markdown-source-view .HyperMD-task-line[data-task='L']{
+    text-decoration: none !important;
+    color: var(--text-normal) !important;
+  }
 
     .markdown-preview-view li[data-task="L"],
     .markdown-source-view .HyperMD-task-line[data-task='L']{
@@ -2028,6 +2041,10 @@ filter: none !important;
     font-weight: bold;
     }
 
+.markdown-source-view .HyperMD-task-line[data-task='!']{
+    text-decoration: none !important;
+    color: var(--text-normal) !important;
+  }
 
 .markdown-preview-view li[data-task="!"],
 .markdown-source-view .HyperMD-task-line[data-task='!']{
