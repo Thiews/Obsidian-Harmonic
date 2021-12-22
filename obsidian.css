@@ -1278,7 +1278,7 @@ margin-left: 1rem;
   filter: hue-rotate(var(--hue-bold-italic));
   }
 
-  .bold-italic-accent .markdown-source-view .cm-strong,.bold-italic-accent .markdown-source-view .cm-em {
+  .wys-mode.bold-italic-accent .markdown-source-view .cm-strong,.wys-mode.bold-italic-accent .markdown-source-view .cm-em {
     color: var(--text-accent);
     filter: hue-rotate(var(--hue-bold-italic));
   }
@@ -1325,8 +1325,11 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 }
 
 /* Accent color for titles */
-.title-accent-color .markdown-source-view .HyperMD-header span {
-  Color:var(--text-accent);
+.wys-mode.title-accent-color .markdown-source-view .HyperMD-header span {
+  Color:var(--text-accent) !important;
+}
+.markdown-source-view .HyperMD-header span {
+  color: var(--text-normal) !important;
 }
 
 
@@ -5003,7 +5006,7 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   width: calc(100% - var(--p-offset) - 4.2rem);
 }
 
-.markdown-source-view.is-live-preview .cm-content {
+.wys-mode .markdown-source-view.is-live-preview .cm-content {
   margin-left: var(--p-offset) !important;
 }
 
@@ -5011,7 +5014,7 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   left: calc(-1 * var(--p-offset)) !important;
 }
 
-.markdown-source-view.is-live-preview .HyperMD-header  {
+.wys-mode .markdown-source-view.is-live-preview .HyperMD-header  {
   margin-left: calc(-1 * var(--p-offset)) !important;
 }
 
@@ -5122,7 +5125,7 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   margin-right: 1rem;
 }
 
-.markdown-source-view.is-live-preview .list-bullet {
+.wys-mode .markdown-source-view.is-live-preview .list-bullet {
   color: var(--text-accent);
 }
 
