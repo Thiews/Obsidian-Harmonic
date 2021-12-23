@@ -183,6 +183,8 @@
 /* --------------- */
 /* Frameless mode */
 
+
+
 .frameless-mode .titlebar, .frameless-mode .titlebar-inner {
   position:fixed;
   top:0;
@@ -312,11 +314,6 @@ margin-left: 0px;
   //max-width: 100% !important;
 }
 
-
-.cm-gutters{
-  width: 1rem;
-  background: transparent !important;
-}
 
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl) .cm-scroller > *:first-child{
   margin-left: 0.5rem;
@@ -5212,6 +5209,7 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 .wys-mode .markdown-source-view.is-live-preview .list-bullet {
   color: var(--text-accent);
 }
+
 
 .markdown-source-view.is-live-preview .cm-link .cm-underline,
 .markdown-source-view.is-live-preview .cm-hmd-internal-link .cm-underline{
