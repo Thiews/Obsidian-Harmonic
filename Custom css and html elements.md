@@ -16,6 +16,8 @@ How : in the top of the page, in the yaml section (between two ---), put
 - cssclass: img-grid, to display grid image galery
 - cssclass: img-masonry-3 (or img-masonry-4 or img-masonry-5), to display image galery with masonry view
 
+<img width="827" alt="Capture d’écran 2021-12-15 à 17 22 49" src="https://user-images.githubusercontent.com/29182877/146224544-a6602b36-a01a-4eeb-9f29-e8f7abd18362.png">
+
 You can display each image in a different way with this synthax:
 
 ```
@@ -23,7 +25,7 @@ You can display each image in a different way with this synthax:
 ![[internal-link|img-border-radius]]
 ```
 
-Works with the class for images above +
+Works with the classes for images above +
 img-profile, img-portrait, img-banner
 
 ## Html and theme custom css
@@ -78,19 +80,6 @@ YOUR TEXT
 ```
 <img width="1440" alt="Capture d’écran 2021-12-13 à 17 51 47" src="https://user-images.githubusercontent.com/29182877/145854325-ab8a1847-3a0f-4365-be79-7205182f6905.png">
 	
-- You can add a masonry grid (img-masonry-3 > 3 columns,img-masonry-4 > 4 columns,img-masonry-5 > 5 columns)
-	
-```
-<div class="img-masonry-3">
-	<img src="url image">
-	<img src="url image">
-	<img src="url image"> etc..
-</div>
-```
-	
-<img width="827" alt="Capture d’écran 2021-12-15 à 17 22 49" src="https://user-images.githubusercontent.com/29182877/146224544-a6602b36-a01a-4eeb-9f29-e8f7abd18362.png">
-
-- A classic grid : the same with "img-grid"
 	
 ## Dataview and custom css
 You can display an article view (like in blogs) with :
