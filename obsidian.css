@@ -303,11 +303,15 @@ padding-right: 0px !important;
 }
 
 .full-width .cm-gutters{
-margin-left: 0px !important;
+margin-left: 0px;
 }
 
 .cm-gutters{
   width: 1rem;
+}
+
+.markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl) .cm-scroller > *:first-child{
+  margin-left: 0.5rem;
 }
 
 .markdown-source-view .cm-content{
@@ -1646,6 +1650,20 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 /* Collapse indicator for titles */
 
+
+.title-collapse .collapse-indicator {
+  opacity: 0 !important;
+}
+
+
+.title-collapse .collapse-indicator:hover{
+  opacity: 1 !important;
+}
+
+.markdown-source-view .collapse-indicator{
+  margin-left: 4rem !important;
+}
+/*
 .title-collapse .heading-collapse-indicator {
   Opacity:0;
 }
@@ -1661,7 +1679,7 @@ Opacity:1 !important;
 
 .CodeMirror-gutter-wrapper:hover{
   Opacity:1;
-}
+}*/
 
 /* ---------------------------*/
 /* Markdown preview styling */
@@ -5419,13 +5437,6 @@ box-shadow: 0px 2px 10px -4px #333;
   background: var(--background-secondary-alt);
 }
 
-.title-collapse .collapse-indicator {
-  opacity: 0 !important;
-}
-
-.title-collapse .collapse-indicator:hover{
-  opacity: 1 !important;
-}
 
 /* Style Settings ----------------------------------------------------  */
 
