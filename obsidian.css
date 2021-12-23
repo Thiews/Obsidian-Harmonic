@@ -287,6 +287,7 @@
 .markdown-source-view{
 padding-left: 0px !important;
 padding-right: 0px !important;
+padding-top: 1rem;
 }
 
 .markdown-source-view.is-readable-line-width .CodeMirror,
@@ -2646,6 +2647,15 @@ Background:var(--background-secondary-alt) !important;
   cursor:zoom-in;
 }
 
+.img-large .el-embed-image p img {
+  width: calc(100vw - 2rem) !important;
+  max-width: calc(100vw - 2rem) !important;
+  position: relative;
+  object-fit: cover;
+  margin-left: calc(50% - 50vw);
+  height: 500px !important;
+}
+
 .img-border-radius .markdown-preview-section img{
   border-radius: 25px;
 }
@@ -4075,7 +4085,14 @@ img[alt*='img-bw']{
   filter: saturate(0);
 }
 
-
+img[alt*='img-large']{
+   width: calc(100vw - 6rem) !important;
+  max-width: calc(100vw - 4rem) !important;
+  position: relative;
+  object-fit: cover;
+  left: calc(50% - 50vw + 1.8rem);
+  height: 500px !important;
+}
 
 /* Image grid */
 
