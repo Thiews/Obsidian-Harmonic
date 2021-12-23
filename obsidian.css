@@ -289,7 +289,9 @@ padding-left: 0px !important;
 padding-right: 0px !important;
 }
 
-.markdown-source-view.is-readable-line-width .CodeMirror, .markdown-preview-view.is-readable-line-width .markdown-preview-sizer {
+.markdown-source-view.is-readable-line-width .CodeMirror,
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer, 
+.markdown-source-view .cm-content{
   max-width:var(--max-width);
   width:var(--line-width);
 }
