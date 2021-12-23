@@ -13,12 +13,14 @@ How : in the top of the page, in the yaml section (between two ---), put
 - cssclass: blockquote-serif, to choose the serif font for the blockquote
 - cssclass: blockquote-bracket, to add a quotation mark for blockquote in the page
 - cssclass: blockquote-text-center, to center the text in the blockquote
-- cssclass: img-grid, to display grid image galery with table
+- cssclass: img-grid, to display grid image galery
+- cssclass: img-masonry-3 (or img-masonry-4 or img-masonry-5), to display image galery with masonry view
 
 You can display each image in a different way with this synthax:
 
 ```
 ![img-border-radius](url image)
+![[internal-link|img-border-radius]]
 ```
 
 Works with the class for images above +
