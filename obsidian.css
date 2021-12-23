@@ -307,8 +307,15 @@ padding-top: 1rem;
 margin-left: 0px;
 }
 
+.cm-contentContainer{
+  overflow: hidden;
+  //max-width: 100% !important;
+}
+
+
 .cm-gutters{
   width: 1rem;
+  background: transparent !important;
 }
 
 .markdown-source-view.mod-cm6.is-readable-line-width:not(.is-rtl) .cm-scroller > *:first-child{
@@ -321,11 +328,12 @@ margin-left: 0px;
 }
 
 .markdown-source-view .cm-contentContainer {
-  max-width: var(--max-width) !important;
+  max-width: 100% !important;
   margin-left: auto;
   margin-right: auto;
 
 }
+
 
 .markdown-source-view .cm-line {
   max-width: calc(100% - 1rem) !important;
