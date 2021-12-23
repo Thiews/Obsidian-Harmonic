@@ -296,11 +296,35 @@ padding-right: 0px !important;
   width:var(--line-width);
 }
 
-.full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-sizer{
+.full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-sizer,.full-width .cm-contentContainer,.full-width .cm-contentContainer .cm-content{
   width:100% !important;
-  //min-width: 100% !important;
+  margin: 0 !important;
+  --max-width: 100%;
 }
 
+.full-width .cm-gutters{
+margin-left: 0px !important;
+}
+
+.cm-gutters{
+  width: 1rem;
+}
+
+.markdown-source-view .cm-content{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.markdown-source-view .cm-contentContainer {
+  max-width: var(--max-width) !important;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.markdown-source-view .cm-line {
+  max-width: calc(100% - 1rem) !important;
+}
 
 /* ------------------- */
 /* Left sidebar */
@@ -5030,10 +5054,6 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 .wys-mode  .CodeMirror-sizer {
   left: var(--p-offset);
   width: calc(100% - var(--p-offset) - 4.2rem);
-}
-
-.wys-mode .markdown-source-view.is-live-preview .cm-content {
-  margin-left: var(--p-offset) !important;
 }
 
 .wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header {
