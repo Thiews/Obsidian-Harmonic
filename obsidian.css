@@ -290,10 +290,26 @@ padding-right: 0px !important;
 }
 
 .markdown-source-view.is-readable-line-width .CodeMirror,
-.markdown-preview-view.is-readable-line-width .markdown-preview-sizer,
- .markdown-source-view .cm-content{
+.markdown-preview-view.is-readable-line-width .markdown-preview-sizer{
   max-width:var(--max-width);
   width:var(--line-width);
+}
+
+.markdown-source-view .cm-contentContainer,.markdown-source-view .cm-line{
+  max-width: 100% !important;
+}
+ .markdown-source-view .cm-content{
+  width:var(--line-width);
+  max-width:100% !important;
+  padding-right: 1.5rem !important;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.markdown-source-view .cm-gutters{
+  width: 1rem;
+  background: transparent !important;
+  z-index: -1;
 }
 
 .full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-sizer, .full-width .cm-contentContainer, .full-width .cm-content, .full-width .cm-line{
@@ -5026,7 +5042,7 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   width: calc(100% - var(--p-offset) - 4.2rem);
 }
 
-.wys-mode .markdown-source-view.is-live-preview .cm-content {
+.wys-mode .markdown-source-view.is-live-preview{
   margin-left: var(--p-offset) !important;
 }
 
@@ -5304,7 +5320,6 @@ font-family: ;
 content: "———";
 position: absolute;
 margin-top: 0.5rem !important;
-width: calc(var(--line-width) - var(--p-offset)) !important;
 height: 3px;
 }
 
