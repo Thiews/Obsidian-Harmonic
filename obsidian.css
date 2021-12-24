@@ -5773,10 +5773,22 @@ settings:
     - 
         id: fonts
         title: 5. Fonts (Preview mode, edit mode, monospace, titles)
-        description : IA Writer Mono V, Ia Writer Quattro V and Pre-installed google fonts - Cabin, Heebo, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Oxygen, Readex Pro, Roboto, "Source Sans 3", Source Sans Pro, Work Sans
         type: heading
         level: 2
         collapsed: true
+    - 
+        id: fonts-download
+        title: Font pre-installed with the theme
+        description : IA Writer Mono V, Ia Writer Quattro V and Pre-installed google fonts - Cabin, Heebo, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Oxygen, Readex Pro, Roboto, "Source Sans 3", Source Sans Pro, Work Sans
+        type: heading
+        level: 3
+        collapsed: false
+    - 
+        id: fonts-choice
+        title: Choose your fonts
+        type: heading
+        level: 3
+        collapsed: false
     - 
         id: text
         title: Text font
