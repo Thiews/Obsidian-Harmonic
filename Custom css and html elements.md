@@ -13,7 +13,7 @@ How : in the top of the page, in the yaml section (between two ---), put
 - cssclass: blockquote-serif, to choose the serif font for the blockquote
 - cssclass: blockquote-bracket, to add a quotation mark for blockquote in the page
 - cssclass: blockquote-text-center, to center the text in the blockquote
-- cssclass: img-grid, to display grid image galery
+- cssclass: img-grid, to display grid image galery **Needs Contextual typography plugin**
 - cssclass: img-masonry-3 (or img-masonry-4 or img-masonry-5), to display image galery with masonry view
 
 <img width="827" alt="Capture d’écran 2021-12-15 à 17 22 49" src="https://user-images.githubusercontent.com/29182877/146224544-a6602b36-a01a-4eeb-9f29-e8f7abd18362.png">
