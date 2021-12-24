@@ -1,6 +1,9 @@
 /* HARMONIC THEME by Mathieu DUBOIS */
+/* If you like the theme, support my work at https://www.buymeacoffee.com/thiews */
 
-/* ───────────────────────────── iA Writer Mono ───────────────────────────── */
+/* ————————— Pre-installed fonts ———————————————— */
+
+/* iA Writer Mono */
 
 @font-face {
     font-family: 'iA Writer Mono V';
@@ -17,7 +20,7 @@
     font-display: swap;
 }
 
-/* ──────────────────────────── iA Writer Quattro ─────────────────────────── */
+/* iA Writer Quattro  */
 
 @font-face {
     font-family: 'iA Writer Quattro V';
@@ -34,7 +37,7 @@
     font-display: swap;
 }
 
-/* ————————————————————————————— Fonts from Google ————————————————————————— */
+/* Fonts from Google */
 
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
