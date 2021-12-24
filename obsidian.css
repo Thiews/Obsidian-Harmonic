@@ -1130,6 +1130,11 @@ input.search-input:focus {
 /* Main pane */
 /* ---------------------- */
 
+div.workspace-leaf div.markdown-preview-sizer.markdown-preview-section > div > * {
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+}
+
 /* Title Bar */
 
 .workspace-leaf-header, .view-header {
@@ -4128,7 +4133,6 @@ img[alt*='img-bw']{
 
 
 .img-grid img {
-  height: auto;
   object-fit: cover;
   height: 200px;
   width: 100%;
