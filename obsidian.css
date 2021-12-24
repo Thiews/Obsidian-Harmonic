@@ -4065,22 +4065,25 @@ img[alt*='img-bw']{
 
 /* Grid */
 
-.img-grid{
+.img-grid .el-embed-image p{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: masonry;
   align-items: stretch;
+  column-gap: 10px;
   justify-content: space-between;  
   align-content: space-between; 
-  margin-left: var(--p-offset);
 }
+
+.img-grid .el-embed-image p br{
+  display: none;
+}
+
 
 .img-grid img {
   margin-bottom: 1rem;
   height: auto;
   object-fit: cover;
-  padding-right: 0.5rem;
-padding-left: 0.5rem;
 }
 
 @media (max-width: 400pt){
