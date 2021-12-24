@@ -1570,6 +1570,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   text-transform:lowercase;
   Line-height:1.2em;
   Color:var(--h5-color);
+  font-size:var(--h5);
   font-weight:var(--h5-weight) !important;
   padding-top:15px;
 }
@@ -4111,12 +4112,14 @@ img[alt*='img-bw']{
 
 .img-grid .el-embed-image p{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-template-rows: masonry;
   align-items: stretch;
-  column-gap: 10px;
-  justify-content: space-between;  
-  align-content: space-between; 
+  column-gap: 1rem;
+  justify-content: stretch;  
+  align-content: stretch; 
+  justify-items: stretch;
+  margin-bottom: -0.8rem;
 }
 
 .img-grid .el-embed-image p br{
@@ -4125,9 +4128,10 @@ img[alt*='img-bw']{
 
 
 .img-grid img {
-  margin-bottom: 1rem;
   height: auto;
   object-fit: cover;
+  height: 200px;
+  width: 100%;
 }
 
 @media (max-width: 400pt){
@@ -4136,6 +4140,7 @@ img[alt*='img-bw']{
     width: 100%;
   }
 }
+
 
 /* Masonry */
 
