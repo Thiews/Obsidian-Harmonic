@@ -291,7 +291,7 @@ padding-right: 0px !important;
 
 .markdown-source-view.is-readable-line-width .CodeMirror,
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer{
-  max-width:var(--max-width);
+  max-width:100% !important;
   width:var(--line-width);
 }
 
