@@ -95,6 +95,7 @@
 --hue-bold-italic:180;
 --img-border-radius: 15px;
 --writing-focus-opacity: 0.6;
+--editor-spacing:  0em;
 
 
 
@@ -1130,6 +1131,8 @@ input.search-input:focus {
 /* Main pane */
 /* ---------------------- */
 
+/* Spaces between div */
+
 div.workspace-leaf div.markdown-preview-sizer.markdown-preview-section > div > :not(h1, h2, h3, h4, h5, h6) {
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
@@ -1358,6 +1361,10 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+.markdown-source-view:not(.cm-header){
+  letter-spacing: var(--editor-spacing);
+}
+
 .markdown-source-view.mod-cm6 .cm-scroller,
 .markdown-source-view,
 .cm-s-obsidian .cm-formatting-hashtag, 
@@ -1367,20 +1374,16 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   font-family:var(--text-editor) !important;
 }
 
-.CodeMirror-line {
-  Letter-spacing:var(--text-spacing) !important;
-}
 .cm-s-obsidian span.cm-formatting-task {
   font-family:var(--text-editor) !important;
   line-height:var(--line-height);
-  Letter-spacing:var(--text-spacing) !important;
 }
 
-.cm-s-obsidian .cm-header, .cm-s-obsidian .cm-strong {
+/*.cm-s-obsidian .cm-header, .cm-s-obsidian .cm-strong {
   font-weight:var(--bold-weight);
   font-family:var(--text) !important;
   Letter-spacing:var(--text-spacing) !important;
-}
+}*/
 
 .cm-formatting-header {
   font-weight:var(--normal-weight) !important;
@@ -5853,7 +5856,12 @@ settings:
         default: 400
     -
         id: text-spacing
-        title: Letter spacing for paragraph
+        title: Letter spacing for paragraph (preview mode)
+        type: variable-text
+        default: 0em
+    -
+        id: editor-spacing
+        title: Letter spacing for paragraph (editor mode)
         type: variable-text
         default: 0em
     -
@@ -5861,7 +5869,7 @@ settings:
         title: Body line height
         description: Line height of the main text
         type: variable-number
-        default: 1.5
+        default: 1.8
     -
         id: headings
         title: 7. Headings
