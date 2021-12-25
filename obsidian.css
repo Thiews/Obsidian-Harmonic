@@ -213,6 +213,11 @@
 }
 
 
+.theme-light.black-background-sidebar .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split{
+  --background-secondary-alt: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 29%));
+  --text-normal: #FFF;
+}
+
 /* ------------------ */
 /* Hides the name of the root folder */
   .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
@@ -886,6 +891,20 @@ margin: 0px !important;
 .menu-v4 .nav-file-title.is-active .nav-file-title-content{
   color: var(--text-accent) !important;
   font-weight: bold;
+}
+
+/* Dark left sidebar when light theme */
+
+.theme-light.black-background-sidebar .nav-folder-title-content{
+ filter: brightness(1.2) !important;
+}
+.theme-light.black-background-sidebar.menu-v1 .nav-file-title-content {
+  background: rgba(0,0,0,0.4);
+}
+
+.theme-light.black-background-sidebar.menu-v3.hue-nav-file-active.bold-italic-accent .nav-file-title.is-active .nav-file-title-content{
+  background: hsla(calc(var(--accent-h)), var(--accent-s),var(--accent-l), 0.4) !important;
+  color: #FFF !important;
 }
 
 /* Search */
@@ -5576,6 +5595,10 @@ settings:
         min: 0.7
         max: 1
         step: 0.01
+    -
+        id: black-background-sidebar
+        title: Dark navivation folder sidebar (light theme only)
+        type: class-toggle
     -
         id: hue-nav-file-active
         title: Bold and italic color for active file (color to choose in Make pages pop menu)
