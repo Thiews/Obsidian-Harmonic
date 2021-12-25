@@ -1361,9 +1361,9 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-.markdown-source-view:not(.cm-header){
+/*.markdown-source-view:not(.cm-header){
   letter-spacing: var(--editor-spacing);
-}
+}*/
 
 .markdown-source-view.mod-cm6 .cm-scroller,
 .markdown-source-view,
@@ -5218,6 +5218,7 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 
 .wys-mode .markdown-source-view.is-live-preview .list-bullet {
   color: var(--text-accent);
+  padding-right: 0.3rem;
 }
 
 .markdown-source-view.is-live-preview .cm-link .cm-underline,
