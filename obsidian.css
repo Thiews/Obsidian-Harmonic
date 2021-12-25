@@ -1937,7 +1937,7 @@ aside {
 filter: none !important;
 }
 .markdown-preview-view li[data-task=""]>.task-list-item-checkbox{
-  margin-left: -0.2rem;
+  margin-left: -0.8rem;
 }
 .markdown-preview-view li[data-task=""]>.task-list-item-checkbox::before,
 .markdown-preview-view li[data-task=""] p .task-list-item-checkbox::before,
@@ -1948,9 +1948,9 @@ filter: none !important;
   font-size: 0.6rem;
   border:2px solid var(--text-accent);
   border-radius: 100%;
-  padding: 0.09rem 0.28rem;
+  padding: 0.13rem 0.28rem;
   position: relative;
-  top: -0.6rem;
+  top: -0.5rem;
   left: -0.4rem;
 }
 
@@ -1958,7 +1958,7 @@ filter: none !important;
 .markdown-source-view .HyperMD-task-line[data-task='x']{
   text-decoration: line-through !important;
   color: var(--text-faint) !important;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 .markdown-preview-view li[data-task="x"]>.task-list-item-checkbox::before,
@@ -1970,9 +1970,9 @@ filter: none !important;
   font-size: 0.8rem;
   background-color: var(--text-accent);
   border-radius: 100%;
-  padding: 0.09rem 0.33rem;
+  padding: 0.15rem 0.33rem;
   position: relative;
-  top: -0.6rem;
+  top: -0.4rem;
   left: -0.4rem;
 }
 
@@ -1998,7 +1998,7 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.5rem;
-    left: -0.4rem;
+    left: -0.6rem;
     content: "⌲";
 }
 
@@ -2017,7 +2017,7 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.4rem;
+    left: -0.6rem;
     content: "✕";
     }
 
@@ -2030,7 +2030,7 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.4rem;
+    left: -0.6rem;
     content: "⇥";
   }
 
@@ -2045,7 +2045,7 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.4rem;
+    left: -0.6rem;
     font-size: 1rem;
     //content: "⎖";
     content: "◐";
@@ -2063,7 +2063,7 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.5rem;
-    left: -0.4rem;
+    left: -0.6rem;
     content: "?";
 }
 
@@ -2079,7 +2079,7 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.5rem;
-    left: -0.4rem;
+    left: -0.6rem;
     font-size: 0.8em;
     content: "🔍";
     }
@@ -2101,7 +2101,7 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.4rem;
+    left: -0.6rem;
     //font-size: 0.5em;
     content: "!";
     font-weight: bold;
@@ -2124,7 +2124,7 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.4rem;
+    left: -0.6rem;
     font-size: 0.9rem;
     content: "⚡︎";
     }
@@ -5370,7 +5370,7 @@ margin-left: calc(var(--p-offset));
 
 .wys-mode div:not(.cm-active) > .cm-hmd-frontmatter.cm-def:before{
 color: var(--text-accent) !important;
-font-family: ;
+font-family: mulish ;
 content: "———";
 position: absolute;
 margin-top: 0.5rem !important;
@@ -5388,7 +5388,7 @@ height: 3px;
   font-family: var(--text);
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
   color: var(--text-normal) !important; 
-  font-style: italic;
+  //font-style: italic;
 }
 
 .wys-mode  .CodeMirror-activeline span.cm-image-alt-text,.wys-mode .CodeMirror-activeline span.cm-image-marker,.wys-mode .CodeMirror-activeline .cm-hmd-internal-link.cm-hmd-embed{
