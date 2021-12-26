@@ -2321,14 +2321,18 @@ ul,ol,ul ul, ol ul, ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 ul > li:not(.task-list-item):before {
   content:"\2022";
   color:var(--text-accent);
-  font-weight:600;
   display:inline-block;
   width:1em;
   position: relative;
   margin-left:-1em;
   top: 1px;
-
 }
+
+@media (max-width: 400pt){
+  ul > li:not(.task-list-item):before {
+    width:0.5em !important;
+  }}
+
 
 ul li p, ol li p {
   display:inline;
