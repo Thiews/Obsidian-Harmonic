@@ -123,18 +123,18 @@ sort file.ctime desc
 
 ### Contribute by **coding** the theme
 - If you have found a bug or a potential improvement for the theme and want to code it, we would be happy to accept your PRs!
-    **Important :** It'd be good to talk about it beforehand to make sure that no one else is working on it. You can [open an issue]() for this.
+  **Important :** It'd be good to talk about it beforehand to make sure that no one else is working on it. You can [open an issue]() for this.
 - If you want to code but don't know where to start :
-    1) Check out the issues labelled "[help wanted]()".
-    2) Check out [our roadmap]() and choose an unassigned task
+  1) Check out the issues labelled "[help wanted]()".
+  2) Check out [our roadmap]() and choose an unassigned task
 
-Here a the steps to contribute to the Harmonic's code :
+**Here a the steps to contribute to the Harmonic's code :**
 1) Fork this repository
 2) Clone your fork on your computer using `git clone https://github.com/<YourGithubName>/Obsidian-Harmonic.git`
 3) In local, navigate into the cloned folder called `Obsidian-Harmonic/`
 4) Add the Harmonic project repository as the "upstream" remote using `git remote add upstream https://github.com/Thiews/Obsidian-Harmonic.git`
-5) Now you can easily pull the new updates on the Harmonic repository using `git pull upstream master`
+5) Now you can easily pull the new updates on the Harmonic repository using `git pull upstream main`
 5) Apply changes in your local repository
 6) Commit your changes using `git add -A` + `git commit -m "<YourChangesDescription>"`
-7) Push your changes to your fork repository using `git push origin master`
+7) Push your changes to your fork repository using `git push origin main`
 8) Return to your fork on Github, refresh the page and you should see an highlighted area that invites you to initiate a Pull Request. (alternatively you can click on the "New pull request" button)
