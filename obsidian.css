@@ -1958,6 +1958,7 @@ aside {
   //margin-left: 0rem;
 }
 
+
 .markdown-preview-view .contains-task-list{
   margin-left: calc(var(--p-offset) - 0.4rem);
 }
@@ -2340,10 +2341,11 @@ ul {
   position: relative;
 }
 
+@media (min-width: 400pt){
 ul > li {
   margin-left:1rem;
   position: relative;
-}
+}}
 
 ol {
   padding-inline-start:0.3em;
@@ -2353,11 +2355,12 @@ ol {
   position:relative;
 }
 
+@media (min-width: 400pt){
 ol > li {
   margin-left:1rem;
   position: relative;
   counter-increment:counter;
-}
+}}
 
 ol ol{
   margin-left: 0.2rem !important;
