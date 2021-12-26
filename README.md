@@ -1,7 +1,8 @@
 # Obsidian-theme : **Harmonic**
 Harmonic is a minimal and highly customizable theme. You can easily change the entire design with just a few changes in [Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings) panel.
 
-If you like using the theme, support my work and
+## Support my work
+If you like using the theme, you can :
 <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
 
 ## Plugins compatibility
@@ -20,7 +21,7 @@ This theme has adjustments or custom-made design for the following plugins :
 Firstly, install the [Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings), to do so :
 1) In your Obsidian go to `Settings` > `Community plugins` > `Browse`
 2) Then browse for the Style Settings plugin and click on `Install` and then on `Enable`
-3) You have now access to the customization panel going to `Settings` > `Style Settings` > `Harmonic`
+3) You have now access to the customization panel by going to `Settings` > `Style Settings` > `Harmonic`
 
 ## What you can customize ?
 
