@@ -1,4 +1,4 @@
-# Obsidian-theme : **Harmonic**
+# _**"Harmonic"**_ theme for Obsidian
 ### Harmonic is a minimal and highly customizable theme. You can easily change the entire design with just a few changes using the [Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings) panel.
 <img width="1440" alt="Capture d’écran 2021-12-01 à 16 31 58" src="https://user-images.githubusercontent.com/29182877/144263738-a27cac6b-9db8-4007-850f-68d273f5d5b8.png">
 
