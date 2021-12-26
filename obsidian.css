@@ -214,7 +214,7 @@
 
 
 .theme-light.black-background-sidebar .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split{
-  --background-secondary-alt: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 29%));
+  --background-secondary-alt: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 27%));
   --text-normal: #FFF;
 }
 
@@ -1271,9 +1271,6 @@ margin-left: 1rem;
   width:0px !important;
 }
 
-.workspace-split.mod-horizontal hr.workspace-leaf-resize-handle{
-  height: 100%;
-}
 
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
