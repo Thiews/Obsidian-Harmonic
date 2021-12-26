@@ -2328,12 +2328,6 @@ ul > li:not(.task-list-item):before {
   top: 1px;
 }
 
-@media (max-width: 400pt){
-  ul > li:not(.task-list-item):before {
-    width:0.5em !important;
-  }}
-
-
 ul li p, ol li p {
   display:inline;
 }
