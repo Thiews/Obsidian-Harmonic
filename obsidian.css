@@ -337,13 +337,15 @@ padding-right: 0px !important;
   max-width:100% !important;
   width:var(--line-width);
 }
+
+@media (min-width: 400pt){
 .markdown-source-view.is-readable-line-width  {
   width: var(--line-width);
   max-width:100% !important;
   padding-left: 2rem !important;
   margin-left: auto;
   margin-right: auto;
-}
+}}
 
 .CodeMirror-sizer{
   max-width:100% !important;
@@ -1476,11 +1478,13 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   font-weight:var(--h1-weight) !important;/*normal;*/
   Color:var(--h1-color);
 }
+
+@media (min-width: 400pt){
 .HyperMD-header-1 {
   letter-spacing:var(--title-spacing);
   margin: 0px;
  padding-bottom: 1rem !important;
-}
+}}
 
 .h-reveal .markdown-preview-view h1:before{
   content:"H1";
@@ -1521,13 +1525,13 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   display: block;
 }
 
-
+@media (min-width: 400pt){
 .HyperMD-header-2 {
   letter-spacing:var(--title-spacing);
  // padding: 30px 0px 20px 0px!important;
  padding-top: 2rem !important;
  padding-bottom: 1rem !important;
-}
+}}
 
 .h-reveal .markdown-preview-view h2:before{
   content:"H2";
@@ -1558,11 +1562,12 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   display: block;
 }
 
+@media (min-width: 400pt){
 .HyperMD-header-3 {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
  padding-bottom: 1rem !important;
-}
+}}
 
 .h-reveal .markdown-preview-view h3:before{
   content:"H3";
@@ -1595,11 +1600,12 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   display: block;
 }
 
+@media (min-width: 400pt){
 .HyperMD-header-4 {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
  padding-bottom: 1rem !important;
-}
+}}
 
 .h-reveal .markdown-preview-view h4:before{
   content:"H4";
@@ -1632,11 +1638,12 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   display: block;
 }
 
+@media (min-width: 400pt){
 .HyperMD-header-5 {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
  padding-bottom: 1rem !important;
-}
+}}
 
 .h-reveal .markdown-preview-view h5:before{
   Font-size:0.8rem;
@@ -1669,11 +1676,12 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   display: block;
 }
 
+@media (min-width: 400pt){
 .HyperMD-header-6 {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
  padding-bottom: 1rem !important;
-}
+}}
 
 .h-reveal .markdown-preview-view h6:before{
   Font-size:0.8rem;
@@ -1949,6 +1957,7 @@ aside {
   border: 0px solid !important;
   //margin-left: 0rem;
 }
+
 
 .markdown-preview-view .contains-task-list{
   margin-left: calc(var(--p-offset) - 0.4rem);
@@ -2312,44 +2321,45 @@ ul,ol,ul ul, ol ul, ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 ul > li:not(.task-list-item):before {
   content:"\2022";
   color:var(--text-accent);
-  font-weight:600;
   display:inline-block;
   width:1em;
   position: relative;
   margin-left:-1em;
   top: 1px;
-
 }
 
 ul li p, ol li p {
   display:inline;
 }
 
-
+@media (min-width: 400pt){
 ul {
   padding-inline-start:0.3em;
   //margin-left: 0.3rem !important;
   position: relative;
-}
+}}
 
+@media (min-width: 400pt){
 ul > li {
   margin-left:1rem;
   position: relative;
-}
+}}
 
+@media (min-width: 400pt){
 ol {
   padding-inline-start:0.3em;
   margin-left:0.3em;
   list-style:none;
   counter-reset:counter;
   position:relative;
-}
+}}
 
+@media (min-width: 400pt){
 ol > li {
   margin-left:1rem;
   position: relative;
   counter-increment:counter;
-}
+}}
 
 ol ol{
   margin-left: 0.2rem !important;
@@ -5253,6 +5263,12 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   left: 26px;
   margin-right: 1rem;
 }
+
+@media (max-width: 400pt){
+  .wys-mode .markdown-source-view:not(.is-live-preview) .HyperMD-list-line .cm-formatting-list:not(.cm-formatting-list-ol):before{
+    content: "•" !important;
+    font-size: 1.5rem;
+  }}
 
 .wys-mode .markdown-source-view.is-live-preview .list-bullet {
   color: var(--text-accent);
