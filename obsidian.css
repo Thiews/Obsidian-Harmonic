@@ -2590,10 +2590,12 @@ Zoom:0.8;
 
 /* --------------- */
 /* Modals */
+@media (min-width: 400pt){
 .modal.mod-settings{
   width: 75vw;
 }
 }
+
 .modal.mod-settings .vertical-tab-header {
   Background:transparent !important;
 }
