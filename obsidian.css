@@ -338,7 +338,7 @@ padding-right: 0px !important;
   width:var(--line-width);
 }
 .markdown-source-view.is-readable-line-width  {
-  width: var(--line-width) !important;
+  width: var(--line-width);
   max-width:100% !important;
   margin-left: auto;
   margin-right: auto;
@@ -361,7 +361,6 @@ margin: 0px !important;
  .markdown-source-view .cm-content{
   width:var(--line-width);
   max-width:100% !important;
-  padding-right: 1.5rem !important;
   margin-left: auto;
   margin-right: auto;
  }
@@ -374,6 +373,8 @@ margin: 0px !important;
 
 .full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-sizer, .full-width .cm-contentContainer, .full-width .cm-content, .full-width .cm-line{
   width:100% !important;
+  padding: 0rem 1rem;
+
   max-width: 100% !important;
   //min-width: 100% !important;
 }
@@ -5130,9 +5131,6 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   width: calc(100% - var(--p-offset) - 4.2rem);
 }
 
-.wys-mode .markdown-source-view.is-live-preview{
-  margin-left: var(--p-offset) !important;
-}
 
 .wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header {
   left: calc(-1 * var(--p-offset)) !important;
