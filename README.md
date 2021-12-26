@@ -3,6 +3,7 @@ Harmonic is a minimal and highly customizable theme. You can easily change the e
 
 ## Support my work
 If you like using the theme, you can :
+
 <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
 
 ## Plugins compatibility
