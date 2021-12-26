@@ -1271,6 +1271,10 @@ margin-left: 1rem;
   width:0px !important;
 }
 
+.workspace-split.mod-horizontal hr.workspace-leaf-resize-handle{
+  height: 100%;
+}
+
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
   border-right:1px solid var(--background-modifier-border);
