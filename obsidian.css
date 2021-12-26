@@ -5267,8 +5267,8 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 @media (max-width: 400pt){
   .wys-mode .markdown-source-view:not(.is-live-preview) .HyperMD-list-line .cm-formatting-list:not(.cm-formatting-list-ol):before{
     content: "•" !important;
-    width: 0.2rem;
-    height: 0.2rem;
+    width: 0.1rem;
+    height: 0.1rem;
   }}
 
 .wys-mode .markdown-source-view.is-live-preview .list-bullet {
