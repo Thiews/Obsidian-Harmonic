@@ -2334,12 +2334,12 @@ ul li p, ol li p {
   display:inline;
 }
 
-
+@media (min-width: 400pt){
 ul {
   padding-inline-start:0.3em;
   //margin-left: 0.3rem !important;
   position: relative;
-}
+}}
 
 @media (min-width: 400pt){
 ul > li {
@@ -2347,13 +2347,14 @@ ul > li {
   position: relative;
 }}
 
+@media (min-width: 400pt){
 ol {
   padding-inline-start:0.3em;
   margin-left:0.3em;
   list-style:none;
   counter-reset:counter;
   position:relative;
-}
+}}
 
 @media (min-width: 400pt){
 ol > li {
