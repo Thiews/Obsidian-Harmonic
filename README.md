@@ -20,7 +20,7 @@ This theme has adjustments or custom-made design for the following plugins :
 2) Then browse for the Harmonic theme and click on `Use`
 
 ## How to customize ?
-Firstly, install the [Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings), to do so :
+Firstly, install the [Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings) :
 1) In your Obsidian go to `Settings` > `Community plugins` > `Browse`
 2) Then browse for the Style Settings plugin and click on `Install` and then on `Enable`
 3) You have now access to the customization panel by going to `Settings` > `Style Settings` > `Harmonic`
@@ -126,19 +126,19 @@ sort file.ctime desc
 
 ## How to contribute ?
 
-### Contribute by **testing** the theme
+### Contribute by _**testing**_ the theme
 1) Test the theme features
 2) Observe a bug or an improvement that could be made
 3) Report it by [creating an issue]()
 
-### Contribute by **coding** the theme
+### Contribute by _**coding**_ the theme
 - If you have found a bug or a potential improvement for the theme and want to code it, we would be happy to accept your PRs!
   **Important :** It'd be good to talk about it beforehand to make sure that no one else is working on it. You can [open an issue]() for this.
 - If you want to code but don't know where to start :
   1) Check out the issues labelled "[help wanted]()".
   2) Check out [our roadmap]() and choose an unassigned task
 
-**Here a the steps to contribute to the Harmonic's code :**
+**Here are the steps to contribute to the Harmonic's code :**
 1) Fork this repository
 2) Clone your fork on your computer using `git clone https://github.com/<YourGithubName>/Obsidian-Harmonic.git`
 3) In local, navigate into the cloned folder called `Obsidian-Harmonic/`
