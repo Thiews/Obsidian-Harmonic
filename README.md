@@ -1,7 +1,7 @@
 # Obsidian-theme : Harmonic
 Harmonic is a minimal and highly customizable theme. You can easily change the entire design with just a few changes in Style settings plugin panel.
 
-If you like using the theme, support my work and    
+If you like using the theme, support my work and
 <a href="https://www.buymeacoffee.com/thiews" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162px !important;margin-left:20px !important;" ></a>
 
 ---
@@ -86,7 +86,7 @@ To have more information about the theme and custom css / html : [Go there](http
  </div>
 ```
 
-- menu bar for page (.menu-page) avec html 
+- menu bar for page (.menu-page) avec html
 
 ```
   <div class="menu-page">
@@ -108,9 +108,33 @@ With the following dataview code. "Cover" appear in page YAML (cover: url of the
 ```dataview
 table file.ctime, ("<img src=" + cover + ">") as cover
 from WHAT YOU WANT TO SHOW
-sort file.ctime desc 
+sort file.ctime desc
 ```
 
 <img width="1440" alt="list note article view" src="https://user-images.githubusercontent.com/29182877/145707056-24b05f43-067e-41bc-bd28-e40059a90d81.png">
 
 
+## How to contribute ?
+
+### Contribute by **testing** the theme
+1) Test the theme features
+2) Observe a bug or an improvement that could be made
+3) Report it by [creating an issue]()
+
+### Contribute by **coding** the theme
+- If you have found a bug or a potential improvement for the theme and want to code it, we would be happy to accept your PRs!
+    **Important :** It'd be good to talk about it beforehand to make sure that no one else is working on it. You can [open an issue]() for this.
+- If you want to code but don't know where to start :
+    1) Check out the issues labelled "[help wanted]()".
+    2) Check out [our roadmap]() and choose an unassigned task
+
+Here a the steps to contribute to the Harmonic's code :
+1) Fork this repository
+2) Clone your fork on your computer using `git clone https://github.com/<YourGithubName>/Obsidian-Harmonic.git`
+3) In local, navigate into the cloned folder called `Obsidian-Harmonic/`
+4) Add the Harmonic project repository as the "upstream" remote using `git remote add upstream https://github.com/Thiews/Obsidian-Harmonic.git`
+5) Now you can easily pull the new updates on the Harmonic repository using `git pull upstream master`
+5) Apply changes in your local repository
+6) Commit your changes using `git add -A` + `git commit -m "<YourChangesDescription>"`
+7) Push your changes to your fork repository using `git push origin master`
+8) Return to your fork on Github, refresh the page and you should see an highlighted area that invites you to initiate a Pull Request. (alternatively you can click on the "New pull request" button)
