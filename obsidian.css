@@ -1271,6 +1271,9 @@ margin-left: 1rem;
   width:0px !important;
 }
 
+.black-background-sidebar .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split.workspace-split.mod-horizontal hr.workspace-leaf-resize-handle{
+  background-color: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 27%));;
+}
 
 .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,
 .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
