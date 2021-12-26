@@ -340,6 +340,7 @@ padding-right: 0px !important;
 .markdown-source-view.is-readable-line-width  {
   width: var(--line-width);
   max-width:100% !important;
+  padding-left: 2rem !important;
   margin-left: auto;
   margin-right: auto;
 }
