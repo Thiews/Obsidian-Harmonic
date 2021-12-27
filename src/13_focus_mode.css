@@ -1,0 +1,91 @@
+/* ----------------------- */
+/*  Focus mode */
+
+.hide-action-buttons .view-action {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.hide-action-buttons .view-action:hover {
+  opacity: 1;
+}
+
+.hide-instruction .prompt-instructions {
+  Display:none;
+}
+
+.hide-tooltip .tooltip {
+  Display:none;
+}
+
+.hide-scrollbar ::-webkit-scrollbar {
+  Display:none;
+}
+
+.hide-file-name .titlebar-button-container {
+  display: none;
+}
+
+.hide-left-menu .workspace-ribbon {
+  Display:none;
+}
+.hide-file-name .workspace-leaf-header, .hide-file-name .view-header .view-header-title:hover {
+  Opacity:1;
+}
+
+.hide-file-name .workspace-leaf-header,.hide-file-name .view-header .view-header-title {
+  Opacity:0;
+  transition: 0.3s;
+}
+
+.view-header-icon {
+  opacity:0 !important;
+}
+
+.hide-tab-header .workspace-tab-header-container {
+   Opacity:0;
+   transition: 0.3s;
+}
+
+.hide-left-menu .workspace-tab-header-container:hover {
+   Opacity:1;
+}
+
+.hide-status-bar .status-bar {
+  Display:none;
+}
+
+.writing-focus .CodeMirror-code .CodeMirror-activeline pre span{
+  color: var(--font-normal) !important;
+  opacity: 1;
+}
+
+.writing-focus .CodeMirror-code .CodeMirror-activeline pre .cm-hmd-internal-link {
+  color: var(--text-accent) !important;
+}
+
+
+.writing-focus .CodeMirror-code:not(.CodeMirror-activeline) span,
+.writing-focus .cm-content .cm-line:not(.cm-active),
+.writing-focus .cm-content .cm-line:not(.cm-active) span,
+.writing-focus .cm-content .HyperMD-header:not(.cm-active){
+  color: var(--text-faint) !important;
+  opacity: var(--writing-focus-opacity) !important;
+}
+
+.writing-focus.bold-italic-accent .CodeMirror-code .CodeMirror-activeline .cm-strong,.writing-focus.bold-italic-accent .CodeMirror-code .CodeMirror-activeline .cm-em {
+    color: var(--text-accent) !important;
+    filter: hue-rotate(var(--hue-bold-italic));
+  }
+
+
+
+.writing-focus.is-mobile .markdown-source-view div {
+  color: var(--text-faint);
+  opacity: var(--writing-focus-opacity);
+}
+
+.writing-focus.is-mobile .markdown-source-view div:hover{
+  color: var(--font-normal) !important;
+  opacity: 1 !important;
+  }

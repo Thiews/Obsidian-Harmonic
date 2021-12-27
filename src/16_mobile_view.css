@@ -1,0 +1,145 @@
+/* ----------------------- */
+/* Mobile */
+
+
+@media (max-width:500pt){
+ .markdown-preview-view {
+ --p-offset:0px !important;
+ max-width: 100% !important;
+}
+  }
+
+@media (max-width: 400pt) {
+  .markdown-source-view.is-readable-line-width,.markdown-source-view.is-readable-line-width , .markdown-preview-view{
+      width:100% !important;
+      padding: 0px 0px;
+      margin: 0px 0px;
+  }
+  .view-header .view-header-title{
+  Opacity:1 !important;
+}
+.view-action {
+    opacity: 1 !important;
+  }
+  body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian,.markdown-preview-view {
+    font-size: var(--font-phone) !important;
+  }
+ .empty-state-title,
+.markdown-preview-view h1, .cm-s-obsidian .cm-header-1{
+  font-size: 1.5em;
+  padding-top: 15px;
+  }
+  .empty-state-title,
+.markdown-preview-view h2, .cm-s-obsidian .cm-header-2{
+  font-size: 1.3em;
+  padding-top: 8px;
+  }
+  .empty-state-title,
+.markdown-preview-view h3, .cm-s-obsidian .cm-header-3{
+  font-size: 1.1em;
+  padding-top: 5px;
+  }
+  .empty-state-title,
+.markdown-preview-view h4, .cm-s-obsidian .cm-header-4{
+  font-size: 1em;
+  padding-top: 3px;
+ }
+ .empty-state-title,
+.markdown-preview-view h5, .cm-s-obsidian .cm-header-5{
+  font-size: 1em;
+  padding-top: 3px;
+ }
+ .empty-state-title,
+.markdown-preview-view h6, .cm-s-obsidian .cm-header-6{
+  font-size: 1em;
+  padding-top: 3px;
+ }
+ .markdown-preview-sizer, .CodeMirror-sizer {
+
+  width: 100% !important;
+ }
+ ::-webkit-scrollbar {
+  Display:none;
+}
+}
+
+/* Edit button */
+
+.edit-button .view-action:nth-last-of-type(4),.edit-button .view-action:nth-last-of-type(5),
+.edit-button .view-action:nth-last-of-type(6) {
+  top: calc(90vh - 10px) !important;
+  Margin-right:1rem !important;
+  Position:absolute !important;
+  Background:var(--text-accent) !important;
+  Width:3rem !important;
+  Height:3rem !important;
+  Border-radius:100% !important;
+  Padding:0.9rem 0.9rem !important;
+  Opacity:1 !important ;
+}
+
+
+.edit-button .view-action:nth-last-of-type(4) svg,.edit-button .view-action:nth-last-of-type(5) svg,.edit-button .view-action:nth-last-of-type(6) svg{
+  Color:#FFF !important;
+  //Width:1.3rem;
+  margin-bottom: 0.1rem !important;
+  opacity: 1 !important;
+}
+
+
+/*.edit-button.is-mobile .view-action:nth-last-of-type(4) svg, .edit-button.is-mobile .view-action:nth-last-of-type(5) svg, .edit-button.is-mobile .view-action:nth-last-of-type(6) svg{
+  margin-left:0.1rem;
+  Margin-top:-0.1rem;
+  Width:1rem;
+}*/
+
+
+/* with Sliding pane plugin */
+
+.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) {
+  position: absolute;
+  left: calc(84vw);
+}
+
+.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4) svg,.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5) svg,.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) svg{
+  margin-left: -0.5rem;}
+
+.edit-button.is-mobile .view-action:nth-last-of-type(4),.edit-button.is-mobile .view-action:nth-last-of-type(5),.edit-button.is-mobile .view-action:nth-last-of-type(6) {
+  Margin-left:-1rem;
+}
+
+/* Show edit button */
+
+@media (max-width: 400pt){
+  .CodeMirror .CodeMirror-line, .CodeMirror .CodeMirror-line-like {
+    z-index: 0;
+  }
+}
+
+@media (max-width: 400pt){
+  .view-action:nth-last-of-type(4),.view-action:nth-last-of-type(5),
+.view-action:nth-last-of-type(6) {
+  top: calc(95vh - 60px);
+  Margin-right:0rem;
+  Position:absolute !important;
+  Background:var(--text-accent);
+  Width:5rem;
+  Height:5rem;
+  z-index: 100 !important;
+  Border-radius:100%;
+  Padding:0.9rem 0.9rem;
+  Opacity:1 !important;
+  //box-shadow: -5px -3px 25px -5px rgba(0,0,0,0.5);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+
+.view-action:nth-last-of-type(4) svg,.view-action:nth-last-of-type(5) svg,.view-action:nth-last-of-type(6) svg{
+  Color:#FFF !important;
+  Width:2rem !important;
+  height: 2rem !important;
+  margin-top: 0.5rem !important;
+  margin-left: 0.6rem;
+  position: relative;
+}
+}

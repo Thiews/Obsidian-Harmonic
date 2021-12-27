@@ -1,0 +1,18 @@
+/* --------------- */
+/* Scroll bars */
+
+::-webkit-scrollbar {
+  width:7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  border-width:0px 4px 6px 0px;
+  border-style:solid;
+  border-radius:0 !important;
+  border-color:var(--background-primary);
+  min-height:40px;
+}

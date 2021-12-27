@@ -1,0 +1,57 @@
+/* Translucency */
+
+.is-translucent.theme-light .workspace {
+  --text-normal: hsl(
+    var(--base-h),
+    calc(var(--base-s) + 100%),
+    calc(var(--base-l) - 100%)
+  );
+  --text-title: hsl(
+    var(--base-h),
+    calc(var(--base-s) + 100%),
+    calc(var(--base-l) - 100%)
+  );
+  --svg-faint: hsl(
+    var(--base-h),
+    calc(var(--base-s) - 3%),
+    calc(var(--base-l) - 38%)
+  );
+}
+
+.is-translucent.theme-light .workspace-split.mod-horizontal.mod-left-split,.theme-light .workspace-split.mod-horizontal.mod-right-split{
+  background: rgba(255,255,255,0.6) !important;
+}
+
+.is-translucent.theme-dark .workspace {
+  --text-normal: hsl(
+    var(--base-h),
+    calc(var(--base-s) + 100%),
+    calc(var(--base-l) + 100%)
+  );
+  --text-title: hsl(
+    var(--base-h),
+    calc(var(--base-s) + 100%),
+    calc(var(--base-l) + 50%)
+  );
+}
+
+
+
+.is-translucent.theme-dark .workspace-split.mod-horizontal.mod-left-split,.theme-dark .workspace-split.mod-horizontal.mod-right-split{
+  background: rgba(0,0,0,0.6) !important;
+}
+
+.is-translucent .nav-folder-title-content{
+  color: hsl(var(--accent-h), calc(var(--accent-s)),calc(var(--accent-l) + 10%)) !important;
+}
+
+.is-translucent.theme-light svg {
+  color: hsl(var(--accent-h), calc(var(--accent-s)),calc(var(--accent-l) - 20%)) !important;
+}
+
+.is-translucent.theme-dark svg {
+  color: hsl(var(--accent-h), calc(var(--accent-s)),calc(var(--accent-l) + 20%)) !important;
+}
+.is-translucent .workspace-split {
+  opacity: 0.8 !important;
+}

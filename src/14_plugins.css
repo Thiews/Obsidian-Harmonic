@@ -1,0 +1,265 @@
+/* ----------------------------- */
+/* PLUGINS */
+/* ----------------------------- */
+/* Andy Matuschak mode! */
+
+
+body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
+  box-shadow: 10px 2px 9px 4px #444 !important;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container > .view-header-title {
+  Opacity:1;
+  //Font-size:var(--font-small);
+  font-size: calc(var(--font-small) * var(--font-normal));
+
+}
+
+body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-title-container {
+  Text-align:left !important;
+}
+
+.plugin-sliding-panes-stacking .view-header-title {
+  text-align: left;
+}
+
+
+
+/* Correct a problem on tablet */
+.is-mobile.plugin-sliding-panes-stacking .workspace-leaf {
+  margin-left: -10px;
+}
+/* -------------------- */
+/* CALENDAR */
+
+.calendar  .day.today {
+  font-weight: 800 !important;
+  font-size: 1.5em !important;
+}
+
+.calendar  .day{
+  font-size:calc(var(--font-small) * var(--font-normal)) !important;
+}
+
+/* -------------------- */
+/* CHECKLIST PLUGIN */
+
+.group-todo {
+  Margin-left:20px;
+}
+
+.checklist-plugin-main button{
+  background: transparent !important;
+}
+
+.checklist-plugin-main .task-list-item-checkbox {
+  Border:1px solid var(--text-accent) !important;
+  Width:15px !important;
+  Height:15px !important;
+}
+
+input[type=checkbox] {
+  Top:6px !important;
+}
+
+.group-todo li:before {
+  Display:none !important;
+}
+
+.group-todo .title {
+  Color:var(--text-accent);
+}
+
+.menu-v1 .checklist-plugin-main li.classic {
+  Background:var(--background-primary) !important;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);/*1px 1px 5px rgb(0 0 0 / 5%);*/
+}
+
+.menu-v3 .checklist-plugin-main li.classic {
+  Background:hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}
+
+.menu-v3 .checklist-plugin-main li.classic:hover{
+  Background:hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}
+
+.menu-v2 .checklist-plugin-main li.classic {
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.05) !important;
+  margin: 0px 0px !important;
+  border-radius: 0px !important;
+  border-bottom: 1px solid hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.1) !important;
+  padding: 10px 10px;
+}
+
+.menu-v2 .checklist-plugin-main .group-todo {
+  margin: 0px 0px !important;
+}
+.menu-v2 .checklist-plugin-main .svelte-yzsyxo ul{
+  margin: 0px 0px !important;
+}
+
+
+.menu-v4 .checklist-plugin-main li.classic {
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+  border-left: 3px solid var(--text-accent);
+  margin-bottom: 0.2rem;
+  border-radius: 0px;
+}
+
+
+
+.checklist-plugin-main .group-header .title {
+  Color:var(--text-accent) !important;
+  Box-shadow:none;
+  //Font-size:var(--font-small);
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
+.checklist-plugin-main li{
+  //Font-size:var(--font-small) !important;
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+.checklist-plugin-main .group {
+  Margin-left:10px !important;
+}
+
+.checklist-plugin-main .group li:before {
+  Display:none;
+}
+.checklist-plugin-main .checkbox {
+  Border:1px solid var(--text-accent) !important;
+}
+
+.checklist-plugin-main {
+  --todoList-checkboxSize:15px !important;
+}
+
+/* -------------------- */
+/* KANBAN plugin */
+
+.kanban-plugin {
+  Background:var(--background-primary) !important;
+}
+
+.kanban-plugin__lane-wrapper {
+  Border-radius:30px !important;
+  width: 23rem !important;
+}
+
+.kanban-plugin__lane{
+  background: var(--background-secondary-alt) !important;
+  box-shadow:2px 2px 3px 2px rgba(0, 0, 0, 0.05);
+  padding: 0px 15px;
+  border-radius: 15px !important;
+}
+
+.kanban-plugin p, .kanban-plugin li,.kanban-plugin button{
+  Font-family:var(--text) !important;
+}
+
+.kanban-plugin__lane-title {
+  Color:var(--text-accent) !important;
+  Font-weight:700;
+  Text-transform:uppercase;
+}
+
+.kanban-plugin__item-wrapper {
+  margin-top: 10px !important;
+  //box-shadow:6px 8px 5px 0px rgba(0, 0, 0, 0.02);
+  //background: var(--background-secondary-alt) !important;
+}
+
+.kanban-plugin__item {
+  border: none !important;
+  border-radius: 10px !important;
+}
+
+.kanban-plugin .markdown-preview-view li,.kanban-plugin .markdown-preview-view ul,kanban-plugin .markdown-preview-view ol,.kanban-plugin .markdown-preview-view p,.kanban-plugin .markdown-preview-view input {
+  Margin-left:0px !important;
+}
+
+.kanban-plugin__item-wrapper {
+  padding:0px 0px!important;
+  //background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
+  background: transparent;
+  border-radius: 5px;
+  //padding: 0px 0px !important;
+}
+
+.kanban-plugin__item-title-wrapper {
+  padding: 0px 0px !important;
+  //background: var(--background-primary) !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
+}
+
+.kanban-plugin__item-title{
+  padding: 10px 0px 10px 20px !important;
+}
+
+.kanban-plugin__item-title p{
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+button.kanban-plugin__new-item-button {
+  color: var(--text-accent) !important;
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+button.kanban-plugin__new-item-button:hover {
+  color: #FFF !important;
+}
+/* MIND MAP PLUGIN */
+
+.theme-light .mm-node.mm-root .mm-node-content {
+  Background:var(--text-accent);
+}
+
+
+/* ------------------------------- */
+/* Dataview plugin */
+.dataview.table-view-table .dataview-result-list-li{
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+.dataview.table-view-table .dataview-result-list-li:before{
+  display: none !important;
+}
+.table-view-table > thead > tr > th {
+  Border-bottom:none !important;
+  Font-size:var(--font-normal) !important;
+  Padding-left:10px !important;
+}
+
+.dataview-articles-style .dataview.table-view-table thead {
+  display: none;
+}
+
+.dataview-articles-style .dataview.table-view-table tbody tr {
+  background: transparent !important;
+}
+
+.dataview-articles-style  .dataview.table-view-table tbody td{
+  font-size: 1.1rem;
+  color: var(--text-normal) !important;
+  padding: 1rem 1rem!important;
+  border-top: 2px solid hsla(var(--accent-h), var(--accent-s), var(--accent-l),0.05);
+}
+
+
+.dataview-articles-style .dataview.table-view-table tbody td:nth-child(1){
+  width:250px !important;
+}
+
+.dataview-articles-style .dataview.table-view-table tbody td:nth-child(2){
+  font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
+  font-style: italic;
+  //color: var(--text-accent) !important;
+}
+.dataview-articles-style .dataview.table-view-table .internal-link{
+  color: var(--text-normal);
+}
+
+.dataview-articles-style img{
+  border-radius: 0px !important;
+  box-shadow: 0px 2px 10px -3px #222;
+}

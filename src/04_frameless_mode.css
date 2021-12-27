@@ -1,0 +1,40 @@
+/* --------------- */
+/* Frameless mode */
+
+.frameless-mode .titlebar,.frameless-mode .titlebar-inner {
+  position:fixed;
+  top:0;
+  height:12px;
+}
+
+.frameless-mode .titlebar,
+.frameless-mode .titlebar-inner {
+ Background:transparent;
+}
+
+.frameless-mode .titlebar-text {
+  display:none;
+}
+
+.frameless-mode.is-frameless {
+  padding-top:0px !important;
+}
+
+.workspace-split.mod-right-split > .workspace-tabs,
+.workspace-split.mod-root .view-header {
+  padding-top:4px;
+}
+
+.workspace-split.mod-left-split > .workspace-tabs {
+  padding-top:18px;
+}
+
+.workspace-split.mod-right-split > .workspace-tabs ~  .workspace-tabs,
+.workspace-split.mod-left-split > .workspace-tabs ~  .workspace-tabs {
+  padding-top:0px;
+}
+
+.is-fullscreen .workspace-split.mod-left-split > .workspace-tabs,
+.is-fullscreen .workspace-split.mod-root .view-header {
+  padding-top:0px;
+}
