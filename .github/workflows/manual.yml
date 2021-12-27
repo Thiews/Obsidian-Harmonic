@@ -1,0 +1,29 @@
+name: Bundle CSS files into obsidian.css
+on: [push]
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Bundle all sources files into obsidian1.css
+        run: |
+          rm ./obsidian1.css
+          touch ./obsidian1.css
+          for file in ./src/*
+          do
+            cat "$file" >> obsidian1.css
+            echo "" >> obsidian1.css
+          done
+      - name: Commit changes
+        run: |
+          git config --global user.email "bundlebot@harmonic.com"
+          git config --global user.name "Bundle Bot"
+          git add -A
+          git commit -m "Github Action : all CSS files have been bundled into obsidian.css file"
+      - name: Push the modifications
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          repository: ${{ env.GITHUB_REPOSITORY }}
+          branch: main
