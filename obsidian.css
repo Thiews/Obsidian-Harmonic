@@ -96,6 +96,7 @@
 --img-border-radius: 15px;
 --writing-focus-opacity: 0.6;
 --editor-spacing:  0em;
+--img-grid-height: 200px;
 
 
 
@@ -340,7 +341,7 @@ padding-right: 0px !important;
 
 @media (min-width: 400pt){
 .markdown-source-view.is-readable-line-width  {
-  width: var(--line-width);
+  width: var(--line-width) !important;
   max-width:100% !important;
   padding-left: 2rem !important;
   margin-left: auto;
@@ -4187,7 +4188,7 @@ img[alt*='img-bw']{
 
 .img-grid img {
   object-fit: cover;
-  height: 200px;
+  height: var(--img-grid-height);
   width: 100%;
 }
 
@@ -5267,7 +5268,7 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 @media (max-width: 400pt){
   .wys-mode .markdown-source-view:not(.is-live-preview) .HyperMD-list-line .cm-formatting-list:not(.cm-formatting-list-ol):before{
     content: "•" !important;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }}
 
 .wys-mode .markdown-source-view.is-live-preview .list-bullet {
@@ -5780,6 +5781,20 @@ settings:
         id: img-bw
         title:  Black and white for images
         type: class-toggle
+    -
+        id: img-grid
+        title:  Display a sequence of images as grid
+        type: class-toggle
+    -
+        id: img-grid-height
+        title: Height of grid images
+        description: Choose the height of grid images
+        type: variable-number-slider
+        default: 200
+        min: 50
+        max: 400
+        step: 1
+        format: px
     - 
         id: blockquote-section
         title: Customize blockquote
