@@ -20,7 +20,7 @@ jobs:
           git config --global user.email "bundlebot@harmonic.com"
           git config --global user.name "Bundle Bot"
           git add -A
-          git commit -m "Automation : all CSS files have been bundled into the obsidian.css file"
+          git commit -m "Automation : all CSS files have been bundled into the obsidian.css file" || true
       - name: Push the modifications
         uses: ad-m/github-push-action@v0.6.0
         with:
