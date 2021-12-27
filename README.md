@@ -1,6 +1,6 @@
 # _**"Harmonic"**_ theme for Obsidian
 ### Harmonic is a minimal and highly customizable theme. You can easily change the entire design with just a few changes using the [Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings) panel ✏️
-<img width="1440" alt="Capture d’écran 2021-12-01 à 16 31 58" src="https://user-images.githubusercontent.com/29182877/144263738-a27cac6b-9db8-4007-850f-68d273f5d5b8.png">
+<img width="1440" alt="" src="https://github.com/Thiews/Obsidian-Harmonic/raw/main/staticfiles/img/Harmonic-light.png">
 
 ## Support my work
 If you like using the theme, you can :
@@ -128,14 +128,14 @@ sort file.ctime desc
 ### Contribute by _**testing**_ the theme
 1) Test the theme features
 2) Observe a bug or an improvement that could be made
-3) Report it by [creating an issue]()
+3) Report it by [creating an issue](https://github.com/Thiews/Obsidian-Harmonic/issues/new)
 
 ### Contribute by _**coding**_ the theme
 - If you have found a bug or a potential improvement for the theme and want to code it, we would be happy to accept your PRs!
-  **Important :** It'd be good to talk about it beforehand to make sure that no one else is working on it. You can [open an issue]() for this.
+  **Important :** It'd be good to talk about it beforehand to make sure that no one else is working on it. You can [open an issue](https://github.com/Thiews/Obsidian-Harmonic/issues/new) for this.
 - If you want to code but don't know where to start :
-  1) Check out the issues labelled "[help wanted]()".
-  2) Check out [our roadmap]() and choose an unassigned task
+  1) Check out the issues labelled "[help wanted](https://github.com/Thiews/Obsidian-Harmonic/labels/help%20wanted)".
+  2) Check out [our roadmap](https://github.com/Thiews/Obsidian-Harmonic/projects/1) and choose an unassigned task
 
 **Here are the steps to contribute to the Harmonic's code :**
 1) Fork this repository
