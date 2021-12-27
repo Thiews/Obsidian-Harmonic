@@ -236,12 +236,6 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
   --text-normal: #FFF;
 }
 
-/* ------------------ */
-/* Hides the name of the root folder */
-  .nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
-    display:none;
-  }
-
 /* --------------- */
 /* Frameless mode */
 
@@ -282,7 +276,6 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 .is-fullscreen .workspace-split.mod-root .view-header {
   padding-top:0px;
 }
-
 
 /* Translucency */
 
@@ -399,7 +392,6 @@ margin: 0px !important;
   max-width: 100% !important;
   //min-width: 100% !important;
 }
-
 
 /* ------------------- */
 /* Left sidebar */
@@ -544,6 +536,12 @@ display:none !important;
 .font-nav-folder-text .nav-folder,.font-nav-folder-text .search-result,.font-nav-folder-text .backlink-pane,.font-nav-folder-text .outline,.font-nav-folder-text #calendar-container,.font-nav-folder-text .tag-container,.font-nav-folder-text .outgoing-link-pane,.font-nav-folder-text .checklist-plugin-main{
   font-family: var(--text);
 }
+
+/* Hides the name of the root folder */
+.nav-folder.mod-root > .nav-folder-title .nav-folder-title-content {
+    display:none;
+}
+
 
 
 /* Don't display collapse indicators */
@@ -1181,7 +1179,6 @@ input.search-input:focus {
   padding-bottom:4px;
   color:var(--text-normal);
 }
-
 
 /* ----------------------- */
 /* Main pane */
@@ -2832,6 +2829,15 @@ img:after{
   background:var(--background-translucent);
 }
 
+
+/* --------------- */
+/* iframes */
+
+iframe {
+  border:0;
+}
+
+
 /* --------------- */
 /* Right sidebar */
 /* --------------- */
@@ -3064,14 +3070,6 @@ Padding-top:0px !important;
 .status-bar-item-segment {
   margin-right:10px;
 }
-
-/* --------------- */
-/* iframes */
-
-iframe {
-  border:0;
-}
-
 
 /* --------------- */
 /* Graphs */
@@ -3319,54 +3317,6 @@ input[type=range]::-webkit-slider-thumb:active {
   color: var(--font-normal) !important;
   opacity: 1 !important;
   }
-
-
-
-
-/* Edit button */
-
-.edit-button .view-action:nth-last-of-type(4),.edit-button .view-action:nth-last-of-type(5),
-.edit-button .view-action:nth-last-of-type(6) {
-  top: calc(90vh - 10px) !important;
-  Margin-right:1rem !important;
-  Position:absolute !important;
-  Background:var(--text-accent) !important;
-  Width:3rem !important;
-  Height:3rem !important;
-  Border-radius:100% !important;
-  Padding:0.9rem 0.9rem !important;
-  Opacity:1 !important ;
-}
-
-
-.edit-button .view-action:nth-last-of-type(4) svg,.edit-button .view-action:nth-last-of-type(5) svg,.edit-button .view-action:nth-last-of-type(6) svg{
-  Color:#FFF !important;
-  //Width:1.3rem;
-  margin-bottom: 0.1rem !important;
-  opacity: 1 !important;
-}
-
-
-/*.edit-button.is-mobile .view-action:nth-last-of-type(4) svg, .edit-button.is-mobile .view-action:nth-last-of-type(5) svg, .edit-button.is-mobile .view-action:nth-last-of-type(6) svg{
-  margin-left:0.1rem;
-  Margin-top:-0.1rem;
-  Width:1rem;
-}*/
-
-
-/* with Sliding pane plugin */
-
-.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) {
-  position: absolute;
-  left: calc(84vw);
-}
-
-.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4) svg,.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5) svg,.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) svg{
-  margin-left: -0.5rem;}
-
-.edit-button.is-mobile .view-action:nth-last-of-type(4),.edit-button.is-mobile .view-action:nth-last-of-type(5),.edit-button.is-mobile .view-action:nth-last-of-type(6) {
-  Margin-left:-1rem;
-}
 
 /* ----------------------------- */
 /* PLUGINS */
@@ -3634,7 +3584,6 @@ button.kanban-plugin__new-item-button:hover {
   box-shadow: 0px 2px 10px -3px #222;
 }
 
-
 /* ----------------------- */
 /* Tablet styling */
 
@@ -3766,9 +3715,8 @@ button.kanban-plugin__new-item-button:hover {
 
 }
 
-
 /* ----------------------- */
-/* phone */
+/* Mobile */
 
 
 @media (max-width:500pt){
@@ -3830,6 +3778,51 @@ button.kanban-plugin__new-item-button:hover {
  ::-webkit-scrollbar {
   Display:none;
 }
+}
+
+/* Edit button */
+
+.edit-button .view-action:nth-last-of-type(4),.edit-button .view-action:nth-last-of-type(5),
+.edit-button .view-action:nth-last-of-type(6) {
+  top: calc(90vh - 10px) !important;
+  Margin-right:1rem !important;
+  Position:absolute !important;
+  Background:var(--text-accent) !important;
+  Width:3rem !important;
+  Height:3rem !important;
+  Border-radius:100% !important;
+  Padding:0.9rem 0.9rem !important;
+  Opacity:1 !important ;
+}
+
+
+.edit-button .view-action:nth-last-of-type(4) svg,.edit-button .view-action:nth-last-of-type(5) svg,.edit-button .view-action:nth-last-of-type(6) svg{
+  Color:#FFF !important;
+  //Width:1.3rem;
+  margin-bottom: 0.1rem !important;
+  opacity: 1 !important;
+}
+
+
+/*.edit-button.is-mobile .view-action:nth-last-of-type(4) svg, .edit-button.is-mobile .view-action:nth-last-of-type(5) svg, .edit-button.is-mobile .view-action:nth-last-of-type(6) svg{
+  margin-left:0.1rem;
+  Margin-top:-0.1rem;
+  Width:1rem;
+}*/
+
+
+/* with Sliding pane plugin */
+
+.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5),.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) {
+  position: absolute;
+  left: calc(84vw);
+}
+
+.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(4) svg,.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(5) svg,.edit-button.plugin-sliding-panes-rotate-header .view-actions .view-action:nth-last-of-type(6) svg{
+  margin-left: -0.5rem;}
+
+.edit-button.is-mobile .view-action:nth-last-of-type(4),.edit-button.is-mobile .view-action:nth-last-of-type(5),.edit-button.is-mobile .view-action:nth-last-of-type(6) {
+  Margin-left:-1rem;
 }
 
 /* Show edit button */
@@ -4365,7 +4358,6 @@ img[alt*='img-bw']{
   cursor: pointer;
   font-weight: 800;
 }
-
 
 /* ----------------------------------------------------------------------------------- */
 /* Icons replacement (icons found in Minimal theme) */
@@ -6195,4 +6187,5 @@ settings:
         level: 2
         collapsed: true
 */
+
 
