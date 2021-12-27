@@ -1,7 +1,25 @@
-/* HARMONIC THEME by Mathieu DUBOIS */
-/* If you like the theme, support my work at https://www.buymeacoffee.com/thiews */
+/*
 
-/* ————————— Pre-installed fonts ———————————————— */
+"Harmonic" theme for Obsidian*
+
+    - Version : 2.0
+
+    - Creator : Mathieu DUBOIS (https://github.com/Thiews)
+
+    - Contributors :
+        * _lilian (https://github.com/LilianCr)
+        * ...
+
+    - Code : https://github.com/Thiews/Obsidian-Harmonic
+
+    - Documentation : Coming soon...
+
+
+If you like this theme, you can support my work at https://www.buymeacoffee.com/thiews
+
+*/
+
+/* ————————— Loaded fonts ———————————————— */
 
 /* Fonts from Google */
 
@@ -64,12 +82,11 @@
     font-display: swap;
 }
 
-
 :root {
 /* VARIABLES STYLE SETTING */
 
 --bold-weight:700;
---font-small:0.85; /* Coeff multuplicateur */ 
+--font-small:0.85; /* Coeff multuplicateur */
 --font-smaller: 0.94; /* Coeff multuplicateur */
 --font-normal:17px;
 --font-phone: 17px;
@@ -115,14 +132,14 @@
   --accent-d:36%;   /* Accent lightness Dark Mode - base : 40% */
   --accent-l:50.6%;   /* Accent lightness Light Mode 50.6% */
 
- 
+
   /*----------------------------------------------------------------
 
   CURSOR
 
   Change this to "pointer" if you like the normal style better */
 
-  --cursor:pointer;   
+  --cursor:pointer;
 
   /*----------------------------------------------------------------*/
 }
@@ -332,7 +349,7 @@
 .markdown-source-view{
 padding-left: 0px !important;
 padding-right: 0px !important;
-} 
+}
 
 .markdown-preview-view.is-readable-line-width .markdown-preview-sizer{
   max-width:100% !important;
@@ -407,7 +424,7 @@ margin: 0px !important;
   margin-top: 20px;
 }
 
-.markdown-preview-view .nav-buttons-container{ 
+.markdown-preview-view .nav-buttons-container{
   margin-top: 100px;
 }
 
@@ -528,7 +545,7 @@ display:none !important;
   font-family: var(--text);
 }
 
- 
+
 /* Don't display collapse indicators */
 
 .nav-folder-collapse-indicator.collapse-icon{
@@ -563,7 +580,7 @@ display:none !important;
 }
 
 .theme-dark .nav-folder-title .nav-folder-title-content{
-  filter: brightness(1);  
+  filter: brightness(1);
 }
 
 .nav-folder-title[data-count]{
@@ -708,8 +725,8 @@ filter: hue-rotate(var(--hue-bold-italic));
   width:calc(100% - 15px);
 }
 
-.nav-file-title-content, .nav-folder-title, 
-.is-collapsed .search-result-file-title, 
+.nav-file-title-content, .nav-folder-title,
+.is-collapsed .search-result-file-title,
 .tag-pane-tag {
   font-size: calc(var(--font-small) * var(--font-normal));
   color:var(--text-normal);
@@ -1304,7 +1321,7 @@ margin-left: 1rem;
   background-color:transparent;
 }
 
-.workspace-leaf:not(.mod-active) {} 
+.workspace-leaf:not(.mod-active) {}
 
 .workspace-tab-container-inner {
   background:transparent;
@@ -1320,7 +1337,7 @@ margin-left: 1rem;
 .workspace-tab-header.is-active,
 .workspace-tab-header.is-after-active,
 .workspace-tab-header.is-after-active .workspace-tab-header-inner,
-.workspace-tab-header.is-before-active, 
+.workspace-tab-header.is-before-active,
 .workspace-tab-header.is-after-active {
   background:transparent;
 }
@@ -1381,7 +1398,7 @@ margin-left: 1rem;
 ::selection { background:var(--text-selection); }
 
 /* Hue for bold and italic pop, preview and edit mode */
-.bold-italic-accent strong,.bold-italic-accent em{ 
+.bold-italic-accent strong,.bold-italic-accent em{
   color: var(--text-accent);
   filter: hue-rotate(var(--hue-bold-italic));
   }
@@ -1410,7 +1427,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 
 .markdown-source-view.mod-cm6 .cm-scroller,
 .markdown-source-view,
-.cm-s-obsidian .cm-formatting-hashtag, 
+.cm-s-obsidian .cm-formatting-hashtag,
 .cm-s-obsidian,
 .cm-s-obsidian span.cm-formatting-task {
   line-height:var(--line-height);
@@ -1450,23 +1467,23 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .title-accent-color .cm-s-obsidian .cm-header-5,.title-accent-color .markdown-preview-view h5,
 .title-accent-color .cm-s-obsidian .cm-header-6,.title-accent-color .markdown-preview-view h6{
   Color:var(--text-accent);
-} 
+}
 
 .title-hue .markdown-preview-view h1, .title-hue .cm-s-obsidian .cm-header-1,.title-hue .markdown-preview-view h2,.title-hue .cm-s-obsidian .cm-header-2,.title-hue .cm-s-obsidian .cm-header-3,.title-hue .markdown-preview-view h3,
 .title-hue .cm-s-obsidian .cm-header-4,.title-hue .markdown-preview-view h4, .title-hue .cm-s-obsidian .cm-header-5,.title-hue .markdown-preview-view h5, .title-hue .title-accent-color .cm-s-obsidian .cm-header-6,.title-hue .markdown-preview-view h6{
   filter: hue-rotate(var(--hue-bold-italic));
   Color:var(--text-accent);
-} 
+}
 
 .title-hue .markdown-preview-view h1:after,
 .title-hue .markdown-preview-view h2:after,
 .title-hue .markdown-preview-view h3:after,
 .title-hue .markdown-preview-view h4:after,
-.title-hue .markdown-preview-view h5:after, 
+.title-hue .markdown-preview-view h5:after,
 .title-hue .markdown-preview-view h6:after{
   Color:var(--text-accent);
   filter: hue-rotate(calc(-1 * var(--hue-bold-italic)));
-} 
+}
 
 .empty-state-title,
 .markdown-preview-view h1, .cm-s-obsidian .cm-header-1{
@@ -1793,7 +1810,7 @@ Opacity:1 !important;
 /* Links */
 
 .external-link {
-  text-decoration:none;  
+  text-decoration:none;
   border-bottom:1px solid #222;
   Background-image:none !important;
   Padding-right:0px !important;
@@ -1806,7 +1823,7 @@ Opacity:1 !important;
 
 .theme-light .external-link{
   color: rgba(0,0,0,0.25);
-  
+
 }
 
 .external-link {
@@ -1991,7 +2008,7 @@ filter: none !important;
 }
 .markdown-preview-view li[data-task=""]>.task-list-item-checkbox::before,
 .markdown-preview-view li[data-task=""] p .task-list-item-checkbox::before,
-.markdown-source-view.is-live-preview input[data-task=" "]:before{ 
+.markdown-source-view.is-live-preview input[data-task=" "]:before{
   filter:none !important;
   content: "✓";
   color: transparent;
@@ -2036,7 +2053,7 @@ filter: none !important;
 .markdown-source-view .HyperMD-task-line[data-task='>']{
   text-decoration: line-through !important;
   color: var(--text-faint) !important;
-  
+
 }
 
 .markdown-preview-view li[data-task=">"]>.task-list-item-checkbox:checked::before,
@@ -2056,7 +2073,7 @@ filter: none !important;
 .markdown-source-view .HyperMD-task-line[data-task='-']{
   text-decoration: line-through !important;
   color: var(--text-faint) !important;
-  
+
 }
 
 .markdown-preview-view li[data-task="-"]>.task-list-item-checkbox:checked::before,
@@ -2251,7 +2268,7 @@ border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
 }
 
 .theme-dark .HyperMD-table-row:nth-child(2n) {
-  Background:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.1) !important; 
+  Background:hsla(var(--accent-h), var(--accent-s), var(--accent-d),0.1) !important;
 }*/
 
 /* Capitalize first letter of a paragraph */
@@ -2273,7 +2290,7 @@ border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
 
 
   /* Edit mode > outline*/
-  
+
 
  .cm-s-obsidian .HyperMD-list-line {
   padding-top: 0;
@@ -2622,7 +2639,7 @@ Zoom:0.8;
 
 
 .modal .vertical-tab-header-group-title {
-  
+
   Color:var(--text-accent);
   Font-weight:bold;
 }
@@ -2733,7 +2750,7 @@ Background:var(--background-secondary-alt) !important;
   width: 150px;
   height: 150px;
   position:relative;
-  display: block; 
+  display: block;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
@@ -2745,7 +2762,7 @@ Background:var(--background-secondary-alt) !important;
   width: 350px;
   height: 350px;
   position:relative;
-  display: block; 
+  display: block;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
@@ -2756,7 +2773,7 @@ Background:var(--background-secondary-alt) !important;
   width: 600px;
   height: 600px;
   position:relative;
-  display: block; 
+  display: block;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
@@ -2903,7 +2920,7 @@ img:after{
   Background:transparent !important;
 }
 
-.backlink-pane .search-result-container {  
+.backlink-pane .search-result-container {
   padding:5px 0px 5px 0px;
   margin-left:0;
 }
@@ -2956,7 +2973,7 @@ Padding-top:0px !important;
   Color:var(--text-accent);
   Margin-left:-13px;
   Padding-right:6px;
-  
+
 }
 
 .tag-pane-tag > .collapse-icon + .tree-item-inner > .tag-pane-tag-text:before {
@@ -3278,7 +3295,7 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 
-.writing-focus .CodeMirror-code:not(.CodeMirror-activeline) span, 
+.writing-focus .CodeMirror-code:not(.CodeMirror-activeline) span,
 .writing-focus .cm-content .cm-line:not(.cm-active),
 .writing-focus .cm-content .cm-line:not(.cm-active) span,
 .writing-focus .cm-content .HyperMD-header:not(.cm-active){
@@ -3365,7 +3382,7 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
   Opacity:1;
   //Font-size:var(--font-small);
   font-size: calc(var(--font-small) * var(--font-normal));
-  
+
 }
 
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-title-container {
@@ -3490,7 +3507,7 @@ input[type=checkbox] {
 /* -------------------- */
 /* KANBAN plugin */
 
-.kanban-plugin { 
+.kanban-plugin {
   Background:var(--background-primary) !important;
 }
 
@@ -3746,7 +3763,7 @@ button.kanban-plugin__new-item-button:hover {
   .is-mobile .side-dock-ribbon-action svg {
     Color:var(--text-accent) !important;
   }
-  
+
 }
 
 
@@ -3766,7 +3783,7 @@ button.kanban-plugin__new-item-button:hover {
       width:100% !important;
       padding: 0px 0px;
       margin: 0px 0px;
-  }  
+  }
   .view-header .view-header-title{
   Opacity:1 !important;
 }
@@ -3807,7 +3824,7 @@ button.kanban-plugin__new-item-button:hover {
   padding-top: 3px;
  }
  .markdown-preview-sizer, .CodeMirror-sizer {
-  
+
   width: 100% !important;
  }
  ::-webkit-scrollbar {
@@ -3968,10 +3985,10 @@ button:hover{
   }
 
   /*.cards-3 img:hover{
-    -webkit-transform:scale(1.25); 
-    -moz-transform:scale(1.25); 
-    -ms-transform:scale(1.25); 
-    -o-transform:scale(1.25); 
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
     transform:scale(1.1);
     transition: 0.2s;
   }*/
@@ -4175,8 +4192,8 @@ img[alt*='img-bw']{
   grid-template-rows: masonry;
   align-items: stretch;
   column-gap: 1rem;
-  justify-content: stretch;  
-  align-content: stretch; 
+  justify-content: stretch;
+  align-content: stretch;
   justify-items: stretch;
   margin-bottom: -0.8rem;
 }
@@ -4289,7 +4306,7 @@ img[alt*='img-bw']{
   padding: 15px 10px 15px 15px;
   margin-top: 20px;
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
-  position: relative;  
+  position: relative;
   left: 0px;
   width: 100%;
   margin-bottom: 3rem;
@@ -4347,7 +4364,7 @@ img[alt*='img-bw']{
   color: var(--text-accent);
   cursor: pointer;
   font-weight: 800;
-}  
+}
 
 
 /* ----------------------------------------------------------------------------------- */
@@ -5444,7 +5461,7 @@ height: 3px;
 .wys-mode  span.cm-hmd-frontmatter {
   font-family: var(--text);
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
-  color: var(--text-normal) !important; 
+  color: var(--text-normal) !important;
   //font-style: italic;
 }
 
@@ -5480,7 +5497,7 @@ box-shadow: 0px 2px 10px -4px #333;
   width: 150px;
   height: 150px;
   position:relative;
-  display: block; 
+  display: block;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
@@ -5492,7 +5509,7 @@ box-shadow: 0px 2px 10px -4px #333;
   width: 350px;
   height: 350px;
   position:relative;
-  display: block; 
+  display: block;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
@@ -5503,7 +5520,7 @@ box-shadow: 0px 2px 10px -4px #333;
   width: 600px;
   height: 600px;
   position:relative;
-  display: block; 
+  display: block;
   object-fit: cover;
   margin-left: auto;
   margin-right: auto;
@@ -5533,7 +5550,7 @@ box-shadow: 0px 2px 10px -4px #333;
 name: Harmonic theme customization
 id: perso
 settings:
-    - 
+    -
         id: logo
         title: 1. Global customization (Logo OR title, Accent color, navigation folder style, icon style)
         type: heading
@@ -5554,28 +5571,28 @@ settings:
         title: Icons
         description: Activate minimal icons
         type: class-toggle
-    - 
+    -
         id: wys-mode
         title: Live preview theme style and WYSIWYG in edit mode (Ozan's Image plugin needed to show images and transclusion)
         type: class-toggle
-    - 
+    -
         id: logo-section
         title: Choose a logo OR a title for your obsidian
         type: heading
         level: 3
         collapsed: false
-    - 
+    -
         id: site-title
         title: Your obsidian title
         description: Put the title in quotation marks (see default parameter)
         type: variable-text
         default: '"OBSIDIAN"'
-    - 
+    -
         id: site-title-accent
         title:  Color accent for your obsidian title
         description: Display the title with the bold and italic accent color (menu > Make pages pop)
         type: class-toggle
-    - 
+    -
         id: logo-url
         title: Your obsidian logo (url)
         description: Put the url syntax like in default
@@ -5586,7 +5603,7 @@ settings:
         title: Invert logo colors in dark mode
         description: B&W image works well
         type: class-toggle
-    - 
+    -
         id: nav-folder-section
         title: Customize the navigation folder panel
         type: heading
@@ -5599,16 +5616,16 @@ settings:
         type: class-select
         default: menu-v1
         options:
-            - 
+            -
                 label: Design 1
                 value: menu-v1
-            - 
+            -
                 label: Design 2
                 value: menu-v3
-            - 
+            -
                 label: Design 3
                 value: menu-v2
-            - 
+            -
                 label: Design 4
                 value: menu-v4
     -
@@ -5618,10 +5635,10 @@ settings:
         type: class-select
         default: font-nav-folder-text
         options:
-            - 
+            -
                 label: Text
                 value: font-nav-folder-text
-            - 
+            -
                 label: Headings
                 value: font-nav-folder-header
     -
@@ -5708,13 +5725,13 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    - 
+    -
         id: bold-italic-section
         title: Customize bold and italic
         type: heading
         level: 3
         collapsed: false
-    - 
+    -
         id: bold-italic-accent
         title:  Bold and italic accentuation
         description: Make bold and italic pop with an other color
@@ -5729,7 +5746,7 @@ settings:
         max: 330
         step: 30
         format: deg
-    - 
+    -
         id: hue-tag
         title:  Use this color to display tag
         type: class-toggle
@@ -5739,38 +5756,38 @@ settings:
         type: heading
         level: 3
         collapsed: false
-    - 
+    -
         id: first-letter-capitalize
         title:  Capitalize first letter of a praragraph
         type: class-toggle
-    - 
+    -
         id: image-section
         title: Customize images
         type: heading
         level: 3
         collapsed: false
-    - 
+    -
         id: img-border-radius
         title:  Border radius for images
         type: class-toggle
-    - 
+    -
         id: img-rounded
         title:  To make rounded images
         type: class-toggle
-    - 
+    -
         id: img-round
         title: Choose the size of rounded image
         description: Choose diffent styles for the left and right sidebars
         type: class-select
         default: img-rounded-medium
         options:
-            - 
+            -
                 label: Small
                 value: img-rounded-small
-            - 
+            -
                 label: Medium
                 value: img-rounded-medium
-            - 
+            -
                 label: Big
                 value: img-rounded-big
     -
@@ -5795,46 +5812,46 @@ settings:
         max: 400
         step: 1
         format: px
-    - 
+    -
         id: blockquote-section
         title: Customize blockquote
         type: heading
         level: 3
         collapsed: false
-    - 
+    -
         id: blockquote-background
         title:  Display background and border for quote
         type: class-toggle
-    - 
+    -
         id: blockquote-bracket
         title:  Quotation mark for quote
         type: class-toggle
-    - 
+    -
         id: blockquote-serif
         title:  Serif font for quote
         type: class-toggle
-    - 
+    -
         id: blockquote-text-center
         title:  Center text for quote
         type: class-toggle
-    - 
+    -
         id: outline-section
         title: Outlines for lists
         type: heading
         level: 3
         collapsed: false
-    - 
+    -
         id: outline-mode
         title: Outline for list
         description: Activate outlines for list
         type: class-toggle
     -
-        id: page-settings 
+        id: page-settings
         title: 4. Page settings (line width, fullwidth mode, paragraph offset)
         type: heading
         level: 2
         collapsed: true
-    - 
+    -
         id: line-width
         title: Line width
         description: Define your line width
@@ -5849,7 +5866,7 @@ settings:
         title: Full width mode
         description: Activate full width
         type: class-toggle
-    - 
+    -
         id: p-offset
         title: Paragraph offset
         description: Change your paragraph offset
@@ -5859,26 +5876,26 @@ settings:
         max: 8
         step: 0.1
         format: rem
-    - 
+    -
         id: fonts
         title: 5. Fonts (Preview mode, edit mode, monospace, titles)
         type: heading
         level: 2
         collapsed: true
-    - 
+    -
         id: fonts-download
         title: Font pre-installed with the theme
         description : IA Writer Mono V, Ia Writer Quattro V and Pre-installed google fonts - Cabin, Heebo, Hind, IBM Plex Sans, Josefin Sans, Jost, Lato, Libre Baskerville, Lora, Montserrat, Mukta, Mulish, Noto Sans, Nunito, Nunito Sans, Open Sans, Outfit, Oxygen, Readex Pro, Roboto, "Source Sans 3", Source Sans Pro, Work Sans
         type: heading
         level: 3
         collapsed: false
-    - 
+    -
         id: fonts-choice
         title: Choose your fonts
         type: heading
         level: 3
         collapsed: false
-    - 
+    -
         id: text
         title: Text font
         description: Font used for paragraph in preview mode
@@ -5896,7 +5913,7 @@ settings:
         description: Font used for for code blocks and front matter
         type: variable-text
         default: menlo
-    - 
+    -
         id: text-title
         title: Header font
         description: Font used for titles
@@ -5908,21 +5925,21 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    - 
+    -
         id: font-normal
         title: Body font size
         description: Font size in px of paragraphs
         type: variable-number
         default: 17
         format: px
-    - 
+    -
         id: font-phone
         title: Body font size for phone
         description: Font size in px of paragraphs for phones
         type: variable-number
         default: 17
         format: px
-    - 
+    -
         id: normal-weight
         title: Body font weight
         description: Font weight of paragraphs
@@ -5950,53 +5967,53 @@ settings:
         type: heading
         level: 2
         collapsed: true
-    - 
+    -
         id: title-spacing
         title: Letter spacing for titles
         description: Letter spacing Used for every titles
         type: variable-text
         default: 0em
-    - 
+    -
         id: title-accent-color
         title: Accent color title
         description: Choose the accent color for every titles
         type: class-toggle
-    - 
+    -
         id: title-hue
         title: Bold and italic color for titles
         type: class-toggle
-    - 
+    -
         id: title-collapse
         title: Collapse indicator for titles
         description: Hide collapse indicators
         type: class-toggle
-    - 
+    -
         id: line-title
         title: Add a line under titles
         type: class-toggle
-    - 
+    -
         id: h-reveal
         title: Hx activate
         description: activate Hx in titles
         type: class-toggle
-    - 
+    -
         id: h-change-color
         title: Color of Hx
         description: Apply color of bold-italic for Hx
         type: class-toggle
-    - 
+    -
         id: level-1-headings
         title: Level 1 Headings
         type: heading
         level: 3
         collapsed: true
-    - 
+    -
         id: h1
         title: H1 font size
         description: Accepts any CSS font-size value
         type: variable-text
         default: 2em
-    - 
+    -
         id: h1-weight
         title: H1 font weight
         description: Accepts numbers representing the CSS font-weight
@@ -6008,7 +6025,7 @@ settings:
         description: Accepts normal or italic representing the CSS font-style
         type: variable-text
         default: normal
-    -  
+    -
         id: h1-color
         title: H1 font color
         type: variable-themed-color
@@ -6021,25 +6038,25 @@ settings:
         type: heading
         level: 3
         collapsed: true
-    - 
+    -
         id: h2
         title: H2 font size
         description: Accepts any CSS font-size value
         type: variable-text
         default: 1.6em
-    - 
+    -
         id: h2-weight
         title: H2 font weight
         description: Accepts numbers representing the CSS font-weight
         type: variable-number
         default: 400
-    - 
+    -
         id: h2-style
         title: H2 font style
         description: Accepts normal or italic representing the CSS font-style
         type: variable-text
         default: normal
-    -  
+    -
         id: h2-color
         title: H2 font color
         type: variable-themed-color
@@ -6052,25 +6069,25 @@ settings:
         type: heading
         level: 3
         collapsed: true
-    - 
+    -
         id: h3
         title: H3 font size
         description: Accepts any CSS font-size value
         type: variable-text
         default: 1.2em
-    - 
+    -
         id: h3-weight
         title: H3 font weight
         description: Accepts numbers representing the CSS font-weight
         type: variable-number
         default: 400
-    - 
+    -
         id: h3-style
         title: H3 font style
         description: Accepts normal or italic representing the CSS font-style
         type: variable-text
         default: normal
-    -  
+    -
         id: h3-color
         title: H3 font color
         type: variable-themed-color
@@ -6083,44 +6100,44 @@ settings:
         type: heading
         level: 3
         collapsed: true
-    - 
+    -
         id: h4
         title: H4 font size
         description: Accepts any CSS font-size value
         type: variable-text
         default: 1em
-    - 
+    -
         id: h4-weight
         title: H4 font weight
         description: Accepts numbers representing the CSS font-weight
         type: variable-number
         default: 400
-    - 
+    -
         id: h4-style
         title: H4 font style
         description: Accepts normal or italic representing the CSS font-style
         type: variable-text
         default: normal
-    -  
+    -
         id: h4-color
         title: H4 font color
         type: variable-themed-color
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
-    - 
+    -
         id: level-5-headings
         title: Level 5 Headings
         type: heading
         level: 3
         collapsed: true
-    -  
+    -
         id: h5
         title: H5 font size
         description: Accepts any CSS font-size value
         type: variable-text
         default: 0.85em
-    - 
+    -
         id: h5-weight
         title: H5 font weight
         description: Accepts numbers representing the CSS font-weight
@@ -6132,26 +6149,26 @@ settings:
         description: Accepts normal or italic representing the CSS font-style
         type: variable-text
         default: normal
-    -  
+    -
         id: h5-color
         title: H5 font color
         type: variable-themed-color
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
-    - 
+    -
         id: level-6-headings
         title: Level 6 Headings
         type: heading
         level: 3
         collapsed: true
-    - 
+    -
         id: h6
         title: H6 font size
         description: Accepts any CSS font-size value
         type: variable-text
         default: 0.85em
-    - 
+    -
         id: h6-weight
         title: H6 font weight
         description: Accepts numbers representing the CSS font-weight
@@ -6163,7 +6180,7 @@ settings:
         description: Accepts normal or italic representing the CSS font-style
         type: variable-text
         default: normal
-    -  
+    -
         id: h6-color
         title: H6 font color
         type: variable-themed-color
@@ -6178,3 +6195,4 @@ settings:
         level: 2
         collapsed: true
 */
+
