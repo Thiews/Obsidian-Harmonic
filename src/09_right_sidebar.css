@@ -1,0 +1,214 @@
+
+/* --------------- */
+/* Right sidebar */
+/* --------------- */
+/* Outline */
+
+.outline {
+  padding-top:10px;
+  padding-bottom:20px;
+  Padding-left:30px;
+  //font-size:var(--font-small);
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+.outline:before{
+  Content:"OUTLINE";
+  Font-weight:600;
+  color:var(--text-accent);
+  font-size: var(--font-small);
+}
+
+.outline .collapse-icon {
+  Color:var(--text-accent);
+}
+
+.outline .tree-item-inner::before {
+  content:"\2022";
+  Color:var(--text-accent);
+  Margin-left:-15px;
+  Padding-right:7px;
+}
+
+.outline .tree-item-inner:not(:only-child)::before {
+  display: none;
+}
+
+.outline .tree-item-inner:hover{
+  background: none !important;
+}
+
+.outline .pane-empty {
+  //font-size:var(--font-small);
+  //font-size: calc(var(--font-small) * var(--font-normal));
+  margin:0 0 0 15px;
+}
+
+.outline .collapsible-item-self {
+  cursor:var(--cursor);
+  line-height:1.4;
+  color:var(--text-normal) !important;
+  margin-bottom:4px;
+  //font-size:var(--font-small);
+  //font-size: calc(var(--font-small) * var(--font-normal)) !important;
+  font-weight:700;
+}
+
+.outline .collapsible-item-self:hover {
+  opacity:0.7;
+}
+
+.outline .tree-item-self:hover{
+  background: none;
+  color: var(--text-accent) !important;
+  transition: 0.1s;
+}
+
+.collapsible-item-collapse {
+  opacity:1;
+}
+
+.outline .collapsible-item-children .collapsible-item-self{
+  font-weight:400 !important;
+}
+
+
+/* backlink pane */
+
+.backlink-pane {
+  Padding-top:30px;
+  padding-bottom:30px;
+  Background:var(--background-secondary-alt);
+  Border-radius:10px;
+  Margin-top:20px;
+}
+
+.backlink-pane.node-insert-event {
+  Background:transparent !important;
+}
+
+.backlink-pane .search-result-container {
+  padding:5px 0px 5px 0px;
+  margin-left:0;
+}
+
+.backlink-pane .search-result-file-title {
+  padding-left:25px;
+}
+
+.list-item-ending-flair {
+  right:0;
+  background:transparent;
+}
+
+.backlink-pane .list-item-ending-flair {
+  right:12px;
+}
+
+.backlink-pane.node-insert-event {
+Padding-top:0px !important;
+}
+
+/* Tag pane */
+
+.tag-pane-tag .list-item-ending-flair {
+  right:5px;
+}
+
+.list-item:hover .list-item-ending-flair {
+  background:transparent;
+  color:var(--text-faint);
+}
+
+.search-result-file-title:hover {
+  color:var(--text-normal);
+}
+
+.tag-container{
+  Padding:10px 40px !important;
+  Font-size:1em !important;
+}
+
+.tag-container .tree-item-self:hover{
+  background: none !important;
+  color: var(--text-accent) !important;
+  transition: 0.1s;
+}
+
+.tag-pane-tag-text:before{
+  content:"#";
+  Color:var(--text-accent);
+  Margin-left:-13px;
+  Padding-right:6px;
+
+}
+
+.tag-pane-tag > .collapse-icon + .tree-item-inner > .tag-pane-tag-text:before {
+  content: none;
+  margin-left: -5px;
+}
+
+.tag-container .tree-item-icon {
+  Color:var(--text-accent);
+}
+
+.tag-container::before {
+  Content:"TAGS";
+  color:var(--text-accent);
+  Font-weight:bold;
+  font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+.tag-pane-tag-count {
+  padding:0;
+  color:var(--text-faint);
+}
+
+.tag-pane-tag {
+  padding:2px 10px;
+  cursor:var(--cursor);
+}
+
+.workspace-leaf-content[data-type='tag'] {
+  padding-top:10px;
+}
+
+
+/* Outgoing links */
+
+.outgoing-link-item {
+  Background:var(--background-primary);
+  //Font-size:var(--font-small);
+  font-size: calc(var(--font-small) * var(--font-normal));
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.05);
+  Border-radius: 8px;
+  Margin-bottom:15px;
+}
+
+.menu-v2 .outgoing-link-item {
+  box-shadow: none;
+  background: transparent;
+  padding: 20px 20px;
+  border-radius: 0px;
+  border-bottom: 1px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  margin: 0px 0px !important;
+}
+.menu-v2 .outgoing-link-pane {
+  padding: 0px 0px;
+}
+
+.menu-v3 .outgoing-link-item {
+  box-shadow: none;
+  Border-radius: 8px;
+  Margin-bottom:15px;
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}
+
+
+.menu-v4 .outgoing-link-item{
+  box-shadow: none;
+  Border-radius: 0px;
+  border-left: 3px solid var(--text-accent);
+  Margin-bottom:0.2rem;
+  background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
+}

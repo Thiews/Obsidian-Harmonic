@@ -1,0 +1,18 @@
+/* --------------- */
+/* Status bar */
+
+.status-bar {
+  background-color:var(--background-primary);
+  color:var(--text-faint);
+  //font-size:var(--font-smaller);
+  font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
+  padding:0;
+}
+
+.status-bar-item {
+  padding:0 5px;
+}
+
+.status-bar-item-segment {
+  margin-right:10px;
+}
