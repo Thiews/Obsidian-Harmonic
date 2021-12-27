@@ -349,6 +349,10 @@ padding-right: 0px !important;
   width:var(--line-width);
 }
 
+.CodeMirror-gutter.CodeMirror-foldgutter{
+  background:transparent;
+}
+
 @media (min-width: 400pt){
 .markdown-source-view.is-readable-line-width  {
   max-width:100% !important;
