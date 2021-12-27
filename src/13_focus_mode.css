@@ -47,6 +47,10 @@
    transition: 0.3s;
 }
 
+.hide-tab-header .workspace-tab-header-container:hover {
+  opacity: 1;
+}
+
 .hide-left-menu .workspace-tab-header-container:hover {
    Opacity:1;
 }
