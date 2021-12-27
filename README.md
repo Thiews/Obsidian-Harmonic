@@ -16,10 +16,9 @@ CSS Plugin adjustments:
 
 Install style **settings plugin** to
 
-## Choose a logo or a title, an accent color, 2 different styles for menus (left sidebar and right sidebar)
-![](http)<img width="1440" alt="Capture d’écran 2021-12-01 à 16 31 58" src="https://user-images.githubusercontent.com/29182877/144263738-a27cac6b-9db8-4007-850f-68d273f5d5b8.png">
-<img width="1440" alt="Capture d’écran 2021-12-01 à 16 46 32" src="https://user-images.githubusercontent.com/29182877/144266444-e7b89113-6fe8-44bd-84e1-0a4c026cdeb2.png">
-<img width="1440" alt="Capture d’écran 2021-12-09 à 14 26 04" src="https://user-images.githubusercontent.com/29182877/145405142-f8d3a078-94e2-4346-b672-a3e83f492a51.png">
+## Choose a logo or a title, an accent color, 4 different styles for menus (left sidebar and right sidebar)
+![Color variation-2](https://user-images.githubusercontent.com/29182877/147460176-9474538c-3804-4d80-ac4a-62bcd3b0585a.png)
+
 
 
 ## Activate focus mode, make bold and italic pop (preview and edit mode)
