@@ -42,11 +42,12 @@ margin: 0px !important;
 .markdown-source-view .cm-contentContainer,.markdown-source-view .cm-line{
   max-width: 100% !important;
 }
- .markdown-source-view .cm-content{
+ .markdown-source-view .cm-scroller{
   width:var(--line-width);
   max-width:100% !important;
   margin-left: auto;
   margin-right: auto;
+  padding:0px 0px !important;
  }
 
 .markdown-source-view .cm-gutters{
