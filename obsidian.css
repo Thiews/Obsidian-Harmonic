@@ -1964,6 +1964,32 @@ Opacity:1 !important;
   padding-left: 4rem !important;
 }
 
+.blockquote-frame blockquote{
+  margin-bottom: -5rem !important;
+  margin-top: -5rem !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 75%;
+}
+
+.blockquote-frame blockquote:before{
+  content: "⌜";
+  font-size: 4rem;
+  position: relative;
+  color: var(--text-accent);
+  top: 4.5rem;
+  left: -2rem;
+}
+
+.blockquote-frame blockquote:after{
+  content: "⌟";
+  font-size: 4rem;
+  position: relative;
+  color: var(--text-accent);
+  top: -5.5rem;
+  left : calc(100% - 1.5rem);
+}
+
 
 /* Edit mode */
 
