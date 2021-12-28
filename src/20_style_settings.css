@@ -490,6 +490,15 @@ settings:
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
+    - 
+        id: h1-text-align
+        title: Title text align
+        type: variable-select
+        default: left
+        options:
+            - left
+            - center
+            - right
     -
         id: level-2-headings
         title: Level 2 Headings
@@ -521,6 +530,15 @@ settings:
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
+    - 
+        id: h2-text-align
+        title: Title text align
+        type: variable-select
+        default: left
+        options:
+            - left
+            - center
+            - right
     -
         id: level-3-headings
         title: Level 3 Headings
@@ -552,6 +570,15 @@ settings:
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
+    - 
+        id: h3-text-align
+        title: Title text align
+        type: variable-select
+        default: left
+        options:
+            - left
+            - center
+            - right
     -
         id: level-4-headings
         title: Level 4 Headings
@@ -583,6 +610,15 @@ settings:
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
+    - 
+        id: h4-text-align
+        title: Title text align
+        type: variable-select
+        default: left
+        options:
+            - left
+            - center
+            - right
     -
         id: level-5-headings
         title: Level 5 Headings
@@ -614,6 +650,15 @@ settings:
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
+    - 
+        id: h5-text-align
+        title: Title text align
+        type: variable-select
+        default: left
+        options:
+            - left
+            - center
+            - right
     -
         id: level-6-headings
         title: Level 6 Headings
@@ -645,6 +690,15 @@ settings:
         format: hex
         default-light: '#363636'
         default-dark: '#d1d1d1'
+    - 
+        id: h6-text-align
+        title: Title text align
+        type: variable-select
+        default: left
+        options:
+            - left
+            - center
+            - right
     -
         id: credits
         title: Credits
