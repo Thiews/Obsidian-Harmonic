@@ -28,6 +28,9 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   width: calc(100% - var(--p-offset) - 4.2rem);
 }
 
+.wys-mode .markdown-source-view.is-live-preview .cm-contentContainer{
+  margin-left: var(--p-offset) !important;
+}
 
 .wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header {
   left: calc(-1 * var(--p-offset)) !important;
