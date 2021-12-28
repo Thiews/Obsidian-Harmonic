@@ -75,7 +75,7 @@ Firstly, install the [Style Settings plugin](https://github.com/mgmeyers/obsidia
 
 ### Custom html elements
 
-To have more information about the theme and custom css / html : [Go there](https://github.com/Thiews/Obsidian-Harmonic/blob/main/Custom%20css%20and%20html%20elements.md)
+To have more information about the theme and custom css / html : [Go there](https://github.com/Thiews/Obsidian-Harmonic/blob/main/docs/Custom-CSS-and-HTML-elements.md)
 
 - columns (.columns-2, columns-3) avec html :
 
