@@ -5491,7 +5491,11 @@ margin-left: calc(var(--p-offset));
 
 .wys-mode.blockquote-serif div:not(.CodeMirror-activeline) > .HyperMD-quote {
  font-family: lora;
+}
 
+.wys-mode.blockquote-text-center div:not(.CodeMirror-activeline) > .HyperMD-quote {
+  text-align: center;
+  padding: 0rem 2rem;
 }
 
 /*.wys-mode .CodeMirror-activeline .cm-hmd-frontmatter.cm-def,.wys-mode .cm-hmd-frontmatter.cm-def:hover,.markdown-source-view.is-live-preview .cm-active .cm-hmd-frontmatter.cm-def{
