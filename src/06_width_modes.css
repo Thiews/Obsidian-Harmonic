@@ -51,9 +51,7 @@ margin: 0px !important;
  }
 
 .markdown-source-view .cm-gutters{
-  width: 1rem;
   background: transparent !important;
-  z-index: -1;
 }
 
 .full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-sizer, .full-width .cm-contentContainer, .full-width .cm-content, .full-width .cm-line{
