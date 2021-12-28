@@ -300,7 +300,7 @@ img[alt*='img-bw']{
 @media (min-width: 400pt) {
 img[alt*='img-large']{
   margin-left: -25%;
-  width: 150%;
+  width: 150% !important;
   max-width: 150% !important;
   height: 450px;
   object-fit: cover;
