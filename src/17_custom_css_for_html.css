@@ -217,22 +217,24 @@ button:hover{
 
 /* Specific image in a page */
 
-img[alt*='img-float-right'] {
-  width: calc(40% - var(--p-offset));
-  height: 250px;
-  float: right;
+.markdown-preview-view img[alt*='img-float-right'] {
+  width: calc(40% - var(--p-offset)) !important;
+  height: 250px !important;
+  float: right !important;
   object-fit: cover;
+  margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
 
-img[alt*='img-float-left'] {
-  width: calc(40% - var(--p-offset));
-  height: 250px;
-  float: left;
-  object-fit: cover;
-  margin-right: 1rem;
-  margin-bottom: 0.5rem;
+.markdown-preview-view img[alt*='img-float-left'] {
+  width: calc(40% - var(--p-offset)) !important;
+  height: 250px !important;
+  float: left !important;
+  object-fit: cover !important;
+  margin-top: 1rem;
+  margin-right: 1rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 img[alt*='img-banner'] {
@@ -241,20 +243,20 @@ img[alt*='img-banner'] {
   object-fit: cover;
 }
 
-img[alt*='img-profile'] {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  float: left;
+.markdown-preview-view img[alt*='img-profile'] {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover !important;
+  float: left !important;
   margin-top: 1rem;
   margin-right: 1rem;
   border-radius: 100% !important;
 }
 
-img[alt*='img-portrait'] {
-  width: 350px;
-  height: 550px;
-  object-fit: cover;
+.markdown-preview-view img[alt*='img-portrait'] {
+  width: 350px !important;
+  height: 550px !important;
+  object-fit: cover !important;
   //float: left;
   margin-right: 1rem;
   margin-top: 1rem;
@@ -302,7 +304,7 @@ img[alt*='img-large']{
   margin-left: -25%;
   width: 150% !important;
   max-width: 150% !important;
-  height: 450px;
+  height: 450px !important;
   object-fit: cover;
 }}
 
