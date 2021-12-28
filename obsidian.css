@@ -5831,16 +5831,6 @@ settings:
         title:  Display a sequence of images as grid
         type: class-toggle
     -
-        id: img-grid-height
-        title: Height of grid images
-        description: Choose the height of grid images
-        type: variable-number-slider
-        default: 200
-        min: 50
-        max: 400
-        step: 1
-        format: px
-    -
         id: blockquote-section
         title: Customize blockquote
         type: heading
