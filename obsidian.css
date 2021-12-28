@@ -4193,6 +4193,15 @@ img[alt*='img-bw']{
   filter: saturate(0);
 }
 
+@media (min-width: 400pt) {
+img[alt*='img-large']{
+  margin-left: -25%;
+  width: 150%;
+  max-width: 150% !important;
+  height: 450px;
+  object-fit: cover;
+}}
+
 /* Image grid */
 
 
