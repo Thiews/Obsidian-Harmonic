@@ -1234,7 +1234,7 @@ ol > li::before {
   height: calc(100% - 2.5rem) !important;
   border-left-color: var(--text-accent);
   filter: saturate(50%);
-  left: -0.9rem;
+  left: -1rem;
   top: 1.7rem;
   bottom: 0;
 }
