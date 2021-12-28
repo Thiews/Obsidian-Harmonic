@@ -306,6 +306,15 @@ img[alt*='img-large']{
   object-fit: cover;
 }}
 
+@media (min-width: 400pt) {
+img[alt*='img-full-width']{
+  margin-left: calc(50% - 50vw - 0.95rem);
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 450px !important;
+  object-fit: cover;
+}}
+
 /* Image grid */
 
 
@@ -325,7 +334,19 @@ img[alt*='img-large']{
 
 /* Grid */
 
-.img-grid .el-embed-image p{
+.img-grid-large .el-embed-image{
+  margin-left: -20%;
+  width: 140% !important;
+  max-width: 140% !important;
+}
+
+.img-grid-full-width .el-embed-image{
+  margin-left: calc(50% - 50vw - 0.95rem);
+  width: 100vw !important;
+  max-width: 100vw !important;
+}
+
+.img-grid .el-embed-image p,.img-grid-large .el-embed-image p,.img-grid-full-width .el-embed-image p{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   grid-template-rows: masonry;
@@ -334,17 +355,18 @@ img[alt*='img-large']{
   justify-content: stretch;
   align-content: stretch;
   justify-items: stretch;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem !important;
 }
 
-.img-grid .el-embed-image p br{
+.img-grid .el-embed-image p br,.img-grid-large .el-embed-image p br,.img-grid-full-width .el-embed-image p br{
   display: none;
 }
 
 
-.img-grid img {
+.img-grid img, .img-grid-large img,.img-grid-full-width img  {
   object-fit: cover;
-  height: 100% !important;
+  //height: var(--img-grid-height);
+  height: 100%;
   width: 100%;
 }
 
