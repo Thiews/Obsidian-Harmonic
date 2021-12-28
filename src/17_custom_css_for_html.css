@@ -218,9 +218,9 @@ button:hover{
 /* Specific image in a page */
 
 .markdown-preview-view img[alt*='img-float-right'] {
-  width: calc(40% - var(--p-offset)) !important;
-  height: 250px !important;
-  float: right !important;
+  width: calc(40% - var(--p-offset));
+  height: 250px;
+  float: right;
   position: relative;
   object-fit: cover;
   margin-top: 1rem;
@@ -230,15 +230,15 @@ button:hover{
 }
 
 .markdown-preview-view  img[alt*='img-float-left'] {
-  width: calc(40% - var(--p-offset)) !important;
-  height: 250px !important;
+  width: calc(40% - var(--p-offset));
+  height: 250px;
   position: relative;
-  float: left !important;
-  object-fit: cover !important;
-  margin-top: 0.5rem !important;
+  float: left;
+  object-fit: cover;
+  margin-top: 0.5rem;
   margin-right: 1rem !important;
-  margin-left: 0px !important;
-  margin-bottom: 0.5rem !important;
+  margin-left: 0px;
+  margin-bottom: 0.5rem;
   top: 1.5rem;
 }
 
@@ -249,26 +249,26 @@ img[alt*='img-banner'] {
 }
 
 .markdown-preview-view img[alt*='img-profile'] {
-  width: 100px !important;
-  height: 100px !important;
-  object-fit: cover !important;
-  float: left !important;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  float: left;
   margin-top: 1rem;
   margin-right: 1rem;
-  border-radius: 100% !important;
+  border-radius: 100%;
 }
 
 .markdown-preview-view img[alt*='img-portrait'] {
-  width: 350px !important;
-  height: 550px !important;
-  object-fit: cover !important;
-  //float: left;
+  width: 350px;
+  height: 550px;
+  object-fit: cover;
   margin-right: 1rem;
   margin-top: 1rem;
   position: relative;
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 1rem;
 }
 
 img[alt*='img-border-radius']{
@@ -321,6 +321,7 @@ img[alt*='img-full-width']{
   height: 450px !important;
   object-fit: cover;
 }}
+
 
 /* Image grid */
 
