@@ -4221,7 +4221,7 @@ img[alt*='img-bw']{
   justify-content: stretch;
   align-content: stretch;
   justify-items: stretch;
-  margin-bottom: -0.8rem;
+  margin-bottom: 1rem;
 }
 
 .img-grid .el-embed-image p br{
@@ -4231,7 +4231,7 @@ img[alt*='img-bw']{
 
 .img-grid img {
   object-fit: cover;
-  height: var(--img-grid-height);
+  height: 100% !important;
   width: 100%;
 }
 
