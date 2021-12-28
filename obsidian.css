@@ -5502,6 +5502,7 @@ height: 3px;
   //font-style: italic;
 }
 
+/*
 .wys-mode  .CodeMirror-activeline span.cm-image-alt-text,.wys-mode .CodeMirror-activeline span.cm-image-marker,.wys-mode .CodeMirror-activeline .cm-hmd-internal-link.cm-hmd-embed{
   opacity: 1 !important;
 }
@@ -5511,6 +5512,7 @@ height: 3px;
 .wys-mode .markdown-source-view:not(.is-live-preview) div:not(.CodeMirror-activeline) span.cm-hmd-internal-link.cm-hmd-embed{
   opacity: 0;
 }
+*/
 
 .oz-transclusion-widget{
   background: var(--background-secondary-alt);
