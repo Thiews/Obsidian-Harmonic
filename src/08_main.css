@@ -723,6 +723,7 @@ Opacity:1 !important;
 .blockquote-background  blockquote {
   border-left:3px solid var(--text-accent);
   Padding:20px 20px 20px 60px;
+  margin: 1rem 0rem !important;
 }
 
 .blockquote-background.theme-light  blockquote {
@@ -753,15 +754,15 @@ Opacity:1 !important;
 }
 
 .blockquote-bracket  blockquote {
-  margin-left: 6.5rem;
+  margin-left: 4rem !important;
 }
 
 .blockquote-text-center  blockquote {
   text-align: center;
-  padding-right: 4rem;
-  padding-left: 4rem;
+  margin: 2rem 0rem !important;
+  padding-right: 5rem !important;
+  padding-left: 4rem !important;
 }
-
 
 
 /* Edit mode */
