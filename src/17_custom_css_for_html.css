@@ -221,20 +221,25 @@ button:hover{
   width: calc(40% - var(--p-offset)) !important;
   height: 250px !important;
   float: right !important;
+  position: relative;
   object-fit: cover;
   margin-top: 1rem;
   margin-left: 1rem;
   margin-bottom: 0.5rem;
+  top: 1rem;
 }
 
-.markdown-preview-view img[alt*='img-float-left'] {
+.markdown-preview-view  img[alt*='img-float-left'] {
   width: calc(40% - var(--p-offset)) !important;
   height: 250px !important;
+  position: relative;
   float: left !important;
   object-fit: cover !important;
-  margin-top: 1rem;
+  margin-top: 0.5rem !important;
   margin-right: 1rem !important;
+  margin-left: 0px !important;
   margin-bottom: 0.5rem !important;
+  top: 1.5rem;
 }
 
 img[alt*='img-banner'] {
