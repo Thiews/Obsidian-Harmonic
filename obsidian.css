@@ -1506,6 +1506,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   font-size:var(--h1);/*28px !important;*/
   font-weight:var(--h1-weight) !important;/*normal;*/
   Color:var(--h1-color);
+  text-align: var(--h1-text-align);
 }
 
 @media (min-width: 400pt){
@@ -1513,6 +1514,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   letter-spacing:var(--title-spacing);
   margin: 0px;
  padding-bottom: 1rem !important;
+ text-align: var(--h1-text-align);
 }}
 
 .h-reveal .markdown-preview-view h1:before{
@@ -1542,6 +1544,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   font-size:var(--h2);
   font-weight:var(--h2-weight) !important;
   Color:var(--h2-color);
+  text-align: var(--h2-text-align);
 }
 
 .line-title .markdown-preview-view h2:after,
@@ -1560,6 +1563,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
  // padding: 30px 0px 20px 0px!important;
  padding-top: 2rem !important;
  padding-bottom: 1rem !important;
+ text-align: var(--h2-text-align);
 }}
 
 .h-reveal .markdown-preview-view h2:before{
@@ -1579,6 +1583,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   padding-top:15px;
   font-size:var(--h3);
   Color:var(--h3-color);
+  text-align: var(--h3-text-align);
 }
 
 .line-title .markdown-preview-view h3:after,
@@ -1596,6 +1601,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
  padding-bottom: 1rem !important;
+ text-align: var(--h3-text-align);
 }}
 
 .h-reveal .markdown-preview-view h3:before{
@@ -1617,6 +1623,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   font-weight:var(--h4-weight) !important;
   font-size:var(--h4);
   padding-top:15px;
+  text-align: var(--h4-text-align);
 }
 
 .line-title .markdown-preview-view h4:after,
@@ -1634,6 +1641,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
  padding-bottom: 1rem !important;
+ text-align: var(--h4-text-align);
 }}
 
 .h-reveal .markdown-preview-view h4:before{
@@ -1655,6 +1663,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   font-size:var(--h5);
   font-weight:var(--h5-weight) !important;
   padding-top:15px;
+  text-align: var(--h5-text-align);
 }
 
 .line-title .markdown-preview-view h5:after,
@@ -1672,6 +1681,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
  padding-bottom: 1rem !important;
+ text-align: var(--h5-text-align);
 }}
 
 .h-reveal .markdown-preview-view h5:before{
@@ -1693,6 +1703,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   Color:var(--h6-color);
   font-weight:var(--h6-weight) !important;
   font-size:var(--h6);
+  text-align: var(--h6-text-align);
 }
 
 .line-title .markdown-preview-view h6:after,
@@ -1710,6 +1721,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   letter-spacing:var(--title-spacing);
   padding-top: 2rem !important;
  padding-bottom: 1rem !important;
+ text-align: var(--h6-text-align);
 }}
 
 .h-reveal .markdown-preview-view h6:before{
@@ -1718,7 +1730,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   margin-right:1rem;
   color:var(--text-accent);/*hsl(var(--accent-h),var(--accent-s),var(--accent-d));*/
 }
-
 /* Change Hx color (preview and edit mode) */
 .h-change-color.bold-italic-accent .markdown-preview-view h1:before,.h-change-color.bold-italic-accent .markdown-preview-view h2:before,.h-change-color.bold-italic-accent .markdown-preview-view h3:before,.h-change-color.bold-italic-accent .markdown-preview-view h4:before,.h-change-color.bold-italic-accent .markdown-preview-view h5:before,.h-change-color.bold-italic-accent .markdown-preview-view h6:before{
   filter: hue-rotate(var(--hue-bold-italic)) !important;
