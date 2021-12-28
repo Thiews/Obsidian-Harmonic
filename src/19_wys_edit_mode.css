@@ -300,6 +300,19 @@ margin-left: calc(var(--p-offset));
   padding: 0rem 2rem;
 }
 
+.wys-mode.blockquote-frame .HyperMD-quote:before{
+  content: "⌜";
+  font-size: 1rem !important;
+  color: var(--text-accent);
+  left: 0rem;
+}
+
+.wys-mode.blockquote-frame .HyperMD-quote:after{
+  content: "⌟";
+  font-size: 1rem !important;
+  color: var(--text-accent);
+}
+
 /*.wys-mode .CodeMirror-activeline .cm-hmd-frontmatter.cm-def,.wys-mode .cm-hmd-frontmatter.cm-def:hover,.markdown-source-view.is-live-preview .cm-active .cm-hmd-frontmatter.cm-def{
   opacity: 1 !important;
 }
