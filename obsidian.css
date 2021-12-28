@@ -114,6 +114,12 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 --writing-focus-opacity: 0.6;
 --editor-spacing:  0em;
 --img-grid-height: 200px;
+--h1-text-align: left;
+--h2-text-align: left;
+--h3-text-align: left;
+--h4-text-align: left;
+--h5-text-align: left;
+--h6-text-align: left;
 
 
 
@@ -143,6 +149,7 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 
   /*----------------------------------------------------------------*/
 }
+
 .theme-dark {
   --background-primary:hsl(var(--base-h),var(--base-s),var(--base-d));
   --background-primary-alt:hsl(var(--base-h),var(--base-s),calc(var(--base-d) - 3%));
