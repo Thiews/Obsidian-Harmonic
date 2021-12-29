@@ -832,85 +832,37 @@ aside {
 
 /* Checkboxes */
 
-/*.markdown-preview-view */input[type=checkbox] {
-  -webkit-appearance:none;
-  appearance:none;
-  border: 0px solid !important;
-  //margin-left: 0rem;
+input[type=checkbox] {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: var(--checkbox-type);
+    border: 2px solid var(--text-accent) !important;
+    padding: 0;
+    background: transparent;
+    filter: none !important;
 }
 
 
-.markdown-preview-view .contains-task-list{
-  margin-left: calc(var(--p-offset) - 0.4rem);
-}
-
-
-.markdown-preview-view .task-list-item-checkbox {
-  filter: none;
+input[type=checkbox]:checked {
+    background-color: var(--text-accent);
+    border: 1px solid transparent;
+    border-radius: var(--checkbox-type);
+    background-position: center !important;
+    background-size: 60% !important;
+    background-repeat: no-repeat !important;
+    background-image: url('data:image/svg+xml; utf8, <svg width="12px" height="10px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-4.000000, -6.000000)" fill="%23ffffff"><path d="M8.1043257,14.0367999 L4.52468714,10.5420499 C4.32525014,10.3497722 4.32525014,10.0368095 4.52468714,9.8424863 L5.24777413,9.1439454 C5.44721114,8.95166768 5.77142411,8.95166768 5.97086112,9.1439454 L8.46638057,11.5903727 L14.0291389,6.1442083 C14.2285759,5.95193057 14.5527889,5.95193057 14.7522259,6.1442083 L15.4753129,6.84377194 C15.6747499,7.03604967 15.6747499,7.35003511 15.4753129,7.54129009 L8.82741268,14.0367999 C8.62797568,14.2290777 8.3037627,14.2290777 8.1043257,14.0367999"></path></g></g></svg>');
 }
 
 .markdown-preview-view ul > li.task-list-item.is-checked {
-  text-decoration:none;
-  color:var(--text-normal);
+    text-decoration: line-through;
+    color: var(--text-faint);
 }
 
-
-.markdown-preview-view .task-list-item .list-collapse-indicator svg{
-  margin-left: -0.8rem;
-}
-
-.markdown-preview-view .contains-task-list > li[data-task=""]{
-  margin-left: 2rem;
-}
-
-.markdown-source-view.is-live-preview .task-list-item-checkbox{
-filter: none !important;
-}
-.markdown-preview-view li[data-task=""]>.task-list-item-checkbox{
-  margin-left: -0.8rem;
-}
-.markdown-preview-view li[data-task=""]>.task-list-item-checkbox::before,
-.markdown-preview-view li[data-task=""] p .task-list-item-checkbox::before,
-.markdown-source-view.is-live-preview input[data-task=" "]:before{
-  filter:none !important;
-  content: "✓";
-  color: transparent;
-  font-size: 0.6rem;
-  border:2px solid var(--text-accent);
-  border-radius: 100%;
-  padding: 0.13rem 0.28rem;
-  position: relative;
-  top: -0.5rem;
-  left: -0.4rem;
-}
-
-.markdown-preview-view .contains-task-list > li[data-task="x"],
-.markdown-source-view .HyperMD-task-line[data-task='x']{
-  text-decoration: line-through !important;
-  color: var(--text-faint) !important;
-  margin-left: 1rem;
-}
-
-.markdown-preview-view li[data-task="x"]>.task-list-item-checkbox::before,
-.markdown-preview-view li[data-task="x"] p .task-list-item-checkbox::before,
-.markdown-source-view.is-live-preview input[data-task="x"]:before {
-  filter:none !important;
-  content: "✓";
-  color: #FFF;
-  font-size: 0.8rem;
-  background-color: var(--text-accent);
-  border-radius: 100%;
-  padding: 0.16rem 0.35rem;
-  position: relative;
-  top: -0.4rem;
-  left: -0.4rem;
-}
-
-/*.markdown-source-view.is-live-preview input[data-task="x"]{
+.markdown-source-view.is-live-preview input[data-task="x"]{
   background-color: var(--text-accent) !important;
   color: var(--text-accent) !important;
   filter: hue-rotate(calc(360 - var(--hue-bold-italic))) !important;
-}*/
+}
 
 .markdown-preview-view li[data-task=">"],
 .markdown-source-view .HyperMD-task-line[data-task='>']{
@@ -928,9 +880,14 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.5rem;
-    left: -0.6rem;
+    left: -0.5rem;
     content: "⌲";
 }
+
+     .markdown-preview-view li[data-task=">"]  input:checked,.markdown-source-view.is-live-preview input[data-task=">"]{
+      background-color:transparent !important;
+      border: none !important;
+    }
 
 .markdown-preview-view li[data-task="-"],
 .markdown-source-view .HyperMD-task-line[data-task='-']{
@@ -947,8 +904,13 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.6rem;
+    left: -0.5rem;
     content: "✕";
+    }
+
+     .markdown-preview-view li[data-task="-"]  input:checked,.markdown-source-view.is-live-preview input[data-task="-"]{
+      background-color:transparent !important;
+      border: none !important;
     }
 
 
@@ -960,14 +922,20 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.6rem;
+    left: -0.5rem;
     content: "⇥";
   }
 
-  .markdown-source-view .HyperMD-task-line[data-task='/']{
+   .markdown-preview-view li[data-task="D"]  input:checked,.markdown-source-view.is-live-preview input[data-task="D"]{
+      background-color:transparent !important;
+      border: none !important;
+    }
+
+  .markdown-source-view .HyperMD-task-line[data-task='/'],.markdown-preview-view li[data-task="/"]{
     text-decoration: none !important;
     color: var(--text-normal) !important;
   }
+
     .markdown-preview-view li[data-task="/"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="/"] p .task-list-item-checkbox:checked::before,
 .markdown-source-view.is-live-preview input[data-task="/"]:before {
@@ -975,13 +943,17 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.6rem;
+    left: -0.5rem;
     font-size: 1rem;
-    //content: "⎖";
     content: "◐";
     }
 
-.markdown-source-view .HyperMD-task-line[data-task='?']{
+    .markdown-preview-view li[data-task="/"]  input:checked,.markdown-source-view.is-live-preview input[data-task="/"]{
+      background-color:transparent !important;
+      border: none !important;
+    }
+
+.markdown-source-view .HyperMD-task-line[data-task='?'],.markdown-preview-view li[data-task="?"]{
     text-decoration: none !important;
     color: var(--text-normal) !important;
   }
@@ -993,11 +965,16 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.5rem;
-    left: -0.6rem;
+    left: -0.5rem;
     content: "?";
 }
 
-.markdown-source-view .HyperMD-task-line[data-task='R']{
+.markdown-preview-view li[data-task="?"]  input:checked,.markdown-source-view.is-live-preview input[data-task="?"]{
+      background-color:transparent !important;
+      border: none !important;
+    }
+
+.markdown-source-view .HyperMD-task-line[data-task='R'],.markdown-preview-view li[data-task="R"]{
     text-decoration: none !important;
     color: var(--text-normal) !important;
   }
@@ -1005,13 +982,17 @@ filter: none !important;
 .markdown-preview-view li[data-task="R"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="R"] p .task-list-item-checkbox:checked::before,
 .markdown-source-view.is-live-preview input[data-task="R"]:before {
-   color: var(--text-accent) !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.5rem;
-    left: -0.6rem;
+    left: -0.5rem;
     font-size: 0.8em;
     content: "🔍";
+    }
+
+.markdown-preview-view li[data-task="R"]  input:checked,.markdown-source-view.is-live-preview input[data-task="R"]{
+      background-color:transparent !important;
+      border: none !important;
     }
 
     .markdown-source-view .HyperMD-task-line[data-task='L']{
@@ -1022,6 +1003,7 @@ filter: none !important;
     .markdown-preview-view li[data-task="L"],
     .markdown-source-view .HyperMD-task-line[data-task='L']{
       color: red !important;
+      text-decoration: none !important;
     }
 
     .markdown-preview-view li[data-task="L"]>.task-list-item-checkbox:checked::before,
@@ -1031,13 +1013,18 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.6rem;
+    left: -0.5rem;
     //font-size: 0.5em;
     content: "!";
     font-weight: bold;
     }
 
-.markdown-source-view .HyperMD-task-line[data-task='!']{
+    .markdown-preview-view li[data-task="L"]  input:checked,.markdown-source-view.is-live-preview input[data-task="L"]{
+      background-color:transparent !important;
+      border: none !important;
+    }
+
+.markdown-source-view .HyperMD-task-line[data-task='!'],.markdown-preview-view li[data-task="!"]{
     text-decoration: none !important;
     color: var(--text-normal) !important;
   }
@@ -1054,11 +1041,15 @@ filter: none !important;
     position: relative;
     padding: 0.26rem 0.4rem;
     top: -0.3rem;
-    left: -0.6rem;
+    left: -0.5rem;
     font-size: 0.9rem;
     content: "⚡︎";
     }
 
+    .markdown-preview-view li[data-task="!"]  input:checked,.markdown-source-view.is-live-preview input[data-task="!"]{
+      background-color:transparent !important;
+      border: none !important;
+    }
 
    /* Edit mode */
 .cm-s-obsidian span.cm-formatting-task {
