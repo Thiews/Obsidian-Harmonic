@@ -4238,7 +4238,7 @@ img[alt*='img-large']{
 
 @media (min-width: 400pt) {
 img[alt*='img-full-width']{
-  margin-left: calc(50% - 50vw - 0.95rem);
+  margin-left: calc(50% - 50vw - 0.95rem - calc(var(--p-offset)/2));
   width: 100vw !important;
   max-width: 100vw !important;
   height: 450px !important;
