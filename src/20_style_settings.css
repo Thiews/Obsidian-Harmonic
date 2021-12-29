@@ -216,7 +216,7 @@ settings:
         collapsed: false
     -
         id: first-letter-capitalize
-        title:  Capitalize first letter of a paragraph
+        title:  Capitalize first letter of a praragraph
         type: class-toggle
     -
         id: image-section
@@ -286,6 +286,25 @@ settings:
         id: blockquote-frame
         title:  Brackets for quote (works in combination with text serif, not the others)
         type: class-toggle
+    -
+        id: checkbox-section
+        title: Customize checkbox style
+        type: heading
+        level: 3
+        collapsed: false
+    -
+        id: checkbox-type
+        title: Choose the style of checkboxes
+        description: Choose diffent styles for the left and right sidebars
+        type: variable-select
+        default: 100%
+        options:
+            -
+                label: Rounded
+                value: 100%
+            -
+                label: Squared
+                value: 25%
     -
         id: outline-section
         title: Outlines for lists
