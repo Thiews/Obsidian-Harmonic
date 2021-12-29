@@ -300,14 +300,19 @@ margin-left: calc(var(--p-offset));
   padding: 0rem 2rem;
 }
 
-.wys-mode.blockquote-frame .HyperMD-quote:before{
+.wys-mode.blockquote-frame:not(.blockquote-background,.blockquote-bracket,.blockquote-text-center)  .HyperMD-quote{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.wys-mode.blockquote-frame:not(.blockquote-background,.blockquote-bracket,.blockquote-text-center) .HyperMD-quote:before{
   content: "⌜";
   font-size: 1rem !important;
   color: var(--text-accent);
   left: 0rem;
 }
 
-.wys-mode.blockquote-frame .HyperMD-quote:after{
+.wys-mode.blockquote-frame:not(.blockquote-background,.blockquote-bracket,.blockquote-text-center) .HyperMD-quote:after{
   content: "⌟";
   font-size: 1rem !important;
   color: var(--text-accent);
