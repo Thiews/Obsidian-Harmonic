@@ -1108,10 +1108,10 @@ input[type=checkbox]:checked {
     content: "";
     border-radius: 25%;
     background-color: rgba(230,126,34,1);
-    background-size: 0.8rem 0.8rem;
+    background-size: 1rem 1rem;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M2 3h19.138a.5.5 0 0 1 .435.748L18 10l3.573 6.252a.5.5 0 0 1-.435.748H4v5H2V3z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm1-10V7h-2v7h6v-2h-4z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
     }
 
     .markdown-preview-view li[data-task="L"]  input:checked,.markdown-source-view.is-live-preview input[data-task="L"]{
@@ -1142,7 +1142,7 @@ input[type=checkbox]:checked {
     content: "";
     border-radius: 25%;
     background-color: rgba(231,76,60,1);
-    background-size: 0.8rem 0.8rem;
+    background-size: 1rem 1rem;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm-1-7v2h2v-2h-2zm0-8v6h2V7h-2z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
