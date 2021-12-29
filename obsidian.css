@@ -2088,6 +2088,7 @@ input[type=checkbox]:checked {
      .markdown-preview-view li[data-task=">"]  input:checked,.markdown-source-view.is-live-preview input[data-task=">"]{
       background-color:transparent !important;
       border: none !important;
+      background: none !important;
     }
 
 .markdown-preview-view li[data-task="-"],
@@ -2112,6 +2113,7 @@ input[type=checkbox]:checked {
      .markdown-preview-view li[data-task="-"]  input:checked,.markdown-source-view.is-live-preview input[data-task="-"]{
       background-color:transparent !important;
       border: none !important;
+      background: none !important;
     }
 
 
@@ -2130,6 +2132,7 @@ input[type=checkbox]:checked {
    .markdown-preview-view li[data-task="D"]  input:checked,.markdown-source-view.is-live-preview input[data-task="D"]{
       background-color:transparent !important;
       border: none !important;
+      background: none !important;
     }
 
   .markdown-source-view .HyperMD-task-line[data-task='/'],.markdown-preview-view li[data-task="/"]{
@@ -2152,6 +2155,7 @@ input[type=checkbox]:checked {
     .markdown-preview-view li[data-task="/"]  input:checked,.markdown-source-view.is-live-preview input[data-task="/"]{
       background-color:transparent !important;
       border: none !important;
+      background: none !important;
     }
 
 .markdown-source-view .HyperMD-task-line[data-task='?'],.markdown-preview-view li[data-task="?"]{
@@ -2173,6 +2177,7 @@ input[type=checkbox]:checked {
 .markdown-preview-view li[data-task="?"]  input:checked,.markdown-source-view.is-live-preview input[data-task="?"]{
       background-color:transparent !important;
       border: none !important;
+      background: none !important;
     }
 
 .markdown-source-view .HyperMD-task-line[data-task='R'],.markdown-preview-view li[data-task="R"]{
@@ -2194,6 +2199,7 @@ input[type=checkbox]:checked {
 .markdown-preview-view li[data-task="R"]  input:checked,.markdown-source-view.is-live-preview input[data-task="R"]{
       background-color:transparent !important;
       border: none !important;
+      background: none !important;
     }
 
     .markdown-source-view .HyperMD-task-line[data-task='L']{
@@ -2223,6 +2229,7 @@ input[type=checkbox]:checked {
     .markdown-preview-view li[data-task="L"]  input:checked,.markdown-source-view.is-live-preview input[data-task="L"]{
       background-color:transparent !important;
       border: none !important;
+      background: none !important;
     }
 
 .markdown-source-view .HyperMD-task-line[data-task='!'],.markdown-preview-view li[data-task="!"]{
@@ -2250,6 +2257,7 @@ input[type=checkbox]:checked {
     .markdown-preview-view li[data-task="!"]  input:checked,.markdown-source-view.is-live-preview input[data-task="!"]{
       background-color:transparent !important;
       border: none !important;
+      background: none !important;
     }
 
    /* Edit mode */
