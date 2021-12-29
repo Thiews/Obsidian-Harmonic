@@ -306,7 +306,7 @@ img[alt*='img-bw']{
 
 @media (min-width: 400pt) {
 img[alt*='img-large']{
-  margin-left: -25%;
+  margin-left: calc(-25% - calc(var(--p-offset)/2));
   width: 150% !important;
   max-width: 150% !important;
   height: 450px !important;
