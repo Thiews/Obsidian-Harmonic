@@ -279,12 +279,12 @@ settings:
         title:  Serif font for quote
         type: class-toggle
     -
-        id: blockquote-frame
-        title:  Brackets for quote (works in combination with text serif, not the others)
-        type: class-toggle
-    -
         id: blockquote-text-center
         title:  Center text for quote
+        type: class-toggle
+    -
+        id: blockquote-frame
+        title:  Brackets for quote (works in combination with text serif, not the others)
         type: class-toggle
     -
         id: outline-section
