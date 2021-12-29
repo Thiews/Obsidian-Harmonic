@@ -2080,7 +2080,7 @@ input[type=checkbox]:checked {
     top: -0.3rem;
     left: -0.5rem;
     content: "";
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -2109,7 +2109,7 @@ input[type=checkbox]:checked {
     padding: 0.15rem 0.8rem;
     top: -0.3rem;
     left: -0.5rem;
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     background-repeat: no-repeat;
     background-size: 1rem 1rem;
     background-position: center;
@@ -2134,7 +2134,7 @@ input[type=checkbox]:checked {
 .markdown-preview-view li[data-task=">"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task=">"] p .task-list-item-checkbox:checked::before,
 .markdown-source-view.is-live-preview input[data-task=">"]:before {
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     position: relative;
     padding: 0.1rem 0.8rem;
     top: -0.4rem;
@@ -2164,7 +2164,7 @@ input[type=checkbox]:checked {
 .markdown-preview-view li[data-task="-"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="-"] p .task-list-item-checkbox:checked::before,
 .markdown-source-view.is-live-preview input[data-task="-"]:before {
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     position: relative;
     padding: 0.1rem 0.8rem;
     top: -0.3rem;
@@ -2187,7 +2187,7 @@ input[type=checkbox]:checked {
     .markdown-preview-view li[data-task="D"]>.task-list-item-checkbox:checked::before,
 .markdown-preview-view li[data-task="D"] p .task-list-item-checkbox:checked::before,
 .markdown-source-view.is-live-preview input[data-task="D"]:before {
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     position: relative;
     padding: 0.1rem 0.8rem;
     top: -0.3rem;
@@ -2219,7 +2219,7 @@ input[type=checkbox]:checked {
     top: -0.3rem;
     left: -0.5rem;
     content: "";
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     background-size: 0.8rem 0.8rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -2248,7 +2248,7 @@ input[type=checkbox]:checked {
     content: "";
     background-size: 0.8rem 0.8rem;
     background-color: rgba(50,213,219,1);
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     background-position: center;
     background-repeat: no-repeat;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0H24V24H0z'/%3E%3Cpath d='M12 19c.828 0 1.5.672 1.5 1.5S12.828 22 12 22s-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm0-17c3.314 0 6 2.686 6 6 0 2.165-.753 3.29-2.674 4.923C13.399 14.56 13 15.297 13 17h-2c0-2.474.787-3.695 3.031-5.601C15.548 10.11 16 9.434 16 8c0-2.21-1.79-4-4-4S8 5.79 8 8v1H6V8c0-3.314 2.686-6 6-6z' fill='rgba(255,255,255,1)'/%3E%3C/svg%3E");
@@ -2273,7 +2273,7 @@ input[type=checkbox]:checked {
     top: -0.4rem;
     left: -0.5rem;
     content: "";
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     background-repeat: no-repeat;
     background-size: 0.8rem 0.8rem;
     background-color: rgba(50,104,219,1);
@@ -2303,11 +2303,11 @@ input[type=checkbox]:checked {
 .markdown-preview-view li[data-task="L"] p .task-list-item-checkbox:checked::before,
 .markdown-source-view.is-live-preview input[data-task="L"]:before {
     position: relative;
-    padding: 0.15rem 0.8rem;
+    padding: 0.1rem 0.8rem;
     top: -0.3rem;
     left: -0.5rem;
     content: "";
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     background-color: rgba(230,126,34,1);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
@@ -2337,11 +2337,11 @@ input[type=checkbox]:checked {
 .markdown-preview-view li[data-task="!"] p .task-list-item-checkbox:checked::before,
 .markdown-source-view.is-live-preview input[data-task="!"]:before {
     position: relative;
-    padding: 0.15rem 0.8rem;
+    padding: 0.1rem 0.8rem;
     top: -0.3rem;
     left: -0.5rem;
     content: "";
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     background-color: rgba(231,76,60,1);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
@@ -2369,7 +2369,7 @@ input[type=checkbox]:checked {
     top: -0.4rem;
     left: -0.55rem;
     content: "";
-    border-radius: 25%;
+    border-radius: var(--checkbox-type);
     background-color: rgba(201,86,189,1);
     background-size: 1rem 1rem;
     background-repeat: no-repeat;
