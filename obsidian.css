@@ -4272,9 +4272,9 @@ img[alt*='img-full-width']{
 }
 
 .img-grid-full-width .el-embed-image{
-  margin-left: calc(50% - 50vw - 0.95rem);
-  width: 100vw !important;
-  max-width: 100vw !important;
+  margin-left: calc(50% - 50vw - 0.95rem - calc(var(--p-offset)));
+  width: calc(100vw + var(--p-offset)) !important;
+  max-width: calc(100vw + var(--p-offset)) !important;
 }
 
 .img-grid .el-embed-image p,.img-grid-large .el-embed-image p,.img-grid-full-width .el-embed-image p{
