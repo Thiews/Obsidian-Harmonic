@@ -1964,7 +1964,7 @@ Opacity:1 !important;
   padding-left: 4rem !important;
 }
 
-.blockquote-frame blockquote{
+.blockquote-frame:not(.blockquote-background,.blockquote-bracket,.blockquote-text-center) blockquote{
   margin-bottom: -5rem !important;
   margin-top: -5rem !important;
   margin-left: auto !important;
@@ -1972,7 +1972,7 @@ Opacity:1 !important;
   width: 75%;
 }
 
-.blockquote-frame blockquote:before{
+.blockquote-frame:not(.blockquote-background,.blockquote-bracket,.blockquote-text-center) blockquote:before{
   content: "⌜";
   font-size: 4rem;
   position: relative;
@@ -1981,7 +1981,7 @@ Opacity:1 !important;
   left: -2rem;
 }
 
-.blockquote-frame blockquote:after{
+.blockquote-frame:not(.blockquote-background,.blockquote-bracket,.blockquote-text-center) blockquote:after{
   content: "⌟";
   font-size: 4rem;
   position: relative;
