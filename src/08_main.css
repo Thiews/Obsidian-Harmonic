@@ -720,10 +720,10 @@ Opacity:1 !important;
   position: relative;
 }
 
-.blockquote-background  blockquote {
+.blockquote-background:not(.blockquote-frame,.blockquote-bracket)  blockquote {
   border-left:3px solid var(--text-accent);
   Padding:20px 20px 20px 60px;
-  margin: 1rem 0rem !important;
+  margin: 1rem 0rem 1rem var(--p-offset) !important;
 }
 
 .blockquote-background.theme-light  blockquote {
@@ -751,10 +751,20 @@ Opacity:1 !important;
   font-size: 5rem !important;
   color: var(--text-accent) !important;
   margin-top: -40px;
+  //margin-left: calc(var(--p-offset) + 1rem);
 }
 
-.blockquote-bracket  blockquote {
-  margin-left: 4rem !important;
+.blockquote-bracket:not(.blockquote-background)  blockquote {
+  margin-left: calc(var(--p-offset) + 4rem) !important;
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.blockquote-bracket.blockquote-background blockquote {
+  margin-left: calc(var(--p-offset) + 3.5rem);
+  border-left:3px solid var(--text-accent);
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 .blockquote-text-center  blockquote {
@@ -789,7 +799,6 @@ Opacity:1 !important;
   top: -5.5rem;
   left : calc(100% - 1.5rem);
 }
-
 
 /* Edit mode */
 
