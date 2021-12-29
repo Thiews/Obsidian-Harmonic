@@ -765,6 +765,7 @@ Opacity:1 !important;
   border-left:3px solid var(--text-accent);
   margin-top: 2rem !important;
   margin-bottom: 2rem !important;
+  padding: 2rem 2rem;
 }
 
 .blockquote-text-center  blockquote {
