@@ -244,6 +244,11 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
   --text-normal: #FFF;
 }
 
+.theme-light.black-background-sidebar .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split input{
+  background: rgba(0,0,0,0.4);
+  color: #FFF;
+}
+
 /* --------------- */
 /* Frameless mode */
 
