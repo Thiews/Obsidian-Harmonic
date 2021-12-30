@@ -159,3 +159,8 @@
   --background-secondary-alt: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 27%));
   --text-normal: #FFF;
 }
+
+.theme-light.black-background-sidebar .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split input{
+  background: rgba(0,0,0,0.4);
+  color: #FFF;
+}
