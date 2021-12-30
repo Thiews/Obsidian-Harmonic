@@ -1523,7 +1523,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .HyperMD-header-1 {
   letter-spacing:var(--title-spacing);
   margin: 0px;
- padding-bottom: 1rem !important;
+ padding-bottom: 1.8rem !important;
  text-align: var(--h1-text-align);
 }}
 
