@@ -1572,8 +1572,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .HyperMD-header-2 {
   letter-spacing:var(--title-spacing);
  // padding: 30px 0px 20px 0px!important;
- padding-top: 1.5rem !important;
- padding-bottom: 0.8rem !important;
+ padding-top: 2.2rem !important;
+ padding-bottom: 1.8rem !important;
  text-align: var(--h2-text-align);
 }}
 
@@ -1611,8 +1611,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 @media (min-width: 400pt){
 .HyperMD-header-3 {
   letter-spacing:var(--title-spacing);
-  padding-top: 1rem !important;
- padding-bottom: 0.5rem !important;
+  padding-top: 2rem !important;
+ padding-bottom: 1.5rem !important;
  text-align: var(--h3-text-align);
 }}
 
@@ -1652,8 +1652,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 @media (min-width: 400pt){
 .HyperMD-header-4 {
   letter-spacing:var(--title-spacing);
-  padding-top: 1rem !important;
- padding-bottom: 0.5rem !important;
+  padding-top: 2rem !important;
+ padding-bottom: 1.5rem !important;
  text-align: var(--h4-text-align);
 }}
 
@@ -1693,8 +1693,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 @media (min-width: 400pt){
 .HyperMD-header-5 {
   letter-spacing:var(--title-spacing);
-  padding-top: 1rem !important;
- padding-bottom: 0.5rem !important;
+  padding-top: 2rem !important;
+ padding-bottom: 1.5rem !important;
  text-align: var(--h5-text-align);
 }}
 
@@ -1734,8 +1734,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 @media (min-width: 400pt){
 .HyperMD-header-6 {
   letter-spacing:var(--title-spacing);
-  padding-top: 1rem !important;
- padding-bottom: 0.5rem !important;
+  padding-top: 2rem !important;
+ padding-bottom: 1.5rem !important;
  text-align: var(--h6-text-align);
 }}
 
