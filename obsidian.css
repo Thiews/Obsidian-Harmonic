@@ -1509,7 +1509,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .empty-state-title,
 .markdown-preview-view h1, .cm-s-obsidian .cm-header-1{
   Font-family:var(--text-title) !important;
-  Padding-top:30px;
+  padding-bottom: 1rem !important;
   Font-style:var(--h1-style);
   letter-spacing:var(--title-spacing);
   Line-height:1.2em;
@@ -1550,7 +1550,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   Font-style:var(--h2-style);
   letter-spacing:var(--title-spacing);
   Line-height:1.2em;
-  padding-top:20px;
+  padding-top: 2rem !important;
+  padding-bottom: 1rem !important;
   font-size:var(--h2);
   font-weight:var(--h2-weight) !important;
   Color:var(--h2-color);
@@ -1590,7 +1591,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   letter-spacing:var(--title-spacing);
   Line-height:1.2em;
   font-weight:var(--h3-weight) !important;
-  padding-top:15px;
+  padding-top: 1rem !important;
+ padding-bottom: 0.5rem !important;
   font-size:var(--h3);
   Color:var(--h3-color);
   text-align: var(--h3-text-align);
@@ -1609,8 +1611,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 @media (min-width: 400pt){
 .HyperMD-header-3 {
   letter-spacing:var(--title-spacing);
-  padding-top: 2rem !important;
- padding-bottom: 1rem !important;
+  padding-top: 1rem !important;
+ padding-bottom: 0.5rem !important;
  text-align: var(--h3-text-align);
 }}
 
@@ -1632,7 +1634,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   Color:var(--h4-color);
   font-weight:var(--h4-weight) !important;
   font-size:var(--h4);
-  padding-top:15px;
+  padding-top: 1rem !important;
+ padding-bottom: 0.5rem !important;
   text-align: var(--h4-text-align);
 }
 
@@ -1649,8 +1652,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 @media (min-width: 400pt){
 .HyperMD-header-4 {
   letter-spacing:var(--title-spacing);
-  padding-top: 2rem !important;
- padding-bottom: 1rem !important;
+  padding-top: 1rem !important;
+ padding-bottom: 0.5rem !important;
  text-align: var(--h4-text-align);
 }}
 
@@ -1672,7 +1675,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   Color:var(--h5-color);
   font-size:var(--h5);
   font-weight:var(--h5-weight) !important;
-  padding-top:15px;
+  padding-top: 1rem !important;
+ padding-bottom: 0.5rem !important;
   text-align: var(--h5-text-align);
 }
 
@@ -1689,8 +1693,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 @media (min-width: 400pt){
 .HyperMD-header-5 {
   letter-spacing:var(--title-spacing);
-  padding-top: 2rem !important;
- padding-bottom: 1rem !important;
+  padding-top: 1rem !important;
+ padding-bottom: 0.5rem !important;
  text-align: var(--h5-text-align);
 }}
 
@@ -1709,7 +1713,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   letter-spacing:var(--title-spacing);
   text-transform:lowercase;
   Line-height:1.2em;
-  padding-top:15px;
+  padding-top: 1rem !important;
+ padding-bottom: 0.5rem !important;
   Color:var(--h6-color);
   font-weight:var(--h6-weight) !important;
   font-size:var(--h6);
@@ -1729,8 +1734,8 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 @media (min-width: 400pt){
 .HyperMD-header-6 {
   letter-spacing:var(--title-spacing);
-  padding-top: 2rem !important;
- padding-bottom: 1rem !important;
+  padding-top: 1rem !important;
+ padding-bottom: 0.5rem !important;
  text-align: var(--h6-text-align);
 }}
 
@@ -1740,6 +1745,7 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   margin-right:1rem;
   color:var(--text-accent);/*hsl(var(--accent-h),var(--accent-s),var(--accent-d));*/
 }
+
 /* Change Hx color (preview and edit mode) */
 .h-change-color.bold-italic-accent .markdown-preview-view h1:before,.h-change-color.bold-italic-accent .markdown-preview-view h2:before,.h-change-color.bold-italic-accent .markdown-preview-view h3:before,.h-change-color.bold-italic-accent .markdown-preview-view h4:before,.h-change-color.bold-italic-accent .markdown-preview-view h5:before,.h-change-color.bold-italic-accent .markdown-preview-view h6:before{
   filter: hue-rotate(var(--hue-bold-italic)) !important;
