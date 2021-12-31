@@ -545,6 +545,10 @@ margin:  0rem 0.5rem !important;
   Filter: invert(100%);
 }
 
+.invert-logo.black-background-sidebar .nav-header:before{
+  Filter: invert(100%);
+}
+
 .workspace-split.mod-right-split .nav-header::before, .view-content .nav-header::before{
 display:none !important;
 }
