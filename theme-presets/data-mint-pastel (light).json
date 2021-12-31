@@ -45,7 +45,7 @@
   "perso@@writing-focus-opacity": 0.35,
   "perso@@font-monospace": "menlo",
   "perso@@font-normal": 21,
-  "perso@@outline-mode": true,
+  "perso@@outline-mode": false,
   "perso@@wys-mode": true,
   "perso@@hue-tag": true,
   "perso@@line-title": true,
