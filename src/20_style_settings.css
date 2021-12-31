@@ -713,8 +713,15 @@ settings:
             - center
             - right
     -
+        id: presets
+        title: → Presets
+        description: Available at https://github.com/Thiews/Obsidian-Harmonic > theme-presets
+        type: heading
+        level: 2
+        collapsed: true
+    -
         id: credits
-        title: Credits
+        title: ⭐️ Credits
         type: heading
         description: Made by @Thiews to be shared. Support my work at buymeacoffee.com/thiews
         level: 2
