@@ -5,3 +5,5 @@
 - delete the file named data.json
 - rename the preset (in the root of Style settings plugin folder) "data.json"
 - Go to View > Force reload
+
+You can share pour favorite presets by uploading your data.json file (rename it before) in here !
