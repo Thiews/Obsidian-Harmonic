@@ -134,7 +134,7 @@
 }
 
 .theme-dark:not(.invert-background-color) .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split ,.theme-dark:not(.invert-background-color) .app-container.is-right-sidedock-collapsed .workspace-split.mod-right-split{
-  background: hsl(var(--accent-h),calc(var(--accent-s) - 50%),calc(var(--accent-d) - 32%));
+  background: hsl(var(--accent-h),calc(var(--accent-s) - 50%),calc(var(--accent-d) - 36%));
 }
 
 
