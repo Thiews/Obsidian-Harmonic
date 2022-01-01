@@ -60,5 +60,6 @@
   "perso@@hue-bold-italic": 30,
   "perso@@title-hue": false,
   "perso@@title-spacing": "-0.02em",
-  "perso@@p-offset": 2.2
+  "perso@@p-offset": 2.2,
+  "perso@@external-link-style2": true
 }
