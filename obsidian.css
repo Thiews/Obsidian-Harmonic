@@ -1036,24 +1036,11 @@ margin: 0px !important;
     box-shadow:none;/*1px 5px 13px rgba(0,0,0,0.05);*/
 }
 
-
 .menu-v2 .search-result-container{
   padding: 0px 20px !important;
   margin: 20px 0px 0px 0px;
   background: var(--background-secondary-alt);
 }
-
-/*.menu-v2 .search-result-container::before{
-  content: "RESULTS";
-  position: relative;
-  display: block;
-  color: var(--text-accent);
-  font-weight: bold;
-  width: 100% !important;
-  text-align: center;
-  margin-bottom: 30px;
-  font-size:calc(var(--font-small) * var(--font-normal));
-}*/
 
 .menu-v2 .search-result {
   box-shadow: none;
@@ -1083,7 +1070,6 @@ margin: 0px !important;
 .menu-v2 .backlink-pane {
   background: transparent !important;
   padding: 0px 0px;
-  //margin-top: -10px;
 }
 
 .menu-v2 .backlink-pane .search-results-children{
@@ -1097,6 +1083,49 @@ margin: 0px !important;
   background: hsla(var(--accent-h), var(--accent-s),var(--accent-l),0.07);
 }
 
+/* Menu v5 */
+
+.menu-v5 .nav-folder-title-content{
+margin-bottom: 0.5rem;
+margin-top: -0.5rem;
+}
+
+.menu-v5 .nav-file-title-content{
+  text-indent: 0.3rem;
+  margin-left: 3.5rem !important;
+  white-space: initial;
+  padding-right: 0.5rem;
+}
+
+
+.menu-v5 .nav-file-title-content:before{
+  content: "";
+  padding: 0.04rem 0.6rem !important;
+  margin-right: 0.5rem;
+  margin-left: -2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  //background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100"><path fill="white" d="M83.071 36.167c-0.046 -0.133 -0.083 -0.263 -0.138 -0.392c-0.204 -0.442 -0.458 -0.863 -0.817 -1.221l-25 -25c-0.358 -0.358 -0.779 -0.613 -1.221 -0.817c-0.125 -0.058 -0.258 -0.092 -0.392 -0.138c-0.35 -0.117 -0.708 -0.192 -1.079 -0.212C54.333 8.379 54.254 8.333 54.167 8.333H25C20.404 8.333 16.667 12.071 16.667 16.667v66.667c0 4.596 3.738 8.333 8.333 8.333h50c4.596 0 8.333 -3.738 8.333 -8.333V37.5c0 -0.088 -0.046 -0.167 -0.054 -0.258C83.258 36.875 83.188 36.517 83.071 36.167zM69.108 33.333H58.333V22.558L69.108 33.333zM25 83.333V16.667h25v20.833c0 2.304 1.863 4.167 4.167 4.167h20.833l0.008 41.667H25z"></path></svg>');
+  position: relative !important;
+  background-color: var(--text-accent);
+  background-size: 60%;
+  border-radius: 25%;
+  vertical-align: middle;
+  box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 5%);
+}
+
+.menu-v5 .nav-file{
+  margin: 0rem -1rem;
+  padding: 0.3rem 0rem;
+  vertical-align: middle;
+}
+
+.menu-v5 .nav-file-title.is-active .nav-file-title-content{
+  color: var(--text-accent);
+  font-weight: bold;
+}
+
+/* Search */
 
 .search-result-count {
   opacity:1;
