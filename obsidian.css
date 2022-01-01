@@ -5928,16 +5928,6 @@ settings:
         title:  Use this color to display tag
         type: class-toggle
     -
-        id: Text-section
-        title: Customize text style
-        type: heading
-        level: 3
-        collapsed: true
-    -
-        id: first-letter-capitalize
-        title:  Capitalize first letter of a paragraph
-        type: class-toggle
-    -
         id: image-section
         title: Customize images
         type: heading
