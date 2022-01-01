@@ -5834,6 +5834,9 @@ settings:
             -
                 label: Design 4
                 value: menu-v4
+            -
+                label: Design 5
+                value: menu-v5
     -
         id: menus-font
         title: Font of navigation folders
