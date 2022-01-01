@@ -38,7 +38,7 @@ settings:
         title: Choose a logo OR a title for your obsidian
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: site-title
         title: Your obsidian title
@@ -66,7 +66,7 @@ settings:
         title: Customize the navigation folder panel
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: menus
         title: Alternative menu styles
@@ -188,7 +188,7 @@ settings:
         title: Customize bold and italic
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: bold-italic-accent
         title:  Bold and italic accentuation
@@ -213,7 +213,7 @@ settings:
         title: Customize text style
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: first-letter-capitalize
         title:  Capitalize first letter of a paragraph
@@ -223,7 +223,7 @@ settings:
         title: Customize images
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: img-border-radius
         title:  Border radius for images
@@ -265,7 +265,7 @@ settings:
         title: Customize blockquote
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: blockquote-background
         title:  Display background and border for quote
@@ -291,7 +291,7 @@ settings:
         title: Customize checkbox style
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: checkbox-type
         title: Choose the style of checkboxes
@@ -310,7 +310,7 @@ settings:
         title: External link style
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: external-link-style2
         title: Change style of external link
@@ -321,7 +321,7 @@ settings:
         title: Outlines for lists
         type: heading
         level: 3
-        collapsed: false
+        collapsed: true
     -
         id: outline-mode
         title: Outline for list
