@@ -61,5 +61,6 @@
   "perso@@text-spacing": "0.02em",
   "perso@@editor-spacing": "0.02em",
   "perso@@site-title": "\"\"",
-  "perso@@logo-url": "url(\"https://cdn-icons-png.flaticon.com/512/169/169367.png\")"
+  "perso@@logo-url": "url(\"https://cdn-icons-png.flaticon.com/512/169/169367.png\")",
+  "perso@@external-link-style2": true
 }
