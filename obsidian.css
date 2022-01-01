@@ -1867,6 +1867,11 @@ Opacity:1 !important;
   color: var(--text-faint);
 }
 
+.external-link-style2 .external-link, .external-link-style2 .markdown-source-view .cm-link .cm-underline{
+  border-bottom: 3px solid var(--text-accent);
+  color: var(--text-normal) !important;
+}
+
 .theme-dark .external-link{
   color: rgba(255,255,255,0.25);
 }
@@ -1877,7 +1882,7 @@ Opacity:1 !important;
 }
 
 .external-link {
-  border-bottom:none !important;
+  border-bottom:none;
 }
 .external-link:hover{
   color: var(--text-accent);
