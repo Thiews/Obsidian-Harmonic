@@ -61,5 +61,6 @@
   "perso@@p-offset": 2.2,
   "perso@@title-spacing": "-0.02em",
   "perso@@site-title": "\"\"",
-  "perso@@logo-url": "url(\"https://www.nicepng.com/png/full/381-3810164_communication-and-implementation-idea-bulb-icon-png.png\")"
+  "perso@@logo-url": "url(\"https://www.nicepng.com/png/full/381-3810164_communication-and-implementation-idea-bulb-icon-png.png\")",
+  "perso@@external-link-style2": true
 }
