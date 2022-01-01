@@ -61,5 +61,6 @@
   "perso@@title-spacing": "0.01em",
   "perso@@hue-bold-italic": 30,
   "perso@@line-width": 44,
-  "perso@@logo-url": "url(\"https://cdn-icons-png.flaticon.com/128/4139/4139333.png\")"
+  "perso@@logo-url": "url(\"https://cdn-icons-png.flaticon.com/128/4139/4139333.png\")",
+  "perso@@external-link-style2": true
 }
