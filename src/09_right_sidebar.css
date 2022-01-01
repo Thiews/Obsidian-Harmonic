@@ -109,6 +109,10 @@
 Padding-top:0px !important;
 }
 
+.tree-item-self.is-clickable:hover{
+  background: transparent;
+}
+
 /* Tag pane */
 
 .tag-pane-tag .list-item-ending-flair {
