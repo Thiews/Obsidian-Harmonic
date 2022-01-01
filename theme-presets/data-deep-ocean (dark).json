@@ -58,5 +58,6 @@
   "perso@@h1-text-align": "left",
   "perso@@title-hue": false,
   "perso@@p-offset": 0,
-  "perso@@hue-bold-italic": 30
+  "perso@@hue-bold-italic": 30,
+  "perso@@external-link-style2": true
 }
