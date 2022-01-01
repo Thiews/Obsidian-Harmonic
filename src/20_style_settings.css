@@ -10,9 +10,15 @@ id: perso
 settings:
     -
         id: logo
-        title: 1. Global customization (Logo OR title, Accent color, navigation folder style, icon style)
+        title: 1. Global customization (Logo OR title, Accent color, backgrounds, icon style)
         type: heading
         level: 2
+        collapsed: true
+    -
+        id: global-style
+        title: Global style (accent color, folder panel, icons, wysiwyg)
+        type: heading
+        level: 3
         collapsed: true
     -
         id: accent
