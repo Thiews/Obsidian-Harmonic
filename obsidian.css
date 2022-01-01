@@ -6025,6 +6025,17 @@ settings:
                 label: Squared
                 value: 25%
     -
+        id: external-link-section
+        title: External link style
+        type: heading
+        level: 3
+        collapsed: false
+    -
+        id: external-link-style2
+        title: Change style of external link
+        description: Border bottom with color accent
+        type: class-toggle
+    -
         id: outline-section
         title: Outlines for lists
         type: heading
