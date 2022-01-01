@@ -2,8 +2,11 @@
 /* Icons replacement (icons found in Minimal theme) */
 /* Thanks to Matthew Meyers, Chetachi Ezikeuzor, inspired by Kepano */
 
-.tree-item-self .collapse-icon {
-  width:20px;
+.tree-item-self .collapse-icon svg{
+  width:10px !important;
+  height: 10px !important;
+  position: relative;
+  top: 2px;
 }
 
 .minimal-icons-on .view-action svg,
