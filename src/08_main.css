@@ -667,7 +667,7 @@ Opacity:1 !important;
   border-bottom:none;
 }
 .external-link:hover{
-  color: var(--text-accent);
+  color: var(--text-accent) !important;
 }
 
 .internal-link {
