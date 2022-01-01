@@ -69,5 +69,6 @@
   "perso@@title-spacing": "-0.02em",
   "perso@@h2-text-align": "center",
   "perso@@h3-text-align": "left",
-  "perso@@h2-style": "italic"
+  "perso@@h2-style": "italic",
+  "perso@@external-link-style2": true
 }
