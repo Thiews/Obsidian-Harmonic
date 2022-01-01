@@ -3616,17 +3616,51 @@ button.kanban-plugin__new-item-button:hover {
 
 /* ------------------------------- */
 /* Dataview plugin */
+
 .dataview.table-view-table .dataview-result-list-li{
   font-size: calc(var(--font-small) * var(--font-normal));
 }
 
 .dataview.table-view-table .dataview-result-list-li:before{
-  display: none !important;
+  //display: none !important;
 }
-.table-view-table > thead > tr > th {
-  Border-bottom:none !important;
-  Font-size:var(--font-normal) !important;
-  Padding-left:10px !important;
+
+
+.dataview.table-view-table > thead > tr{
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2);
+  color: var(--text-normal);
+}
+
+.dataview.table-view-table > thead > tr > th {
+  font-size: calc(var(--font-small) * var(--font-normal)) !important;
+   Border-bottom:none !important;
+   padding: 5px 1rem;
+}
+
+.dataview.table-view-table > thead > tr > th:first-child {
+  border-top-left-radius: 15px;
+}
+
+.dataview.table-view-table > thead > tr > th:last-child {
+  border-top-right-radius: 15px;
+}
+
+.dataview.table-view-table tbody {
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.05);
+}
+
+.dataview.table-view-table tbody tr {
+ background: none !important;
+}
+
+.dataview.table-view-table tbody tr td{
+  padding: 0.8rem 1rem;
+  border-top: 1px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+}
+
+
+.dataview-articles-style .dataview.table-view-table tbody{
+  background: none !important;
 }
 
 .dataview-articles-style .dataview.table-view-table thead {
