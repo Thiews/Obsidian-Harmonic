@@ -52,7 +52,7 @@
   "perso@@line-title": false,
   "perso@@frameless-mode": true,
   "perso@@p-offset": 2.2,
-  "perso@@black-background-sidebar": false,
+  "perso@@black-background-sidebar": true,
   "perso@@accent": "#B03F3F",
   "perso@@hue-nav-file-active": false,
   "perso@@img-grid": false,
