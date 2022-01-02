@@ -190,6 +190,10 @@ display:none !important;
   filter: brightness(1);
 }
 
+.theme-light.black-background-sidebar .nav-folder-title .nav-folder-title-content{
+  filter: brightness(1) !important;
+}
+
 .nav-folder-title[data-count]{
 //display: flex;
 
