@@ -992,7 +992,7 @@ filter: hue-rotate(var(--hue-bold-italic));
 
 .menu-v2 .nav-file .is-active {
   border-left: 5px solid var(--text-accent);
-  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.08) !important;
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.04) !important;
   border-radius: 0px;
 }
 
