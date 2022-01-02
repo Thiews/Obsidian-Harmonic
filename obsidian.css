@@ -978,7 +978,7 @@ filter: hue-rotate(var(--hue-bold-italic));
 
 
 .menu-v2 .nav-file {
-  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.03) !important;
+  background: hsla(var(--accent-h),var(--accent-s), var(--accent-l),0.08) !important;
 }
 
 .menu-v2 .nav-file .nav-file-title-content {
