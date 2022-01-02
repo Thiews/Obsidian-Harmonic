@@ -85,8 +85,8 @@
   --background-translucent:hsla(var(--base-h),var(--base-s),var(--base-d),0.85);
   --background-match-highlight:hsla(var(--accent-h), 40%, 62%, 0.2);
   --background-modifier-accent:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) - 10%));
-  --text-accent:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d)));
-  --text-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) + 10%));
+  --text-accent:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l)));
+  --text-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 5%));
   --interactive-accent:hsl(var(--accent-h),var(--accent-s),var(--accent-d));
   --interactive-accent-hover:hsl(var(--accent-h),var(--accent-s),calc(var(--accent-d) + 10%));
 
