@@ -1648,9 +1648,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .wys-mode.title-accent-color .markdown-source-view .HyperMD-header span {
   Color:var(--text-accent) !important;
 }
-.markdown-source-view .HyperMD-header span {
-  color: var(--text-normal) !important;
-}
 
 
 /* Titles */
