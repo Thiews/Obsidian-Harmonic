@@ -2759,7 +2759,7 @@ Span.cm-hmd-frontmatter{
 /* Popover */
 
 .popover .markdown-preview-view {
-background: var(--background-secondary-alt);
+//background: var(--background-secondary-alt);
 Zoom:0.8;
 }
 
