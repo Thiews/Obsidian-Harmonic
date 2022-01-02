@@ -361,8 +361,8 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 
 
 .invert-background-color.theme-dark {
-  --background-primary: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 36%));
-  --background-secondary-alt: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 38%));
+  --background-primary: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 25%));/* 36% */
+  --background-secondary-alt: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) - 27%)); /* 38% */
   --background-primary-alt:transparent;
   --background-tertiary: transparent;
 }
