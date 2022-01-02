@@ -31,7 +31,7 @@
   "perso@@blockquote-text-center": false,
   "perso@@blockquote-background": true,
   "perso@@menus-font": "font-nav-folder-text",
-  "perso@@bold-italic-accent": true,
+  "perso@@bold-italic-accent": false,
   "perso@@hide-tab-header": true,
   "perso@@invert-background-color": false,
   "perso@@hue-bold-italic": 30,
