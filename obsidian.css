@@ -269,7 +269,7 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 
   --base-h:0;       /* Base hue */
   --base-s:0%;      /* Base saturation */
-  --base-d:5%;     /* Base lightness Dark Mode  - 0 is black */
+  --base-d:2%;     /* Base lightness Dark Mode  - 0 is black */
   --base-l:99%;     /* Base lightness Light Mode  - 100 is white */
   --accent-h:229.8;   /* Accent hue */
   --accent-s:39.7%;   /* Accent saturation */
