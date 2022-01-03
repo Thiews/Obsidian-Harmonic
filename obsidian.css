@@ -3505,17 +3505,13 @@ input[type=range]::-webkit-slider-thumb:active {
 .hide-left-menu .workspace-ribbon {
   Display:none;
 }
-.hide-file-name .workspace-leaf-header, .hide-file-name .view-header .view-header-title:hover {
+.hide-file-name .workspace-leaf-header, .hide-file-name .view-header:hover {
   Opacity:1;
 }
 
-.hide-file-name .workspace-leaf-header,.hide-file-name .view-header .view-header-title {
+.hide-file-name .workspace-leaf-header,.hide-file-name .view-header{
   Opacity:0;
   transition: 0.3s;
-}
-
-.view-header-icon {
-  opacity:0 !important;
 }
 
 .hide-tab-header .workspace-tab-header-container {
