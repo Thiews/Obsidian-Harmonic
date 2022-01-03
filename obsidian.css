@@ -6792,7 +6792,7 @@ settings:
 }
 
 .more-options:not(.menu-v2,.menu-v5) .nav-file-title.is-active .nav-file-title-content{
- background: var(--nav-file-active-background);
+ background: var(--nav-file-active-background) !important;
 }
 
 .more-options .nav-file-title.is-active .nav-file-title-content{
