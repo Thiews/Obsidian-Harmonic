@@ -13,9 +13,8 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container > .view-header-title {
   Opacity:1;
-  //Font-size:var(--font-small);
   font-size: calc(var(--font-small) * var(--font-normal));
-
+  color:var(--text-normal);
 }
 
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-title-container {
