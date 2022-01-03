@@ -559,6 +559,10 @@ margin: 0px !important;
 /* -------------------*/
 /* App Ribbon*/
 
+.workspace-ribbon, .workspace-ribbon.is-collapsed{
+  background: var(--background-secondary-alt) !important;
+}
+
 .workspace-ribbon svg {
   Color:var(--text-accent);
 }
