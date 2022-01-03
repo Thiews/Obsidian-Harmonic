@@ -32,11 +32,12 @@
 
 .hide-file-name .view-header{
   box-shadow: none;
+  background-color:var(--background-primary) !important;
 }
 
 
 .hide-file-name .view-header:hover{
-  box-shadow: 2px 2px 12px 0px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.05);
+  background-color:var(--background-secondary-alt) !important;
 }
 
 .hide-file-name .workspace-leaf-header, .hide-file-name .view-header .view-header-title-container:hover {
@@ -96,6 +97,8 @@
     filter: hue-rotate(var(--hue-bold-italic));
   }
 
+
+
 .writing-focus.is-mobile .markdown-source-view div {
   color: var(--text-faint);
   opacity: var(--writing-focus-opacity);
@@ -104,4 +107,4 @@
 .writing-focus.is-mobile .markdown-source-view div:hover{
   color: var(--font-normal) !important;
   opacity: 1 !important;
- }
+}
