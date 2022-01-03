@@ -113,9 +113,8 @@ margin-left: 1rem;
 }
 
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
-  border-left:1px solid transparent;
+  border-left:1px solid var(--background-modifier-border);
   width:0px !important;
-  background-color:transparent;
 }
 
 .black-background-sidebar .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split.workspace-split.mod-horizontal hr.workspace-leaf-resize-handle{
