@@ -143,8 +143,9 @@
   border-radius: 0px !important;
 }
 
-.hide-file-name .markdown-preview-view,.hide-file-name .markdown-source-view{
-  margin: 0px !important;
+.hide-file-name .markdown-preview-view{
+  margin-top: -12px!important;
+  padding: 0px !important;
 }
 
 .hide-file-name .markdown-preview-view,.hide-file-name .markdown-source-view{
