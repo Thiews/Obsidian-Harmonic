@@ -18,9 +18,8 @@ div.workspace-leaf div.markdown-preview-sizer.markdown-preview-section > div > :
 /* Title Bar */
 
 .workspace-leaf-header, .view-header {
-  background-color:var(--background-primary) !important;
+  background-color:var(--background-secondary-alt) !important;
   border:none !important;
-  box-shadow: 2px 2px 12px 0px hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.05);
 }
 
 .view-header-title-container::before {
