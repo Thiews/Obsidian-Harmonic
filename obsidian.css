@@ -3596,6 +3596,9 @@ input[type=range]::-webkit-slider-thumb:active {
 /* ----------------------------- */
 /* Andy Matuschak mode! */
 
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header{
+  background: var(--background-primary) !important;
+}
 
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
   box-shadow: 10px 2px 9px 4px #444 !important;
