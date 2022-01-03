@@ -1396,7 +1396,7 @@ div.workspace-leaf div.markdown-preview-sizer.markdown-preview-section > div > :
 /* Workspace border radius */
 
 .workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content{
-  border-radius: none !important;
+  border-radius: 0px !important;
 }
 
 /* Title Bar */
