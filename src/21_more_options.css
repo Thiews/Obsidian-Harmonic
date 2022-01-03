@@ -1,0 +1,97 @@
+/* ------------------ More options ---------------------- */
+
+/* Sidebars */
+.more-options .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split, .more-options .app-container.is-right-sidedock-collapsed .workspace-split.mod-right-split{
+  --background-secondary-alt: var(--sidebars-color) !important;
+}
+
+.more-options .workspace-split.mod-vertical > * > .workspace-leaf-resize-handle,.more-options .workspace-split.mod-left-split > .workspace-leaf-resize-handle {
+  border-right: 1px solid var(--sidebars-color) !important;
+}
+
+.more-options .workspace-split.mod-right-split > .workspace-leaf-resize-handle{
+  border-left: 1px solid var(--sidebars-color) !important;
+}
+
+/* Text */
+.more-options {
+  --text-normal: var(--text-normal-color);
+}
+
+/* Folder */
+
+.more-options .nav-folder-title-content {
+  color: var(--nav-folder-color) !important;
+}
+
+/* Files */
+
+.more-options .nav-file-title-content, .more-options .tag-pane-tag-self, .more-options .tree-item-inner {
+  color: var(--nav-file-color) !important;
+}
+
+.more-options .nav-file-title.is-active .nav-file-title-content{
+ color: var(--nav-file-active-color) !important;
+ background: var(--nav-file-active-background) !important;
+}
+
+/* Bold and italic */
+
+.more-options .markdown-preview-view strong,
+.more-options .markdown-preview-view em,
+.more-options .markdown-source-view span.cm-strong,
+.more-options .markdown-source-view span.cm-em{
+  color: var(--strong-em-color) !important;
+}
+
+.more-options .HyperMD-header:before,
+.more-options h1:before,
+.more-options h2:before,
+.more-options h3:before,.more-options h4:before,
+.more-options h5:before,
+.more-options h6:before{
+  color: var(--h-color) !important;
+}
+
+/* Internal link */
+
+.more-options .internal-link, .more-options span.cm-hmd-internal-link > span.cm-underline {
+  color: var(--internal-link-color) !important;
+}
+
+.more-options a.internal-link:hover, .more-options span.cm-hmd-internal-link:hover{
+  text-decoration: none !important;
+  filter: brightness(1.1) !important;
+  cursor: pointer;
+}
+
+/* External link */
+
+.more-options .external-link, .more-options span.cm-underline {
+  color: var(--external-link-color) !important;
+}
+
+.more-options.external-link-style2 .external-link, .more-options.external-link-style2 .cm-link:not(.cm-hmd-internal-link) span.cm-underline {
+  border-bottom: 3px solid var(--external-link-color);
+  color: var(--text-normal-color) !important;
+}
+
+.more-options.external-link-style2 a.external-link:hover, .more-options.external-link-style2 .cm-link:not(.cm-hmd-internal-link) span.cm-underline:hover {
+  color: var(--external-link-color) !important;
+   filter: brightness(1.1) !important;
+}
+
+.more-options a.external-link:hover, .more-options .cm-link:not(.cm-hmd-internal-link) span.cm-underline:hover {
+ cursor: pointer;
+  filter: brightness(1.1) !important;
+}
+
+/* tags */
+
+.more-options a.tag, .more-options span.cm-hashtag {
+  color: var(--tag-color);
+  background: var(--tag-background-color);
+}
+
+
+
