@@ -53,10 +53,6 @@
   opacity: 0;
 }
 
-.hide-file-name .view-header-icon:hover{
-  opacity: 1;
-}
-
 .hide-tab-header .workspace-tab-header-container {
    Opacity:0;
    transition: 0.3s;
