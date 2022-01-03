@@ -38,6 +38,15 @@
  color: var(--nav-file-active-color) !important;
 }
 
+.more-options.menu-v2 .nav-file-title.is-active {
+ color: var(--nav-file-active-color) !important;
+ border-left: 5px solid var(--nav-file-active-background);
+}
+
+.more-options.menu-v5 .nav-file-title.is-active .nav-file-title-content:before{
+  background: var(--nav-file-active-background) !important;
+}
+
 /* Bold and italic */
 
 .more-options .markdown-preview-view strong,
