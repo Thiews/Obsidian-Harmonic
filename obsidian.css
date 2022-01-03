@@ -559,7 +559,7 @@ margin: 0px !important;
 /* -------------------*/
 /* App Ribbon*/
 
-.workspace-ribbon, .workspace-ribbon.is-collapsed{
+.workspace-ribbon{
   background: var(--background-secondary-alt) !important;
 }
 
