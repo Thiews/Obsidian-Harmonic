@@ -1388,6 +1388,13 @@ div.workspace-leaf div.markdown-preview-sizer.markdown-preview-section > div > :
     margin-block-start: 0.4em;
     margin-block-end: 0.4em;
 }
+
+/* Workspace border radius */
+
+.workspace-split.mod-root > .workspace-leaf:last-of-type .workspace-leaf-content{
+  border-radius: none !important;
+}
+
 /* Title Bar */
 
 .workspace-leaf-header, .view-header {
