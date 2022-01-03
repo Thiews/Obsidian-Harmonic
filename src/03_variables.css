@@ -126,6 +126,28 @@
 /* --------------------- */
 /* Color adjustments*/
 
+.workspace-split.mod-vertical > .workspace-leaf:last-child .view-content{
+  background: var(--background-secondary-alt) !important;
+}
+
+.hide-file-name .view-content{
+  padding: 0px !important;
+}
+
+.markdown-preview-view,.markdown-source-view{
+  background: var(--background-primary) !important;
+  box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.08);
+}
+
+.hide-file-name .markdown-preview-view,.hide-file-name .markdown-source-view{
+  margin: 0px !important;
+}
+
+.hide-file-name .markdown-preview-view,.hide-file-name .markdown-source-view{
+  box-shadow: none;
+  border-radius: 0px;
+}
+
 .invert-background-color.theme-light {
   --background-primary: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 35%));
   --background-secondary-alt: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 38%));
