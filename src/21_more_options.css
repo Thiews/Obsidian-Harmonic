@@ -1,7 +1,7 @@
 /* ------------------ More options ---------------------- */
 
 /* Sidebars */
-.more-options .app-container.is-left-sidedock-collapsed .workspace-split.mod-left-split, .more-options .app-container.is-right-sidedock-collapsed .workspace-split.mod-right-split{
+.more-options {
   --background-secondary-alt: var(--sidebars-color) !important;
 }
 
