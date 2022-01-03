@@ -6648,6 +6648,13 @@ settings:
         title: Activate more options
         type: class-toggle
     -
+        id: main-panel-color
+        title: Main panel color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
         id: sidebars-color
         title: Sidebar color
         type: variable-themed-color
