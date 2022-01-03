@@ -6749,6 +6749,11 @@ settings:
 
 /* ------------------ More options ---------------------- */
 
+/* Main pane color */
+.more-options {
+  --background-primary: var(--main-panel-color) !important;
+}
+
 /* Sidebars */
 .more-options {
   --background-secondary-alt: var(--sidebars-color) !important;
