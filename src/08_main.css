@@ -36,7 +36,7 @@ div.workspace-leaf div.markdown-preview-sizer.markdown-preview-section > div > :
   //font-size:var(--font-small);
   font-size: calc(var(--font-small) * var(--font-normal));
   Box-shadow:none !important;
-  //text-align: center;
+  text-align: center;
     color: var(--text-accent) !important;
 }
 
@@ -46,7 +46,7 @@ div.workspace-leaf div.markdown-preview-sizer.markdown-preview-section > div > :
 }
 
 .view-header-icon {
-  color: var(--text-accent);
+    opacity:0;
 }
 
 .view-actions {
