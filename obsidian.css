@@ -6636,6 +6636,101 @@ settings:
             - left
             - center
             - right
+    -    
+        id: more-custom
+        title: More options (‼️ Overwites previous option choices and can break color harmony)
+        description: If you really need it !
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        id: more-options
+        title: Activate more options
+        type: class-toggle
+    -
+        id: sidebars-color
+        title: Sidebar color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: text-normal-color
+        title: Text color
+        type: variable-themed-color
+        format: hex
+        default-light: '#111'
+        default-dark: '#fff'
+    -
+        id: nav-folder-color
+        title: Navigation folder text color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: nav-file-color
+        title: Navigation file text color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: nav-file-active-color
+        title: Active navigation file text color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: nav-file-active-background
+        title: Active navigation file background color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: strong-em-color
+        title: Bold and italic color (desactivate bold and italic accent in Make your page pop)
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: h-color
+        title: Hx color (for title)
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: internal-link-color
+        title: Internal link color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: external-link-color
+        title: External link color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: tag-color
+        title: Tag color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
+    -
+        id: tag-background-color
+        title: Tag background color
+        type: variable-themed-color
+        format: hex
+        default-light: '#363636'
+        default-dark: '#d1d1d1'
     -
         id: presets
         title: → Presets
