@@ -357,8 +357,12 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 
 .markdown-preview-view,.markdown-source-view{
   background: var(--background-primary) !important;
-  box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,0.08);
-  border-radius: 15px 15px 0px 0px !important;
+  box-shadow: inset 0px 0px 6px -4px rgba(0,0,0,0.7);
+  border-radius: 15px 15px 0px 0px;
+}
+
+.hide-left-menu .markdown-preview-view,.markdown-source-view{
+  border-radius: 0px !important;
 }
 
 .hide-file-name .markdown-preview-view,.hide-file-name .markdown-source-view{
