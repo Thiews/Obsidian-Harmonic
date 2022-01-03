@@ -1443,6 +1443,7 @@ div.workspace-leaf div.markdown-preview-sizer.markdown-preview-section > div > :
   font-size: calc(var(--font-small) * var(--font-normal));
   Box-shadow:none !important;
   //text-align: center;
+    color: var(--text-accent) !important;
 }
 
 .bold-italic-accent .view-header-title {
