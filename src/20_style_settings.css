@@ -39,14 +39,14 @@ settings:
         id: title-bar-style
         title: Title bar style of main page
         type: class-select
-        default: title-bar-style-1
+        default: title-bar-style-2
         options:
             -
                 label: Style 1
-                value: title-bar-style-1
+                value: title-bar-style-2
             -
                 label: Style 2
-                value: title-bar-style-2
+                value: title-bar-style-1
     -
         id: wys-mode
         title: Live preview theme style and WYSIWYG in edit mode (Ozan's Image plugin needed to show images and transclusion)
