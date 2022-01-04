@@ -3743,6 +3743,11 @@ input[type=checkbox] {
   Box-shadow:none;
   font-size: calc(var(--font-small) * var(--font-normal));
 }
+
+.checklist-plugin-main li .content{
+  padding-bottom: 14px !important;
+}
+
 .checklist-plugin-main li .content p{
   font-size: calc(var(--font-small) * var(--font-normal));
 }
