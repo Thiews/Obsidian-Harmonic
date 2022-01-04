@@ -3756,6 +3756,12 @@ input[type=checkbox] {
   font-size: calc(var(--font-small) * var(--font-normal)) !important;
 }
 
+.checklist-plugin-main .settings-container svg{
+  fill: var(--text-accent) !important;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+}
+
 .checklist-plugin-main .group {
   Margin-left:10px !important;
 }
