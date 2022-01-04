@@ -3743,12 +3743,15 @@ input[type=checkbox] {
 .checklist-plugin-main .group-header .title {
   Color:var(--text-accent) !important;
   Box-shadow:none;
-  //Font-size:var(--font-small);
   font-size: calc(var(--font-small) * var(--font-normal));
 }
-.checklist-plugin-main li{
-  //Font-size:var(--font-small) !important;
+.checklist-plugin-main li .content p{
   font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+.checklist-plugin-main header .count{
+  background: var(--background-secondary-alt) !important;
+  color: var(--text-accent);
 }
 
 .checklist-plugin-main .group {
