@@ -1,6 +1,22 @@
 /* --------------- */
 /* Frameless mode */
 
+.titlebar {
+  background: var(--background-secondary-alt);
+}
+
+.titlebar-inner{
+  color: var(--text-accent);
+}
+
+.titlebar-text {
+  opacity: 0;
+}
+
+.titlebar-text:hover{
+  opacity: 1;
+}
+
 .frameless-mode .titlebar,.frameless-mode .titlebar-inner {
   position:fixed;
   top:0;
