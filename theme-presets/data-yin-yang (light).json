@@ -48,7 +48,7 @@
   "perso@@wys-mode": true,
   "perso@@hue-tag": false,
   "perso@@line-title": false,
-  "perso@@frameless-mode": true,
+  "perso@@frameless-mode": false,
   "perso@@p-offset": 0,
   "perso@@black-background-sidebar": false,
   "perso@@accent": "#9CC7F6",
