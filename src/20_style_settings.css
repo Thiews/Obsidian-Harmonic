@@ -16,7 +16,7 @@ settings:
         collapsed: true
     -
         id: global-style
-        title: Global style (accent color, backgrounds, icons, wysiwyg)
+        title: Global style (accent color, backgrounds, icons, title bar style, wysiwyg)
         type: heading
         level: 3
         collapsed: true
