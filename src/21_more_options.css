@@ -78,7 +78,7 @@
 
 .more-options a.internal-link:hover, .more-options span.cm-hmd-internal-link:hover{
   text-decoration: none !important;
-  filter: brightness(1.1) !important;
+  filter: brightness(1.05) !important;
   cursor: pointer;
 }
 
@@ -95,12 +95,12 @@
 
 .more-options.external-link-style2 a.external-link:hover, .more-options.external-link-style2 .cm-link:not(.cm-hmd-internal-link) span.cm-underline:hover {
   color: var(--external-link-color) !important;
-   filter: brightness(1.1) !important;
+   //filter: brightness(1.05) !important;
 }
 
 .more-options a.external-link:hover, .more-options .cm-link:not(.cm-hmd-internal-link) span.cm-underline:hover {
  cursor: pointer;
-  filter: brightness(1.1) !important;
+  filter: brightness(1.05) !important;
 }
 
 /* tags */
