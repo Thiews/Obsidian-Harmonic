@@ -5991,6 +5991,18 @@ settings:
         description: Activate minimal icons
         type: class-toggle
     -
+        id: title-bar-style
+        title: Title bar style of main page
+        type: class-select
+        default: title-bar-style-1
+        options:
+            -
+                label: Style 1
+                value: title-bar-style-1
+            -
+                label: Style 2
+                value: title-bar-style-2
+    -
         id: wys-mode
         title: Live preview theme style and WYSIWYG in edit mode (Ozan's Image plugin needed to show images and transclusion)
         type: class-toggle
