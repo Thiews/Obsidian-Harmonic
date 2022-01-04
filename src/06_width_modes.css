@@ -14,10 +14,7 @@ padding-right: 0px !important;
   padding: 0px !important;
 }
 
-.markdown-preview-view,.markdown-source-view{
-  background: var(--background-primary) !important;
-  border-radius: 20px 20px 0px 0px;
-}
+
 
 .hide-left-menu .markdown-preview-view,.markdown-source-view{
   border-radius: 0px !important;
