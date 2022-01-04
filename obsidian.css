@@ -387,10 +387,6 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 }
 
 .workspace-split.mod-vertical > .workspace-leaf:last-child .view-content{
-  background: var(--background-secondary-alt) !important;
-}
-
-.markdown-preview-view,.markdown-source-view{
   background: var(--background-primary) !important;
 }
 
