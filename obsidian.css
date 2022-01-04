@@ -347,11 +347,6 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 /* --------------------- */
 /* Color adjustments*/
 
-.workspace-split.mod-vertical > .workspace-leaf:last-child .view-content{
-  background: var(--background-secondary-alt) !important;
-}
-
-
 .invert-background-color.theme-light {
   --background-primary: hsl(var(--accent-h),var(--accent-s),calc(var(--accent-l) + 35%));
   --background-secondary-alt: hsl(var(--accent-h),calc(var(--accent-s)),calc(var(--accent-l) + 38%));
