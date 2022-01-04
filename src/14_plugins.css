@@ -12,9 +12,12 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
 }
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container > .view-header-title {
-  Opacity:1;
   font-size: calc(var(--font-small) * var(--font-normal));
   color:var(--text-normal) !important;
+}
+
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container {
+  opacity: 1;
 }
 
 body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header .view-header-title-container {
