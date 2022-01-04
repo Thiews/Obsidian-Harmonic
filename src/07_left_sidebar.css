@@ -80,7 +80,7 @@ margin:  0rem 0.5rem !important;
 }
 
 .nav-action-button:hover svg{
-  Filter: brightness(1.2);
+  Filter: brightness(1.05);
 }
 
 .nav-action-button svg{
@@ -90,7 +90,7 @@ margin:  0rem 0.5rem !important;
 }
 
 .workspace-tab-header-inner-icon:hover{
-  filter: brightness(1.2) !important;
+  filter: brightness(1.05) !important;
 }
 
 .nav-action-button,
@@ -183,7 +183,7 @@ display:none !important;
 }
 
 .nav-folder-title .nav-folder-title-content:hover{
-  filter:brightness(1.2) !important;
+  filter:brightness(1.05) !important;
 }
 
 .theme-light .nav-folder-title .nav-folder-title-content {
@@ -502,9 +502,6 @@ filter: hue-rotate(var(--hue-bold-italic));
   padding-left: 0.5rem;
 }
 
-.menu-v4 .nav-folder-collapse-indicator.collapse-icon{
-  //Display: inline !important;
-}
 
 .menu-v4 .nav-folder-children .nav-folder.is-collapsed .nav-folder-title:before{
   content: "\002B" !important;
@@ -548,7 +545,7 @@ margin: 0px !important;
 /* Dark left sidebar when light theme */
 
 .theme-light.black-background-sidebar .nav-folder-title-content{
- filter: brightness(1.2) !important;
+ filter: brightness(1.05) !important;
 }
 .theme-light.black-background-sidebar.menu-v1 .nav-file-title-content {
   background: rgba(0,0,0,0.4);
