@@ -516,6 +516,9 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 
 /* width modes adjustment */
 
+.markdown-source-view:not(.is-live-preview){
+  width: 100% !important;
+}
 .markdown-source-view{
 padding-left: 0px !important;
 padding-right: 0px !important;
