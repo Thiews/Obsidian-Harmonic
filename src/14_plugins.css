@@ -111,8 +111,6 @@ input[type=checkbox] {
   border-radius: 0px;
 }
 
-
-
 .checklist-plugin-main .group-header .title {
   Color:var(--text-accent) !important;
   Box-shadow:none;
@@ -125,6 +123,10 @@ input[type=checkbox] {
 .checklist-plugin-main header .count{
   background: var(--background-secondary-alt) !important;
   color: var(--text-accent);
+}
+
+.checklist-plugin-main input.search{
+  font-size: calc(var(--font-small) * var(--font-normal)) !important;
 }
 
 .checklist-plugin-main .group {
