@@ -386,6 +386,15 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
   color: #FFF;
 }
 
+.workspace-split.mod-vertical > .workspace-leaf:last-child .view-content{
+  background: var(--background-secondary-alt) !important;
+}
+
+.markdown-preview-view,.markdown-source-view{
+  background: var(--background-primary) !important;
+  border-radius: 20px 20px 0px 0px;
+}
+
 /* --------------- */
 /* Frameless mode */
 
