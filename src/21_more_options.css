@@ -52,6 +52,10 @@
   background: var(--nav-file-active-background) !important;
 }
 
+.more-options .nav-file-title-content:hover{
+  color: var(--text-accent) !important;
+}
+
 /* Bold and italic */
 
 .more-options .markdown-preview-view strong,
