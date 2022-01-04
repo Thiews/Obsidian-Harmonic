@@ -2,6 +2,9 @@
 
 /* width modes adjustment */
 
+.markdown-source-view:not(.is-live-preview){
+  width: 100% !important;
+}
 .markdown-source-view{
 padding-left: 0px !important;
 padding-right: 0px !important;
