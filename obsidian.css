@@ -2129,7 +2129,7 @@ Opacity:1 !important;
   border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
 }
 
-.markdown-source-view:not(.is-live-preview) div:not(.cm-active) .HyperMD-hr {
+.markdown-source-view:not(.is-live-preview) div:not(.cm-active).HyperMD-hr {
   border-bottom:2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2); 
 }
 
