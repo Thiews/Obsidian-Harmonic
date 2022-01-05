@@ -718,7 +718,7 @@ margin-bottom: 0.2rem!important;
   left: 0.5rem;
   position: relative;
   display: inline-block;
-  color: var(--text-accent);
+  color: var(--text-faint);
 }
 
 .menu-v6 .nav-folder:not(.is-collapsed):before{
