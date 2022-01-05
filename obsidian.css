@@ -2122,10 +2122,22 @@ Opacity:1 !important;
   border-color: #1a1A1A;
 }
 
-.theme-light .markdown-preview-view hr {
+.theme-dark div:not(.cm-active) .hr{
+  height:1px;
+  background:#1A1A1A ;
+  content: "";
+}
+
+.theme-light .markdown-preview-view hr{
   height:1px;
   border-width:2px 0 0 0;
   border-color: #eee;
+}
+
+.theme-light div:not(.cm-active) .hr{
+   height:1px;
+  background: #eee;
+  content: "";
 }
 
 .invert-background-color .markdown-preview-view hr {
