@@ -699,6 +699,7 @@ Opacity:1 !important;
 .notion-link .internal-link,.notion-link .cm-hmd-internal-link {
   border-bottom: 1px solid var(--text-accent);
   color: var(--text-normal);
+  font-weight:500;
 }
 
 .notion-link .external-link,.notion-link .markdown-source-view .cm-link .cm-underline{
