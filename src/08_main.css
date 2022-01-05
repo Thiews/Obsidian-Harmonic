@@ -682,12 +682,19 @@ div.cm-active.HyperMD-hr .cm-hr{
   color: var(--text-normal);
 }
 
+.external-link-style1 .external-link:hover,
+.external-link-style1 .markdown-source-view .cm-link .cm-underline:hover,
+.external-link-style2 .external-link:hover,
+.external-link-style2 .markdown-source-view .cm-link .cm-underline:hover{
+  color: var(--text-accent) !important;
+}
+
 .theme-dark.external-link-style1 .external-link,.theme-dark.notion-link .external-link{
-  color: #555 !important;
+  color: #555;
 }
 
 .theme-light.external-link-style1 .external-link,.theme-light.notion-link .external-link{
-  color:#bbb !important;
+  color:#bbb;
 }
 
 .external-link-style1 .external-link {
@@ -722,7 +729,7 @@ div.cm-active.HyperMD-hr .cm-hr{
 }
 
 a.external-link:hover,a.internal-link:hover,.cm-underline:hover, .cm-hmd-internal-link:hover{
-  filter: brightness(1.1) !important;
+  filter: brightness(1.15) !important;
   cursor: pointer;
 }
 
