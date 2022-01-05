@@ -2140,6 +2140,22 @@ Opacity:1 !important;
   content: "";
 }
 
+.theme-dark div:not(.cm-active) .HyperMD-hr {
+  border-bottom:1px solid #1A1A1A;
+}
+
+.theme-light div:not(.cm-active) .HyperMD-hr {
+  border-bottom:1px solid #eee;
+}
+
+div:not(.cm-active) .HyperMD-hr .cm-hr{
+  opacity: 0;
+}
+
+div.cm-active.HyperMD-hr .cm-hr{
+  opacity: 1;
+}
+
 .invert-background-color .markdown-preview-view hr {
    height:1px;
   border-width:2px 0 0 0;
