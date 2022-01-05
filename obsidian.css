@@ -6306,16 +6306,27 @@ settings:
                 label: Squared
                 value: 25%
     -
-        id: external-link-section
-        title: External link style
+        id: link-section
+        title: Link style
         type: heading
         level: 3
         collapsed: true
     -
-        id: external-link-style2
-        title: Change style of external link
-        description: Border bottom with color accent
-        type: class-toggle
+        id: link-style
+        title: Choose the style of checkboxes
+        description: Choose diffent styles for the left and right sidebars
+        type: class-select
+        default: external-link-style2
+        options:
+            -
+                label: Style 1 (gray external link)
+                value: external-link-style1
+            -
+                label: Style 2 (underlined external link)
+                value: external-link-style2
+            -
+                label: Style 3 (notion like)
+                value: notion-link
     -
         id: outline-section
         title: Outlines for lists
