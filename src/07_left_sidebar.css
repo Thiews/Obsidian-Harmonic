@@ -763,6 +763,7 @@ color: var(--text-normal) !important;
 .menu-v6 .nav-file-title.is-active .nav-file-title-content{
   color: var(--text-accent);
   font-weight: bold;
+  font-size:1rem;
 }
 
 .menu-v6  .search-results-children .tree-item.search-result{
