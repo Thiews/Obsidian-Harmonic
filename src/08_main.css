@@ -709,6 +709,7 @@ Opacity:1 !important;
   content: "\2197";
   padding-right: 5px;
   font-family: arial;
+  color:var(--text-accent);
 }
 
 a.external-link:hover,a.internal-link:hover,.cm-underline:hover, .cm-hmd-internal-link:hover{
