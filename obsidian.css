@@ -568,7 +568,7 @@ margin: 0px !important;
   background: transparent !important;
 }
 
-.full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-sizer, .full-width .cm-contentContainer, .full-width .cm-content, .full-width .cm-line{
+.full-width .markdown-source-view.is-readable-line-width .CodeMirror, .full-width .markdown-preview-sizer, .full-width .cm-contentContainer, .full-width .cm-content, .full-width .cm-scroller{
   width:100% !important;
   padding: 0rem 1rem;
 
