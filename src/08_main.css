@@ -696,7 +696,7 @@ Opacity:1 !important;
   text-decoration: none !important;
 }
 
-.notion-link .internal-link,.notion-link .cm-hmd-internal-link .cm-underline{
+.notion-link .internal-link,.notion-link .cm-hmd-internal-link {
   border-bottom: 1px solid var(--text-accent);
   color: var(--text-normal);
 }
