@@ -1409,9 +1409,17 @@ Zoom:0.8;
 }
 
 .popover .markdown-reading-view,.popover{
-  background: var(--background-secondary-alt);
   border: 0px solid !important;
 }
+
+.theme-light .popover .markdown-reading-view,.theme-light .popover{
+  background: hsl(var(--accent-h),calc(var(--accent-s) - 20%),calc(var(--accent-l) + 50%));
+}
+
+.theme-dark .popover .markdown-reading-view,.theme-dark .popover{
+  background: hsl(var(--accent-h),calc(var(--accent-s) - 20%),calc(var(--accent-l) - 40%));
+}
+
 
 /* Tags in front matter */
 
