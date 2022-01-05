@@ -765,6 +765,12 @@ color: var(--text-normal) !important;
   font-weight: bold;
 }
 
+.menu-v6  .search-results-children .tree-item.search-result{
+  background: var(--background-primary) !important;
+  margin: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
 /* Search */
 
 .search-result-count {
