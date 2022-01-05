@@ -676,11 +676,11 @@ Opacity:1 !important;
 }
 
 .theme-dark.external-link-style1 .external-link,.theme-dark.notion-link .external-link{
-  color: #555;
+  color: #555 !important;
 }
 
 .theme-light.external-link-style1 .external-link,.theme-light.notion-link .external-link{
-  color:#bbb;
+  color:#bbb !important;
 }
 
 .external-link-style1 .external-link {
