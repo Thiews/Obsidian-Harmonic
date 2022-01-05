@@ -6158,6 +6158,9 @@ settings:
             -
                 label: Design 5
                 value: menu-v5
+            -
+                label: Design 6
+                value: menu-v6
     -
         id: menus-font
         title: Font of navigation folders
