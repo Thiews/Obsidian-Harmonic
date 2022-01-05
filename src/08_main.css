@@ -668,11 +668,11 @@ Opacity:1 !important;
   content: "";
 }
 
-.theme-dark div:not(.cm-active) .HyperMD-hr {
+.theme-dark .markdown-source-view:not(.is-live-preview) div:not(.cm-active) .HyperMD-hr {
   border-bottom:1px solid #1A1A1A;
 }
 
-.theme-light div:not(.cm-active) .HyperMD-hr {
+.theme-light .markdown-source-view:not(.is-live-preview) div:not(.cm-active) .HyperMD-hr {
   border-bottom:1px solid #eee;
 }
 
