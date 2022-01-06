@@ -2100,6 +2100,13 @@ Opacity:1 !important;
   Opacity:1;
 }
 
+.markdown-source-view.mod-cm6 .cm-fold-indicator{
+  position: relative;
+  display: inline-block;
+  left: -30px;
+  top: 0.5rem;
+}
+
 /* ---------------------------*/
 /* Markdown preview styling */
 /*--------------------------- */
