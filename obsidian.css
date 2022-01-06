@@ -2158,6 +2158,7 @@ div.cm-active.HyperMD-hr .cm-hr{
 .external-link:hover,
 .markdown-source-view .cm-link .cm-underline:hover{
   color: var(--text-accent) !important;
+  transition:0.2s;
 }
 
 .internal-link,.cm-hmd-internal-link,.internal-link:hover,.cm-hmd-internal-link:hover {
