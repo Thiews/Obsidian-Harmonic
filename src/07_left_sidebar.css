@@ -760,6 +760,10 @@ color: var(--text-normal) !important;
   vertical-align: middle;
 }
 
+.menu-v6 .nav-file-title.is-active{
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.15) !important;
+}
+
 .menu-v6 .nav-file-title.is-active .nav-file-title-content{
   color: var(--text-accent);
   font-weight: bold;
