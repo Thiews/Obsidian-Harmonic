@@ -731,7 +731,9 @@ div.cm-active.HyperMD-hr .cm-hr{
 }
 
 
-.icon-internal-link .internal-link:before,.icon-external-link .external-link:after{
+.icon-internal-link .internal-link:before,
+.icon-internal-link .cm-hmd-internal-link:nth-child(2n+1) > .cm-underline:before,
+.icon-external-link .external-link:after{
   content: "";
   position: relative;
   color: var(--text-accent);
@@ -751,7 +753,7 @@ div.cm-active.HyperMD-hr .cm-hr{
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAEQElEQVRoge2ZzW/cRBiHn9dmN5uofFWQA6JCQKoigRTYXSupSGlQA5cSDkTigMQlCkIglb8A/okICfFZBLfQVBVpb62URqmUyPaGlThBy6X0kkoNggObdXZfDusViWN7P+zdXPZ3GnnGr+fxzDue3xgGGmigOMlRdwDAtu03RORd4AzwtH/5T2BNVZcsy7reKsaRgmxtbZ2s1Wrf0gCIlIjcBBYKhcLtqDZG2p1rV7ZtT9dqtU0aENuq+qlhGC9nMpljmUzmWL1efwX4DLivqmdVddN13UjgIxmRUql0rl6vrwDDwKVKpTI/NTX1T1jbjY2NR0zTvCgi7wAPRGQibGT6DrIfQkS+zOfzH4mIxt2jqlIqlX5S1TkRuVkoFKaDbfo6tbqBABAR9TxvHn+a2bY9E2zTN5BuIZqanJz8G1gE8Fe4A+oLiOM4ryeBaKper1/1i68F63oO4jjOC8BlEkIAVKvVO37xqWBdT0FUVYCvgceAS0kgWqmnII7jzABTwHalUplPCpHNZp/3i/eCdT0FMQzjfQBVXYz6TnQYb9aPt3aoLmnwOKnqhN+BlaSxHMd5FLgAYJrmUrC+18n+DEAul/sjSRBVFVX9DngSWM3n8zeCbR5K8oA2tAsM7e3tHciNcrk8Wq1WrwCeZVln4wL4X/UvmlsUYCGsXa9H5C7A7u7uyeaFcrk86nneDRE5LSK5uJubEKr6IfCvqs4Vi8U7YW17CiIi68CuYRhD8D8E8BLwayaTmY26NwhhGMasZVmrUe17OrXq9fqPIrJSLBY3QyDOjY+Pb4fdFwYRlhf71Zfdb68hIAFIiD2tAXdV9Rbwg2VZtzqFCHiPtiGgi6nVwp6+KCJjwM9xEI7jTKhqNZvN/gbged4p4DzwCfAE8EBV5/L5fGROBNXRiNi2PS0il4HHadjTRdM0r5qmeRsaq5NhGENxOeE4znlgGRiKeMwqsBC1OkWp7RFp057+AvHTSVX/Mgzje1WdAk4AJo0puWaa5lK7UymotkakE1PUSU6kqZbfkTQgXNd9y7btV1Pu+wHFgqQB4Sf2cnMn3CtFgnRqT6vV6jXCc6IKZFW1/yNi2/YpGitL2/ZURPYAN5gTIyMjv/vFE2l1OkxRq9ZXNJbYtu1psVg8HXZ9Z2dHcrkc9HhfdwjEcZw3aZxS9Nyepqmwt/Qe9MeepqkwkL7Z0zQVBvIs9MeepqkwEC9pUFUV13U/33eC/kHSmK0UBnIPoFKpPNdNwKafAD7Gt6dxP2jSUhjImt+htzsN1qk9TVOHQFS1mZQX1tfXH243ULfOLi0dArEs67r/z250eHj4on9+G6ujhoCIbbzrumOqugkcF5Flz/Pm/f8Th5TEnqapyLftuu4ZVb0CHAfuA4uqeq2VPe1XTgQVO21c1x0DvlHV2NNAurSnaaoth2jb9sy+E5PmLjaxPR1ooIH6p/8AR7C3jGOFiyMAAAAASUVORK5CYII=");
 }
 
-.theme-light.icon-internal-link .internal-link:before{
+.theme-light.icon-internal-link .internal-link:before,.icon-internal-link .cm-hmd-internal-link:nth-child(2n+1) > .cm-underline::before{
   margin-right: 0.2rem;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath d='M20 22H4a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1zm-1-2V4H5v16h14zM8 7h8v2H8V7zm0 4h8v2H8v-2zm0 4h8v2H8v-2z' fill='rgba(20,20,20,1)'/%3E%3C/svg%3E");
 }
