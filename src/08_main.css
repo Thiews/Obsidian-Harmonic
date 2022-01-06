@@ -720,13 +720,13 @@ div.cm-active.HyperMD-hr .cm-hr{
 
 .internal-link,span.cm-hmd-internal-link{
   border-bottom-width:var(--internal-link-width) !important;
-  border-bottom-color:var(--text-accent);
+  border-bottom-color:var(--internal-link-border-color);
   border-bottom-style:solid ;
 }
 
 .external-link,.markdown-source-view .cm-link .cm-underline{
   border-bottom-width:var(--external-link-width) !important;
-  border-bottom-color:var(--text-accent);
+  border-bottom-color:var(--external-link-border-color);
   border-bottom-style:solid ;
 }
 
