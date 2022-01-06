@@ -2125,7 +2125,8 @@ Opacity:1 !important;
 }
 
  div:not(.cm-active) .hr{
-   height:0.5rem;
+   position: relative;
+   top: -2rem !important;
   border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
 }
 
