@@ -512,7 +512,7 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 @media (min-width: 400pt){
 .markdown-source-view{
 padding-left: 20px !important;
-padding-right: 20px !important;
+padding-right: 0px !important;
 }}
 
 
