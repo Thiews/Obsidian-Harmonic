@@ -6426,27 +6426,73 @@ settings:
                 label: Squared
                 value: 25%
     -
-        id: link-section
-        title: Link style
+        id: external-link-section
+        title: External link style
         type: heading
         level: 3
         collapsed: true
     -
-        id: link-style
-        title: Choose the style of checkboxes
-        description: Choose diffent styles for the left and right sidebars
+        id: icon-external-link
+        title:  Display icon for external links
+        type: class-toggle
+    -
+        id: external-link-width
+        title: External link underline width
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 5
+        step: 1
+        format: px
+    -
+        id: external-link-style
+        title: Text color of external links
         type: class-select
-        default: external-link-style2
+        default: external-link-faint
         options:
             -
-                label: Style 1 (gray external link)
-                value: external-link-style1
+                label: Faint
+                value: external-link-faint
             -
-                label: Style 2 (underlined external link)
-                value: external-link-style2
+                label: Normal
+                value: external-link-normal
             -
-                label: Style 3 (notion like)
-                value: notion-link
+                label: Color
+                value: external-link-color
+    -
+        id: internal-link-section
+        title: Internal link style
+        type: heading
+        level: 3
+        collapsed: true
+    -
+        id: icon-internal-link
+        title:  Display icon for internal links
+        type: class-toggle
+    -
+        id: internal-link-width
+        title: Internal link underline width
+        type: variable-number-slider
+        default: 1
+        min: 0
+        max: 5
+        step: 1
+        format: px
+    -
+        id: internal-link-style
+        title: Text color of internal links
+        type: class-select
+        default: internal-link-color
+        options:
+            -
+                label: Faint
+                value: internal-link-faint
+            -
+                label: Normal
+                value: internal-link-normal
+            -
+                label: Color
+                value: internal-link-color
     -
         id: outline-section
         title: Outlines for lists
