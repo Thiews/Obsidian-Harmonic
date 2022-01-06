@@ -203,7 +203,7 @@ settings:
         step: 0.01
     -
         id: features
-        title: 3. Make pages pop (bold and italic accentuation, image, blockquote, checkboxes, links, outline)
+        title: 3. Make pages pop (bold and italic accentuation, image, blockquote, checkboxes, external link, outline)
         type: heading
         level: 2
         collapsed: true
@@ -353,6 +353,21 @@ settings:
             -
                 label: Color
                 value: external-link-color
+    - 
+        id: external-link-border-color
+        title: Border bottom color
+        type: variable-select
+        default: var(--text-accent)
+        options:
+            - 
+                label: Faint color border
+                value: var(--text-faint)
+            - 
+                label: Text color border
+                value: var(--text-normal)
+            - 
+                label: Accent color border
+                value: var(--text-faint)
     -
         id: internal-link-section
         title: Internal link style
@@ -387,6 +402,21 @@ settings:
             -
                 label: Color
                 value: internal-link-color
+    - 
+        id: internal-link-border-color
+        title: Border bottom color
+        type: variable-select
+        default: var(--text-accent)
+        options:
+            - 
+                label: Faint color border
+                value: var(--text-faint)
+            - 
+                label: Text color border
+                value: var(--text-normal)
+            - 
+                label: Accent color border
+                value: var(--text-faint)
     -
         id: outline-section
         title: Outlines for lists
