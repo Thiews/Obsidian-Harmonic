@@ -6317,7 +6317,7 @@ settings:
         step: 0.01
     -
         id: features
-        title: 3. Make pages pop (bold and italic accentuation, image, blockquote, checkboxes, external link, outline)
+        title: 3. Make pages pop (bold and italic accentuation, image, blockquote, checkboxes, links, outline)
         type: heading
         level: 2
         collapsed: true
