@@ -6154,6 +6154,10 @@ settings:
         level: 3
         collapsed: true
     -
+        id: wys-mode
+        title: Activate live preview and edit mode customization
+        type: class-toggle
+    -
         id: accent
         title: Accent color
         type: variable-color
@@ -6180,10 +6184,6 @@ settings:
             -
                 label: Style 2
                 value: title-bar-style-1
-    -
-        id: wys-mode
-        title: Live preview theme style and WYSIWYG in edit mode (Ozan's Image plugin needed to show images and transclusion)
-        type: class-toggle
     -
         id: logo-section
         title: Choose a logo OR a title for your obsidian
