@@ -156,6 +156,8 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
 .wys-mode .markdown-source-view.is-live-preview .list-bullet {
   color: var(--text-accent);
   padding-right: 0.3rem;
+  position:relative;
+  top:-4px;
 }
 
 .markdown-source-view.is-live-preview .cm-link .cm-underline,
