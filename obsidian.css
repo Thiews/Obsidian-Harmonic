@@ -4107,8 +4107,13 @@ button.kanban-plugin__new-item-button:hover {
 }
 
 .dataview-articles-style img{
-  border-radius: 0px !important;
+  height: 150px;
+  width: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  object-fit: cover;
 }
+
 
 /* ----------------------- */
 /* Tablet styling */
