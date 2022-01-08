@@ -4097,7 +4097,7 @@ button.kanban-plugin__new-item-button:hover {
   width:250px !important;
 }
 
-.dataview-articles-style .dataview.table-view-table tbody td:nth-child(2){
+.dataview-articles-style .dataview.table-view-table tbody td:nth-child(3){
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
   font-style: italic;
   //color: var(--text-accent) !important;
