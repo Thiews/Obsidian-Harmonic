@@ -15,15 +15,15 @@ settings:
         level: 2
         collapsed: true
     -
+        id: wys-mode
+        title: Activate live preview and edit mode theme customization
+        type: class-toggle
+    -
         id: global-style
         title: Global style (accent color, backgrounds, icons, title bar style, wysiwyg)
         type: heading
         level: 3
         collapsed: true
-    -
-        id: wys-mode
-        title: Activate live preview and edit mode customization
-        type: class-toggle
     -
         id: accent
         title: Accent color
