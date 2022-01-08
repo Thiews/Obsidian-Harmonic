@@ -6148,7 +6148,7 @@ settings:
         type: class-toggle
     -
         id: global-style
-        title: Global style (accent color, backgrounds, icons, title bar style, wysiwyg)
+        title: Global style (accent color, backgrounds, icons, title bar style)
         type: heading
         level: 3
         collapsed: true
