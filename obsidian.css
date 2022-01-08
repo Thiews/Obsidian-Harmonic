@@ -2231,7 +2231,7 @@ div.cm-active.HyperMD-hr .cm-hr{
   color: var(--text-accent);
   background-size: 100%;
   background-repeat: no-repeat;
-  top: 0.2rem;
+  top: 0.15rem;
 }
 
 .theme-light.icon-external-link .external-link:after{
