@@ -2964,7 +2964,7 @@ Span.cm-hmd-frontmatter{
 
 .popover .markdown-preview-view{
 Zoom:0.8;
-padding:10px;
+padding:10px !important;
 }
 
 .popover {
