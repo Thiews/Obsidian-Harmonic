@@ -1259,12 +1259,6 @@ border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
  .cm-s-obsidian .HyperMD-list-line {
   padding-top: 0;
 }
-/*
-.cm-s-obsidian .HyperMD-list-line span{
-  text-indent: 0px !important;
-  //margin-left: -10px;
-}*/
-
 
 .HyperMD-list-line .cm-formatting-list-ol {
   color: var(--text-accent) !important;
@@ -1303,11 +1297,10 @@ ul,ol,ul ul, ol ul, ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 ul > li:not(.task-list-item):before {
   content:"\2022";
   color:var(--text-accent);
-  display:inline-block;
   width:1em;
   position: relative;
   margin-left:-1em;
-  top: 1px;
+  margin-right:0.55rem;
 }
 
 ul li p, ol li p {
