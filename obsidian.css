@@ -3659,6 +3659,10 @@ input[type=range]::-webkit-slider-thumb:active {
   color:var(--interactive-accent);
 }
 
+.graph-view.color-fill-tag {
+  color: orange !important;
+}
+
 /* --------------- */
 /* Scroll bars */
 
