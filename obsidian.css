@@ -4033,10 +4033,11 @@ button.kanban-plugin__new-item-button:hover {
 
 .dataview.table-view-table .dataview-result-list-li{
   font-size: calc(var(--font-small) * var(--font-normal));
+  margin-left:-0.5rem;
 }
 
 .dataview.table-view-table .dataview-result-list-li:before{
-  //display: none !important;
+  display: none !important;
 }
 
 
