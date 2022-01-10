@@ -79,6 +79,10 @@ color: var(--text-accent) !important;
   color: var(--text-accent);
 }
 
+.calendar  .day.today.active{
+  color: var(--text-accent);
+}
+
 .calendar  .day{
   font-size:calc(var(--font-small) * var(--font-normal)) !important;
 }
