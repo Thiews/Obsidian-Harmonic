@@ -2664,10 +2664,9 @@ input[type=checkbox]:checked {
 .markdown-preview-view th {
   text-align: left;
   Font-size:var(--font-normal);
+  border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
   font-weight: 600;
-  border-top:none;
   text-align: left;
-  border-top:none;
 }
 
 .invert-background-color .markdown-preview-view th {
@@ -2687,6 +2686,9 @@ border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
   border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
   }
 
+.markdown-preview-view table tr{
+  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+}
 .theme-light .markdown-preview-view table tr:nth-child(2n) {
   Background:var(--background-secondary-alt);
 }
