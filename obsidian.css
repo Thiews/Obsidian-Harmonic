@@ -3802,12 +3802,14 @@ body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf
 }
 
 body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
-  box-shadow: 10px 2px 9px 4px #444 !important;
+  box-shadow: 10px 2px 9px 4px #888 !important;
 }
 
-body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container > .view-header-title {
+body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf:not(.mod-active) > .workspace-leaf-content > .view-header > .view-header-title-container > .view-header-title {
   font-size: calc(var(--font-small) * var(--font-normal));
-  color:var(--text-normal) !important;
+  color:var(--text-faint) !important;
+  text-align: left;
+  font-weight: 400 !important;
 }
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header > .view-header-title-container {
@@ -3818,16 +3820,16 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
   Text-align:left !important;
 }
 
-.plugin-sliding-panes-stacking .view-header-title {
-  text-align: left;
+body.plugin-sliding-panes-rotate-header .workspace-leaf.mod-active .view-header div.view-header-title{
+font-weight: 600 !important;
 }
-
 
 
 /* Correct a problem on tablet */
 .is-mobile.plugin-sliding-panes-stacking .workspace-leaf {
   margin-left: -10px;
 }
+
 /* -------------------- */
 /* CALENDAR */
 
