@@ -13,7 +13,7 @@ body.plugin-sliding-panes-stacking .workspace > .mod-root > .workspace-leaf {
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf:not(.mod-active) > .workspace-leaf-content > .view-header > .view-header-title-container > .view-header-title {
   font-size: calc(var(--font-small) * var(--font-normal));
-  color:var(--text-faint) !important;
+  color:var(--text-normal) !important;
   text-align: left;
   font-weight: 400 !important;
 }
@@ -27,7 +27,8 @@ body.plugin-sliding-panes-rotate-header.plugin-sliding-panes-header-alt .workspa
 }
 
 body.plugin-sliding-panes-rotate-header .workspace-leaf.mod-active .view-header div.view-header-title{
-font-weight: 600 !important;
+font-weight: 400 !important;
+color: var(--text-accent) !important;
 }
 
 
