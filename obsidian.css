@@ -3834,15 +3834,52 @@ color: var(--text-accent) !important;
 /* -------------------- */
 /* CALENDAR */
 
+#calendar-container .year{
+  color: var(--text-accent) !important;
+}
+
+#calendar-container .reset-button{
+  color: var(--text-normal);
+}
+
+#calendar-container .reset-button:hover{
+  color: var(--text-accent);
+}
+
+#calendar-container .arrow svg{
+  color: var(--text-accent);
+}
+
+.calendar thead tr th {
+  color: var(--text-normal) !important;
+}
+
+.calendar  .day{
+  margin: 0px 5px !important;
+}
+
 .calendar  .day.today {
-  font-weight: 800 !important;
-  font-size: 1.5em !important;
+  font-size: 1.2em !important;
+  color: var(--text-accent);
+}
+
+.calendar .dot-container svg{
+  fill: var(--text-accent) !important;
+}
+
+.calendar  .day.active {
+ font-weight: 800 !important;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.2) !important;
+  color: var(--text-accent);
 }
 
 .calendar  .day{
   font-size:calc(var(--font-small) * var(--font-normal)) !important;
 }
 
+.calendar  .day:hover{
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
+}
 /* -------------------- */
 /* CHECKLIST PLUGIN */
 
