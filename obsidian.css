@@ -2665,7 +2665,7 @@ input[type=checkbox]:checked {
   text-align: left;
   Font-size:var(--font-normal);
   border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
-  font-weight: 600;
+  font-weight: var(--text-normal);
   text-align: left;
 }
 
