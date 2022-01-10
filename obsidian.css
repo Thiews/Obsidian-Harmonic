@@ -4033,14 +4033,42 @@ button.kanban-plugin__new-item-button:hover {
 /* ------------------------------- */
 /* Dataview plugin */
 
-.dataview.table-view-table .dataview-result-list-li{
-  font-size: calc(var(--font-small) * var(--font-normal));
-  margin-left:-0.5rem;
+.dataview.table-view-table > thead > tr > th {
+  font-size: calc(var(--font-normal)) !important;
+  border-top: 1px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+   Border-bottom:none !important;
+   font-weight: var(--text-normal);
+   padding: 5px 1rem;
 }
 
 .dataview.table-view-table .dataview-result-list-li:before{
   display: none !important;
 }
+
+.dataview.table-view-table .dataview-result-list-li{
+  margin-left: -0.2rem;
+}
+
+.dataview.table-view-table tbody tr td{
+  padding: 0.8rem 1rem;
+  border-top: 1px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  font-size: calc(var(--font-small) * var(--font-normal));
+
+}
+
+.theme-light .dataview.table-view-table tr:nth-child(2n) {
+  Background:var(--background-secondary-alt);
+}
+
+.theme-dark .dataview.table-view-table tr:nth-child(2n) {
+  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+}
+
+.dataview.table-view-table tbody td{
+  border: none;
+}
+
+/*
 
 
 .dataview.table-view-table > thead > tr{
@@ -4048,11 +4076,6 @@ button.kanban-plugin__new-item-button:hover {
   color: var(--text-normal);
 }
 
-.dataview.table-view-table > thead > tr > th {
-  font-size: calc(var(--font-small) * var(--font-normal)) !important;
-   Border-bottom:none !important;
-   padding: 5px 1rem;
-}
 
 .dataview.table-view-table > thead > tr > th:first-child {
   border-top-left-radius: 15px;
@@ -4070,11 +4093,7 @@ button.kanban-plugin__new-item-button:hover {
  background: none !important;
 }
 
-.dataview.table-view-table tbody tr td{
-  padding: 0.8rem 1rem;
-  border-top: 1px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
-}
-
+*/
 
 .dataview-articles-style .dataview.table-view-table tbody{
   background: none !important;
