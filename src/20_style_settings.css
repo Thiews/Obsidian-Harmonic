@@ -333,7 +333,7 @@ settings:
         id: external-link-width
         title: External link underline width
         type: variable-number-slider
-        default: 1
+        default: 3
         min: 0
         max: 5
         step: 1
@@ -342,7 +342,7 @@ settings:
         id: external-link-style
         title: Text color of external links
         type: class-select
-        default: external-link-faint
+        default: external-link-normal
         options:
             -
                 label: Faint
@@ -357,7 +357,7 @@ settings:
         id: external-link-border-color
         title: Border bottom color
         type: variable-select
-        default: var(--text-accent)
+        default: var(--text-normal)
         options:
             - 
                 label: Faint color border
@@ -382,7 +382,7 @@ settings:
         id: internal-link-width
         title: Internal link underline width
         type: variable-number-slider
-        default: 1
+        default: 0
         min: 0
         max: 5
         step: 1
