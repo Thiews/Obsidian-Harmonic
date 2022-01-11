@@ -6620,7 +6620,7 @@ settings:
                 value: var(--text-normal)
             - 
                 label: Accent color border
-                value: var(--text-faint)
+                value: var(--text-accent)
     -
         id: outline-section
         title: Outlines for lists
