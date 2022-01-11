@@ -3511,11 +3511,11 @@ Padding-top:0px !important;
 /* Status bar */
 
 .status-bar {
-  background-color:var(--background-primary);
-  color:var(--text-faint);
-  //font-size:var(--font-smaller);
+  background-color:var(--background-secondary-alt);
+  color:var(--text-accent);
   font-size: calc(var(--font-smaller) * var(--font-small) * var(--font-normal));
   padding:0;
+  justify-content: flex-end;
 }
 
 .status-bar-item {
