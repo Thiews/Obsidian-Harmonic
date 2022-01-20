@@ -25,7 +25,7 @@ padding-right: 0px !important;
   padding: 20px 20px 20px 50px !important;
 }}
 
-.CodeMirror-gutter.CodeMirror-foldgutter{
+.CodeMirror-gutters,.CodeMirror-gutter.CodeMirror-foldgutter{
   background:transparent !important;
 }
 
