@@ -571,7 +571,7 @@ margin: 0px !important;
   padding:0px 0px !important;
  }
 
-.markdown-source-view .cm-gutters{
+.markdown-source-view .cm-gutters, .markdown-source-view .CodeMirror-gutter-filler{
   background: transparent !important;
 }
 
