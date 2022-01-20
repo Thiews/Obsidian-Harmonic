@@ -533,7 +533,7 @@ padding-right: 0px !important;
 }}
 
 .CodeMirror-gutter.CodeMirror-foldgutter{
-  background:transparent;
+  background:transparent !important;
 }
 
 @media (min-width: 400pt){
