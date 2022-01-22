@@ -1345,8 +1345,8 @@ ol ol{
 ol > li::before {
   content:counter(counter) ". ";
   color:var(--text-accent);
-  position:absolute;
-  left:-1.1em;
+  position:relative;
+  margin-left:-1em;
   //text-align:right;
   width:2em;
 }
