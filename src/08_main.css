@@ -1168,60 +1168,42 @@ input[type=checkbox]:checked {
 
 /* Tables */
 
-.markdown-preview-view table {
+ table {
   Width:calc(100% - var(--p-offset));
 }
 
 
-.markdown-preview-view tbody tr{
-  Background:var(--background-primary);
-  Font-size:calc(var(--font-small) * var(--font-normal));
-}
-
-.markdown-preview-view th {
+th {
   text-align: left;
   Font-size:var(--font-normal);
-  border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
   font-weight: var(--text-normal);
-  text-align: left;
 }
 
-.invert-background-color .markdown-preview-view th {
-border-top: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
-}
 
-.theme-light .markdown-preview-view th {
+
+.theme-light th {
   Background:var(--background-secondary-alt);
 }
 
-.theme-dark .markdown-preview-view th {
+.theme-dark  th {
   Background:hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
 }
 
-.invert-background-color .markdown-preview-view th {
+.invert-background-color th {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
-  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
-  }
-
-.markdown-preview-view table tr{
-  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
-}
-.theme-light .markdown-preview-view table tr:nth-child(2n) {
-  Background:var(--background-secondary-alt);
 }
 
-.theme-dark .markdown-preview-view table tr:nth-child(2n) {
-  background: hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
+th, td {
+    padding: 4px 10px;
+    border: 2px solid var(--background-primary) !important;
 }
 
-.invert-background-color .markdown-preview-view table tr {
-  background: var(--background-primary) !important;
-  border-bottom: 2px solid hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+tbody tr td {
+  padding: 0.8rem 1rem;
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.03);
+  font-size: calc(var(--font-small) * var(--font-normal));
 }
 
-.invert-background-color .markdown-preview-view table tr:nth-child(2n) {
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1) !important;
-}
 
   /* Tables in edit monde */
 
