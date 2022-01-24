@@ -1939,7 +1939,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
 .cm-s-obsidian .cm-header-4 {
   Font-family:var(--text-title) !important;
   Font-style:var(--h4-style);
-  font-variant:small-caps;
   letter-spacing:var(--title-spacing);
   Line-height:1.2em;
   Color:var(--h4-color);
