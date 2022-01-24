@@ -3,6 +3,13 @@
 /* width modes adjustment */
 
 @media (min-width: 400pt){
+.is-live-preview .cm-gutter.cm-lineNumbers {
+  color: var(--text-normal);
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  padding: 0px 3px;
+}}
+
+@media (min-width: 400pt){
 .markdown-source-view{
 padding-left: 0px !important;
 padding-right: 0px !important;
