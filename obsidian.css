@@ -512,7 +512,7 @@ If you like this theme, you can support my work at https://www.buymeacoffee.com/
 @media (min-width: 400pt){
 .is-live-preview .cm-gutter.cm-lineNumbers {
   color: var(--text-normal);
-  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
+  background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.06);
   padding: 0px 3px;
 }}
 
