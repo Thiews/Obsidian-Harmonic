@@ -1,6 +1,28 @@
 /* ----------------------------- */
 /* PLUGINS */
 /* ----------------------------- */
+
+/* ZOOM PLUGIN */
+
+.zoom-plugin-bls-zoom .cm-editor .cm-formatting-list-ul:hover:before{
+  cursor: pointer !important;
+    z-index: 2;
+    color: var(--text-accent);
+    filter: brightness(1.2);
+    content: "•";
+    position: absolute;
+    margin-top: 0px; 
+    margin-left: 0px;
+}
+
+.zoom-plugin-header{
+font-size: calc(var(--font-small) * var(--font-normal));
+}
+
+.is-folding .cm-panels-top {
+  border: none !important;
+}
+
 /* Andy Matuschak mode! */
 
 body.plugin-sliding-panes-rotate-header .workspace > .mod-root > .workspace-leaf > .workspace-leaf-content > .view-header{
