@@ -1168,12 +1168,12 @@ input[type=checkbox]:checked {
 
 /* Tables */
 
- table {
+ table:not(.calendar) {
   Width:calc(100% - var(--p-offset));
 }
 
 
-th {
+table:not(.calendar) th {
   text-align: left;
   Font-size:var(--font-normal);
   font-weight: var(--text-normal);
@@ -1181,29 +1181,28 @@ th {
 
 
 
-.theme-light th {
+.theme-light table:not(.calendar) th {
   Background:var(--background-secondary-alt);
 }
 
-.theme-dark  th {
+.theme-dark  table:not(.calendar) th {
   Background:hsla(var(--accent-h), var(--accent-s), var(--accent-l), 0.1);
 }
 
-.invert-background-color th {
+.invert-background-color table:not(.calendar) th {
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.1);
 }
 
-th, td {
+table:not(.calendar) th, table:not(.calendar) td {
     padding: 4px 10px;
     border: 2px solid var(--background-primary) !important;
 }
 
-tbody tr td {
+table:not(.calendar) tbody tr td {
   padding: 0.8rem 1rem;
   background: hsla(var(--accent-h),var(--accent-s),var(--accent-l),0.03);
   font-size: calc(var(--font-small) * var(--font-normal));
 }
-
 
   /* Tables in edit monde */
 
