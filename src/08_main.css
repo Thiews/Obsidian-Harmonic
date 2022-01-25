@@ -699,7 +699,6 @@ div.cm-active.HyperMD-hr .cm-hr{
 
 .internal-link,span.cm-hmd-internal-link {
   text-decoration: none;
-  font-weight: 500;
 }
 
 .internal-link-faint .internal-link,.internal-link-faint .markdown-source-view span.cm-hmd-internal-link{
