@@ -1395,6 +1395,7 @@ ol > li::before {
   color: var(--text-accent);
   background: var(--background-secondary-alt) !important;
   padding: 2px 5px;
+  font-family: var(--font-monospace) !important;
 }
 
 .markdown-preview-view .markdown-preview-section  div pre{
