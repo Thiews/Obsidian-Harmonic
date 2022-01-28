@@ -5896,6 +5896,8 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   color: var(--text-accent);
   padding-right: 0.3rem;
   position:relative;
+  left: -0.35rem;
+  margin-left: 0.3rem;
 }
 
 .markdown-source-view.is-live-preview .cm-link .cm-underline,
