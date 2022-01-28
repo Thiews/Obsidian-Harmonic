@@ -818,7 +818,6 @@ color: var(--text-normal) !important;
   //font-size:var(--font-small) !important;
   font-size: calc(var(--font-small) * var(--font-normal));
   color:var(--text-normal);
-  Font-weight:var(--normal-weight);
 }
 
 .side-dock-collapsible-section-header {
