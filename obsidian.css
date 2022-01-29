@@ -2139,6 +2139,10 @@ Opacity:1 !important;
   Margin-left:var(--p-offset);
 }
 
+.markdown-preview-view ul ol,.markdown-preview-view ol ul,.markdown-preview-view ul ul,.markdown-preview-view ol ol {
+  margin-left: 0px;
+}
+
 .markdown-preview-view  ol li p,.markdown-preview-view  ul li p, .markdown-preview-view  blockquote p,.markdown-preview-view li ul, .markdown-preview-view li iframe{
   Margin-left:0px !important;
 }
