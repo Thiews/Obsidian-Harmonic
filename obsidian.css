@@ -2730,7 +2730,6 @@ table:not(.calendar) tbody tr td {
 
  .cm-s-obsidian .HyperMD-list-line {
   padding-top: 0;
-  text-indent: -1.2rem !important;
 }
 
 .HyperMD-list-line .cm-formatting-list-ol {
