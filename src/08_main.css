@@ -338,14 +338,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   text-align: var(--h1-text-align);
 }
 
-@media (min-width: 400pt){
-.HyperMD-header-1 {
-  letter-spacing:var(--title-spacing);
-  margin: 0px;
- padding-bottom: 1.8rem !important;
- text-align: var(--h1-text-align);
-}}
-
 .h-reveal .markdown-preview-view h1:before{
   content:"H1";
   Font-size:0.8rem;
@@ -387,15 +379,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   display: block;
 }
 
-@media (min-width: 400pt){
-.HyperMD-header-2 {
-  letter-spacing:var(--title-spacing);
- // padding: 30px 0px 20px 0px!important;
- padding-top: 2.2rem !important;
- padding-bottom: 1.8rem !important;
- text-align: var(--h2-text-align);
-}}
-
 .h-reveal .markdown-preview-view h2:before{
   content:"H2";
   Margin-right:1rem;/*14px;*/
@@ -426,14 +409,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   width: 100%;
   display: block;
 }
-
-@media (min-width: 400pt){
-.HyperMD-header-3 {
-  letter-spacing:var(--title-spacing);
-  padding-top: 2rem !important;
- padding-bottom: 1.5rem !important;
- text-align: var(--h3-text-align);
-}}
 
 .h-reveal .markdown-preview-view h3:before{
   content:"H3";
@@ -466,14 +441,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   width: 100%;
   display: block;
 }
-
-@media (min-width: 400pt){
-.HyperMD-header-4 {
-  letter-spacing:var(--title-spacing);
-  padding-top: 2rem !important;
- padding-bottom: 1.5rem !important;
- text-align: var(--h4-text-align);
-}}
 
 .h-reveal .markdown-preview-view h4:before{
   content:"H4";
@@ -508,14 +475,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   display: block;
 }
 
-@media (min-width: 400pt){
-.HyperMD-header-5 {
-  letter-spacing:var(--title-spacing);
-  padding-top: 2rem !important;
- padding-bottom: 1.5rem !important;
- text-align: var(--h5-text-align);
-}}
-
 .h-reveal .markdown-preview-view h5:before{
   Font-size:0.8rem;
   content:"H5";
@@ -548,14 +507,6 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   width: 100%;
   display: block;
 }
-
-@media (min-width: 400pt){
-.HyperMD-header-6 {
-  letter-spacing:var(--title-spacing);
-  padding-top: 2rem !important;
- padding-bottom: 1.5rem !important;
- text-align: var(--h6-text-align);
-}}
 
 .h-reveal .markdown-preview-view h6:before{
   Font-size:0.8rem;
