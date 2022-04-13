@@ -1846,6 +1846,11 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   display: block;
 }
 
+.HyperMD-header{
+  padding-top: 1.2em !important;
+  padding-bottom: 0.6em !important; 
+}
+
 .markdown-preview-view h2,
 .cm-s-obsidian .cm-header-2 {
   Font-family:var(--text-title) !important;
