@@ -369,3 +369,19 @@ button.kanban-plugin__new-item-button:hover {
   object-fit: cover;
 }
 
+* ------------------------------- */
+/* File tree plugin */
+
+.file-tree-header-fixed{
+background: transparent !important;
+}
+
+.oz-folder-contents{
+    border-left-color:  var(--text-accent) !important;
+}
+
+.oz-folders-action-items .oz-nav-action-button {
+    color: var(--text-accent) !important;
+}
+
+
