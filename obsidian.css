@@ -5778,10 +5778,6 @@ body:not(.is-mobile).wys-mode div:not(.CodeMirror-activeline) > pre .cm-formatti
   margin-left: var(--p-offset) !important;
 }
 
-.wys-mode div:not(.CodeMirror-activeline) > .HyperMD-header {
-  left: calc(-1 * var(--p-offset)) !important;
-}
-
 .wys-mode .markdown-source-view.is-live-preview .HyperMD-header  {
   margin-left: calc(-1 * var(--p-offset)) !important;
 }
