@@ -1851,6 +1851,10 @@ body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   padding-bottom: 0.6em !important; 
 }
 
+.HyperMD-header-1{
+    padding-top: 0rem !important;
+}
+
 .markdown-preview-view h2,
 .cm-s-obsidian .cm-header-2 {
   Font-family:var(--text-title) !important;
