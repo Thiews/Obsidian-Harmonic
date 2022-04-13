@@ -2770,7 +2770,7 @@ ul,ol,ul ul, ol ul, ol ol ul, ol ul ul, ul ol ul, ul ul ul {
 }
 
 
-ul > li:not(.task-list-item):before {
+ul > li:not(.task-list-item,.mm-list):before {
   content:"\2022";
   color:var(--text-accent);
   width:1em;
