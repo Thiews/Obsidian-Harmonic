@@ -1434,16 +1434,19 @@ Span.cm-hmd-frontmatter{
 
 /* Popover */
 
-.popover .markdown-preview-view{
+.popover .markdown-preview-view,.popover .markdown-source-view{
 Zoom:0.8;
 padding:10px !important;
+}
+
+.popover .markdown-source-view{
+    width: 100% !important;
 }
 
 .popover {
   background: var(--background-primary);
   box-shadow: 0px 0px 5px -2px #AAA !important;
 }
-
 
 /* Tags in front matter */
 
