@@ -4069,6 +4069,14 @@ button.kanban-plugin__new-item-button:hover {
    padding: 5px 1rem;
 }
 
+.dataview.table-view-table .dataview-result-list-li:before{
+  display: none !important;
+}
+
+.dataview.table-view-table .dataview-result-list-li{
+  margin-left: -0.2rem;
+}
+
 .dataview.table-view-table tbody tr td{
   padding: 0.8rem 1rem;
   font-size: calc(var(--font-small) * var(--font-normal));
