@@ -1748,7 +1748,7 @@ margin-left: 1rem;
 
 /* Editor */
 
-body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
+.markdown-preview-view,body, input, button, .cm-s-obsidian .cm-formatting-hashtag, .cm-s-obsidian {
   font-family:var(--text) !important;
   font-size:var(--font-normal);
   font-weight:var(--normal-weight);
